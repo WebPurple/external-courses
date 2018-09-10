@@ -1,8 +1,7 @@
 const path = require('path');
 const {readFileSync} = require('fs');
 
-module.exports = {
-  getCode: absolutePath => readFileSync(
-      path.resolve(absolutePath)
-    ).toString()
-};
+const getCode = (absolutePath, defaultSource = `${__dirname}/src`) =>
+    readFileSync(path.resolve(path.join(defaultSource, absolutePath))).toString();
+
+module.exports = getCode;
