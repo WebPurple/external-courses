@@ -34,7 +34,7 @@
   ],
   "jest": {
     "moduleNameMapper": {
-      "~loader": "<rootDir>/test-loader.js"
+      "~utils": "<rootDir>/test-utils.js"
     }
   }
 }
