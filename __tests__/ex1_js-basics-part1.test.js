@@ -1,7 +1,8 @@
-describe('Ex1. JS Basics Part 1', () => {
-    describe('Task 01. Variable assignment', () => {
-        eval(require('~loader')('ex1_js-basics-part1/task-01.js'));
+const task = require('~utils').createTask('ex1_js-basics-part1', true);
 
+describe('Ex1. JS Basics Part 1', () => {
+    task('01', codeAsStr => {
+        eval(codeAsStr);
         test('x should be 10', () => expect(x).toBe(10));
     });
 });
