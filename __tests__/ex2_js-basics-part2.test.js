@@ -47,10 +47,10 @@ describe('Ex2. JS Basics Part 2', () => {
 
     task('04', code => {
         const arr1 = [1, 1];
-        test(`should be true for ${arr1.toString()}`, () => expect(code(arr1)).toBeTruthy());
+        test(`should be 'true' for ${arr1.toString()}`, () => expect(code(arr1)).toBe(true));
 
         const arr2 = [0, 1];
-        test(`should be false for ${arr2.toString()}`, () => expect(code(arr2)).toBeFalsy());
+        test(`should be 'false' for ${arr2.toString()}`, () => expect(code(arr2)).toBe(false));
     });
 
     task('05', code => {

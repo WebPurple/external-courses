@@ -16,10 +16,10 @@ describe('Ex3. JS Objects Part 1', () => {
         const obj = {a: 1};
 
         test("should return 'true' if key exists in object", () =>
-            expect(code('a', obj)).toBeTruthy());
+            expect(code('a', obj)).toBe(true));
 
         test("should return 'false' if key not exists in object", () =>
-            expect(code('b', obj)).toBeFalsy());
+            expect(code('b', obj)).toBe(false));
     });
 
     task('04', code => {
