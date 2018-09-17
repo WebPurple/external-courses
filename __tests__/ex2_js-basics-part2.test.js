@@ -2,16 +2,16 @@ const task = require('~utils').createTask('ex2_js-basics-part2');
 
 describe('Ex2. JS Basics Part 2', () => {
     task('01', code => {
-        test("should return 'number', if parameter is number without coercion", () => {
+        it("should return 'number', if parameter is number without coercion", () => {
             expect(code(2)).toBe('number');
             expect(code('2')).toBe('string');
         });
 
-        test("should return 'string', if parameter is string", () => {
+        it("should return 'string', if parameter is string", () => {
             expect(code('')).toBe('string');
         });
 
-        test('should return undefined, otherwise', () => {
+        it('should return undefined, otherwise', () => {
             expect(code()).toBeUndefined();
             expect(code(null)).toBeUndefined();
             expect(code(undefined)).toBeUndefined();
@@ -26,7 +26,7 @@ describe('Ex2. JS Basics Part 2', () => {
 
         const arr = [1, 2];
 
-        test(`should be called 3 times for ${arr.toString()}`, () => {
+        it(`should be called 3 times for ${arr.toString()}`, () => {
             code(arr);
             expect(console.log.calls.count()).toBe(3);
         });
@@ -40,29 +40,29 @@ describe('Ex2. JS Basics Part 2', () => {
         ];
 
         testData.forEach(([input, output]) =>
-            test(`should return ${output.toString()} for ${input.toString()}`, () =>
+            it(`should return ${output.toString()} for ${input.toString()}`, () =>
                 expect(code(input)).toEqual(output)),
         );
     });
 
     task('04', code => {
         const arr1 = [1, 1];
-        test(`should be 'true' for ${arr1.toString()}`, () => expect(code(arr1)).toBe(true));
+        it(`should be 'true' for ${arr1.toString()}`, () => expect(code(arr1)).toBe(true));
 
         const arr2 = [0, 1];
-        test(`should be 'false' for ${arr2.toString()}`, () => expect(code(arr2)).toBe(false));
+        it(`should be 'false' for ${arr2.toString()}`, () => expect(code(arr2)).toBe(false));
     });
 
     task('05', code => {
         const arr = [-100, 100, 1];
-        test(`should return 100 for ${arr.toString()}`, () => expect(code(arr)).toBe(100));
+        it(`should return 100 for ${arr.toString()}`, () => expect(code(arr)).toBe(100));
     });
 
     task('06', code => {
         const simple = 13;
         const complex = 14;
 
-        test('should operate correctly with simple, complex & invalid inputs', () => {
+        it('should operate correctly with simple, complex & invalid inputs', () => {
             expect(code(simple)).toBe(`Число ${simple} - простое число`);
             expect(code(complex)).toBe(`Число ${complex} - составное число`);
             expect(code(1001)).toBe('Данные неверны');

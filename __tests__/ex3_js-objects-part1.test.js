@@ -6,7 +6,7 @@ describe('Ex3. JS Objects Part 1', () => {
 
         const obj = {a: 1};
 
-        test("should be called once for 'obj' object", () => {
+        it("should be called once for 'obj' object", () => {
             code(obj);
             expect(console.log.calls.count()).toBe(1);
         });
@@ -15,22 +15,22 @@ describe('Ex3. JS Objects Part 1', () => {
     task('03', code => {
         const obj = {a: 1};
 
-        test("should return 'true' if key exists in object", () =>
+        it("should return 'true' if key exists in object", () =>
             expect(code('a', obj)).toBe(true));
 
-        test("should return 'false' if key not exists in object", () =>
+        it("should return 'false' if key not exists in object", () =>
             expect(code('b', obj)).toBe(false));
     });
 
     task('04', code => {
         const obj = {a: 1};
 
-        test('should leave property unchanged if it exists', () => {
+        it('should leave property unchanged if it exists', () => {
             code('a', obj);
             expect(obj.a).toBe(1);
         });
 
-        test("should set 'new' to property if it doesn't exist", () => {
+        it("should set 'new' to property if it doesn't exist", () => {
             code('b', obj);
             expect(obj.b).toBe('new');
         });
@@ -39,7 +39,7 @@ describe('Ex3. JS Objects Part 1', () => {
     task('05', code => {
         const obj = {a: 1};
 
-        test('should return the same reference after cloning', () => {
+        it('should return the same reference after cloning', () => {
             expect(obj === code(obj)).toBeFalsy();
         });
     });
@@ -48,14 +48,14 @@ describe('Ex3. JS Objects Part 1', () => {
         const obj = {a: 1, b: {c: 0}, e: {f: [{g: 1}]}};
         const objCopy = code(obj);
 
-        test('should create object with new references for non-primitive values', () => {
+        it('should create object with new references for non-primitive values', () => {
             expect(obj === objCopy).toBeFalsy();
             expect(obj.b === objCopy.b).toBeFalsy();
             expect(obj.e === objCopy.e).toBeFalsy();
             expect(obj.e.f === objCopy.e.f).toBeFalsy();
         });
 
-        test('should copy all properties', () => {
+        it('should copy all properties', () => {
             expect(obj).toEqual(objCopy);
         });
     });

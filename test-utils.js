@@ -17,11 +17,15 @@ const softRequire = modulePath => {
 };
 
 exports.createTask = (dirPath, read = false) => (number, cb) => {
-    const pathToTask = `${dirPath}/task-${number}.js`;
+    const oneParam = typeof number === 'function';
+    const taskCb = oneParam ? number : cb;
+    const taskNo = oneParam ? '' : number;
+
+    const pathToTask = `${dirPath}/task${taskNo ? `-${taskNo}` : taskNo}.js`;
     const moduleExport = read
         ? readCode(`${__dirname}/src/${pathToTask}`)
         : softRequire(`./src/${pathToTask}`);
     const conditionalDescribe = moduleExport ? describe : xdescribe;
 
-    conditionalDescribe(`Task ${number}`, () => cb(moduleExport));
+    conditionalDescribe(`Task ${taskNo}`, () => taskCb(moduleExport));
 };
