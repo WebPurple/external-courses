@@ -41,29 +41,3 @@ tags: html, css, advanced, task
 </p>
 
 [Руководство](https://snook.ca/archives/html_and_css/floated-label-pattern-css).
-
-# Задание 4
-
-Создайте адаптивную страницу.
-
-Для планшетов:
-
-<p align="center">
-    <img
-        width='750'
-        title='Task'
-        src="https://s3.amazonaws.com/media-p.slid.es/uploads/659430/images/4298002/cutted_for_tablet.jpg"
-    />
-</p>
-
-Для десктопов:
-
-<p align="center">
-    <img
-        width='750'
-        title='Task'
-        src="https://s3.amazonaws.com/media-p.slid.es/uploads/659430/images/4298007/cutted.jpg"
-    />
-</p>
-
-[Треугольник для всплывающих подсказок](https://css-tricks.com/snippets/css/css-triangle/).

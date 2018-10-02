@@ -46,3 +46,4 @@ tags: html, css, basics, fundamentals, task
 
 [Поправьте сайдбар неколькими способами](https://codepen.io/chriscoyier/pen/ClGcF).
 
+Для выполнения задания необходимо выполнить fork с помощью соответствующей кнопки.
