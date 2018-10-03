@@ -11,3 +11,5 @@ function isAllElementsEqual(arr) {
       else {return false;}
   }
 }
+
+module.exports = isAllElementsEqual;
