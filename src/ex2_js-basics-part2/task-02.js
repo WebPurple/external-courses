@@ -1,6 +1,6 @@
 'use strict';
 
-function code(myArray){
+function dumpArray(myArray){
     
     var counter = 0;
 
@@ -11,3 +11,5 @@ function code(myArray){
 
     console.log(counter);
 }
+
+module.exports = dumpArray;
