@@ -7,3 +7,5 @@ function viewArray(arr) {
   }
   console.log('Всего элементов: ' + arr.length);
 }
+
+module.exports = viewArray;
