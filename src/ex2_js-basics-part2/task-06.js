@@ -8,3 +8,5 @@ function isSimpleNumber(x) {
   }
   return result;
 }
+
+module.exports = isSimpleNumber;
