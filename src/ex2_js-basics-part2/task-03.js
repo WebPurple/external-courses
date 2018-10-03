@@ -16,3 +16,5 @@ function numbersEvenOddZero(numArray) {
   console.log('[' + result.join(', ') + ']');
   return result;
 }
+
+module.exports = numbersEvenOddZero;
