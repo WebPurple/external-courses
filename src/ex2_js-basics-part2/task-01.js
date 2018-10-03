@@ -1,15 +1,13 @@
 'use strict';
 
-function code(a){
+function getType(a){
     var variableType = typeof(a);
-    var result = 'undefined';
-    if (variableType === 'string'){
-        result = 'string';
-    } else if (variableType === 'number'){
-        result = 'number';
+
+    if (variableType === 'string' || variableType === 'number' ){
+        var result = variableType;
     }
+    
     return result;
 }
 
-console.log(code(2));
-console.log(code('2'));
+module.exports = getType;
