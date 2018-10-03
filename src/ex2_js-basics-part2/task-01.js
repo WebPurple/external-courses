@@ -5,4 +5,4 @@ var detectType = function(x) {
   else {return 'undefined';}
 }
 
-module.exports = detectType;
+module.exports = 'detectType';
