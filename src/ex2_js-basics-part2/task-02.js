@@ -2,7 +2,6 @@
 
 function viewArray(arr) {
   var i;
-  console.log('Обзор массива:');
   for(i=0; i<arr.length; i++) {
     console.log('[' + i + '] => ' + arr[i]);
   }
