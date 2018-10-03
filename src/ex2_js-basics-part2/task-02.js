@@ -1,5 +1,3 @@
-'use strict';
-
 function viewArray(arr) {
   var i;
   console.log('Обзор массива:');
