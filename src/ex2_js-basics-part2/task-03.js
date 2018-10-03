@@ -5,6 +5,7 @@ function numbersEvenOddZero(numArray) {
   var message = '';
   var i;
   for(i=0; i<numArray.length; i++) {
+    if(typeof numArray[i] !== 'number' || isNaN(numArray[i])) {continue;}
     if(numArray[i] === 0) {result[2]++;} // ноль
     else if(numArray[i] % 2) {result[1]++;} // нечетное
     else {result[0]++;} // четное
