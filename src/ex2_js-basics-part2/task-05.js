@@ -5,3 +5,5 @@ function maxElement(arr) {
     return current > max ? current : max;
   }, '');
 }
+
+module.exports = maxElement;
