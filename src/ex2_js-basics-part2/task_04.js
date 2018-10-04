@@ -6,12 +6,12 @@ function arrayFunc(arr) {
         if (arr[i] === arr[i + 1]) {
             check = true;
         } 
-        if (check) {
-            return 'true';
-        } else {
-            return 'false';
-        }     
+        
+        return check;
     }
 }
 
-module.exports = arrayFunc;
+var a = arrayFunc([1, 1, 1, 1, 1]);
+console.log(a);
+
+//module.exports = arrayFunc;
