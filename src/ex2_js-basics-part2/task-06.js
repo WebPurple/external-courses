@@ -3,11 +3,10 @@
 function isPrime(a){
 
     var result;
-    
+    var i = 2;
+    var primeFlag = true;
+
     if (a <= 1000){
-        
-        var i = 2;
-        var primeFlag = true;
         
         while (primeFlag && i<Math.sqrt(a)){
             if (a % i === 0){

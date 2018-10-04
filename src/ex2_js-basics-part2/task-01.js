@@ -1,10 +1,12 @@
 'use strict';
 
 function getType(a){
+
     var variableType = typeof(a);
+    var result = undefined;
 
     if (variableType === 'string' || variableType === 'number' ){
-        var result = variableType;
+        result = variableType;
     }
     
     return result;

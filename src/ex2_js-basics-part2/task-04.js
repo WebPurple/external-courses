@@ -7,7 +7,7 @@ function isSame(someArray){
     var i = 1;
     
     while(result && i<someArray.length){
-        if (someArray[i] != someArray[0]){
+        if (someArray[i] !== someArray[0]){
             result = false;
         }
         i++;
