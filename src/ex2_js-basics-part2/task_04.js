@@ -7,9 +7,8 @@ function arrayFunc(arr) {
         if (arr[i] === arr[i + 1]) {
             check = true;
         } 
-        
-        return check;
     }
+    return check;
 }
 
 
