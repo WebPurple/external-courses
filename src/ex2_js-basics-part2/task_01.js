@@ -1,13 +1,17 @@
 "use strict";
 
 function valueCheck(value) {
+    var result;
+
     if (typeof(value) !== 'number' && typeof(value) !== 'string'){
-        return 'undefined';
+        result = 'undefined';
     } else if (!isNaN(value)) {
-        return value + ' - is number';
+        result = value + ' - is number';
     } else {
-        return value + ' - is string';
+        result = value + ' - is string';
     } 
+
+    return result;
 }
 
 module.exports = valueCheck;
