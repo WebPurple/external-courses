@@ -11,7 +11,5 @@ function arrayFunc(arr) {
     }
 }
 
-var a = arrayFunc([1, 1, 1, 1, 1]);
-console.log(a);
 
-//module.exports = arrayFunc;
+module.exports = arrayFunc;
