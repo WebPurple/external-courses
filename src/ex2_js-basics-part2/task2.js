@@ -7,4 +7,4 @@ function arrCounter (arr) {
     console.log(counter);
 }
 
-arrCounter (['1, 2, 3', 'Hello']);
+module.exports = arrCounter;

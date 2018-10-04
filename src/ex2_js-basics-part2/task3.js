@@ -16,4 +16,4 @@ function evenOdd (arr) {
     console.log('Even: ', countEven, ' Odd: ', countOdd, ' Null: ', countNull);
 }
 
-evenOdd ([1, 2, 3, 4, 0, 0, 0]);
+module.exports = evenOdd;

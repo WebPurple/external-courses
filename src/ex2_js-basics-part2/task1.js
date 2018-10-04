@@ -10,4 +10,4 @@ function determineType (arg) {
     }
 };
 
-console.log (determineType ({}));
+module.exports = determineType;

@@ -8,4 +8,4 @@ function maxElement (arr) {
     return maxEl;
 }
 
-console.log (maxElement ([10, 2, 5, 3]));
+module.exports = maxElement;

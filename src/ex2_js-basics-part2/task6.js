@@ -11,4 +11,5 @@ function primeNumber (numb) {
         return ('Number ' + numb + ': Compound number');
     }
 }
-console.log (primeNumber (71));
+
+module.exports = primeNumber;
