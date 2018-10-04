@@ -2,7 +2,8 @@
 
 function arrayProcessing(arr) {
     var _even = 0, _odd = 0, _zero = 0;
-    for (var i = 0; i < arr.length; i++) {
+    var i;
+    for (i = 0; i < arr.length; i++) {
         if (arr[i] % 2 === 0) {
             _even += 1;
         } else {
