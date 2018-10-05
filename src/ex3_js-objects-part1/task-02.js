@@ -1,3 +1,4 @@
+'use strict';
 
 function dumpObject(someObject){
     var key;

@@ -1,3 +1,5 @@
+'use strict';
+
 var pancake = {
     name: 'vanilla pancake',
     count: 3,

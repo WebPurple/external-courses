@@ -1,3 +1,4 @@
+'use strict';
 
 function hasProperty(keyName, someObject){
     if(!Object.keys(someObject).includes(keyName)){
