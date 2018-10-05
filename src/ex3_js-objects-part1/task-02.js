@@ -1,11 +1,10 @@
 
 function dumpObject(someObject){
-    var objectKey;
+    var key;
     var allKeys = Object.keys(someObject);
-    console.log(allKeys);
-    for(objectKey in allKeys){
-        console.log(objectKey);
-    }
+    allKeys.foreach(function(key){
+        console.log(key);
+    });
 }
 
 var myobj = {
@@ -13,5 +12,5 @@ var myobj = {
     b: 123123,
     asdasd: true
 }
-console.log(myobj);
+
 dumpObject(myobj);
