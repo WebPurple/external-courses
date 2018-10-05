@@ -12,13 +12,8 @@ function dataType(a) {
 
         return "number";
         
-    }  else {    
-    
-    return undefined;
-
-    }
-        
+    }          
 } 
 
 
-console.log(dataType(NaN));
+console.log(dataType('few'));
