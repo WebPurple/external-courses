@@ -1,5 +1,6 @@
-function chooseElements() {
+function isTrue() {
     var arr=[];
+    var i;
        let items = prompt("Перечислите через запятую элементы", "");
           if ((typeof(items)) === "string" && (typeof(items)) != null && items != ""){
                     console.log('ввод верный');
@@ -9,11 +10,15 @@ function chooseElements() {
             alert ("Введите корректные данные");
               i--;
               }
-            arr.forEach( function(item, i, arr)  {
-            console.log(++i + ': ' + item);
-            
-            }); 
-            console.log("Number of elements: " + arr.length); 
-    }
   
-  chooseElements();
+    for (i = 0; i < arr.length; i++) {
+  if (arr[i] === arr[i-1]) {
+    console.log(true);
+  }
+  else{
+    console.log(false);
+  }
+  
+      }
+  }
+  isTrue();
