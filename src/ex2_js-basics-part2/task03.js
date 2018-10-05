@@ -7,5 +7,3 @@ var f = function(arr) {
     }
     console.log(out);
 }
-
-f([1,2,3,4,0]);
