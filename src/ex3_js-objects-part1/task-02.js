@@ -7,5 +7,4 @@ function dumpObject(someObject){
     });
 }
 
-
 module.exports = dumpObject;
