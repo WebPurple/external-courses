@@ -19,9 +19,14 @@ function deepClone(someObject){
     return objectClone;
 }
 
-function isArray(someObject){ //нужна для проверки является ли объект массивом
-    var i = 0;                //без этой проверки код падает, считая f - объектом,
-    var result = true;        //а f - массив
+
+//нужна для проверки является ли объект массивом
+//без этой проверки код падает, считая f - объектом,
+//а f - массив
+
+function isArray(someObject){ 
+    var i = 0;                
+    var result = true;        
     var objKeys = Object.keys(someObject);
     while (result && i < objKeys.length){
         if (i != objKeys[i]){

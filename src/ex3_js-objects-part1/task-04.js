@@ -1,10 +1,11 @@
 'use strict';
 
 function hasProperty(keyName, someObject){
-    if(!Object.keys(someObject).includes(keyName)){
-        someObject[keyName] = 'new';
+    var improvedObject = someObject;
+    if(!Object.keys(improvedObject).includes(keyName)){
+        improvedObject[keyName] = 'new';
     }
-    return someObject;
+    return improvedObject;
 }
 
 module.exports = hasProperty;
