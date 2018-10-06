@@ -12,7 +12,7 @@ function typeNumber(a) {
             
     } else {
       
-      for (var i = 2; i < parseInt(Math.sqrt(a)); i++) {
+      for (var i = 2; i <= parseInt(Math.sqrt(a)); i++) {
         if (a % i === 0) {
           
           console.log('Число ' + a + ' - составное');
@@ -24,10 +24,7 @@ function typeNumber(a) {
     console.log('Число ' + a + ' - простое');
             
     }
-    
   }
 
-  typeNumber(999);
-  typeNumber(199);
-  typeNumber(1001);
- 
+module.exports = typeNumber;
+

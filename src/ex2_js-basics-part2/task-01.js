@@ -8,12 +8,10 @@ function dataType(a) {
 
         return undefined;
 
-    }  else if ( typeof a === 'number') {
+    } else if ( typeof a === 'number') {
 
         return "number";
-        
     }          
 } 
 
-
-console.log(dataType('few'));
+module.exports = dataType;

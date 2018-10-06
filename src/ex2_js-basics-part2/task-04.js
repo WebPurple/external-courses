@@ -6,7 +6,6 @@ function flatArr(a) {
     }
     
     return true;
-      
   }
 
-  console.log(flatArr([1,1,1,2,1]));
+module.exports = flatArr;

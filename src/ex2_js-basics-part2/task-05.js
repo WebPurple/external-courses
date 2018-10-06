@@ -10,4 +10,4 @@ function maxValue(a) {
     console.log(max);
   }
 
-maxValue([15,3,231,4,534,654]);
+module.exports = maxValue; 
