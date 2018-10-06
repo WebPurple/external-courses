@@ -22,7 +22,7 @@ describe('Ex3. JS Objects Part 1', () => {
             expect(code('b', obj)).toBe(false));
     });
 
-    task('04', code => {
+        task('04', code => {
         const obj = {a: 1};
 
         it('should leave property unchanged if it exists', () => {
@@ -39,7 +39,7 @@ describe('Ex3. JS Objects Part 1', () => {
     task('05', code => {
         const obj = {a: 1};
 
-        it('should return the same reference after cloning', () => {
+        it('should create object with own new reference', () => {
             expect(obj === code(obj)).toBeFalsy();
         });
     });
