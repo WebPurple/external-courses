@@ -1,10 +1,8 @@
 function defineType(x) {
-    if (typeof x == 'number') {
+    if (typeof x === 'number') {
         return 'number';
-    } else if (typeof x == 'string') {
+    } else if (typeof x === 'string') {
         return 'string';
-    } else {
-        return undefined;
-    }
+    } return undefined;
 };
 module.exports = defineType;
