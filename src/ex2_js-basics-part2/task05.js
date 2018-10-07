@@ -3,7 +3,8 @@
 // Написать функцию, которая возвращает максимально значение в массиве.
 function maxNumber(array){
     var max = array[0];
-    for (var i = 1; i < array.length; i++){
+    var i;
+    for (i = 1; i < array.length; i++){
         if (array[i] >= max){
             max = array[i];
         }

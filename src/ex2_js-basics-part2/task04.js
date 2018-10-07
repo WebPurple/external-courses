@@ -2,7 +2,8 @@
 
 // Написать функцию, которая проверяет одинаковые ли элементы в массиве и выводит возвращает `true` или `false`.
 function allElementsEqual(array){
-    for (var i = 1; i < array.length; i++){
+    var i;
+    for (i = 1; i < array.length; i++){
         if (array[i] !== array[0]){
             return false;
         }
