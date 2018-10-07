@@ -56,7 +56,7 @@ describe('Ex3. JS Objects Part 1', () => {
         });
 
         it('should copy all properties', () => {
-            expect(obj).toEqual(objCopy);
+            expect(objCopy).toEqual(obj);
         });
     });
 });
