@@ -5,6 +5,6 @@ function MyFuncSprint (){
         if (i % 2 == 0) 
         var n = n + 1
         console.log( NumberArr [i] + " Число элементов: " + NumberArr.length);
-         }
+            }
     }
     module.exports = MyFuncSprint;
