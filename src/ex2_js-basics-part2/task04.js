@@ -6,7 +6,8 @@ function allElementsEqual(array){
         if (array[i] !== array[0]){
             return false;
         }
-    } return true;
+    } 
+    return true;
 }
 console.log(allElementsEqual([4,4,2]));
 console.log(allElementsEqual([5,5,5,5,5]));
