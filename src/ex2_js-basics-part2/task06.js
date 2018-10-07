@@ -12,7 +12,6 @@
 // // Число 14 - составное число
 // ```
 function isPrime(number){
-    var number;
     var i;
     if (number > 1000){
         return "Данные неверны";
@@ -20,13 +19,13 @@ function isPrime(number){
     else if (number <= 1){
         return "Число - не простое и не составное"
     }
-    else {
-        for (i = 2; i < number; i++){
-            if ((number % i) === 0){
-                return "Число " + number + "- составное число";
-            } return "Число " + number + " - простое"; 
-        }
+
+    for (i = 2; i < number; i++){
+        if ((number % i) === 0){
+            return "Число " + number + " - составное число";
+        } 
     }
+    return "Число " + number + " - простое"; 
 }
 console.log(isPrime(13));
 console.log(isPrime(9));
