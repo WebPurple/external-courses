@@ -1,5 +1,3 @@
-
-
 const task = require('~utils').createTask('ex14_js-context');
 
 describe('Ex14. JS Context. Task 1', () => {
