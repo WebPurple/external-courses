@@ -1,11 +1,10 @@
-function testUnique (A) {   
-    var n = A.length;
-    for (var i = 0; i < n-1; i++)
-     { for (var j = i+1; j < n; j++)
-        { if (A[i] === A[j]) 
-            return false; 
+var f = function (arr) {
+    var t = true;
+    for (var i=i;  i < arr.length; i++) {
+        if (t) {
+            if (arr[i-1] !==  arr[i]) t = false;
         }
-     }
-    return true;
-} 
-testUnique ([2,4,6,6,9])
+    }
+console.log (t); 
+}
+f ([10,15,6,6,8,6])
