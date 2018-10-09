@@ -1,18 +1,18 @@
 function showInfoNumberAray(Array) {
-    var countEvenOddZero =['четных: ',0,' ; нечетных: ',0,' ; нулей: ',0];
+    var countEvenOddZero =[0,0,0];
   
     for (var i=0;i<a.length;i++)
     {
         if (a[i]%2===0 && a[i]!==0)
-        ++countEvenOddZero[1];
+        ++countEvenOddZero[0];
         if (a[i]%2!==0 && a[i]!==0)
-        ++countEvenOddZero[3];
+        ++countEvenOddZero[1];
         if (a[i]===0)
-        ++countEvenOddZero[5];
+        ++countEvenOddZero[2];
         }
         console.log(countEvenOddZero);
-        //console.log('четных: '+countEvenOddZero[1]+' ; нечетных: '+countEvenOddZero[3]+' ; нулей: '+countEvenOddZero[5]);
-        console.log(Array)
+        
+        //console.log(Array)
     }
 
 
