@@ -18,4 +18,6 @@ var x=15;
 console.log (simpleNumber(x))
 var x=1
 console.log (simpleNumber(x))
+console.log (simpleNumber(NaN))
+
 
