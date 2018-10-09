@@ -5,4 +5,4 @@ var f = function(a) {
         console.log('number')
     } else console.log('undefined') 
 }
-
+f(111)
