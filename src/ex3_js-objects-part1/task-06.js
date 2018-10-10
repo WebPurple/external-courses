@@ -1,15 +1,20 @@
 'use strict';
 function makeClone(obj) {
-    var clone = {};
-    var prop;
-    for (prop in obj) {
-        if (obj.hasOwnProperty(prop)) {
-            if (typeof obj[prop] === 'object') {
-                clone[prop] = makeClone(obj[prop]);
-            };
-            clone[prop] = obj[prop];
-        }
+  var objNew = {};
+  var key;
+  var i;
+  for (key in obj) {
+    if (Array.isArray(obj[key])) {
+      objNew[key] = [];
+      for (i = 0; i < obj[key].length; i++) {
+        objNew[key][i] = obj[key][i];
+      }
+    } else if (typeof obj[key] === 'object') {
+      objNew[key] = objDeepClone(obj[key]);
+    } else {
+      objNew[key] = obj[key];
     }
-    return clone;
-};
+  }
+  return objNew;
+}
 module.exports = makeClone;
