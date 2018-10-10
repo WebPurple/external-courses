@@ -10,7 +10,7 @@ function makeClone(obj) {
         objNew[key][i] = obj[key][i];
       }
     } else if (typeof obj[key] === 'object') {
-      objNew[key] = objDeepClone(obj[key]);
+      objNew[key] = makeClone(obj[key]);
     } else {
       objNew[key] = obj[key];
     }
