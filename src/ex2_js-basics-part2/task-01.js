@@ -1,3 +1,4 @@
+'use strict';
 function defineType(x) {
     if (typeof x === 'number') {
         return 'number';
