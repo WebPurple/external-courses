@@ -58,7 +58,7 @@
     "no-warning-comments": [0, { "terms": ["todo", "fixme", "xxx"], "location": "start" }],
     "no-with": 2,
     "radix": 2,
-    "vars-on-top": 2,
+    "vars-on-top": 0,
     "wrap-iife": [2, "outside"],
     "yoda": 2
   },
