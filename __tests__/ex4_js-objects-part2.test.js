@@ -59,10 +59,10 @@ describe('Ex4. JS Objects Part 2', () => {
         task('11', code => {
             beforeAll(() => spyOn(console, 'log'));
 
-            code('abbac');
-
-            it('should count each word count of entrance', () =>
-                expect(console.log.calls.count()).toBe(3));
+            it('should count each word count of entrance', () => {
+                code('abbac');
+                expect(console.log.calls.count()).toBe(3);
+            });
         });
     });
 
