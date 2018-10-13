@@ -1,4 +1,4 @@
-const task = require('~utils').createTask('ex14_js-context');
+const {task} = require('~utils')('ex14_js-context');
 
 describe('Ex14. JS Context. Task 2', () => {
     task('02', code => {
@@ -19,7 +19,7 @@ describe('Ex14. JS Context. Task 2', () => {
             expect(code.getGuessedString()).toBe('_________');
         });
 
-        it('should return proper initial values', () => {            
+        it('should return proper initial values', () => {
             expect(code.getErrorsLeft()).toBe(6);
             expect(code.getWrongSymbols().length).toBe(0);
         });
@@ -40,6 +40,6 @@ describe('Ex14. JS Context. Task 2', () => {
             code.guess('a');
             code.guess('k');
             expect(code.getWrongSymbols()).toEqual(['a', 'k']);
-        });       
+        });
     });
 });
