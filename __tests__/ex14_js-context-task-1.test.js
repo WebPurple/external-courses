@@ -1,4 +1,4 @@
-const task = require('~utils').createTask('ex14_js-context');
+const {task} = require('~utils')('ex14_js-context');
 
 describe('Ex14. JS Context. Task 1', () => {
     task('01', code => {
