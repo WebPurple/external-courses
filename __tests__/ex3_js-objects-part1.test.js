@@ -1,4 +1,4 @@
-const task = require('~utils').createTask('ex3_js-objects-part1');
+const {task} = require('~utils')('ex3_js-objects-part1');
 
 describe('Ex3. JS Objects Part 1', () => {
     task('02', code => {
@@ -22,7 +22,7 @@ describe('Ex3. JS Objects Part 1', () => {
             expect(code('b', obj)).toBe(false));
     });
 
-        task('04', code => {
+    task('04', code => {
         const obj = {a: 1};
 
         it('should leave property unchanged if it exists', () => {

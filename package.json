@@ -21,7 +21,9 @@
   "devDependencies": {
     "eslint": "5.4.0",
     "jest": "23.5.0",
-    "pre-commit": "1.2.2"
+    "pre-commit": "1.2.2",
+    "css-validator": "0.8.0",
+    "html-validator": "3.1.2"
   },
   "pre-commit": [
     "test",

@@ -1,4 +1,4 @@
-const task = require('~utils').createTask('ex2_js-basics-part2');
+const {task} = require('~utils')('ex2_js-basics-part2');
 
 describe('Ex2. JS Basics Part 2', () => {
     task('01', code => {

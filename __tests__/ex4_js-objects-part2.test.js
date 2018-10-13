@@ -1,4 +1,4 @@
-const task = require('~utils').createTask('ex4_js-objects-part2');
+const {task} = require('~utils')('ex4_js-objects-part2');
 
 describe('Ex4. JS Objects Part 2', () => {
     describe('Prototypes', () => {
