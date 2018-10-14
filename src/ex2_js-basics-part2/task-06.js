@@ -33,6 +33,27 @@ p = function (a){
   else if ( a % 7 === 0){
     console.log("Summary number");
   }
+  else if ( a % 11=== 0 ){
+    console.log("Summary number")
+  }
+  else if ( a % 13 === 0 ){
+    console.log("Summary number")
+  }
+  else if ( a % 17 ===0 ){
+    console.log("Summary number")
+  }
+  else if ( a % 19 === 0 ){
+    console.log("Summary number")
+  }
+  else if ( a % 23 === 0 ){
+    console.log("Summary number")
+  }
+  else if ( a % 29 === 0 ){
+    console.log("Summary number")
+  }
+  else if ( a % 31 === 0 ){
+    console.log("Summary number")
+  }
   else if ( typeof a === "string"){
     console.log("Error");
   }
@@ -43,3 +64,4 @@ p = function (a){
 }
 }
 p(1001)
+)
