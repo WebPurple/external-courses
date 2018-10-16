@@ -5,7 +5,7 @@ function simple() {
     var number;
     if (item <= 1000) {
      for (i = 2; i < item; i++) {
-      if (item <= 1 || item % i == 0) {
+      if (item <= 1 || item % i === 0) {
         res=false;
         break;
       }

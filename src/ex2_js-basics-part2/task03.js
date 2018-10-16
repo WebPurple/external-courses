@@ -5,7 +5,7 @@ function evenOrOddNumber() {
     var nool = 0;
     var i;
        let items = prompt("Перечислите через запятую элементы", "");
-          if ((typeof(items)) === "string" && (typeof(items)) != null && items != ""){
+          if ((typeof(items)) === "string" && (typeof(items)) !== null && items !== ""){
                     console.log('ввод верный');
                     arr = items.split(",");
               
@@ -19,7 +19,7 @@ function evenOrOddNumber() {
     for (i = 0; i < arr.length; i++) {
   if (arr[i]!== 0) {
   
-        if (arr[i] % 2 == 0) {
+        if (arr[i] % 2 === 0) {
       ++sum;
         }
    else {
