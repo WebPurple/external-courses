@@ -1,4 +1,4 @@
-const task = require('~utils').createTask('ex6_js-array-methods');
+const {task} = require('~utils')('ex6_js-array-methods');
 
 describe('Ex6. JS Array methods', () => {
     task('01', code => {
