@@ -1,4 +1,4 @@
-'use scrict'
+'use strict'
 
 function countSymbols(somestring){
     let symbols = {};
