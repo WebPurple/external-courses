@@ -1,6 +1,5 @@
 function noPrototype () {
     var obj={};
-    obj=Object.Create(null);
+    obj=Object.create(null);
     return obj
 }
-
