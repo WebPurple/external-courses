@@ -1,36 +1,8 @@
 'use strict'
-
+var calc = calculator();
 function calculator(){
     var result = 0;
     
-    var addition = function(number){
-        if (number !== undefined){
-            result += number;
-        };
-        return addition;
-    };
-
-    var substraction = function(number){
-        if (number !== undefined){
-            result -= number;
-        };
-        return substraction;
-    }
-
-    var division = function(number){
-        if (number !== undefined){
-            result /= number;
-        };
-        return division;
-    };
-
-    var multiplication = function(number){
-        if (number !== undefined){
-            result *= number;
-        };
-        return multiplication;
-    }
-
     return {
 
         getResult: function(){
@@ -41,22 +13,34 @@ function calculator(){
             result = 0;
         },
 
-        add: addition,
+        add: function add(number){
+            if (number !== undefined){
+                result += number;
+            };
+            return add;
+        },
 
-        substract: substraction,
+        subtract: function subtract(number){
+            if (number !== undefined){
+                result -= number;
+            };
+            return subtract;
+        },
 
-        divide: division,
+        divide: function divide(number){
+            if (number !== undefined){
+                result /= number;
+            };
+            return divide;
+        },
 
-        multiply: multiplication
+        multiply: function multiply(number){
+            if (number !== undefined){
+                result *= number;
+            };
+            return multiply;
+        }
     }   
 }
 
-module.exports = calculator;
-let c = calculator();
-
-c.add(1);
-console.log(calculator.getResult());
-c.multiply(2);
-console.log(c.getResult());
-c.multiply(2);
-console.log(c.getResult());
+module.exports = calc;
