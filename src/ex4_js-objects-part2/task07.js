@@ -7,6 +7,6 @@ function extraction(str, num) {
             strNew += str[i];
         }
         strNew += '...';
-        return strNew
+        return strNew;
     }
-}
+}  
