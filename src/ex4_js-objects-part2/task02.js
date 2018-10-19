@@ -1,0 +1,1 @@
+var data = Object.create(null);
