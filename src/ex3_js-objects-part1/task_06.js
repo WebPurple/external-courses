@@ -2,8 +2,8 @@
 
 function objectProcessing(object){
     var clone = {};
-    var key;
-    
+    var key = null;
+
     for (key in object ){
         clone[key] = object[key];
     }
