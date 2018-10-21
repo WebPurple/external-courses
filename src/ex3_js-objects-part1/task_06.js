@@ -7,7 +7,7 @@ function cloneObject(object) {
 
         for (property in object) { 
             if (object.hasOwnProperty(property)) { 
-                if ("object" === typeof object[property]) {
+                if ("object" === typeof(object[property])) {
                     clone[property] = makeClone(object[property]); 
                  } else {
                     clone[property] = object[property]; 
