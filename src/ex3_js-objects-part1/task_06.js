@@ -2,9 +2,12 @@
 
 function objectProcessing(object){
     var clone = {};
-    for (var key in object ){
+    var key;
+    
+    for (key in object ){
         clone[key] = object[key];
     }
+
     return clone;
 }
 
