@@ -1,10 +1,10 @@
 "use strict"; 
 
 function objectProcessing(object, string){
-    if (!(string in object)) {
+    if (object.hasOwnProperty(string)) {
         object[string] = 'new';
-    } 
-      
+    }
+
     return object;
 }
 
