@@ -2,11 +2,12 @@
 
 function objectProcessing(string, object){
     var property = string;
-    if (!object.hasOwnProperty(property)) {
-        object[property] = 'new';
+    var clone = object;
+    if (!clone.hasOwnProperty(property)) {
+        clone[property] = 'new';
     }
 
-    return object;
-} 
+    return clone;
+}
 
 module.exports = objectProcessing;
