@@ -1,27 +1,20 @@
 "use strict"; 
 
-function clone(obj) {
+function cloneObject(object) {
 
-    var temp = null;
-    var key = null;
+    var clone = {};
+    var property = null; 
 
-    if (obj === null || typeof (obj) !== 'object' || 'isActiveClone' in obj)
-        return obj;
-
-    if (obj instanceof Date)
-        temp = new obj.constructor();
-    else
-        temp = obj.constructor();
-
-    for (key in obj) {
-        if (Object.prototype.hasOwnProperty.call(obj, key)) {
-            obj['isActiveClone'] = null;
-            temp[key] = clone(obj[key]);
-            delete obj['isActiveClone'];
+        for (property in object) { 
+            if (object.hasOwnProperty(property)) { 
+                if ("object"===typeof object[property]) 
+                    clone[property] = makeClone(object[property]); 
+                else
+                    clone[property] = object[property]; 
+            }
         }
-    }
 
-    return temp;
+    return clone;
 }
 
-module.exports = clone;
+module.exports = cloneObject;

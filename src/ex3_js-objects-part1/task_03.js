@@ -2,7 +2,7 @@
 
 function objectProcessing(object, string) {
     var present = false;
-    var key;
+    var key = null;
     for(key in object){
         if (string === key) {
             present = true;
