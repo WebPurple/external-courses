@@ -1,7 +1,7 @@
 "use strict"; 
 
 function objectProcessing( object ) {
-    var key;
+    var key = null;
     for (key in object) {
         console.log('Ключ: ' + key + ', значение: ' + object[key] );
     }
