@@ -1,11 +1,12 @@
 "use strict"; 
 
-function objectProcessing(object, string){
-    if (object.hasOwnProperty(string)) {
-        object[string] = 'new';
+function objectProcessing(string, object){
+    var property = string;
+    if (!object.hasOwnProperty(property)) {
+        object[property] = 'new';
     }
 
     return object;
-}
+} 
 
 module.exports = objectProcessing;
