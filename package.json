@@ -37,5 +37,8 @@
     "moduleNameMapper": {
       "~utils": "<rootDir>/test-utils.js"
     }
+  },
+  "dependencies": {
+    "ajv": "^6.5.4"
   }
 }
