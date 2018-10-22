@@ -1,3 +1,3 @@
-function randomNumber(a, b) {
-    return Math.floor(Math.random() * (b - a) + a)
+function randomNumber() {
+    return Math.random() * 100
 }
