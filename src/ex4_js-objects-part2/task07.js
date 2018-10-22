@@ -1,17 +1,17 @@
 //js_task07__Isaev_Arsenyi
 
-str1 = 'qwerty';
-num1=2;
+a = 'qwerty';
+n=5;
 
-
-function toCut(str,num){
-    var newStr = str;
-
-    if(str.length > num) newStr = str.slice(0, num) + "…";
-    return newStr;
+function toCut(str1, num) {
+    if (str1.length > num && num >= 3) {
+        NewStr = str1.slice(0, num - 3) + '…';
+        return NewStr;
+    } return 'Error';
 }
 
-console.log(toCut(str1, num1));
+
+console.log(toCut(a, n));
 
 
 module.export=toCut;
