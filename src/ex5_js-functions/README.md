@@ -19,7 +19,8 @@ Calculator.multiply();
 
     ```js
     console.log(Calculator.getResult()); // 0
-    ```
+    ``` текущим состоянием:
+
 
 -   иметь метод для сброса текущего состояния:
 
@@ -27,8 +28,7 @@ Calculator.multiply();
     console.log(Calculator.reset()); // 0
     ```
 
--   все операции производятся над текущим состоянием:
-
+-   все операции производятся над
     ```js
     Calculator.add(4);
     Calculator.subtract(1);
@@ -63,3 +63,29 @@ Calculator.multiply();
 
     console.log(Calculator.getResult()); // 0
     ```
+
+
+// тесты
+
+console.log(Calculator.getResult()); // 0
+Calculator.add(5);
+console.log(Calculator.getResult()); // 5
+Calculator.reset();
+console.log(Calculator.getResult()); // 0
+Calculator.add(5);
+Calculator.subtract(2);
+console.log(Calculator.getResult()); // 3
+Calculator.subtract(3);
+console.log(Calculator.getResult()); // 0
+Calculator.add(3);
+console.log(Calculator.getResult()); // 3
+Calculator.subtract(1)(1)(1);
+console.log(Calculator.getResult()); // 0
+Calculator.multiply(5);
+console.log(Calculator.getResult()); // 0
+Calculator.add(1)(1)(1); 
+console.log(Calculator.getResult()); // 3
+Calculator.multiply(5)(4);
+console.log(Calculator.getResult()); // 60
+Calculator.divide(2);
+console.log(Calculator.getResult()); // 30
