@@ -5,9 +5,11 @@ function myFunction(string, substring, value) {
     var resultString = '';
     var i = null;
     for (i in str) {
-        resultString += str[i] + ' ';
-        if(+i === +value) {
-            resultString += substring + ' ';
+        if (str.hasOwnProperty(i)){
+            resultString += str[i] + ' ';
+            if(+i === +value) {
+                resultString += substring + ' ';
+            }
         }
     }
     return resultString    
