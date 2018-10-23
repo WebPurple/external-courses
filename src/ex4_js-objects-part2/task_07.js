@@ -12,7 +12,7 @@ function myFunction(string, value){
         resultStr += '…';
     }
 
-    return  resultStr;
+    return resultStr;
 }
 
 module.exports = myFunction;
