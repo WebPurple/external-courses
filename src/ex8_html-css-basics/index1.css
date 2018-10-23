@@ -1,0 +1,19 @@
+div {
+    background-color: #FFC8FF;
+}
+a:link {
+	color: red;
+}
+a:visited {
+	color: green;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	color: blue;
+}
+table {
+	border:1px ;
+	padding:20px;
+}

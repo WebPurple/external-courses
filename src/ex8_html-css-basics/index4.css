@@ -1,0 +1,38 @@
+#Description {
+    background-color: #d8c7c7;
+    border-style:outset;
+   
+}
+p {
+    text-indent: 1cm;
+    width: 35%;
+    font-size: 15px;
+    font-family:Helvetica;
+}
+.indent {
+    text-indent: 40pt;
+    font-size: 1em;
+    font-style: italic;
+}
+#Description li {
+    color: rgb(189, 70, 120) ;
+    font-size: 1.25rem;
+    font-family: Mali;
+}
+.list {
+background-image: url(https://nz4.ru/wp-content/uploads/2014/12/94.jpg);
+background-attachment: fixed; 
+border-style:double;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#paragraphs {
+    border-style:dashed;
+    background-color: azure;
+    background-attachment:scroll;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+
+}
+#paragraphs h2 {
+    text-align: center;
+}

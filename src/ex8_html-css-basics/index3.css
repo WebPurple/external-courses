@@ -1,0 +1,25 @@
+#first {
+    border-style:inset;
+    border-color: violet;
+    border-width: 5px;
+}
+#second {
+    border-style:dashed;
+    border-color: violet;
+    border-width: 5px;
+}
+#third {
+    border-style:outset;
+    border-color:violet;
+    border-width:5px;
+}
+#fourth {
+    border-style:double ;
+    border-color:violet;
+    border-width:5px;
+}
+#fifth {
+    border-style:solid;
+    border-color:violet;
+    border-width: 5px;
+}
