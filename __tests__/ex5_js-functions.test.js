@@ -1,4 +1,4 @@
-const task = require('~utils').createTask('ex5_js-functions');
+const {task} = require('~utils')('ex5_js-functions');
 
 describe('Ex5. JS Functions', () => {
     task(code => {
