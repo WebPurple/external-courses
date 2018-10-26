@@ -1,0 +1,50 @@
+#a {
+    background: midnightblue;
+    color: white;
+    width: 350px;
+    margin: auto;
+    font: 20px fantasy;
+    padding: 15px;
+}
+#b {
+    background: navy;
+    color: wheat;
+    width: 3in;
+    margin: 10px auto;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    text-align: center;
+    padding: 15px;
+}
+#c {
+    background: darkblue;
+    color: blanchedalmond;
+    max-height: 50px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    padding: 15px;
+    
+}
+#d {
+    background: mediumblue;
+    color: lavenderblush;
+    height: 70px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    padding: 15px;
+}
+#e {
+    background: blue;
+    color: navajowhite;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Jura', sans-serif;
+    font-size: 30px;
+    padding: 15px;
+}
