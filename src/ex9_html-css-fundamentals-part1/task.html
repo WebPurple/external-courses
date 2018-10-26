@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+    <form action="url" method="post">
+
+      
+            <h3>Form Here</h3>
+            <p id="p">* required fields </p>
+            <hr>
+
+            <p><label class="label" for="name"> Name: </label>
+                <input class="input" type="text" id="name" placeholder="placeholder text" required></p>
+
+            <p><label class="label" for="email">Email: </label>
+                <input class="input" type="email" id="email" placeholder="placeholder text"> <span class="one">Form
+                    field hint</span>
+            </p>
+            <p><label class="label" for="website">Website: </label>
+                <input class="input" type="url" id="website" placeholder="placeholder text" required> <span class="two">Form
+                    field hint</span> </p>
+
+            <p><label class="label" for="message">Message: </label>
+                <textarea id="message"></textarea></p>
+
+      
+        <p><input class="submit" type="submit" value="Submit"></p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+.one {
+margin: 10px 550px; 
+background: #60B88D;
+width: 500px;
+height: 250px;
+box-shadow: 5px 5px 0 #90CDAF, 10px 10px 0 #BFE3D1;   
+}
+.two {
+	background: #60b88d;
+	position: relative;
+}
+
+.two::after {
+	content: '';
+	background: #90cdaf;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: -1;
+}
+
+.two::before {
+	content: '';
+	background: #c7e6d7;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: -2;
+}
+
+.two,
+.two::after,
+.two::before {
+	height: 250px;
+	width: 500px;
+}
+
+.div3, .div2, .div1 {
+	height: 250px;
+	width: 500px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.div3 {
+	background: #c7e6d7;
+	top: 10px;
+	left: 10px;	
+}
+.div2 {
+	background: #90cdaf;
+	top: 5px;
+	left: 5px;	
+}
+.div1 {
+	background: #60b88d;
+	top: 0px;
+	left: 0px;
+}

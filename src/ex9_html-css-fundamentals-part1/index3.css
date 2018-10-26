@@ -1,0 +1,15 @@
+button { 
+border-radius: 10px; 
+padding: 10px; 
+font-size: 20px; 
+background: linear-gradient(to top, #8d9191, #d9dee7); 
+color: rgb(99, 99, 99); 
+border-width: 2px; 
+border-color: #cdd0d8; 
+border-style:ridge groove groove ridge ; 
+box-shadow: 0 0 0 1px #fff, 0 0 0 2px rgb(177, 177, 177); 
+text-shadow:0.1px 1px 0px rgb(124, 124, 124); 
+} 
+span { 
+opacity: .7; 
+}
