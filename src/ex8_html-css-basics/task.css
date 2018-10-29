@@ -1,0 +1,36 @@
+   div {
+       outline: #6d6d6d;
+   }
+   
+   .content {
+    color: #ccccdb;
+    border: 10px black;
+   }
+   .footer {
+        
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #6d6d6d; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+   div {
+       font-family: 'Courier New', Courier, monospace;
+   }
+
+   .font1{
+    font-family: 'Courier New', Courier, monospace;
+   }
+   .font2{
+    font-family: sans-serif;
+   }
+   .font3{
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .font4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+   }
+   .font5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }

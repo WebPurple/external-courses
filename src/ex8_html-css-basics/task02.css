@@ -1,0 +1,41 @@
+.div1{
+    background-color:green;
+}
+
+.div2{
+width: 30%;
+}
+
+.tabl{
+    border: 1px;
+    width:25%;
+}
+
+.bottomborder{
+border-bottom: solid 1px;
+margin-bottom: 15px;
+padding-bottom: 15px;
+}
+
+p{
+font-size: 25px;
+}
+
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+.slide{
+margin-left: 40px;
+}
+
+pre{
+    padding-bottom: 15px;
+}
+img{
+    border: solid 3px rgba(2, 145, 145, 0.521);
+}

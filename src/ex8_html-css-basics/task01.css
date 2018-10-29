@@ -1,0 +1,47 @@
+
+   .content {
+    color: #ccccdb;
+    border-bottom: 1px solid #000;
+   }
+   div {
+       font-family: 'Courier New', Courier, monospace;
+   }
+
+   .font1{
+    font-family: 'Courier New', Courier, monospace;
+   }
+   .font2{
+    font-family: sans-serif;
+   }
+   .font3{
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .font4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+   }
+   .font5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+   .backgr{
+       background-color: #e451896b;
+       width: 50%;
+       height: 5em;
+
+   }
+
+   .borderr{
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+
+   .link{
+        padding: 10px;
+        color: red;
+   }
+
+   /*{
+   //    border:solid 1px blueviolet;
+   //}

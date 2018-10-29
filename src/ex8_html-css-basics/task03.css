@@ -1,0 +1,53 @@
+body {
+	background-color: #000;
+}
+
+* {
+	display: inline-block;
+}
+
+.div1 {
+	border: solid 1px blue;
+	border-radius: 20%;
+	width: 240px;
+	height: 240px;
+	margin: 5%;
+	color: white;
+}
+
+.div2 {
+	box-shadow: 0 0 0 3px red;
+	border-radius: 20%;
+	width: 240px;
+	height: 240px;
+	margin: 5%;
+	color: white;
+}
+
+.div3 {
+	outline: 2px solid rgb(255, 255, 255);
+	border-radius: 20%;
+	width: 240px;
+	height: 240px;
+	margin: 5%;
+	color: white;
+}
+
+.div4 {
+	border: 4px solid rgb(39, 165, 81);
+	outline: 3px solid rgb(34, 165, 62);
+	border-radius: 10%;
+	width: 240px;
+	height: 240px;
+	margin: 5%;
+	color: white;
+}
+
+.div5 {
+	border: 1px dashed yellow;;
+	border-radius: 10%;
+	width: 240px;
+	height: 240px;
+	margin: 5%;
+	color: white;
+}
