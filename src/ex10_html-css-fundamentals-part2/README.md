@@ -164,7 +164,7 @@
 
 ## Задание 8
 
-Создайте адаптивную страницу.
+Создайте адаптивную страницу. Макет скачать по [ссылке](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB?usp=sharing) - Portal_UI.psd
 
 Для планшетов:
 

@@ -41,3 +41,6 @@
 </p>
 
 [Руководство](https://snook.ca/archives/html_and_css/floated-label-pattern-css).
+
+## Задание 4
+Сверстать сайдбар. Макет скачать по [ссылке](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB?usp=sharing) - library.psd
