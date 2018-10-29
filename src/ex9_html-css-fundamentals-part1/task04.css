@@ -1,0 +1,36 @@
+table {
+  border-collapse: collapse;
+  position: absolute;
+  top:30%;
+  left:40%;
+}
+
+td {
+	border: 1px solid rgb(0, 0, 0);
+	height: 100px;
+	width: 100px;
+  text-align: center;
+  position: relative;
+}
+
+input {
+	display: none;
+}
+
+label{
+	position: absolute;
+	top: 0px;
+  right: 0px;
+  bottom:1px;
+  left:1px;
+}
+
+input:checked + p {
+	display: inherit;
+}
+
+p {
+	display: none;
+	color: red;
+	font-size: 70px;
+}
