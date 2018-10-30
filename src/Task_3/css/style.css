@@ -1,0 +1,38 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif; }
+
+div{
+	width: 100px;
+	height: 50px;
+	margin-bottom: 5px;
+}
+
+.one {
+	color: red;
+	border: 1px solid;
+}
+.two {
+
+
+	outline: 2px solid blue;
+}
+.three {
+
+
+	box-shadow: 0 0 0 3px orange;
+}
+
+.four {
+
+
+	border-style: solid;
+	border-color: green;
+
+	}
+.five {
+	border-top: 1px solid grey;
+	border-right: 1px solid blue;
+	border-bottom: 1px solid red;
+	border-left: 1px solid yellow;
+}

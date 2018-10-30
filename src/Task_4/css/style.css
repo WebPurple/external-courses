@@ -1,0 +1,50 @@
+body {
+background-color: #f8f8f8;
+font-family: 'Roboto', sans-serif;
+font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #473519;
+}
+
+a:hover {
+    color: burlywood;
+}
+
+h3:hover {
+    color: burlywood;
+
+}
+
+
+h2, h1 {
+  text-align: center;
+  color: #5e4538;
+  font-family: "vollkorn";
+}
+
+h3 {
+  color: #473519;
+
+}
+
+ul {
+   position: fixed;
+    font-color: #473519;
+    right: 10px; 
+    top: 30px;
+    font-family: "vollkorn";
+    font-size: 18px;
+}
+
+
+.IMG {
+width: 700px;
+height: 500px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
