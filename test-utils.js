@@ -55,7 +55,7 @@ module.exports = (exerciseName, read = false, taskExt = 'js') => {
                 ...hrefs.map(href => readFileSync(`${dirWithTask}/${href}`, 'utf-8')),
             ].join('');
 
-            validateCSS({text: bundle}, (error, res) => {
+            validateCSS({text: bundle, profile: 'css3svg'}, (error, res) => {
                 if (error) {
                     console.warn(`Internet connection error: ${error.message}`);
                     return done();
