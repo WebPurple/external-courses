@@ -1,0 +1,34 @@
+table {
+    border: 2px solid black;
+}
+
+td {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    
+}
+label{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    align-content: center; 
+    justify-content: center;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    width: 0;
+    visibility: hidden;
+}
+span {
+    display: flex;
+}
+input[type="checkbox"]:checked+span::after{
+    display: block;
+    font-size: 60px;
+    content: "♘";
+    color: red;
+}
