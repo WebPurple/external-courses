@@ -19,35 +19,9 @@
     background: linear-gradient(45deg, #999999, #444444)
 }
 
-.outer-button{
-    display: block;
-    width: 10%;
-    height: 60px;
-    border: 3px solid black;
-    border-radius: 9px;
-    padding: 0px;
-    background: white;
-}
-
-.inner-div{
-    display: flex;
-    align-content: center;
-    border: 6px solid #666666;
-    border-radius: 6px;
-    height: 40px;
-    width: auto;
-    margin: 1px;
-    background: linear-gradient(45deg, #999999, #444444)
-    
-}
-
 .button-caption{
     font-size: 15px;
     color: #CCCCCC;
-}
-.text-wrap{
-    height: 30px;
-    width: 90%;
 }
 
 body {
