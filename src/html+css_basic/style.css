@@ -1,0 +1,23 @@
+.descriptionlist{
+    background-color: brown;
+    width: 20%;
+    height: 20%;
+}
+@font-face {
+    font-family: Pompadur; 
+    src: url(Pompadur.ttf); 
+}
+@font-face {
+    font-family: Darling; 
+    src: url(Darling.ttf); 
+}
+pre{
+    font-family: Darling, sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+}
+body{
+    background: url(http://www.2fons.ru/pic/201405/1680x1050/2fons.ru-7507.jpg);
+    background-attachment: fixed;
+    color: chartreuse;
+}
