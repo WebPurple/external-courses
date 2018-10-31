@@ -1,0 +1,33 @@
+h1 {
+    font-family: fantasy;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    background: #18d394;
+}
+
+p {
+    font-family: Arial;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background: rgb(30, 207, 110);
+}
+
+ul {
+    color: white;
+    background: red;
+}
+ol {
+    font-style: italic;
+}
+
+table {
+    border: 3px solid;
+}
+
+img {
+    background: yellow;
+    width: 30%;
+}
