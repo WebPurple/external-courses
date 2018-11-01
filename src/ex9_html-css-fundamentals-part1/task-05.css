@@ -1,14 +1,15 @@
-.box{
+div {
+    margin: 30px;
     width: 300px;
     height: 200px;
+}
+
+.box{
     background-color: green;
     box-shadow: 6px 6px 0 lawngreen, 12px 12px lightgreen;
 }
 .box2 {
-    margin-top: 30px;
 	background: #772222;
-	width: 300px;
-	height: 200px;
 	position: relative;
 }
 
@@ -27,3 +28,24 @@
     background: #DD8888;
     top: 10px; left: 10px;
 }  
+
+.box3 {
+    width: 300px;
+    height: 200px;
+    background:  #DD8888 ;
+}
+
+
+.box3-shadow {
+    position: relative;
+    margin: 0;
+    bottom: 5px;
+    right: 5px;
+}
+.first {
+    background: #AA5555;
+}
+
+.second {
+    background:#772222;
+}
