@@ -24,26 +24,22 @@
 
 ## Задание 4
 
-Выполните следующее [задание](http://htmlbook.ru/practical/hod-konyom).
+Выполните следующее [задание](http://htmlbook.ru/practical/ramka).
 
 ## Задание 5
 
-Выполните следующее [задание](http://htmlbook.ru/practical/ramka).
+[Пройдите игру](https://flexboxfroggy.com/#ru).
 
 ## Задание 6
 
-[Пройдите игру](https://flexboxfroggy.com/#ru).
+[Пройдите игру](http://www.flexboxdefense.com/).
 
 ## Задание 7
 
-[Пройдите игру](http://www.flexboxdefense.com/).
+[Пройдите игру](http://cssgridgarden.com/#ru).
 
 ## Задание 8
 
-[Пройдите игру](http://cssgridgarden.com/#ru).
+[Поправьте сайдбар двумя способами - используя Grid и Flex](https://codepen.io/chriscoyier/pen/ClGcF).
 
-## Задание 9
-
-[Поправьте сайдбар неколькими способами](https://codepen.io/chriscoyier/pen/ClGcF).
-
-Для выполнения задания необходимо выполнить fork с помощью соответствующей кнопки.
+Для выполнения задания необходимо выполнить fork с помощью соответствующей кнопки на codePen или залить файл с заданием в PullRequest.
