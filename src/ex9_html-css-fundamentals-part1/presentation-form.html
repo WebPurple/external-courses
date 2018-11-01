@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link href="form.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="form-header">
+            <h1> Form here</h1>
+            <span class="required-span">* required fields</span>
+        </div>
+        <form>
+            <div class="form-item">
+                <label>
+                    Name:
+                </label>
+                <input type="text" name="name" required>    
+                <div class="error">
+                    <div class = "triangle"></div>
+                    <span class="invalid-input">
+                        Form field hint
+                    </span>
+                </div>
+            </div>
+            <div class="form-item">
+                <label>
+                    Email:
+                </label>
+                <input type="email" name="email" required>
+                <div class="error">
+                    <div class = "triangle">
+                    </div>
+                    <span class="invalid-input">
+                        Form field hint
+                    </span>
+                </div>
+            </div>
+            <div class="form-item">
+                <label>
+                    Website:
+                </label>
+                <input type="text" name="website" required>
+                <div class="error">
+                    <div class = "triangle"></div>
+                    <span class="invalid-input">
+                        Form field hint
+                    </span>
+                </div>
+            </div>
+            <div class="form-item">
+                <label>
+                    Message:
+                </label>
+                <textarea>
+
+                </textarea>
+                <div class="error">
+                    <div class = "triangle"></div>
+                    <span class="invalid-input">
+                        Form field hint
+                    </span>
+                </div>
+            </div>
+            <div class="form-item">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
