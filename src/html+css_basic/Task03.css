@@ -1,0 +1,21 @@
+.example1 {
+    outline-style:dotted;
+    outline-color: red;
+}
+
+.example2 {
+    border: 4px double orange;
+}
+#third {
+    border: 6px solid;
+    border-color:greenyellow;
+}
+
+#forth {
+    border-style:dotted solid double dashed;
+    border-width: 4px 2px 4px 2px;
+    border-color: aqua blanchedalmond hotpink chartreuse;
+}
+#fifth {
+    box-shadow: 4px 2px 4px 2px white, 8px 4px 8px 4px blue, 12px 8px 12px 8px red;
+}
