@@ -1,0 +1,28 @@
+table{
+ margin:auto;
+ font-family: Arial, serif;
+ color:#6e7d9d;
+}
+td{
+ padding:10px;
+}
+th{
+ padding:10px;
+ text-align:center;
+ text-transform:uppercase; 
+}
+.header{
+ background-color:#e3eaf3;	
+}
+.odd{
+ background-color:#f2f6fa;
+}
+.even{
+ background-color:#e8edf4;
+}
+.customer{
+ text-transform:capitalize;	
+}
+tr:hover{
+ background-color:#e2e5e9;
+}

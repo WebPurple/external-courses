@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="task-01.css" />
+  <title>task-01</title>
+ </head>
+ <body>
+  <form action="http://httpbin.org/get" method="GET">
+   <fieldset>
+   <legend>Personal data</legend>
+    <label>
+	 <span>Surname</span> 
+     <input type="text" name="surname">
+	</label>
+    <label> 
+	 <span> First name </span>
+     <input type="text" name="first-name">
+	</label>
+    <label> 
+	 <span>Middle name</span>
+     <input type="text" name="middle-name">	 
+	</label>
+	<p> 
+	 <span>You are</span>
+	  <label class="inline"><input type="radio" name="sex" value="male" checked> male</label>
+	  <label class="inline"><input type="radio" name="sex" value="female"> female</label>
+	</p>
+	<label> 
+	 <span>Age</span>
+     <input type="number" name="middle-name" min="18" max="101">	 
+	</label>
+	<label> 
+	 <span>Country of Residence</span>
+     <select name="country">
+      <option>&nbsp;</option>
+      <option>country name</option>
+     </select>	 
+	</label>
+    <p> 
+	 <span>City</span>
+      <label class="inline"> <input type="checkbox" name="city" value="Ryazan"> Ryazan</label>
+	  <label class="inline"> <input type="checkbox" name="city" value="Moscow"> Moscow</label>
+	</p>
+	<label> 
+	 <span>Photography</span>
+     <input type="file" name="photo">	 
+	</label>
+	<hr>
+	<label> 
+	 <span>Title</span>
+     <select name="title" multiple size="8">
+      <optgroup label="Technologies">
+       <option value="Web Master">Web Master</option>
+       <option value="Database Administrator">Database Administrator</option>
+       <option value="Computer-aided design">Computer-aided design</option>
+      </optgroup>
+       <optgroup label="Finance">
+       <option value="Economic Planning">Economic Planning</option>
+       <option value="Management accounting">Management accounting</option>
+       <option value="Budgeting and planning">Budgeting and planning</option>
+      </optgroup>
+     </select>	 
+	</label>
+	<label> 
+	 <span>Salary</span>
+     <input type="range" name="salary">
+	</label>
+	<label> 
+     <textarea name="comment" placeholder="Tell us about yourself ..." cols="50" rows="10"></textarea>
+	</label>
+	</fieldset>
+	<fieldset>
+	 <legend>Contact information</legend>
+	 <label>
+	  <span>Site</span> 
+      <input type="url" name="site">
+	 </label>
+	 <label>
+	  <span>Email</span> 
+      <input type="email" name="email">
+	 </label>
+	 <label>
+	  <span>Phone</span> 
+      <input type="tel" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" minlength="16" maxlength="16" name="phone">
+	 </label>
+	</fieldset>
+    <label>
+	 <span>Password</span> 
+     <input type="password" name="pass" required>
+	</label>
+    <button type="submit" name="submit">
+     Отправить
+    </button>
+	<button type="reset" name="reset">
+     Сбросить
+    </button>
+ </form>
+ </body>
+</html>
