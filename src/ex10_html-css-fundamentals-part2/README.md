@@ -4,13 +4,11 @@
 
 Создайте HTML-страницу с формой, используя типы для инпутов.
 
-**Важно!** Верстать нужно не всю форму, а только части начинающиеся с рамки Personal data (т.е. блок Personal data, блок Contact Information, Password, 2 кнопки)
-
 <p align="center">
     <img
         width='750'
         title='Task'
-        src="https://s3.amazonaws.com/media-p.slid.es/uploads/130700/images/1845459/1.png"
+        src="https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB"
     />
 </p>
 
@@ -60,11 +58,9 @@
     />
 </p>
 
-## Задание 8
+## Задание 3
 
 Создайте адаптивную страницу. Макет скачать по [ссылке](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB?usp=sharing) - Portal_UI.psd
-
-Верстать нужно не весь макет, а только то, что изображено на картинках ниже:
 
 Для планшетов:
 
