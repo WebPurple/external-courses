@@ -8,7 +8,7 @@
     <img
         width='750'
         title='Task'
-        src="https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB"
+        src="https://cdn1.savepice.ru/uploads/2018/11/2/f76f5cff14477729ec1d0eed9c1f2871-full.png"
     />
 </p>
 
