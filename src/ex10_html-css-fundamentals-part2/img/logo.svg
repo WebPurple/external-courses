@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 403 93" width="403" height="93">
+	<defs>
+		<image width="403" height="93" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZMAAABdCAMAAABXV3sjAAAAAXNSR0IB2cksfwAAAFFQTFRFZmZmgICAb29vgICAgICA////AAAAbW1tIK/fa3Bwb29vbm5xbW1zbHBwbm5xcHBwbG9ybG9xbm5xbW1xHanicXFxYnZ2ampwdHR0ZmZ3bW1tnmK/cgAAABt0Uk5TBQQXBgIBAAcQOS5mKkJIIFx4TzY+CQ0pCw8O79UH0wAAAQ1JREFUeJzt27cRAzEQBMGn1loz/0CZwa7P7/EBHKrtG4bcJDfNzXLzXBltkSuTl8uXuVWunF7nymhMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoTJf5tsctvcLrfPHXLH3Cl3zl1yheyau+XuOSZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwmTUJo/cM/fKlTWNd66MVi7/5L658nbZnCkfK+spTJgwYcKECRMmTJgwYcKECRMmTJgwYcKECRMmTJgwYcKECRMmTJgwYcKECRMmTJgwYcKEyZhNfj2+khtlp0kbAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 41px;line-height: 34px;fill: #3687c4;font-family: "Open Sans";text-anchor: middle } 
+	</style>
+	<use id="logo" href="#img1" x="0" y="0" />
+	<text id="logo" style="transform: matrix(1,0,0,1,200.824,62.23)" >
+		<tspan x="0" y="0" class="txt0">logo</tspan>
+	</text>
+</svg>
