@@ -6,12 +6,13 @@ div.descriptionList {
     background-image: url("drinks.jpg");
     background-color: violet;
     background-repeat: no-repeat;
-    background-size: 350px;
+    background-size: 340px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .first{
     font-family: 'Chakra Petch', sans-serif;
+    font-size: 12;
 }
 
 .second{
