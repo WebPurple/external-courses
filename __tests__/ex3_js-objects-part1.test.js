@@ -1,4 +1,4 @@
-const task = require('~utils').createTask('ex3_js-objects-part1');
+const {task} = require('~utils')('ex3_js-objects-part1');
 
 describe('Ex3. JS Objects Part 1', () => {
     task('02', code => {
@@ -39,7 +39,7 @@ describe('Ex3. JS Objects Part 1', () => {
     task('05', code => {
         const obj = {a: 1};
 
-        it('should return the same reference after cloning', () => {
+        it('should create object with own new reference', () => {
             expect(obj === code(obj)).toBeFalsy();
         });
     });
@@ -56,7 +56,7 @@ describe('Ex3. JS Objects Part 1', () => {
         });
 
         it('should copy all properties', () => {
-            expect(obj).toEqual(objCopy);
+            expect(objCopy).toEqual(obj);
         });
     });
 });
