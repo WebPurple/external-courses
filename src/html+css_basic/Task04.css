@@ -1,0 +1,30 @@
+div.descriptionList {
+    background-color: rgb(87, 155, 127);
+}
+
+.drinks{
+    background-image: url("drinks.jpg");
+    background-color: violet;
+    background-repeat: no-repeat;
+    background-size: 350px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.first{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.second{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blueviolet;
+}
+
+.third{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.forth{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, bold;
+    font-size: 2em;
+    color: red;
+}
