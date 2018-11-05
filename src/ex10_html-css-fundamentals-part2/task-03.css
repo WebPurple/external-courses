@@ -34,11 +34,30 @@ a, a:visited{
  max-height:98px;
 }
 .hint{
+ display:flex;	
+ align-items:center;
+ justify-content:center;
  position: absolute;
  width: 225px;
  height: 50px;
- left: calc(100% - 225px);
- top: calc(0% + 25px) ;
+ left: calc(100% - 205px);
+ top: calc(0% + 25px);
+}
+.pointer{
+ display:none;
+ width: 1px;
+ height: 0;
+ border-right: 17px solid transparent;
+ border-top: 8px solid #d4d4d5;
+ border-left: 17px solid transparent; 
+}
+.white-pointer{
+ display:none;
+ width: 0.5px;
+ height: 0;
+ border-right: 16px solid transparent;
+ border-top: 8.5px solid white;
+ border-left: 16px solid transparent; 
 }
 .header-contact{
  display:flex;
@@ -69,8 +88,62 @@ a, a:visited{
 .phone:hover, .geo:hover, .mail:hover{
  background-position: bottom center;
 }
-.mail:hover ~ .hint{
- border: 1px solid black;
+.mail:hover ~ .hint, .geo:hover ~ .hint, .phone:hover ~ .hint{	
+ border-radius: 5px;
+ background-color: #ffffff;
+ border: 2px solid #d4d4d5;
+}
+.phone-number, .geo-address, .mail-address{
+ display:none;
+ font-size: 16px;
+ line-height: 27px;
+ color: #6d6e71;
+ font-family: "Open Sans";
+ font-weight: 300;
+}
+.mail:hover	~ .hint .mail-address{
+ display:inline;
+}
+.geo:hover	~ .hint .geo-address{
+ display:inline;
+}
+.phone:hover ~ .hint .phone-number{
+ display:inline;
+}
+.mail:hover	~ .pointer{
+ display:block;
+ position:absolute;
+ top:75px; 
+}
+.geo:hover	~ .pointer{
+ display:block;
+ position:absolute;
+ top:75px; 
+ right:73px;
+}
+.phone:hover ~ .pointer{
+ display:block;
+ position:absolute;
+ top:75px; 
+ right:148px;
+}
+.mail:hover	~ .white-pointer{
+ display:block;
+ position:absolute;
+ top:73px;
+ right:0.5px;
+}
+.geo:hover	~ .white-pointer{
+ display:block;
+ position:absolute;
+ top:73px; 
+ right:74px;
+}
+.phone:hover ~ .white-pointer{
+ display:block;
+ position:absolute;
+ top:73px; 
+ right:149px;
 }
 .divide{
  background: url(img/divide.png) no-repeat;
