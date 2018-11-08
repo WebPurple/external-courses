@@ -1,0 +1,13 @@
+.circle
+{
+    clip-path: circle(100px);
+}
+.poly
+{
+    clip-path: polygon(50% 0%, 70% 0%, 20% 100%, 0% 100%);
+}
+img
+{
+    width: 272px;
+    height: 92px;
+}
