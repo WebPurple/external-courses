@@ -1,0 +1,105 @@
+.loader-container
+{
+    width: 250px;
+    height: 25px;
+    background-color: red;
+    position: relative;
+}
+.loader-container::after
+{
+    text-align: center;
+    position: relative;
+    animation-name: Loader-text;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: normal;
+    position: absolute;
+    content: "0%";
+    margin-left: 110px;
+}
+.loader
+{
+    background-color: green;
+    animation-name: Loader-bar;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: normal;
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    animation-timing-function: linear;
+}
+@keyframes Loader-bar
+{
+    0%
+    {
+        width: 0%;
+    }
+    20%
+    {
+        width: 20%;
+    }
+    40%
+    {
+        width: 40%;
+    }
+    60%
+    {
+        width: 60%;
+    }
+    80%
+    {
+        width: 80%;
+    }
+    100%
+    {
+        width: 100%;
+    }
+}
+@keyframes Loader-text
+{
+    0%
+    {
+        content: "0%"
+    }
+    10%
+    {
+        content: "10%"
+    }
+    20%
+    {
+        content: "20%"
+    }
+    30%
+    {
+        content: "30%"
+    }
+    40%
+    {
+        content: "40%"
+    }
+    50%
+    {
+        content: "50%"
+    }
+    60%
+    {
+        content: "60%"
+    }
+    70%
+    {
+        content: "70%"
+    }
+    80%
+    {
+        content: "80%"
+    }
+    90%
+    {
+        content: "90%"
+    }
+    100%
+    {
+        content: "100%"
+    }
+}
