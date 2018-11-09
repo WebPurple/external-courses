@@ -1,0 +1,76 @@
+body {
+  background-image: url(https://pixelbox.ru/upload/file/-/fon.jpg);
+  background-size: cover;
+  color: #606468;
+  font-size: 14px;
+  margin: 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+.field { 
+    position:relative; 
+    font-family: Arial; 
+    text-transform:uppercase; 
+    font-weight:bold;
+}
+label {
+    position:absolute; 
+    left:0; 
+    top:0; 
+    transition: all .2s linear; 
+    color:#999; 
+    font-size:10px; }
+input {
+    margin-top:15px; 
+    border:1px solid #999; 
+    padding:3px 2px; 
+}
+input:invalid + label { top:3px; opacity:0; }
+input:valid + label { opacity:1; top:0; }
+input:focus { outline:none; }
+input:focus + label { color:#b5cd60;; }
+
+form {
+  padding: 22px 22px 22px 22px;
+  border-radius: 5px;
+  background: #282e33;
+  border-top: 3px solid #434a52;
+  border-bottom: 3px solid #434a52;
+}
+form input[type="text"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 235px;
+  height: 50px;
+}
+form input[type="password"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 235px;
+  height: 50px;
+}
+
+form input[type="submit"] {
+  background: #b5cd60;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+form input[type="submit"]:hover {
+  background: #daca41;
+}

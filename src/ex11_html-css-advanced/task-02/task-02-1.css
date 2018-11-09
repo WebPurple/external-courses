@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(255, 254, 204);
+}
+.main {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: calc(50% - 100px);
+    top: 150px;
+}
+.loader {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+  .loader:before,
+  .loader:after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border: 8px solid red;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .loader:before {
+    animation: animate 3s infinite linear;
+  }
+  
+  .loader:after {
+    animation: animate2 3s infinite linear;
+  }
+
+
+@keyframes animate {
+  100% {
+    transform: rotate(180deg) skew(360deg);
+  }
+}
+
+@keyframes animate2 {
+  100% {
+    transform: rotate(-180deg) skew(-360deg);
+  }
+}

@@ -1,0 +1,48 @@
+.element {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at center, green, yellow);
+    border-radius: 50%;
+    left: calc(50% - 40px);
+    top: 240px;
+    animation-name: myAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+@keyframes myAnimation {
+    15% {
+        border-radius: 0px;
+        background: radial-gradient(circle at center, green, yellow);
+    }
+    20% {
+        background: radial-gradient(circle at center, blue, violet);
+        width: 80px;
+        height: 80px;
+        transform: skewX(0deg);
+    }
+    35% {
+        width: 150px;
+        height: 150px; 
+        transform: skewX(45deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    65% {
+        transform: rotate(360deg);
+        background: radial-gradient(circle at center, blue, violet);
+    }
+    80% {
+        border-radius: 0px;
+        background: radial-gradient(circle at center, green, yellow);
+        width: 150px;
+        height: 150px;
+    }
+    100% {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        transform: rotate(360deg);
+    }
+}
