@@ -20,14 +20,68 @@
 .loader
 {
     background-color: green;
+    position: absolute;
+    height: 100%;
+    text-align: center;
     animation-name: Loader-bar;
     animation-iteration-count: infinite;
     animation-duration: 5s;
     animation-direction: normal;
-    position: absolute;
-    height: 100%;
-    text-align: center;
     animation-timing-function: linear;
+}
+.sphere-container
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.sphere-block-left
+{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.sphere-block-right
+{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+.sphere-item-container
+{
+    width: calc(100% - 400px);
+    height: 200px;
+    background-color: yellow;
+}
+.sphere-item-item
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: steelblue;
+    box-shadow: inset 0 -5px 15px rgba(255,255,255,0.4),
+                inset -2px -1px 40px rgba(0,0,0,0.4),
+                0 0 1px #000;
+    animation-name: Sphere;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    z-index: 100;
+}
+.anim
+{
+    height: 100px;
+    width: 100px;
+    animation-name: Anim;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    background-image: linear-gradient( 0deg, red, white);
 }
 @keyframes Loader-bar
 {
@@ -101,5 +155,57 @@
     100%
     {
         content: "100%"
+    }
+}
+@keyframes Sphere
+{
+    0%
+    {
+        bottom: -100px;
+        left: 0px;
+        animation-timing-function: ease-out;
+    }
+    50%
+    {
+        left: calc(50% - 50px);
+        bottom: 100px;
+        animation-timing-function: ease-in;
+    }
+    100%
+    {
+        bottom: -100px;
+        left: calc( 100% - 100px);
+    }
+}
+@keyframes Anim
+{
+    0%
+    {
+        border-radius: 100px;
+    }
+    15%
+    {
+        border-radius: 0px;
+    }
+    30%
+    {
+        background-image: linear-gradient( 90deg, white, black);
+        transform: skewX(50deg);
+    }
+    45%
+    {
+        transform: scaleX(1.2);
+    }
+    60%
+    {
+        transform: rotate(180deg);
+    }
+    75%
+    {
+        background-image: repeating-linear-gradient( 50deg, red, blue);
+    }
+    100%
+    {
+        border-radius: 100px;
     }
 }
