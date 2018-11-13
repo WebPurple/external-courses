@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+FORM
+</title>
+<link href="formview.css" rel="stylesheet">
+</head>
+<body>
+<form>
+<fieldset>
+    <legend>Personal data</legend>
+    <p><label for="Surname">Surname</label><input type="text" id="Surname"></p>
+    <p><label for="First Name">First Name</label><input type="text" id="First Name"></p>
+    <p><label for="Middle Name">Middle Name</label><input type="text" id="Middle Name"></p>
+<p>You are<input type="radio" name="SEX" value="male">male
+<input type="radio" name="SEX" value="female">female</p>
+<p>Age<input type="number" min="18" max="101"></p>
+<p>Country of Residence<select name="country">
+       <option value="Russia" selected>Russia</option>
+       <option value="Argentina">Argentina</option>
+       <option value="Armenia">Armenia</option> 
+       <option value="Ukraine">Ukraine</option>
+       <option value="USA">USA</option>
+       <option value="France">France</option>
+</select></p>
+<p>City<input type="checkbox" name="City" value="Ryazan">Ryazan
+<input type="checkbox" name="City" value="Moscow">Moscow</p>
+<p>Photography<input type="file" name="file"></p>
+<hr/>
+<p>Title<select name="Profession">
+      <optgroup label="Technologies">
+      <option value="r1">Web Master</option>
+      <option value="r2">Database Administrator</option>
+      <option value="r3">Computer-aided design</option>
+      <optgroup label="Finance">
+      <option value="u1">Economic Planning</option>
+      <option value="u2">Management accounting</option>
+      <option value="u3">Budgeting and Planning</option>
+</optgroup>
+</select></p>
+
+<p>Salary<input id="Salary" type="range" min="1" max="200000" step="1000" onchange="textbox.value =  Salary.value" />
+<input id="textbox" type="text" onchange="Salary.value=textbox.value"/>
+</p>
+<textarea name="Description">Tell us about yourself</textarea>
+  </fieldset>
+  <fieldset>
+<legend>Contact information</legend>
+     <p>Site<input type="text"></p>
+     <p>Email<input type="text"></p>
+     <p>Phone<input type="text"></p>
+  </fieldset>
+<p>Password<input type="text" required></p>
+<p><input type="submit" value="Отправить"><input type="submit" value="Сбросить"></p>
+<form action="http://httpbin.org/" method="post">
+<form action="http://httpbin.org/" method="get">
+</form>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,27 @@
+table{
+position:relative;
+left:300px;
+top:100px
+}
+ 
+td{
+border:2px solid black;
+}
+
+
+
+.size1{
+height:20px;
+}
+
+.size2{
+height:50px;
+}
+
+#color1{
+background:#E0FFFF;
+}
+
+#color2{
+background:#F0FFF0;
+}
