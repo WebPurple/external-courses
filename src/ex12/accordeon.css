@@ -1,0 +1,38 @@
+.accordeon {
+    margin: 0 auto;
+    width: 60%;
+    display: block;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+p {
+    height: 0px;
+    overflow-y: hidden;
+    visibility: hidden;
+    
+    transition: all 0.2s linear;
+    background: #EA0;   
+}
+h3{
+    background: #DDF;
+}
+.active {
+    height: 100px;
+    visibility: visible;
+}
+
+.card {
+    border: 3px solid #BBC;
+    transition: all 0.2s linear;
+    padding: 0;
+    margin: 5px;
+    
+}
+
+.card *{
+    margin: 0;
+    display: block;
+}
