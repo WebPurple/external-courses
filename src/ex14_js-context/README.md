@@ -82,8 +82,6 @@ hangman.getWrongSymbols(); // [a,k]
 ```javascript
 hangman.guess('b') // "webp___p_e"
   .guess('l') // "webp__ple"
-  .getErrorsLeft() // 4
-  .getWrongSymbols() // [a,k]
   .guess('u') // "webpu_ple"
   .guess('r'); // "webpurple | You won!"
 ```
