@@ -74,7 +74,13 @@ hangman.getErrorsLeft(); // 4
 Реализуйте метод `getWrongSymbols`, который возвращает массив с неправильно угаданными символами:
 
 ```javascript
-hangman.getWrongSymbols(); // [a,k]
+hangman.getWrongSymbols(); // ["a","k"]
+```
+
+Реализуйте метод `getStatus`, который возвращает строку с угаданными буквами и количество оставшихся ошибок:
+
+```javascript
+hangman.getStatus(); // "we_p__p_e | errors left 4"
 ```
 
 Пользователь должен иметь возможность производить подобные действия:
