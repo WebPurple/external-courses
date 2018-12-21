@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Adaptive page</title>
+   <link rel="stylesheet"  href="books.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="wrapper">
+  	  <div class="addingABook">
+  	    <fieldset style="height:60%">
+        <legend>Add a new book</legend>
+           <div style="display:flex;flex-direction:row">
+              <p style="text-align: left">Book<input type="text" id="addBook" size="5"></p>
+              <p style="text-align: left">First Name<input type="text" id="addFirstName" size="5"></p>
+              <p style="text-align: left">Second Name<input type="text" id="addSecondName" size="5"></p>
+           </div>
+
+           <p style="text-align: left">When this book has been written?(year)<input type="text" id="addRecent" size="5"></p>
+           <div style="display:flex;flex-direction:row">
+              <p style="text-align: left">Popularity(from 0 to 10)<input type="text" id="addIsPopular" size="5"></p>
+              <p style="text-align: left">Price<input type="text" id="addFree" size="5"></p>
+           </div>
+           <div style="display:flex;flex-direction:row">
+              <p style="text-align: left">Must Read<input type="checkbox" id="MustReadCheckBox"  size="5"></p>
+              <p style="text-align: left">Best of list<input type="checkbox" id="BestOfListCheckBox"  size="5"></p>
+              <p style="text-align: left">Classic Novels<input type="checkbox" id="ClassicNovelsCheckBox"  size="5"></p>
+              <p style="text-align: left">Non Fiction<input type="checkbox" id="NonFictionCheckBox"  size="5"></p>
+           </div>
+           <p style="text-align: left">Link to cover of the book<input type="text" id="addCover"  size="15"></p>
+           <div style="display:flex;flex-direction: row; justify-content:space-around;">
+           <p style="text-align: left"><input type="submit" id="submitId" value="Add a book"></p>
+           <p style="text-align: left"><input type="submit" id="CancelAdd" value="Cancel"></p>
+        </div>
+        </fieldset>    
+      </div>
+      <div class="must">
+        Write here your must read titles
+        <p style="text-align: left">Book<input type="text" id="mustBook" size="15"></p>
+        <div style="display:flex;flex-direction: row; justify-content:center;">
+           <p style="text-align: left"><input type="submit" id="addToMustRead" value="Add to Must Read"></p>
+           <p style="text-align: left"><input type="submit" id="writeOutMustReadList" value="Write out must read list"></p>
+        </div>
+        <p style="text-align: left"><input type="submit" id="CancelMust" value="Cancel"></p>
+      </div>
+    <div class="horizontalBars">
+      <img src="books/black_horizontal.png">
+      <img src="books/black_horizontal.png">
+    </div>
+    <div class="leftVerticalBar">
+      <div class="addABook"  id="addABookId">
+         <!--<img src="books/add.png" style="width:80%; height:40%">-->
+         <input type="image" src="books/add.png" style="width:80%; height:40%"/>
+      </div>
+      <div class="Divide">
+         <img src="books/divide.png" style="width:100%; height:100%">
+      </div>
+      <div class="Divide">
+         <img src="books/divide.png" style="width:100%; height:100%">
+      </div>
+      <div class="Divide">
+         <img src="books/divide.png" style="width:100%; height:100%">
+      </div>
+      <div class="leftMenu">
+         <!--<img src="books/now.png" style="width:50%;height:5%">
+         <img src="books/buy.png" style="width:50%;height:5%">
+         <img src="books/favourite.png" style="width:50%;height:5%">
+         <img src="books/wish.png" style="width:50%;height:5%">
+         <img src="books/hist.png" style="width:50%;height:5%">
+         <img src="books/now.png" style="width:50%;height:5%">-->
+         <input type="image" id="buyId" src="books/buy.png" style="width:50%; height:5%"/>
+         <input type="image" id="favouriteId" src="books/favourite.png" style="width:50%; height:5%"/>
+         <input type="image" id="wishId" src="books/wish.png" style="width:50%; height:5%"/>
+         <input type="image" id="histId" src="books/hist.png" style="width:50%; height:5%"/>
+         <input type="image" id="nowId" src="books/now.png" style="width:50%; height:5%"/>
+      </div>
+      <div class="leftMenu_2">
+         <!--<img src="books/must.png" style="width:50%;height:5%">
+         <img src="books/best.png" style="width:50%;height:5%">
+         <img src="books/classic.png" style="width:50%;height:5%">
+         <img src="books/non_fiction.png" style="width:50%;height:5%">-->
+         <input type="image" src="books/must.png" style="width:50%;height:5%" id="must"/>
+         <input type="image" src="books/best.png" style="width:50%;height:5%" id="best"/>
+         <input type="image" src="books/classic.png" style="width:50%;height:5%" id="classic"/>
+         <input type="image" src="books/non_fiction.png" style="width:50%;height:5%" id="non_fiction"/>
+      </div>
+      <div class="leftMenu_3" id="history">
+      </div>
+      <img src="books/black.png"> 
+    </div>
+       <div class="UpperRightMenu">
+          <div class="UpperRightMenu_inside">
+             <!--<img src="books/help_center.png" style="margin-right: 3%; height:30%; width:5%">  
+             <img src="books/support.png" style="margin-right: 3%; height:30%; width:5%"> 
+             <img src="books/John_Doe.png" style="height:100%; width:10%">--> 
+             <input type="image" src="books/help_center.png" style="margin-right: 3%; height:30%; width:5%"/>
+             <input type="image" src="books/support.png" style="margin-right: 3%; height:30%; width:5%"/>
+             <input type="image" src="books/John_Doe.png" style="height:100%; width:10%"/>
+          </div>
+       </div>
+    <div class="LowerRightMenu">
+      <!--<img src="books/vopros_fon.png" style="height:4.7%;">  
+      <img src="books/mechanic.png" style="height:4.7%">--> 
+      <input type="image" src="books/vopros_fon.png" style="height:100%;"/>
+      <input type="image" src="books/mechanic.png" style="height:100%">
+    </div>
+
+    <div class="Books_vertical" id="addElem">
+
+         <img src="books/1.png" id="image1" style="width:15%; height:40%">
+         <img src="books/2.png" id="image2" style="width:15%; height:40%">
+         <img src="books/3.png" id="image3" style="width:15%; height:40%">
+         <img src="books/4.png" id="image4" style="width:15%; height:40%">
+         <img src="books/5.png" id="image5" style="width:15%; height:40%">
+         <!--<img src="books/1.png" style="width:15%;">  
+         <img src="books/2.png" style="width:15%;"> 
+         <img src="books/3.png" style="width:15%;">
+         <img src="books/4.png" style="width:15%;">
+         <img src="books/5.png" style="width:15%;">-->
+
+
+         <img src="books/6.png" id="image6" style="width:15%; height:40%">
+         <img src="books/7.png" id="image7" style="width:15%; height:40%">
+         <img src="books/8.png" id="image8" style="width:15%; height:40%">
+         <img src="books/9.png" id="image9" style="width:15%; height:40%">
+         <img src="books/10.png" id="image10" style="width:15%; height:40%">
+         <!--<img src="books/6.png" style="width:15%;">  
+         <img src="books/7.png" style="width:15%;"> 
+         <img src="books/8.png" style="width:15%;">
+         <img src="books/9.png" style="width:15%;">
+         <img src="books/10.png" style="width:15%;">-->
+
+    </div>
+    <div class="top_horizontal">
+      <img src="books/top.png" style="width:100%; height:100%"> 
+       <div class="browseAvailable">
+          <img src="books/available.png" style="width:20%; height:30%">
+       </div>
+       <div class="top_horizontal_menu">
+          <div class="top_horizontal_menu_inside1">
+             <!--<img src="books/all.png" style="width:10%; height:50%">
+             <img src="books/most.png" style="width:10%; height:20%">
+             <img src="books/popular.png" style="width:10%; height:25%">
+             <img src="books/free.png" style="width:10%; height:20%">-->
+             <input type="image" id="allId" src="books/all.png"  style="width:10%; height:50%"/>
+             <input type="image" id="mostId" src="books/most.png"  style="width:10%; height:20%"/>
+             <input type="image" id="popularId" src="books/popular.png"  style="width:10%; height:25%"/>
+             <input type="image" id="freeId" src="books/free.png" style="width:10%; height:20%"/>
+          </div>
+          <div class="top_horizontal_menu_inside2">
+             <!--<img src="books/enter_keywords.png" style="width:50%; height:70%">-->
+                <input type="search" id="searchID" placeholder="Enter keywords..." style="width:50%; height:50%; border-radius:40px/30px"/>
+          </div>
+       </div>
+    </div>
+   
+  </div>
+
+
+<script src="external.js"></script>
+</body>
+</html>
+
