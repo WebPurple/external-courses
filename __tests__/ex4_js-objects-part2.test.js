@@ -45,8 +45,10 @@ describe('Ex4. JS Objects Part 2', () => {
         );
 
         task('08', code =>
-            it('should lowerCamelCase input string', () =>
-                expect(code('User Object', 5)).toBe('userObject')),
+            it('should lowerCamelCase input string', () => {
+                expect(code('User Object', 5)).toBe('userObject');
+                expect(code('Should be lower caMel case iNput string', 5)).toBe('shouldBeLowerCamelCaseInputString');
+            })
         );
 
         task('09', code =>
