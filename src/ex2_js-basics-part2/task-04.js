@@ -1,7 +1,7 @@
 function checkIdenticalItems(array) {
-  array.sort();
-  for (var i = 0; i < array.length; i++) {
-    if (array[i] === array[i - 1]) {
+  var elem = array[0];
+  for (var i = 1; i < array.length; i++) {
+    if (array[i] === elem) {
       return true
     }
   }

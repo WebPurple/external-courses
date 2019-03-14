@@ -1,10 +1,11 @@
 function getValueType(value) {
-  if (typeof value === "number") {
-    return typeof value;
+  if (typeof value === "number" && !isNaN(value)) {
+    return "number";
   } else if (typeof value === "string") {
-    return typeof value;
+    return "string";
   }
     return undefined;
+
 }
 
 module.exports = getValueType;
