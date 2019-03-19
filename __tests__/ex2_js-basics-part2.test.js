@@ -26,7 +26,7 @@ describe('Ex2. JS Basics Part 2', () => {
 
         const arr = [1, 2];
 
-        it(`should be called 3 times for ${arr.toString()}`, () => {
+        it(`should be called 3 times for ${JSON.stringify(arr)}`, () => {
             code(arr);
             expect(console.log.calls.count()).toBe(3);
         });
@@ -40,22 +40,22 @@ describe('Ex2. JS Basics Part 2', () => {
         ];
 
         testData.forEach(([input, output]) =>
-            it(`should return ${output.toString()} for ${input.toString()}`, () =>
+            it(`should return ${JSON.stringify(output)} for ${JSON.stringify(input)}`, () =>
                 expect(code(input)).toEqual(output)),
         );
     });
 
     task('04', code => {
         const arr1 = [1, 1];
-        it(`should be 'true' for ${arr1.toString()}`, () => expect(code(arr1)).toBe(true));
+        it(`should be 'true' for ${JSON.stringify(arr1)}`, () => expect(code(arr1)).toBe(true));
 
         const arr2 = [0, 1];
-        it(`should be 'false' for ${arr2.toString()}`, () => expect(code(arr2)).toBe(false));
+        it(`should be 'false' for ${JSON.stringify(arr2)}`, () => expect(code(arr2)).toBe(false));
     });
 
     task('05', code => {
         const arr = [-100, 100, 1];
-        it(`should return 100 for ${arr.toString()}`, () => expect(code(arr)).toBe(100));
+        it(`should return 100 for ${JSON.stringify(arr)}`, () => expect(code(arr)).toBe(100));
     });
 
     task('06', code => {
