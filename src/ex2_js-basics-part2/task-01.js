@@ -5,10 +5,10 @@ Remizov Maxim, 2019
 Написать функцию, которая принимает либо число, либо строку и в зависимости от типа переданного аргумента возвращает 'number' или 'string'. Если аргумент не число/строка функция возвращает undefined.
 */
 var myFuncDetected = function (variable){
-var result = typeof (variable); 
-  if (result === "number"){
+var result; 
+  if (typeof variable === "number"){
         result = "number";
-      } else if (result === "string") {
+      } else if (typeof variable === "string") {
         result = "string";
       } else {
         result = undefined;

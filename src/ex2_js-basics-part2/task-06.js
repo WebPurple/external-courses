@@ -12,42 +12,23 @@ f(13);
 f(14);
 // Число 14 - составное число
 */
-
-var funcEven = function (num){
-  
-  var counter = 0;
-  
-  if ((num > 1000) || (num < 2)) {
-    
-    result = "Данные неверны";
-  
-  } else {
-  
-    var x = Math.sqrt(num);
-    
-    for (i = 2; i < x; i++){
-    
-      if ((num % i) === 0){
-        
-        counter++;
-        
+var funcEven = function (num){  
+  var counter = 0;  
+  if ((num > 1000) || (num < 2)) {    
+    result = "Данные неверны";  
+  } else {  
+    var x = Math.sqrt(num);    
+    for (i = 2; i < x; i++){    
+      if ((num % i) === 0){        
+        counter++;       
       }
+    }    
+    if (counter === 0){   
+      result = 'Число '+num+' - простое число';      
+    } else {    
+    result = 'Число '+num+' - составное число';    
     }
-    
-    if (counter === 0){
-    
-      result = 'Число '+num+' - простое число';
-      
-    } else {
-    
-    result = 'Число '+num+' - составное число';
-    
-    }
-  }
-  
-  return result;
-  
+  }  
+  return result;  
 }
-
-
 module.exports = funcEven;
