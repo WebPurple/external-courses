@@ -6,13 +6,18 @@ Remizov Maxim, 2019
 */
 var myFuncDetected = function (variable){
 var result; 
-  if (typeof variable === "number"){
-        result = "number";
-      } else if (typeof variable === "string") {
-        result = "string";
-      } else {
+  if(isNaN(variable) === true){
+    result = undefined;
+  }else{
+    if (typeof variable === "string") {
+        result = "string";               
+      } else if (typeof variable === "number"){    
+        result = "number"; 
+      }else{
         result = undefined;
       }
+  }
+   
   return result;  
 };
 module.exports = myFuncDetected;
