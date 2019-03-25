@@ -13,7 +13,7 @@ Calculator = {
         if (a !== undefined) {
             Calculator.stored -= a;
         }
-        return Calculator.subtract;
+        return subtract;
     },
 
     divide: function divide(a) {
@@ -24,14 +24,14 @@ Calculator = {
                 Calculator.stored = NaN;
             }
         }
-        return Calculator.divide;
+        return divide;
     },
 
     multiply: function multiply(a) {
         if (a !== undefined) {
             Calculator.stored *= a;
         }
-        return Calculator.multiply;
+        return multiply;
     },
 
     getResult: function getResult() {
