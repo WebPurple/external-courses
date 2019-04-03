@@ -6,9 +6,7 @@ Remizov Maxim, 2019
 */
 var myFunc = function(myObject){
   for (var key in myObject){
-	  if(key in myObject){
 		console.log(key+": "+myObject[key]);
-	  }
-  }
+	}
 }
 module.exports = myFunc;

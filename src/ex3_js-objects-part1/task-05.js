@@ -7,9 +7,7 @@ Remizov Maxim, 2019
 var funcClone = function(myObj){
   var newObj = {};
   for(var key in myObj){
-	  if(key in myObj){
 		newObj[key]=myObj[key];
-	  }
   }
   return newObj;
 }

@@ -7,9 +7,8 @@ Remizov Maxim, 2019
 var funcNewProp = function(myStr, myObj){	
   var newObj = {};
   newObj = myObj;
-  if ((myStr in newObj) === false){   
-	var key = myStr;
-    newObj[key] = 'new';
+  if (!newObj[myStr] === true){   
+    newObj[myStr] = 'new';
   } 
   return newObj; 
 };
