@@ -15,7 +15,7 @@
 
 -   Попробуйте и `GET`, и `POST` методы
 
--   Используйте `http://httpbin.org/` в качестве конечной точки
+-   Используйте `http://httpbin.org/` в качестве конечной точки (Для метода `GET` `http://httpbin.org/get`, а для `POST` `http://httpbin.org/post`)
 
 [Построение форм](https://webref.ru/layout/learn-html-css/building-forms).
 
