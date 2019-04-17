@@ -1,4 +1,4 @@
-Calculator = {
+var Calculator = {
 
     stored: 0,
 
