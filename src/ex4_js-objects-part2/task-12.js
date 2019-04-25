@@ -1,6 +1,2 @@
-function roundThreeDec(a, b) {
-    var c = a + b;
-    c = +c.toFixed(3);
-    return c;
-}
+roundThreeDec = (a, b) =>{return (a + b).toFixed(3)*1}
 module.exports = roundThreeDec
