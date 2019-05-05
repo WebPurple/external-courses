@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="header__menu">
+        <a href="#">Help Center</a>
+        <a href="#">Our Support</a>
+    </div>
+    <div class="header__block">
+        <img src="img/avatar-01.png" alt="">
+        <p>John Doe</p>
+        <i class="fas fa-chevron-circle-down"></i>
+    </div>
+</header>
+<aside>
+    <div class="aside__add">
+        <div class="aside__add-button"><i class="fas fa-plus" style="margin-right: 19px"></i>Add a Book</div>
+    </div>
+    <div class="aside__menu">
+        <ul>
+            <li><i class="fas fa-book"></i>Now Reading</li>
+            <li><i class="fas fa-globe-americas"></i>Browse</li>
+            <li><i class="fas fa-shopping-cart"></i>Buy Books</li>
+            <li><i class="fas fa-star"></i>Favourite Books</li>
+            <li><i class="fas fa-th-list"></i>Wishlist</li>
+            <li><i class="far fa-clock"></i>History</li>
+        </ul>
+    </div>
+    <div class="aside__filters">
+        <ul>
+            <li>Must Read Titles</li>
+            <li>Best Of List</li>
+            <li>Classic Novels</li>
+            <li>Non Fiction</li>
+        </ul>
+    </div>
+    <div class="aside__history">
+        <div class="aside__history-record">
+            <i class="far fa-clock"></i>
+            <p>You added <strong>Fight Club</strong> by <strong>Chuck Palahniuk</strong> to your <strong>Must Read Titles.</strong>
+            </p>
+            <p id="time">24 minutes ago</p>
+        </div>
+        <div class="aside__history-record">
+            <i class="far fa-clock"></i>
+            <p id="text">You added <strong>The Trial</strong> by <strong>Franz Kafka</strong> to your <strong>Must Read Titles.</strong>
+            </p>
+            <p id="time">48 minutes ago</p>
+        </div>
+    </div>
+</aside>
+<section id="head">
+    <p>Browse Available Books</p>
+</section>
+<section id="search">
+    <div class="search__filters">
+        <div class="filter filt-active">All Books</div>
+        <div class="filter">Most Recent</div>
+        <div class="filter">Most Popular</div>
+        <div class="filter">Free Books</div>
+    </div>
+    <div class="search__search">
+        <input placeholder="Enter Keywords"><i class="fas fa-search"></i>
+    </div>
+</section>
+
+<main id="main">
+<!--************************************************************
+    <div class="main-card">
+        <img src="http://rsu-library-api.herokuapp.com/static/images/1.jpg" alt="">
+        <p id="card-book">Jewels of Nizam</p>
+        <p id="card-author">Geeta Devi</p>
+        <div class="card-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <div class="main-card">
+        <img src="http://rsu-library-api.herokuapp.com/static/images/1.jpg" alt="">
+        <p id="card-book">Jewels of Nizam</p>
+        <p id="card-author">Geeta Devi</p>
+        <div class="card-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <div class="main-card">
+        <img src="http://rsu-library-api.herokuapp.com/static/images/1.jpg" alt="">
+        <p id="card-book">Jewels of Nizam</p>
+        <p id="card-author">Geeta Devi</p>
+        <div class="card-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <div class="main-card">
+        <img src="http://rsu-library-api.herokuapp.com/static/images/1.jpg" alt="">
+        <p id="card-book">Jewels of Nizam</p>
+        <p id="card-author">Geeta Devi</p>
+        <div class="card-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <div class="main-card">
+        <img src="http://rsu-library-api.herokuapp.com/static/images/1.jpg" alt="">
+        <p id="card-book">Jewels of Nizam</p>
+        <p id="card-author">Geeta Devi</p>
+        <div class="card-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <div class="main-card">
+        <img src="http://rsu-library-api.herokuapp.com/static/images/1.jpg" alt="">
+        <p id="card-book">Jewels of Nizam</p>
+        <p id="card-author">Geeta Devi</p>
+        <div class="card-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <div class="main-card">
+        <img src="http://rsu-library-api.herokuapp.com/static/images/1.jpg" alt="">
+        <p id="card-book">Jewels of Nizam</p>
+        <p id="card-author">Geeta Devi</p>
+        <div class="card-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <div class="main-card">
+        <img src="http://rsu-library-api.herokuapp.com/static/images/1.jpg" alt="">
+        <p id="card-book">Jewels of Nizam</p>
+        <p id="card-author">Geeta Devi</p>
+        <div class="card-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <div class="main-card">
+        <img src="http://rsu-library-api.herokuapp.com/static/images/1.jpg" alt="">
+        <p id="card-book">Jewels of Nizam</p>
+        <p id="card-author">Geeta Devi</p>
+        <div class="card-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <div class="main-card">
+        <img src="http://rsu-library-api.herokuapp.com/static/images/1.jpg" alt="">
+        <p id="card-book">Jewels of Nizam</p>
+        <p id="card-author">Geeta Devi</p>
+        <div class="card-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+-->
+</main>
+<footer>
+    <div class="foo__help">
+        <i class="fas fa-question-circle"></i>
+    </div>
+    <div class="foo_settings">
+        <i class="fas fa-cog"></i>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
