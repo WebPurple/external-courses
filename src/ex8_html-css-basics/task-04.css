@@ -1,0 +1,58 @@
+html{
+    font-size: 16pt;
+}
+@font-face{
+    font-family: "liteItalicFont";
+    src: url(AlexBrush-Regular.ttf);
+}
+@font-face{
+    font-family: "sourceCodePro";
+    src: url(SourceCodePro-Regular.otf);
+}
+h1{
+    background: url(https://1igolka.com/wp-content/uploads/2017/11/ornamenty_i_uzory_22_06165832.jpg);
+    width: 70vw;
+    height: 10vh;
+    font-size: 1.6rem;
+    color: rgb(18, 119, 250);
+}
+h2{
+    background-color: #df73ff;
+    width: 70%;
+    height: 9%;
+    font-size: 24pt;
+
+}
+h3{
+    background-color: bisque;
+
+}
+h4{
+    background-color: rgb(30, 150,100)
+}
+h5{
+    background-color: rgba(190, 150, 200,0.5)
+}
+ol{
+    font-size: 20pt;
+    background-color: #aaf0d1;
+    width: 200px;
+    height: 150px;
+    font-family: 'arial';
+}
+li{
+    font-size: 0.8em;
+}
+li:nth-child(2n+1){
+    font-family: 'Times New Roman'
+}
+div{
+    font-size: 1cm;
+}
+.italic{
+    font-family: liteItalicFont;
+}
+.regular{
+    font-family: sourceCodePro;
+    font-size: 0.6rem;
+}

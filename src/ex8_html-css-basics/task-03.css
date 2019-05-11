@@ -1,0 +1,33 @@
+div {
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    background-color: aquamarine;
+}
+#divBorder {
+    border: 2px solid black;
+}
+#divShadow{
+    box-shadow: 0 0 0 2px black;
+}
+#divOutline{
+    outline: 2px solid black;
+}
+#divElem:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 304px;
+    height: 154px;
+    background: black;
+    transform: translate(-30px, -2px);
+}
+#divElem2::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 304px;
+    height: 154px;
+    background:  url(img.png);
+    transform: translate(-2px, -2px);
+}

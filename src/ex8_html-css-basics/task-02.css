@@ -1,0 +1,9 @@
+div {
+    background-color: green;
+}
+p + p {
+    width: 50vh;
+}
+img {
+    width: 300px;
+}
