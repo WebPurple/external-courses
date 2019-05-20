@@ -95,8 +95,10 @@ var requestURL = 'https://rsu-library-api.herokuapp.com/books';
 				Array.from(books_select).forEach(function(book) {
 					const title = book.textContent;
 					if(title.toLowerCase().indexOf(term) !== -1) {
+						// eslint-disable-next-line no-param-reassign
 						book.style.display = 'block';
 					} else {
+						// eslint-disable-next-line no-param-reassign
 						book.style.display = "none";
 					}
 				})
