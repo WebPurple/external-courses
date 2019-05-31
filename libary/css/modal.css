@@ -1,0 +1,67 @@
+#modal-window{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	flex-direction: column;
+	background: rgb(238,241,248);
+	
+}
+
+#book-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+#tag-adder{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 90%;
+}
+
+#tag-adder *{
+    margin-top: 1vw;
+}
+
+#tag-color{
+	background: rgb(50, 50, 50);
+	width: 4vw;
+	height: 4vw;
+}
+
+#tag-info-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+#book-tag-adder{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+#book-tag-adder *{
+	width: 14vw;
+	height: 2vw;
+	margin-top: 2vw;
+}
+
+#book-tag-list{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left:1.5vw;
+	width: 14vw;
+	height: 10vw;
+	margin-top: 2vw;
+	overflow-y: auto;
+	overflow-x: hidden;
+}

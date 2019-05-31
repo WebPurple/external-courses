@@ -1,0 +1,158 @@
+<html>
+<head>
+    <title>Library</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bars.css"/>
+    <link rel="stylesheet" href="css/book content.css"/>
+    <link rel="stylesheet" href="css/stars.css"/>
+    <link rel="stylesheet" href="css/modal.css"/>
+    <link rel="stylesheet" href="css/history.css"/>
+</head>
+
+<body>
+<div id="lib">
+    <div class="bar" id="header">
+        <button class="bar-butt hoverable-blue">Help Center</button>
+        <div id="useless-point"></div>
+        <button class="bar-butt hoverable-blue">Our Support</button>
+        <button class="top-right-butt bar-butt hoverable-blue">
+            <img id="user-photo" src="images/user.png"/>
+            &nbsp;&nbsp;User Userovich
+        </button>
+    </div>
+
+    <div id="lib-body">
+        <div class="sidebar">
+            <div id="add-book-panel" class="sidebar-panel">
+                <form id="add-book-form">
+                    <button type="submit" id="add-book-butt">+  ADD A BOOK</button>
+                    <input id="author" class="sidebar-panel" type="text" name="author" placeholder="enter author" required>
+                    <input id="title" class="sidebar-panel" type="text" name="title" placeholder="enter title" required>
+                    <input id="image" class="sidebar-panel" type="file" name="image" placeholder="choose file" required>
+                </form>
+            </div>
+
+            <div id="menu-panel" class="sidebar-panel">
+                <button class="hoverable-blue">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    &nbsp;&nbsp;Now Reading
+                </button>
+
+                <button id="browse-button" class="hoverable-blue">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    &nbsp;&nbsp;Browse
+                </button>
+
+
+                <button class="hoverable-blue">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    &nbsp;&nbsp;Buy Book
+                </button>
+
+
+                <button class="hoverable-blue">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    &nbsp;&nbsp;Favorite Books
+                </button>
+
+                <button class="hoverable-blue">
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    &nbsp;&nbsp;Wishlist
+                </button>
+
+                <button id="history-button" class="hoverable-blue">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    &nbsp;&nbsp;History
+                </button>
+            </div>
+
+            <div id="mapping-panel" class="sidebar-panel">
+            </div>
+            <div id="history-panel" class="sidebar-panel">
+            </div>
+        </div>
+
+        <div id="history">
+        </div>
+
+        <div id="lib-content">
+            <div id="lib-content-header">
+                <span class="welcome-header">Browse Available Book</span>
+                <hr>
+                <div class="filter-row">
+                    <div id="filters" class="filter-container">
+                        <span id="all-filter" class="filter">all books</span>
+                        <span class="filter">most recent</span>
+                        <span id="rating-filter" class="filter">most popular</span>
+                        <span class="filter">free books</span>
+                    </div>
+
+                    <div class="search-container">
+                        <input type="text" id="search" placeholder="Enter Keywords">
+                        <button id="search-butt"></button>
+                    </div>
+                </div>
+                <p>
+            </div>
+            <div id="table-container">
+                <div id="modal-window">
+                    <div id="tag-info-container">
+                        <div id="book-info">
+                            <input id="book-id" type="hidden" />
+                            <img id="book-image"/>
+                            <span id="book-title"></span>
+                            <span id="book-author"></span>
+                        </div>
+
+                        <form id="book-tag-adder">
+                            <div id="book-tag-list">
+                            </div>
+                            <select id="tag-list">
+                            </select>
+                            <button type="submit" id="set-book-tag">set tag</button>
+                        </form>
+
+                        <form id="tag-adder">
+                            <input id="tag-name"  placeholder="enter tag name" required>
+                            <input id="red-bar" type="range" min="0" max="255" step="1" value="50">
+                            <input id="green-bar" type="range" min="0" max="255" step="1" value="50">
+                            <input id="blue-bar" type="range" min="0" max="255" step="1" value="50">
+                            <div id="tag-color">
+                            </div>
+                            <button id="tag-add-button" type="submit">add tag</button>
+                        </form>
+                    </div>
+                    <button id="book-info-close">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bar" id="footer">
+        <button class="config-butt hoverable-blue">
+            <i class="fa fa-question-circle" aria-hidden="true"></i>
+        </button>
+        <button class="bottom-right-butt config-butt hoverable-blue">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+        </button>
+    </div>
+</div>
+<script src="js/book/book.js" ></script>
+<script src="js/filter/filter.js"></script>
+<script src="js/filter/all_book.js"></script>
+<script src="js/tag/tag.js"></script>
+<script src="js/tag/set_book_tag.js"></script>
+<script src="js/notification/notify_feature.js"></script>
+<script src="js/add book/add_feature.js"></script>
+<script src="js/search/search_feature.js"></script>
+<script src="js/filter/most_popular.js"></script>
+<script src="js/star/star_feature.js"></script>
+<script src="js/history/history.js" ></script>
+<script src="js/browse/browse_feature.js" ></script>
+<script src="js/modal window/modal_window_feature.js" ></script>
+<script src="js/tag/add_tag_feature.js" ></script>
+<script src="js/core/app.js" ></script>
+</body>
+</html>

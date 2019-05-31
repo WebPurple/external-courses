@@ -1,0 +1,209 @@
+body{
+	margin:0;
+	overflow:hidden;
+}
+
+#lib{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	width:100%;
+	height:100vh;
+}
+
+.bar{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	align-items:stretch;
+	background: rgb(47,54,73);
+	width:100%;
+	height:5vh;
+}
+
+#header{
+	border-radius:5px 5px 0 0;
+}
+
+#footer{
+	border-radius:0 0 5px 5px;
+	z-index:2;
+}
+
+.top-right-butt{
+	display:flex;
+	align-items:center;
+	border-radius:0 5px 0 0;
+}
+
+.bottom-right-butt{
+	border-radius:0 0 5px 0;
+}
+
+.bar-butt{
+	font-size:1vw;
+	color:rgb(102,110,131);
+	background:transparent;
+	border:0;
+	border-color:transparent;
+}
+
+.config-butt{
+	background:rgb(108,109,127);
+	border:0;
+	text-align:center;
+	width:3.3vw;
+	height:100%;
+}
+
+.config-butt .fa{
+	font-size:1.5vw;
+	color:white;
+}
+
+
+.hoverable-blue:hover{
+	color:white;
+	background:rgb(22,164,250);
+}
+
+#useless-point{
+	background:rgb(36,43,62);
+	border-radius:50%;
+	margin-top:1.1vw;
+	width:0.4vw;
+	height:0.4vw;
+}
+
+button{
+	text-transform: capitalize;
+}
+
+#lib-body{
+    display:flex;
+	flex-direction:row;
+	align-items:stretch;
+	justify-content:flex-start;
+	width:100%;
+	height:90%;
+}
+
+.sidebar{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	background:rgb(25,33,46);
+	width:15%;
+}
+
+.sidebar-panel{
+	display:flex;
+	flex-direction:column;
+	background:rgb(31,38,56);
+}
+
+#add-book-panel{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	height:25%;
+}
+
+#add-book-form{
+	width: 100%;
+	height: 90%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+}
+
+#add-book-form input{
+	margin-top:1vh;
+	background:rgb(238,241,248);
+	border: none;
+	width:11vw;
+	height: 1.5vw;
+	font-size: 0.8vw;
+}
+
+#menu-panel{
+	justify-content:stretch;
+	height:25%;
+}
+
+#menu-panel button{
+	font-size:1vw;
+	text-align:left;
+	color:rgb(102,110,131);
+	background:transparent;
+	border:0;
+	height:100%;
+	padding-left:1.9vw;
+
+}
+#menu-panel button:hover{
+	color:white;
+	background:rgb(22,164,250);
+
+}
+
+
+#mapping-panel{
+	justify-content:stretch;
+	height:25%;
+}
+
+#mapping-panel button{
+	text-align:left;
+	padding-left:1.9vw;
+	font-size:1vw;
+	background:transparent;
+	color:rgb(102,110,131);
+	border:0;
+	height:40%;
+}
+
+#mapping-panel button .fa-circle{
+	font-size:0.6vw;
+}
+
+#history-panel{
+	height:20%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#add-book-butt{
+	margin-top:1vh;
+	background:rgb(242,121,90);
+	color:white;
+	border:0;
+	border-radius:0.5vw;
+	width:80%;
+	height:3vw;
+	font-size:1.1vw;
+	font-weight:bold;
+	text-align:center;
+}
+
+#user-photo{
+	border-radius:50%;
+	width:2vw;
+	height:2vw;
+}
+
+.history-element{
+	color: rgb(102,110,131);
+	font-size: 1vw;
+	display:flex;
+	flex-direction:row;
+	width:80%;
+	margin-top:1.4vw;
+	
+}
+
+
+
