@@ -4,7 +4,7 @@
 `git checkout master`
 
 2. Обновляем основную ветку разработки с master WebPurple/external-courses,
-Инструкция - [тут](./how-to-do-homework.md)
+Инструкция - [тут](https://github.com/WebPurple/external-courses/blob/master/how-to/how-to-update-webpurple-repo.md)
 
 **Важно помнить, что файлы, которые вы не закоммитили или не засташили, могут пропасть**
 
