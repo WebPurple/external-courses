@@ -1,6 +1,5 @@
 function displayArray(argument) {
-    let count=0;
-    let numberOfElements=1;
+    let count=0, numberOfElements=1;
     while (count <argument.length){
         console.log(argument[count]);
         numberOfElements++;

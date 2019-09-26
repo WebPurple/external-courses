@@ -1,6 +1,5 @@
 function maxArrayElement(argument) {
-    let maxElement=0;
-    let count=0;
+    let maxElement=0, count=0;
     while (count<argument.length) {
         if (argument[count] > maxElement) maxElement = argument[count];
     count++;

@@ -4,8 +4,7 @@ function checkSimple(argument) {
         case 2: return (console.log("Число 2 - простое число")); break;
     }
     if (argument>1000 || argument<0) return ("Данные неверны");
-    let count=2;
-    let isCompound=false;
+    let count=2, isCompound=false;
     while ((count*count<=argument)&&(isCompound === false)) {
         if (argument % count === 0) {
             isCompound = true;
