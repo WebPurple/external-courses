@@ -38,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.task-06.js">
+  <component name="RunManager" selected="Node.js.task-04.js">
     <configuration name="task-01.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="task-01.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -73,7 +73,7 @@
       <updated>1569432958856</updated>
       <workItem from="1569432960006" duration="252000" />
       <workItem from="1569433226932" duration="5786000" />
-      <workItem from="1569514025122" duration="1050000" />
+      <workItem from="1569514025122" duration="2062000" />
     </task>
     <servers />
   </component>
