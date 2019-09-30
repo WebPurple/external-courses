@@ -36,7 +36,8 @@
 9. Делаем коммит<br>
 `git commit -m "commit msg"`
 
-Правила именования коммитов - [скоро будет тут]
+Правила именования коммитов - [тут](https://chris.beams.io/posts/git-commit/)<br>
+Перевод статьи: [по ссылке](https://habr.com/ru/post/416887/)
 
 10. Из ветки branchName **(не основной ветки разработки!)** делаем команду<br>
 `git push origin branchName`
