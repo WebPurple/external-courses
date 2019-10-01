@@ -1,9 +1,9 @@
-function maxArrayElement(argument) {
+function maxArrayElement(arr) {
     let maxElement=0, count=0;
-    while (count<argument.length) {
-        if (argument[count] > maxElement) maxElement = argument[count];
+    while (count<arr.length) {
+        if (arr[count] > maxElement) maxElement = arr[count];
     count++;
     }
-    return (maxElement);
+    return maxElement;
 }
 module.exports = maxArrayElement;

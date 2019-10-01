@@ -1,12 +1,12 @@
-function oddEvenZeroArray(argument) {
+function oddEvenZeroArray(arr) {
     let count=0, zeroElements=0, oddElements=0, evenElements=0;
-    while (count<argument.length){
-        if (typeof(argument[count])==="number"){
-            if (argument[count]===0) {
+    while (count<arr.length){
+        if (typeof(arr[count])==="number"){
+            if (arr[count]===0) {
                 zeroElements++;
                 oddElements--;
             }
-            if (argument[count]%2===0) oddElements++
+            if (arr[count]%2===0) oddElements++
             else evenElements++;
         }
         count++;
