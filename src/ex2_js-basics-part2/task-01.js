@@ -1,9 +1,9 @@
 "use strict";
 function showType(variable){
 	if (typeof variable === 'string') {
-		console.log('Тип переменной: String'); 	//значение String вернется в конце функции
+		console.log('Тип переменной: String'); 	// String return func
 	}
-	else if (typeof variable === 'number') {console.log('Тип переменной: Number');}//значение Number вернется в конце функции
+	else if (typeof variable === 'number') {console.log('Тип переменной: Number');}//Number return to end func
 		else {
 			console.log('Undefined');
 			return undefined;
