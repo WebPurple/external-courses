@@ -1,13 +1,13 @@
-"use strict";
-function showType(variable){
-	if (typeof variable === 'string') {
-		console.log('Тип переменной: String'); 	// String return func
-	}
-	else if (typeof variable === 'number') {console.log('Тип переменной: Number');}//Number return to end func
-		else {
-			console.log('Undefined');
-			return undefined;
-		}
-	return (typeof variable);		
+function showType(retArr) {
+  if (typeof retArr === 'string') {
+    console.log('Тип переменной: String');
+    return 'string'; // String return func
+  } else if (typeof retArr === 'number') {
+    console.log('Тип переменной: Number');
+    return 'number'; //Number return to end func
+  }
+  console.log('Undefined');
+  return undefined;
+
 }
 module.exports = showType;
