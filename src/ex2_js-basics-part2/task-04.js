@@ -1,15 +1,15 @@
 function isEqual(array) {
-    var result = true;
+    let result = true;
     if (array.length === 0) {
         result = true;
     }
-    for (var i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length - 1; i++) {
         a = array[i];
         if (a === array[i + 1]) {
-            result = true
+            result = true;
         }
         else {
-            result = false
+            result = false;
         }
     }
     return result
