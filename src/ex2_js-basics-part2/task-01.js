@@ -1,3 +1,5 @@
+'use strict';
+
 function showType(retArr) {
   if (typeof retArr === 'string') {
     console.log('Тип переменной: String');
