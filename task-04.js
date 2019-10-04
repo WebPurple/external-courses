@@ -4,8 +4,4 @@ function equalityArrayElements(Arr) {
         if (Arr[0] !== Arr[count]) {
             elementsEqual = false;
         }
-        count++;
-    }
-    return(elementsEqual);
-}
-module.exports = equalityArrayElements; 
+      
