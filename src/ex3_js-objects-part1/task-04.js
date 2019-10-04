@@ -5,7 +5,7 @@ function addStrIfNotExist(str, obj){
             isExist = false;
         }
     }
-    if (!isExist) obj.str = "new"//eslint-disable-line no-param-reassign
+    if (!isExist) obj[str] = "new"//eslint-disable-line no-param-reassign
     return obj;
 }
-module.exports = addStrIfNotExist;
+module.exports = addStrIfNotExist
