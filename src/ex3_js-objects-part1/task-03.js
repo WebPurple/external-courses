@@ -1,14 +1,7 @@
-let object = {
-	name: 'Pavel',
-	age: 22,
-	profession:'programmer'
-}
 let includeToObject = function(field, obj){
-	let result = false;
-	for(key in obj){
-		if (key == field) result = true; // eslint-disable-line
-	}
-	return result;
+	for (key in obj){
+		if (key === field) return true;
+	} 
+	return false;
 }
-console.log(includeToObject('profession', object));
 module.exports = includeToObject;
