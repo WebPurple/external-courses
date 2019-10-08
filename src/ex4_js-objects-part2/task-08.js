@@ -1,5 +1,3 @@
-module.exports = converToLowerCamelCase;
-
 function converToLowerCamelCase(str){
     let array = str.split(' ');
     array[0] = array[0].toLowerCase();
@@ -8,3 +6,4 @@ function converToLowerCamelCase(str){
     }
     return array.join('');
 }
+module.exports = converToLowerCamelCase;

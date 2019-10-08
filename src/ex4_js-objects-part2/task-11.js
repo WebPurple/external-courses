@@ -1,5 +1,3 @@
-module.exports = countSymbol;
-
 function countSymbol(str){
     let array = str.split('');
     array = array.sort();
@@ -12,3 +10,4 @@ function countSymbol(str){
     }
      return str;
 }
+module.exports = countSymbol;

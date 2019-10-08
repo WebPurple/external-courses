@@ -1,5 +1,3 @@
-module.exports = trimStrToGivenLength;
-
 function trimStrToGivenLength(str,num){
     let currentStr;
     if(str.length > num){
@@ -7,3 +5,4 @@ function trimStrToGivenLength(str,num){
     }
     return currentStr;
 }
+module.exports = trimStrToGivenLength;

@@ -1,5 +1,3 @@
-module.exports = returnStrWithUpperSymbolInWOord;
-
 function returnStrWithUpperSymbolInWOord(str){
     let array = str.split(' ');
     for(let i = 0; i < array.length;i++){
@@ -7,3 +5,4 @@ function returnStrWithUpperSymbolInWOord(str){
     }
     return array.join(' ');
 }
+module.exports = returnStrWithUpperSymbolInWOord;
