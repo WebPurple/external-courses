@@ -1,5 +1,3 @@
-module.exports = returnPropFromProt;
-
 const protoObject = {
     a: 'first',
     b: 'second'
@@ -16,3 +14,4 @@ function returnPropFromProt(property, obj){
     }
     return undefined;
 }
+module.exports = returnPropFromProt;
