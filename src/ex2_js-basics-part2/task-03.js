@@ -1,19 +1,16 @@
-module.exports = checkParity;
-
-function checkParity(massive) {
+function checkParity(array) {
     function isNumeric(n) {
         return !isNaN(parseFloat(n)) && isFinite(n);
     }
     let numberEven = 0,
         numberOdd = 0,
-        numberZero = 0,
-        result = [];
-    for (let i = 0; i < massive.length; i++) {
-        if (isNumeric(massive[i])) {
-            if (massive[i] === 0 || massive[i] === null) {
+        numberZero = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (isNumeric(array[i])) {
+            if (array[i] === 0 || array[i] === null) {
                 numberZero++;
             } else {
-                if (massive[i] % 2 === 0) {
+                if (array[i] % 2 === 0) {
                     numberEven++;
                 } else {
                     numberOdd++;
@@ -21,8 +18,6 @@ function checkParity(massive) {
             }
         }
     };
-    result.push(numberEven);
-    result.push(numberOdd);
-    result.push(numberZero);
-    return result;
+    return [numberEven, numberOdd, numberZero];
 }
+module.exports = checkParity;

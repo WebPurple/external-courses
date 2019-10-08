@@ -1,8 +1,7 @@
-module.exports = printMassivel;
-
-function printMassive(massive) {
-    massive.forEach(function(item) {
+function printArray(array) {
+    array.forEach(function(item) {
         console.log(item);
     });
-    console.log("Число элементов : " + massive.length);
+    console.log("Число элементов : " + array.length);
 }
+module.exports = printArray;

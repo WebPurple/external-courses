@@ -1,5 +1,3 @@
-module.exports = chekPrime;
-
 function chekPrime(variable) {
     if (variable <= 1000) {
         for (let j = 2; j < variable; j++) {
@@ -11,3 +9,4 @@ function chekPrime(variable) {
     }
     return "Данные неверны";
 }
+module.exports = chekPrime;
