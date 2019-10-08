@@ -7,4 +7,5 @@ function makeCloneObj(obj) {
   }
   return clone
 };
-module.exports = makeCloneObj
+
+module.exports = makeCloneObj;
