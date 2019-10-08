@@ -1,5 +1,5 @@
 function addStrIfNotExist(str, obj){
-    isExist = true
+    let isExist = true;
     for (let key in obj){
         if (str!==key){
             isExist = false;

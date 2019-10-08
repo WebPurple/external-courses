@@ -1,4 +1,4 @@
-function dClone(obj){
+function deepCloneObj(obj){
     let newObj = {};
     if (typeof obj === "object"){
         for (let key in obj){
@@ -9,11 +9,11 @@ function dClone(obj){
                     if (Array.isArray(prop)) {
                         newObj[key] = [];
                         for (let item of prop){
-                            newObj[key].push(dClone(item))
+                            newObj[key].push(deepCloneObj(item))
                         }
                     }
                     else{
-                        newObj[key] = dClone(prop);
+                        newObj[key] = deepCloneObj(prop);
                     }
                     break;
                 default:
