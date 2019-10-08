@@ -1,8 +1,6 @@
 function displayArray(arr) {
-    let count=0, numberOfElements=1;
-    while (count <arr.length){
+    for (let count=0;count<arr.length;count++){
         console.log(arr[count]);
-        count++;
     }
     return console.log("Number of elements", arr.length);
 }

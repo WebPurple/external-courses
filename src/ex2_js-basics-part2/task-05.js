@@ -1,8 +1,7 @@
 function maxArrayElement(arr) {
-    let maxElement=0, count=0;
-    while (count<arr.length) {
+    let maxElement=0;
+    for (count=0; count<arr.length; count++) {
         if (arr[count] > maxElement) maxElement = arr[count];
-    count++;
     }
     return maxElement;
 }
