@@ -1,5 +1,3 @@
-module.exports = addMissingProperty;
-
 function addMissingProperty(property, obj){
     const result = obj;
     if(!obj.hasOwnProperty(property)){
@@ -7,3 +5,4 @@ function addMissingProperty(property, obj){
     }
     return result;
 }
+module.exports = addMissingProperty;

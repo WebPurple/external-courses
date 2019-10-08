@@ -1,5 +1,3 @@
-module.exports = deepCopyObject;
-
 function deepCopyObject(object){
     let clone;
     if(object.length){
@@ -16,3 +14,4 @@ function deepCopyObject(object){
     }  
     return clone;
 }
+module.exports = deepCopyObject;

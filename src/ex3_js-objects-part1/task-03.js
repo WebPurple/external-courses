@@ -1,5 +1,3 @@
-module.exports = checkProperty;
-
 function checkProperty(property, object){
     for(let key in object){
         if(object.hasOwnProperty(key)){
@@ -10,3 +8,4 @@ function checkProperty(property, object){
     };
     return false;
 }
+module.exports = checkProperty;

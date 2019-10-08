@@ -1,5 +1,3 @@
-module.exports = copyObject;
-
 function copyObject(object){
     let copy = {};
 
@@ -10,3 +8,4 @@ function copyObject(object){
     }
     return copy;
 }
+module.exports = copyObject;
