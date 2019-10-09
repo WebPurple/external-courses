@@ -6,4 +6,5 @@ function converToLowerCamelCase(str){
     }
     return array.join('');
 }
+
 module.exports = converToLowerCamelCase;

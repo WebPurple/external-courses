@@ -5,4 +5,5 @@ function returnStrWithUpperSymbolInWOord(str){
     }
     return array.join(' ');
 }
+
 module.exports = returnStrWithUpperSymbolInWOord;

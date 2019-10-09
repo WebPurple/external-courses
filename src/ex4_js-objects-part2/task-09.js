@@ -3,4 +3,5 @@ function addSubstrInPosition(str, addedWord, pos){
     array.splice(pos+1,0,addedWord);
     return array.join(' ');
 }
+
 module.exports = addSubstrInPosition;

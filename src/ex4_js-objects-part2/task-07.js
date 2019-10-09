@@ -5,4 +5,5 @@ function trimStrToGivenLength(str,num){
     }
     return currentStr;
 }
+
 module.exports = trimStrToGivenLength;

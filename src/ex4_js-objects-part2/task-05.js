@@ -4,4 +4,5 @@ function checkSubString(str, subStr){
     }
     return false;
 }
+
 module.exports = checkSubString;

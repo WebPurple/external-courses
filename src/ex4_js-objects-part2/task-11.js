@@ -10,4 +10,5 @@ function countSymbol(str){
     }
      return str;
 }
+
 module.exports = countSymbol;

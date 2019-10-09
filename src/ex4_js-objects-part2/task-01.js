@@ -12,4 +12,5 @@ function returnPropFromProt(property, obj){
         }
     return undefined;
 }
+
 module.exports = returnPropFromProt;
