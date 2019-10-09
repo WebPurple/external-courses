@@ -1,6 +1,5 @@
 function deepCopyObject(object){
     let clone;
-    // if(object.length){
     if( object instanceof Array){
         clone = [];
     } else{

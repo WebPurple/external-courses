@@ -5,4 +5,5 @@ function addMissingProperty(property, obj){
     }
     return result;
 }
+
 module.exports = addMissingProperty;

@@ -8,4 +8,5 @@ function checkProperty(property, object){
     };
     return false;
 }
+
 module.exports = checkProperty;

@@ -8,4 +8,5 @@ function copyObject(object){
     }
     return copy;
 }
+
 module.exports = copyObject;
