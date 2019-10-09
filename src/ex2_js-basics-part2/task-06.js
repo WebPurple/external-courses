@@ -9,4 +9,5 @@ function chekPrime(variable) {
     }
     return "Данные неверны";
 }
+
 module.exports = chekPrime;

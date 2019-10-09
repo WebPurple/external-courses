@@ -14,4 +14,5 @@ function checkIdenticalElements(array) {
     }
     return false;
 }
+
 module.exports = checkIdenticalElements;

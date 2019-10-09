@@ -20,4 +20,5 @@ function checkParity(array) {
     };
     return [numberEven, numberOdd, numberZero];
 }
+
 module.exports = checkParity;

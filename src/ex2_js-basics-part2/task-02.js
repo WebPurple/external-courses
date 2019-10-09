@@ -4,4 +4,5 @@ function printArray(array) {
     });
     console.log("Число элементов : " + array.length);
 }
+
 module.exports = printArray;

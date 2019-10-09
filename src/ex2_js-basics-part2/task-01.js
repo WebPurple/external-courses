@@ -9,4 +9,5 @@ function checkType(variable) {
     }
     return undefined;
 }
+
 module.exports = checkType;

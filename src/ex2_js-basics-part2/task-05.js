@@ -7,4 +7,5 @@ function getMaximum(array) {
     }
     return max;
 }
+
 module.exports = getMaximum;
