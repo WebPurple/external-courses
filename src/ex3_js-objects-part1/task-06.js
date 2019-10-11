@@ -23,8 +23,6 @@ function deepCloneObj(obj){
         }
         return newObj
     }
-    else {//eslint-disable-line no-else-return
-        return obj;
-    }
+    return obj;
 }
 module.exports = dClone;
