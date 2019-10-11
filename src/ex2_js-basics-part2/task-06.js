@@ -1,7 +1,11 @@
 function checkSimple(argument) {
-    switch (argument) {// eslint-disable-line default-case
-        case 0: return (console.log("Вы ввели 0")); break;
-        case 2: return (console.log("Число 2 - простое число")); break;
+    if (argument===0){
+        return (console.log("Вы ввели 0"));
+    }
+    else {// eslint-disable-line no-else-return
+        if (argument===2) {
+            return (console.log("Число 2 - простое число"));
+        }
     }
     if (argument>1000 || argument<0) return ("Данные неверны");
     let count=2, isCompound=false;
