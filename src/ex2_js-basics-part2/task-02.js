@@ -3,6 +3,5 @@ function displayArrayElements(arr) {
       console.log(arr[i]);
     }
     console.log(arr.length);
-  }
-
-  module.exports = displayArrayElements; 
+}
+module.exports = displayArrayElements; 
