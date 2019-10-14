@@ -15,4 +15,5 @@ function searchStr(str) {
     }
   }
 };
+
 module.exports = searchStr;
