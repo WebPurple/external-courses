@@ -1,4 +1,4 @@
-(function Calculator(){//eslint-disable-line
+(function Calculator(){
   let res = 0;
   const add = function add(x=0){
     res += x;
@@ -31,5 +31,5 @@
     getResult,
     reset
   }
-})();
+}());
 module.exports = Calculator;
