@@ -1,5 +1,4 @@
 function deleteSpacesInString (str){
-    let strNoSpaces = str.trim();
-    return strNoSpaces;
+    return str.trim();
 }
 module.exports = deleteSpacesInString;

@@ -1,7 +1,9 @@
-function cutString (str, lengthOfString){//eslint-disable-line consistent-return
-    if (str.length>lengthOfString){
-        str = str.substring(0,lengthOfString-1)+"…";//eslint-disable-line no-param-reassign
-        return str;
+function cutString (str, lengthOfString){
+    let newStr = str;
+    if (newStr.length>lengthOfString){
+        newStr = newStr.substring(0,lengthOfString-1)+"…";
+        return newStr;
     }
+    return undefined
 }
 module.exports = cutString;

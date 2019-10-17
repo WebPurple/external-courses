@@ -1,11 +1,12 @@
 function countOfDifferentLetters (str){
     let results = Array.prototype.reduce.call(str, 
         function (obj, letter) {
-            if (obj[letter] === undefined) {
-                obj[letter] = 0;//eslint-disable-line no-param-reassign
+            const newObj = Object.assign({}, obj)
+            if (newObj[letter] === undefined) {
+                newObj[letter] = 0;
             }
-            obj[letter] += 1;//eslint-disable-line no-param-reassign
-            return obj;
+            newObj[letter] += 1;
+            return newObj;
         }, {});
     for (let letter in results) {
         console.log('Символ "' + letter + '" повторяется "' + results[letter] + '" раз.');
