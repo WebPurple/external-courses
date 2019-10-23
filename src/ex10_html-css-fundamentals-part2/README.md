@@ -2,6 +2,10 @@
 
 ## Задание 1
 
+Сделайте какую-либо картинку круглой. Затем измените ее форму на более сложную, как в [примере](http://jsbin.com/kigepuzezo/edit?html,css,output).
+
+## Задание 2
+
 Создайте HTML-страницу с формой, используя типы для инпутов.
 Макет скачать по [ссылке](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB) - Form.png
 
@@ -21,7 +25,7 @@
 
 [HTML5-формы](https://html5book.ru/html5-forms/).
 
-## Задание 2
+## Задание 3
 
 Создайте таблицу.
 
@@ -51,9 +55,13 @@
     />
 </p>
 
-## Задание 3
+## Задание 4
 
 Создайте адаптивную страницу. Макет скачать по [ссылке](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB?usp=sharing) - Portal_UI.psd
+
+Страницы должны отвечать правилам семантической верстки. Для работы с макетом можно использовать такие тулы, как Photoshop, Zeplin, Avocode.<br>
+
+Файлы должны быть названы в соответствии с заданием - task-04.html, task-04.css
 
 Для планшетов:
 
