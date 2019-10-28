@@ -39,6 +39,6 @@
 [Руководство](https://snook.ca/archives/html_and_css/floated-label-pattern-css).
 
 ## Задание 3
-Сверстать сайдбар и футер страницы. Макет скачать по [ссылке](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB?usp=sharing) - Kanban.fig, а так же онлайн-версия [здесь](https://www.figma.com/file/NUMbMR5pCisMuGNIhxgQI4/Kanban?node-id=1%3A2) <br>
+Сверстать хедер и футер страницы. Макет скачать по [ссылке](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB?usp=sharing) - Kanban.fig, а так же онлайн-версия [здесь](https://www.figma.com/file/NUMbMR5pCisMuGNIhxgQI4/Kanban?node-id=1%3A2) <br>
 
 Для работы потребуется Figma
