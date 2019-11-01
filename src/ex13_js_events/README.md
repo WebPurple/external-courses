@@ -47,7 +47,9 @@ const dataMock = [
 
 ### CSS
 
-6. Учитывать состояния кнопки "+ Add card" - active и disable. Почитать best practices по accessibility<br>
+6. Соблюдать семантическую верстку. Кнопка должна быть button, элементы дропдауна списком, и тд.
+
+7. Учитывать состояния кнопки "+ Add card" - active и disable. Почитать best practices по accessibility<br>
 
  - Если активна, при наведении должна подсвечиваться, курсор меняться на pointer
 
@@ -55,7 +57,7 @@ const dataMock = [
 
  - В обычном состоянии кнопка должна соответствовать макету
 
-6. При выборе списка задач из дропдауна (наведении, клике) должны быть применены эффекты, например, выделять цветом, менять курсор на pointer.<br>
+8. При выборе списка задач из дропдауна (наведении, клике) должны быть применены эффекты, например, выделять цветом, менять курсор на pointer.<br>
 
 
 Макет [здесь](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB?usp=sharing) - Kanban.fig, а так же онлайн-версия [здесь](https://www.figma.com/file/NUMbMR5pCisMuGNIhxgQI4/Kanban?node-id=1%3A2) <br>
