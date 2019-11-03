@@ -62,6 +62,7 @@ const dataMock = [
 
 9. При выборе списка задач из дропдауна (наведении, клике) должны быть применены эффекты, например, выделять цветом, менять курсор на pointer.<br>
 
+10. Использовать селекторы по тегу для задания стилей нельзя. Использовать классы. В случае, когда есть необходимость - селектор по id.
 
 Макет [здесь](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB?usp=sharing) - Kanban.fig, а так же онлайн-версия [здесь](https://www.figma.com/file/NUMbMR5pCisMuGNIhxgQI4/Kanban?node-id=1%3A2) <br>
 
