@@ -16,7 +16,7 @@ header, footer {
 main {
     background: #0079BF;
     min-width: 1152px;
-    height: 590px;
+    min-height: 500px;
     overflow-x: scroll;
 }
 
