@@ -1,0 +1,57 @@
+.field {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.title {
+    border-bottom: 1px solid #999;
+}
+
+.description {
+    border-top: 1px solid #999;
+}
+
+.price {
+    border-right: 1px solid #999;
+}
+
+label {
+    opacity: 1;
+    position: absolute;
+    left: 2px;
+    top: 13px;
+    transition: all .2s linear;
+    color: #999;
+    font-size: 15px;
+}
+
+input {
+    margin-top: 15px;
+    border: 1px solid transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus+label {
+    font-size: 9px;
+    top: 6px;
+    color: rgb(78, 162, 211);
+}
+
+fieldset {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}

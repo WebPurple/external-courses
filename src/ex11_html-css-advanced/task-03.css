@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+header, footer {
+    height: 55px;
+    width: 100%;
+    background: #0067A3;
+}
+
+main {
+    background: #0079BF;
+    min-width: 1152px;
+    height: 590px;
+    overflow-x: scroll;
+}
+
+main::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+main::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+main::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgb(83, 83, 83);
+}
+
+.row-fragment {
+    display: flex;
+    justify-content: space-between;
+    width: 32px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+}
+
+.row-fragment .circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.row-fragment .line {
+    width: 19px;
+    height: 2px;
+    background: white;
+    margin-top: 3px;
+}
+
+.logo {
+    width: 31px;
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.app-logo span {
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.app-logo {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 384px;
+    height: 45px;
+    left: 14px;
+    top: 5px;
+    align-items: center;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu .arrow {
+    height: 8px;
+    width: 12px;
+}
+
+.user-ivent {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 6px;
+    top: 8px;
+}
+
+.create-list {
+    width: 181px;
+    height: 33px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.create-list span {
+    margin-right: 15px;
+}
+
+.add {
+    width: 22px;
+    height: 22px;
+}
+
+.user {
+    width: 39px;
+    height: 39px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    position: relative;
+    margin-right: 7px;
+}
+
+.user img {
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+}
+
+footer {
+    line-height: 21px;
+    font-size: 18px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info {
+    margin-right: 25px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
