@@ -2,6 +2,10 @@
 
 ## Задание 1
 
+Сделайте какую-либо картинку круглой. Затем измените ее форму на более сложную, как в [примере](http://jsbin.com/kigepuzezo/edit?html,css,output).
+
+## Задание 2
+
 Создайте три анимации:
 
 -   лоадер для страницы
@@ -24,7 +28,7 @@
 
     -   круг
 
-## Задание 2
+## Задание 3
 
 Реализуйте плавающую подпись к полю ввода, как тут:
 
@@ -38,7 +42,5 @@
 
 [Руководство](https://snook.ca/archives/html_and_css/floated-label-pattern-css).
 
-## Задание 3
-Сверстать хедер и футер страницы. Макет скачать по [ссылке](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB?usp=sharing) - Kanban.fig, а так же онлайн-версия [здесь](https://www.figma.com/file/NUMbMR5pCisMuGNIhxgQI4/Kanban?node-id=1%3A2) <br>
-
-Для работы потребуется Figma
+## Задание 4
+Сверстать сайдбар. Макет скачать по [ссылке](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB?usp=sharing) - library.psd
