@@ -7,4 +7,4 @@ x = 12 - 2;
 
 // the fird way: 
 let valueCarrier = 10;
-x = valueCarrier;
+x = valueCarrier; 
