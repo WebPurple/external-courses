@@ -1,18 +1,16 @@
-function getInformNumber($value)
-{
-let result;
-        if (Number.isInteger($value) && $value>1 && $value<=1000) 
+function getDeepCloneObj($obj){
+    let copyObj={};
+      for (value in $obj)
         {
-          for(let i = 2; i<$value; i++)
-            {
-              if (($value % i) ===0) result = `Число ${$value} - составное число`;
-            }
-          result = `Число ${$value} - простое число`;
+          if (typeof($obj[value])==="object")
+		{
+            	copyObj[value] = getDeepCloneObj($obj[value]);
+		}
+          else
+		{
+            	copyObj[value] = $obj[value];
+		}
         }
-        else 
-	{
-		result = `Данные неверны`;
-	}
-return result;
+    return copyObj;
 }
-module.exports = getInformNumber
+module.exports = getDeepCloneObj

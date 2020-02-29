@@ -1,17 +1,11 @@
-function getArrayElements(arr)
-{
-  if (Array.isArray(arr))
+function getKeysValuesOfObject(obj){
+  if (typeof(obj)==="object")
     {
-      for(let i=0;i<arr.length;i++)
-      {
-        console.log(`arr[${i}] = ${arr[i]}`);
-      }
-      console.log(`arr.length = ${arr.length}`);
+      for (let value in obj)
+        {
+          console.log(`${value} = ${obj[value]}`)
+        }
     }
-  else
-	{
-    		console.log("undifened");
-	}
-  return;
+return;
 }
-module.exports = getArrayElements
+module.exports = getKeysValuesOfObject

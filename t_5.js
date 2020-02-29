@@ -1,13 +1,9 @@
-function getMaxNumber($arr)
-{
-      let $maxNumber = -Infinity;
-      for(let i=0;i<$arr.length;i++)
-      {
-         if (typeof($arr[i])==="number" && !Number.isNaN($arr[i]))
-           {
-             $maxNumber=Math.max($arr[i],$maxNumber)
-           }
-      }
-      return $maxNumber;
+function getCopyObj($obj){
+let result;
+  if (typeof($obj)==="object")
+    {
+      result = Object.assign({}, $obj);
+    }
+return result;
 }
-module.exports = getMaxNumber
+module.exports = getCopyObj
