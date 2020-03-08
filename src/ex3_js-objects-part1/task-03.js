@@ -1,4 +1,4 @@
-module.exports = function checkObject(string, object) {
+function checkObject(string, object) {
     for (const key in object) {
         if (key === string) {
             return true;
@@ -7,3 +7,5 @@ module.exports = function checkObject(string, object) {
 
     return false
 }
+
+module.exports = checkObject

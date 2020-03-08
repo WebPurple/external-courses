@@ -1,4 +1,4 @@
-module.exports = function createObject() {
+function createObject() {
     let Obj = {};
 
     Obj.number = 1;
@@ -6,3 +6,5 @@ module.exports = function createObject() {
     Obj.bool = true;
     delete Obj.bool
 }
+
+module.exports = createObject

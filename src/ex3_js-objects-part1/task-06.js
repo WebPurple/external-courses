@@ -7,7 +7,7 @@ module.exports = function deepCloneObject(object) {
         if (object.hasOwnProperty(key)) {
             if (object[key] instanceof Array) {
                 clonedObject[key] = [];
-                object[key].forEach(element => {
+                object[key].forEach(function cloneArrayElement(element) {
                     clonedObject[key].push(deepCloneObject(element))
                 });
             }
