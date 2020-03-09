@@ -5,7 +5,7 @@ function getMaxElement(array){
       max=array[i]
     }
   }
-  return(max)
+  return max
 }
 
 module.exports=getMaxElement
