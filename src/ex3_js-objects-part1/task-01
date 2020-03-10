@@ -1,4 +1,0 @@
-let user = {  
-  : "Sofia",      
-};
-delete user.age;
