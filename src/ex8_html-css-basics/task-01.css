@@ -1,0 +1,14 @@
+body {
+    font-size: 20px;
+}
+hr {
+    background-color: gray;
+    height: 3px;
+}
+div {
+    background-color: #A30065;
+    font-size: 4rem;
+}
+img {
+    width: 40%;
+}

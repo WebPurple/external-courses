@@ -1,0 +1,30 @@
+* {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+}
+body {
+    font-size: 1.5rem;
+}
+.lists {
+    background-color: green;
+    font-style: italic;
+    font-size: 70%;
+}
+.paragraphs {
+    background-color: rgba(240, 187, 187, 0.9);
+    font-weight: 600;
+    word-spacing: 23px;
+    font-size: 12px;
+}
+.tables {
+    background-color: #bde5ff;
+    font-variant: small-caps;
+    font-size: 25pt;
+}
+.image {
+    background-image: url(https://images.unsplash.com/photo-1467999466299-13206c8b1f77?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjEyMDd9);
+}
+img {
+    width: 40%;
+    height: 400px;
+}
