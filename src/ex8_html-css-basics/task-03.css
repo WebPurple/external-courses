@@ -1,0 +1,17 @@
+div {
+    margin: 8% 30%;
+    text-align: center;
+    font-size: 3em;
+}
+.border {
+    background-color: grey;
+    border: 10px dashed red;
+}
+.outline {
+    background-color: grey;
+    outline: 10px dotted green;
+}
+.box-shadow {
+    background-color: grey;
+    box-shadow: 0 0 0 10px blue;
+}
