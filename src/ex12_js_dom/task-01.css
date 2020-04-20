@@ -1,0 +1,95 @@
+.body {
+    margin: 0 0 0 0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: #2f2f2f;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 0;
+}
+
+.photo img {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.changeSlide {
+    animation: changeSlide .2s ease-in-out;
+}
+
+@keyframes changeSlide {
+    0% {
+        opacity:1;
+    }
+    25% {
+        opacity:0.5;
+    }
+    50% {
+        opacity:0;
+    }
+    75% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.btn_next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    width: 5vh;
+    height: 100vh;
+}
+
+.btn_prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 5px;
+    width: 5vh;
+    height: 100vh;
+}
+
+.next, .prev {
+    height: 99vh;
+    width: 99vw;
+    border: none;
+    outline: none; 
+    opacity: 35%;
+    font-family: monospace;
+    font-size: 4rem;
+    background: grey;
+    cursor: pointer;
+}
+
+.next:focus, .prev:focus {
+    outline: lightgrey;
+    outline-style: solid;   
+    outline-color: white;
+    outline-width: 3px;
+}
+
+.next:hover, .prev:hover {
+    outline-style: solid;   
+    outline-color: white;
+    outline-width: 5px;
+}
+
+.next:active, .prev:active {
+    background: white;
+}
