@@ -4,5 +4,5 @@ module.exports = function numberOrString(myMessage){
     } else if (typeof myMessage === "number" && !isNaN(myMessage)) {
         return 'number';
     }
-    return undefined;
+        return undefined;
 }
