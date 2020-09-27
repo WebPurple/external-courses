@@ -8,8 +8,7 @@ function whichType(inputParam) {
         return "string";
     }
 
-    if ( type === "number" )
-    {
+    if ( type === "number" ){
         if ( isNaN( inputParam ) ){
             return "undefined";
         }
