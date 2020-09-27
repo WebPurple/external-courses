@@ -4,9 +4,14 @@ function writeAllArrayElemsAndLenght(inputArray){
 
     if ( Array.isArray(inputArray) )
     {
-        inputArray.forEach( element => { console.log(element) } );
+        inputArray.forEach( element => { 
+            console.log(element) } );
+
         console.log(`Length: ${inputArray.length}`);
     }
-    else
+    else{
         console.log("Input is not array");
+    }
 }
+
+module.exports = writeAllArrayElemsAndLenght;
