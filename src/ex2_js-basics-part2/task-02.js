@@ -4,5 +4,6 @@ module.exports = function countArray (myArray) {
         console.log(myArray[counter]);
         counter++;
     }
-    return console.log(myArray.length);
+    console.log(myArray.length);
+	return;
 }
