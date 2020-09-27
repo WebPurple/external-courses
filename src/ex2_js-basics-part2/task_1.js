@@ -1,4 +1,5 @@
 "use strict"
+
 function whichType(inputParam)  {
 
     const typeOfInputParam = isNaN(inputParam) ? undefined : typeof(inputParam)
