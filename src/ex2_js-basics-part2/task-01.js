@@ -1,19 +1,16 @@
 "use strict"
 
-function whichType(inputParam) {
-
-    let type = typeof(inputParam);
-
-    if ( type === "string" ){
-        return "string";
+function whichType(inputParams) {
+    let type = typeof(inputParams);
+    if (type === 'string') {
+      return type;
     }
+    if (type === 'number') {
+      if (isNaN(inputParams)) {
+        return undefined;
+      }
 
-    if ( type === "number" ){
-        if ( isNaN( inputParam ) ){
-            return "undefined";
-        }
-
-        return "number";
+       return type;
     }
 
     return undefined;
