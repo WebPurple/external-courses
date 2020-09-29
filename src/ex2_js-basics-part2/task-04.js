@@ -1,7 +1,12 @@
-function everArray(arr) {
+function sameArray(arr) {
     let arr1 = arr.every(function (item, i, list) {
-        return item === list[0];
+        if (item === list[0]) {
+            return true;
+        } 
+
+            return false
     });
-    console.log(arr1);
+
+    return arr1; 
 };
-module.exports = everArray;
+module.exports = sameArray;
