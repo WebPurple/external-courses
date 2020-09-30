@@ -1,4 +1,11 @@
-module.exports = function maxValueOfArray (myArray) {
-    let result = Math.max.apply(null, myArray);
+module.exports = function MaxValueOfArray (myArr) {
+    let result = myArr[0];
+    
+    for (let j = 1 ; j < myArr.length; j++) {
+	    if (myArr[j] > result) {
+            result = myArr[j];
+        }
+    }
+    
     return result;
 }

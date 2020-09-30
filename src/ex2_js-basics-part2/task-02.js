@@ -1,9 +1,10 @@
 module.exports = function countArray (myArray) {
-    let counter = 0;
-    for (let elem of myArray) {
-        console.log(myArray[counter]);
-        counter++;
+    
+    for (let i = 0 ; i < myArray.length; i++){    
+        console.log(myArray[i]);
     }
+    
     console.log(myArray.length);
-	return;
-}
+    
+    return;
+    }

@@ -1,8 +1,13 @@
 module.exports = function numberOrString(myMessage){
-    if ( typeof myMessage === "string" ){
-        return 'string';
-    } else if (typeof myMessage === "number" && !isNaN(myMessage)) {
-        return 'number';
+    const typeMyMessage = typeof (myMessage);
+
+    if (typeMyMessage === "string") {
+        return typeMyMessage;
     }
-        return undefined;
+    
+    if (typeMyMessage === "number" && !isNaN(myMessage)) {
+        return typeMyMessage;
+    }
+    
+    return undefined;
 }
