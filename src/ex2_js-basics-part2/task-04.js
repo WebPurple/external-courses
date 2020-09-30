@@ -1,8 +1,9 @@
 function arrCheck(e) {
   let bool = true;
+  const firstElement =e[0]
 
   for (let i = 0; i < e.length; i++) {
-    if (e[0] !== e[i]) {
+    if (firstElement !== e[i]) {
       bool = false;
     }
   }
