@@ -5,8 +5,7 @@ function checkEven(e) {
     if (typeof element === "number") {
       if (element === 0) {
         zero += 1;
-
-        continue
+       return
       }
 
       if (element % 2 === 0 ) {
