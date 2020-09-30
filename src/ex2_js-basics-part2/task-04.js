@@ -5,6 +5,7 @@ function arrCheck(e) {
   for (let i = 0; i < e.length; i++) {
     if (firstElement !== e[i]) {
       bool = false;
+      return bool
     }
   }
 
