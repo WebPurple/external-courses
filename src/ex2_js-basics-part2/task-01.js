@@ -4,6 +4,7 @@ function typeDifinition(e) {
   if (type === "string" || (type === "number" && !isNaN(e))) {
     return type;
   }
+  
   return undefined;
 }
 

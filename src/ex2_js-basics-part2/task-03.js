@@ -1,5 +1,5 @@
 function checkEven(e) {
-  let [even,notEven,zero]=[]
+  let [even,notEven,zero]=[0,0,0]
   
   e.forEach((element) => {
     if (typeof element === "number") {
