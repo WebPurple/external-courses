@@ -3,6 +3,7 @@ function checkEven(e) {
   let notEven = 0;
   let zero = 0;
   let arr = [];
+  
   e.forEach((element) => {
     if (typeof element === "number") {
       if (element === 0) {

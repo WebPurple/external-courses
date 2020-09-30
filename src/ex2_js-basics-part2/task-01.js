@@ -1,8 +1,11 @@
-function thisXis(e) {
-  if (typeof e === "string" || (typeof e === "number" && !isNaN(e))) {
-    return typeof e;
+function typeDifinition(e) {
+  const type = typeof e;
+  if (type === "string" || (type === "number" && !isNaN(e))) {
+    
+    return type;
   }
+
   return undefined;
 }
 
-module.exports = thisXis;
+module.exports = typeDifinition;

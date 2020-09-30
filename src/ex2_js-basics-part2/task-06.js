@@ -1,14 +1,21 @@
-function numCheck(e) {
-  if (typeof e === "number" && e <= 1000) {
-    if (e % 2 !== 0) {
-      return `Число ${e} - простое число`;
+const determiningTheTypeOfNumber = (x) => {
+  let typeOfNumber = `Число ${x} - простое число`;
+
+  if (x > 1 && x < 1000) {
+    for (let i = 2; i < x; i++) {
+      if (x % i === 0) {
+        typeOfNumber = `Число ${x} - составное число`;
+
+        return typeOfNumber;
+      }
     }
 
-    if (e % 2 === 0) {
-      return `Число ${e} - составное число`;
-    }
+    return typeOfNumber;
   }
-  return "Данные неверны";
-}
 
-module.exports = numCheck;
+  return "Данные неверны";
+};
+
+
+
+module.exports = determiningTheTypeOfNumber;
