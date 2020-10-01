@@ -18,6 +18,7 @@ function calcArray(arr) {
                }
           }
      }
+     
      return [sumEven, sumOdd, sumZero];
 };
 
