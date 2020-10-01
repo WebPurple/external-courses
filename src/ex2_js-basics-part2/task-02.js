@@ -4,7 +4,8 @@ function arrRecount(e) {
   });
 
   console.log(e.length);
-  return
+
+  return;
 }
 
 module.exports = arrRecount;
