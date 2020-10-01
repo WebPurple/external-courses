@@ -6,4 +6,5 @@ function showElem(arr) {
     console.log(`Общее число элементов = ${arr.length}`)
     return;
 };
+
 module.exports = showElem;

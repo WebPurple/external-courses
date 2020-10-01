@@ -3,12 +3,17 @@ function getChange(n) {
         return undefined;
     }
     
-    if (typeof n === 'string') {
-        return 'string';
-    } else if (typeof n === 'number') {
-        return 'number';
+    const type = typeof n;
+
+    if (type === 'string') {
+        return type;
+    } 
+    
+    if (type === 'number') {
+        return type;
     }
 
-        return undefined;
+    return undefined;
 };
+
 module.exports = getChange;

@@ -1,12 +1,13 @@
 function sameArray(arr) {
-    let arr1 = arr.every(function (item, i, list) {
-        if (item === list[0]) {
-            return true;
+    let num = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (num !== arr[i]) {
+            return false;
         } 
-
-            return false
-    });
-
-    return arr1; 
+    } 
+    
+    return true;
 };
+
 module.exports = sameArray;
