@@ -6,13 +6,11 @@ function checkEven(e) {
       if (element === 0) {
         zero += 1;
       } else {
-
         if (element % 2 === 0) {
           even += 1;
         } else {
           notEven += 1;
         }
-        
       }
     } else console.log("В массиве есть не число");
   });
