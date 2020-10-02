@@ -1,5 +1,5 @@
 function simpleNumber(n) {
-    if (n <= 1000 && n !== 1 && n !== 0 && n > 0) {
+    if (n <= 1000 && n > 1) {
         for (let i = 2; i < n; i++) {
             if (n % i === 0) {
                 return `Число ${n} - составное число`;

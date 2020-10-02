@@ -5,20 +5,18 @@ function calcArray(arr) {
 
      for (let key of arr) {
           if (key !== null && key !== undefined) {
-               if (key % 2 === 0 && key !== 0) {
-                    sumEven = sumEven + 1;
-               }
-
-               if (key % 2 !== 0 && key !== 0) {
-                    sumOdd = sumOdd + 1;
-               }
-
                if (key === 0) {
                     sumZero = sumZero + 1;
+               } else {
+                    if (key % 2 === 0) {
+                         sumEven = sumEven + 1;
+                    } else {
+                         sumOdd = sumOdd + 1;
+                    }
                }
           }
      }
-     
+
      return [sumEven, sumOdd, sumZero];
 };
 
