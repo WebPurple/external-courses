@@ -9,12 +9,10 @@ function countOddAndEven(inputArray) {
     if (element !== null && element !== undefined) {
       if (element === 0) {
         ++numberOfZeros;
-      }
-      else { 
+      } else { 
         if (element % 2 === 0) { 
           ++numberOfEven;
-        }
-        else {
+        } else {
           ++numberOfOdd;
         }
       }

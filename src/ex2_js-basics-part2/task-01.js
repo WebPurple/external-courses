@@ -3,16 +3,11 @@
 function whichType(inputParams) {
     let type = typeof(inputParams);
     
-    if (type === 'string') {
-      return type;
-    }
-    
-    if (type === 'number') {
-      if (isNaN(inputParams)) {
+    if (type === 'string' || type === 'number' && !isNaN(inputParams)) {
+      if (inputParams === null) {
         return undefined;
       }
-
-       return type;
+      return type;
     }
 
     return undefined;
