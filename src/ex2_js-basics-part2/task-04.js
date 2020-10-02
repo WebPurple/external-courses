@@ -1,14 +1,11 @@
 function compaireItemArray(array) {
-  let flag = true;
-
   for (let i = 1; i < array.length; i++) {
-    if (array[i] !== array[i - 1]) {
-      flag = false;
-      break;
-    }
+
+    if (array[i] !== array[i - 1]) return false;
+
   }
 
-  return flag;
+  return true;
 }
 
 module.exports = compaireItemArray;

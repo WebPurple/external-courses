@@ -1,20 +1,18 @@
 function checkEvenArray(array) {
-  const result = [0, 0, 0];
+  let [evenNum, oddNum, zero] = [0, 0, 0];
 
   for (let elem of array) {
-    if (elem === null || typeof (elem) === 'string') {
-      delete elem;
+
+    if (!(typeof elem === "string")) {
+
+      if (elem === 0) zero++;
+      if (elem % 2 === 0 && elem !== 0 && elem !== null) evenNum++;
+      if (elem % 2 === 1) oddNum++;
+
     }
-    if (elem == 0) {
-      delete elem;
-      result[2]++;
-    }
-    if (elem % 2 == 0) result[0]++;
-    if (elem % 2 == 1) result[1]++
   }
 
-  return result;
+  return [evenNum, oddNum, zero];
 }
-
 
 module.exports = checkEvenArray;

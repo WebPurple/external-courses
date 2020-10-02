@@ -5,7 +5,9 @@ function sumElements(array) {
     sum += elem;
     console.log(elem);
   }
+
   console.log(sum);
+
   return;
 }
 

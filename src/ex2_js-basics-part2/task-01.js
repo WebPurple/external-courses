@@ -1,6 +1,9 @@
 function checkType(data) {
-  if (typeof data === 'string') return 'string';
-  if (typeof data === 'number' && !Number.isNaN(data)) return 'number';
+  const  typeData = typeof(data);
+
+  if (typeData === 'string') return typeData;
+  if (typeData === 'number' && !Number.isNaN(data)) return typeData;
+  
 }
 
 module.exports = checkType;
