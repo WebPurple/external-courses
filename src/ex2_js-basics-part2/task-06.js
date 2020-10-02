@@ -1,7 +1,7 @@
 module.exports = function numberUnder1000SimpleOrComplex (myNumber) {
   
   if (myNumber > 1000) return 'Данные неверны';
-  
+
   switch (myNumber) {
     case 0:
       return '0 не натуральное число';
