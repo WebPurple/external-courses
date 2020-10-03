@@ -1,13 +1,10 @@
-function objCopy(obj) {
-  const objCopy = {};
+function CloneObj(obj) {
+  const objCopy = new Object();
 
   for (let key in obj) {
-    if (key) {
-      if (key === "Object Object") {
-        key = objCopy(key);
-      }
-
-      objCopy[key] = key;
+    if (typeof obj[key] === "object object") {
+      objCopy[key] = CloneObj(obj[key]);
+    } else {
       objCopy[key] = obj[key];
     }
   }
@@ -15,4 +12,4 @@ function objCopy(obj) {
   return objCopy;
 }
 
-module.exports = objCopy();
+module.exports = CloneObj();
