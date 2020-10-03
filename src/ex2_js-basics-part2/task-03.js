@@ -7,12 +7,10 @@ module.exports = function countArray (myArr) {
     if (typeof myArr[j] === "number" && !isNaN(myArr[j])) {
       if (myArr[j] === 0) {
         numberZero++;
-      }
-      else {
+      } else {
         if (myArr[j] %2 === 0) {
           numberEven++;
-        }
-        else {
+        } else {
           numberOdd++;
         }
       }
