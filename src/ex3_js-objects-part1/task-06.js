@@ -11,6 +11,7 @@ function deepClone(obj) {
         for (let item of keyObj) {
           modernArray.push(deepClone(item));
         }
+
         clone[key] = modernArray;
       } else {
         clone[key] = deepClone(keyObj);
