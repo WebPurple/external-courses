@@ -2,20 +2,21 @@ function deepClone(obj) {
   const clone = {};
 
   for (const key in obj) {
-    const newProperty = obj[key];
+    const keyObj = obj[key];
 
-    if (typeof newProperty === "object") {
-      if (Array.isArray(newProperty)) {
-        const mass = [];
+    if (typeof keyObj === "object") {
+      if (Array.isArray(keyObj)) {
+        const modernArray = [];
 
-        for (let item of newProperty) mass.push(deepClone(item));
-        clone[key] = mass;
+        for (let item of keyObj) {
+          modernArray.push(deepClone(item));
+        }
+        clone[key] = modernArray;
       } else {
-        clone[key] = deepClone(newProperty);
+        clone[key] = deepClone(keyObj);
       }
-
     } else {
-      clone[key] = newProperty;
+      clone[key] = keyObj;
     }
   }
 
