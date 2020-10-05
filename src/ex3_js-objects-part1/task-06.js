@@ -10,6 +10,7 @@ function cloneFactory(objToClone) {
     }
     clonedObj[i] = JSON.parse(JSON.stringify(objToClone[i]));
   }
+  
   return clonedObj;
 }
 
