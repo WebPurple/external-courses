@@ -1,9 +1,15 @@
-function CloneObj(obj) {
+function cloneObj(obj) {
   const objCopy = new Object();
 
   for (let key in obj) {
-    if (typeof obj[key] === "object object") {
-      objCopy[key] = CloneObj(obj[key]);
+    if (Array.isArray(obj[key])) {
+      objCopy[key] = obj[key].map((val) => {
+        objCopy[key] = val;
+
+        return val;
+      });
+    } else if (typeof obj[key] === "object") {
+      objCopy[key] = cloneObj(obj[key]);
     } else {
       objCopy[key] = obj[key];
     }
@@ -11,5 +17,4 @@ function CloneObj(obj) {
 
   return objCopy;
 }
-
-module.exports = CloneObj();
+module.exports = cloneObj;

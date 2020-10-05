@@ -1,7 +1,5 @@
 function getProperty(property,obj) {
-  const bool = obj.hasOwnProperty(property);
-
-  if (!bool) {
+  if (!obj.hasOwnProperty(property)) {
     obj[property] = 'new'; //eslint-disable-line
   }
 
@@ -9,4 +7,4 @@ function getProperty(property,obj) {
 }
 
 
-module.exports = getProperty();
+module.exports = getProperty;

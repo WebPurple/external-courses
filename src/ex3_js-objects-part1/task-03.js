@@ -6,4 +6,4 @@ function getProperty(property, obj) {
   return false;
 }
 
-module.exports = getProperty();
+module.exports = getProperty;
