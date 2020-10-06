@@ -4,6 +4,10 @@ function cloneObj(obj) {
   for (let key in obj) {
     if (Array.isArray(obj[key])) {
       objCopy[key] = obj[key].map((val) => {
+        if (typeof val == "object") {
+          return cloneObj(val);
+        }
+        
         return val;
       });
     } else if (typeof obj[key] === "object") {
@@ -15,4 +19,5 @@ function cloneObj(obj) {
 
   return objCopy;
 }
+
 module.exports = cloneObj;

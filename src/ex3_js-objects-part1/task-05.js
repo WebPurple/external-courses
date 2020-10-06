@@ -1,6 +1,5 @@
 function objCopy(obj) {
- const obj2 = Object.assign({},obj)
- return obj2
+  return Object.assign({}, obj);
 }
 
 module.exports = objCopy;
