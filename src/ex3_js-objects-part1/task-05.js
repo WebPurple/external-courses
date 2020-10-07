@@ -1,9 +1,7 @@
 "use strict"
 
 function cloneObject(obj) {
-  let newRef = Object.create(obj);
-
-  return newRef;
+  return Object.assign({}, obj);
 }
 
 module.exports = cloneObject;

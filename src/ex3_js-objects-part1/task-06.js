@@ -4,11 +4,24 @@ function cloneFactory(objToClone) {
   let clonedObj = {};
   
   for(const i in objToClone) {
-    if (objToClone[i] instanceof Object && !(objToClone[i] instanceof Array)) {
+    if (Array.isArray(objToClone[i])) {
+      let clonedArray = [];
+
+      for (let j = 0; j < objToClone[i].length; ++j){
+        if (typeof objToClone[i][j] === 'object') {
+          clonedArray.push(cloneFactory(objToClone[i][j]));
+        } else {
+          clonedArray.push(objToClone[i][j]);
+        }
+      }
+
+      clonedObj[i] = clonedArray; 
+
+    } else if (typeof objToClone[i] === 'object') {
       clonedObj[i] = cloneFactory(objToClone[i]);
-      continue;
+    } else {
+      clonedObj[i] = objToClone[i];
     }
-    clonedObj[i] = JSON.parse(JSON.stringify(objToClone[i]));
   }
   
   return clonedObj;

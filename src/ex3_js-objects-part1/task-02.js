@@ -1,7 +1,9 @@
 "use strict"
 
 function logAllKeysAndValues(obj) {
-  console.log(Object.keys(obj), Object.values(obj));
+  for (let key in obj) {
+    console.log(key + ': ' + obj[key]);
+  }
 }
 
 module.exports = logAllKeysAndValues;
