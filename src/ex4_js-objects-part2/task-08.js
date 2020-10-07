@@ -4,6 +4,7 @@ function toLowerCamelCase(str) {
   let resultStr = str.split(' ')
                      .map( elem => {
                        let tempStr = elem.toLowerCase();
+                       
                        return tempStr.charAt(0).toUpperCase() + tempStr.slice(1);
                      })
                      .join('');

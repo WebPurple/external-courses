@@ -2,7 +2,9 @@
 
 function insertStrInAnotherOnPosition(str, insertStr, pos) {
   let tempStr = str.split(' ');
+  
   tempStr[pos] += ' ' + insertStr;
+
   return tempStr.join(' ');
 }
 

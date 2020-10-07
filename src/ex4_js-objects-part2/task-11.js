@@ -1,7 +1,7 @@
 'use strict'
 
 function countChars(str) {
-  let result = [];
+  let result = {};
   str.split('')
      .map( elem => {
       result[elem] = result[elem] ? 1 + result[elem] : 1;

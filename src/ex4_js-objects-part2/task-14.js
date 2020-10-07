@@ -1,7 +1,7 @@
 'use strict'
 
 function randValueBetweenMinAndMax(max, min) {
-  return Math.floor(min + Math.random() * (max + 1 - min));
+  return Math.round(Math.random() * (max - min)) + min;
 }
 
 module.exports = randValueBetweenMinAndMax;
