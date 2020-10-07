@@ -7,6 +7,8 @@ function checkPrimeNumber(num) {
 
     return `Число ${num} - простое число`;
   }
+
+  return "Данные неверны";
 }
 
 module.exports = checkPrimeNumber;
