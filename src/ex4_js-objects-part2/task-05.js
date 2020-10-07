@@ -1,7 +1,7 @@
 'use strict'
 
 function isFirstStrInSecondStr(firstStr, secondStr) {
-  return secondStr.search(firstStr) ? true : false; // разобраться как работает, потому что возвращает -1, а это true
+  return firstStr.search(secondStr) !== - 1 ? true : false;
 }
 
 module.exports = isFirstStrInSecondStr;
