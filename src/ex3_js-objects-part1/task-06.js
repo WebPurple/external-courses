@@ -16,7 +16,6 @@ function cloneFactory(objToClone) {
       }
 
       clonedObj[i] = clonedArray; 
-
     } else if (typeof objToClone[i] === 'object') {
       clonedObj[i] = cloneFactory(objToClone[i]);
     } else {
