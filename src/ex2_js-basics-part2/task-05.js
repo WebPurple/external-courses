@@ -1,5 +1,5 @@
 function maxNumber(array) {
-  return Math.max.apply(null, array);
+  return Math.max(...array);
 }
 
 module.exports = maxNumber;
