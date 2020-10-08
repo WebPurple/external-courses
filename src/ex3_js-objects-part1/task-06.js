@@ -1,5 +1,5 @@
 function cloneObj(obj) {
-  const objCopy = new Object();
+  const objCopy = {};
 
   for (let key in obj) {
     if (Array.isArray(obj[key])) {
