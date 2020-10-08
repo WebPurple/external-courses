@@ -1,9 +1,9 @@
 function addObjNew(str, obj) {
-  if (!(str in obj)){
-    // eslint-disable-line no-param-reassign  obj[str] = 'new';
-  }
+  const result = obj;
 
-  return obj;
+  if (!(str in result)) result[str] = 'new';
+
+  return result;
 }
 
 module.exports = addObjNew;
