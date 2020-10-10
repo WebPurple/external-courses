@@ -1,11 +1,11 @@
-module.exports = function propertyCheck(userString,userData) {
+function propertyCheck(userString,userData) {
   let newUserData = userData;
-
-  if (userData.hasOwnProperty(userString)) {
-    return userData;
+  
+  if (!newUserData.hasOwnProperty(userString)) {
+    newUserData[userString] = 'new';
   }
- 
-  newUserData[userString] = 'new';   
   
   return newUserData;
 }
+
+module.exports = propertyCheck;

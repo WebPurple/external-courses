@@ -1,4 +1,4 @@
-module.exports = function cloneObject(userData) {
+function cloneObject(userData) {
   let userDataClone = {};
 
   for (key in userData) {
@@ -9,3 +9,5 @@ module.exports = function cloneObject(userData) {
 
   return userDataClone;
 }
+
+module.exports = cloneObject;

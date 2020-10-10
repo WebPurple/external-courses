@@ -1,4 +1,4 @@
-module.exports = function outputKeyValue(obj) {
+function outputKeyValue(obj) {
   for (let key in obj) {
     if (obj.hasOwnProperty(key)) {
       console.log(key + ' : ' + obj[key]);
@@ -7,3 +7,5 @@ module.exports = function outputKeyValue(obj) {
   
   return;
 }
+
+module.exports = outputKeyValue;

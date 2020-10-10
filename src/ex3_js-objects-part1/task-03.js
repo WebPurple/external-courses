@@ -1,3 +1,5 @@
-module.exports = function propertyCheck(userString,userData) {
-  return (userData[userString] !== undefined);
+function propertyCheck(userString,userData) {
+  return (userData.hasOwnProperty(userString))
 }
+
+module.exports = propertyCheck;
