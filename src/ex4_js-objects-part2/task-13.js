@@ -1,7 +1,5 @@
 function randomNumber() {
-  let rand = 0 - 0.5 + Math.random() * (100 - 0 + 1);
-
-  return Math.floor(rand);
+  return Math.floor(Math.random() * 101);
 }
 
 module.exports = randomNumber;
