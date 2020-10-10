@@ -1,11 +1,12 @@
 function searchStr(str) {
-  const result = str.split(" ");
+  const strArray = str.split(" ");
+  const array = [];
 
-  for (let elem of result) {
-    elem = elem[0].toUpperCase() + elem.slice(1);
+  for (let elem of strArray) {
+    array.push(elem[0].toUpperCase() + elem.slice(1))
   }
 
-  return result.join(' ');
+  return array.join(' ');
 }
 
 module.exports = searchStr;
