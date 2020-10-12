@@ -1,12 +1,13 @@
 function Calculator() {
   this.presentValue = 0;
 
-  (this.getResult = function () {
+  this.getResult = () => {
     return this.presentValue;
-  }),
-    (this.reset = function () {
-      this.presentValue = 0;
-    });
+  };
+
+  this.reset = () => {
+    this.presentValue = 0;
+  };
 
   this.add = (a) => {
     if (!isNaN(a)) {
