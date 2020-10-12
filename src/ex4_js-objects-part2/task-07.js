@@ -1,11 +1,10 @@
 function сutStr(str, num) {
-  let result = '';
-
   if (str.length > num) {
-    result = str.substr(0, num - 1) + "…";
+    let result = str.substr(0, num - 1) + "…";
+    return result;
   }
 
-  return result;
+  return str;
 }
 
 module.exports = сutStr;
