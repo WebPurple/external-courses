@@ -1,7 +1,12 @@
 function wordToUpperCase(str) {
-  return str.replace(/(^|\s)\S/g, (a) => {
-    return a.toUpperCase();
-  });//взять все символы не пустого пространства в начале строки или после пробела
+  const arrStr = str.split(" ");
+  const arrNewStr = [];
+
+  for (let i = 0; i < arrStr.length; i++) {
+    arrNewStr[i] = arrStr[i][0].toUpperCase() + arrStr[i].slice(1);
+  }
+
+  return arrNewStr.join(" ");
 }
 
 module.exports = wordToUpperCase;

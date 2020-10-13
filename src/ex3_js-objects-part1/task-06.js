@@ -4,7 +4,7 @@ function cloneObj(obj) {
   for (let key in obj) {
     if (Array.isArray(obj[key])) {
       objCopy[key] = obj[key].map((val) => {
-        if (typeof val == "object") {
+        if (typeof val === "object") {
           return cloneObj(val);
         }
         

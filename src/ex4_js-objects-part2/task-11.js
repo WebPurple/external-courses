@@ -1,5 +1,6 @@
 function numberOfEachCharacter(str) {
-  let obj = {};
+  const obj = {};
+
   for (let i = 0; i < str.length; i++) {
     if (str[i] !== " ") {
       if (!obj.hasOwnProperty(str[i])) {
@@ -7,8 +8,6 @@ function numberOfEachCharacter(str) {
       } else {
         obj[str[i]] += 1;
       }
-    } else {
-      continue;
     }
   }
 

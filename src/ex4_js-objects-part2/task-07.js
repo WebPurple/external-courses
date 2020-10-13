@@ -1,15 +1,9 @@
 function trimStr(str, num) {
-  let newStr = "";
+  const newStr = str.split("");
 
-  for (let i = 0; i <= num; i++) {
-    if (i + 1 === num) {
-      return newStr + "…";
-    }
+  newStr[num - 1] = "…";
 
-    newStr += str[i];
-  }
-
-  return newStr;
+  return newStr.splice(0, num).join("");
 }
 
 module.exports = trimStr;
