@@ -1,7 +1,5 @@
-function createNewObject() {
-  let myArr = Object.create(null);
-  
-  return myArr;
+function createEmptyObject() {
+  return Object.create(null);
 }
 
-module.exports = createNewObject;
+module.exports = createEmptyObject;

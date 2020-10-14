@@ -1,18 +1,13 @@
-function stringCapital(myString) {
-  let myNewString =[];
+function stringAllWordsCapital(myString) {
+  let myNewString = myString.split(' ');
   
-  for (let i = 0; i < myString.length; i++) {
-    myNewString[i] = myString[i];
-    
-    if (myNewString[i - 1] === ' ') {
-      myNewString[i] = myNewString[i].toUpperCase();
+  for (i in myNewString) {
+    if (myNewString.hasOwnProperty(i)) {
+      myNewString[i] = myNewString[i][0].toUpperCase() + myNewString[i].slice(1);
     }
   }
   
-  myNewString[0] = myNewString[0].toUpperCase();
-  myNewString = myNewString.join('');
-  
-  return myNewString;
+  return myNewString.join(' ');
 }
 
-module.exports = stringCapital;
+module.exports = stringAllWordsCapital;

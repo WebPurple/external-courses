@@ -1,20 +1,9 @@
 function addString(myString1, myString2, myNumber) {
-  let myNewString1 = myString1.split(' ',);
-  let myNewString2 = [];
+  let newArray = [];
   
-  for (let i = 0; i <= myNumber; i++) {
-    myNewString2[i] = myNewString1[i];
-  }
+  newArray.push(myString1.split(' ').slice(0, myNumber + 1).join(' '), myString2, myString1.split(' ').slice(myNumber + 1).join(' '));
   
-  myNewString2.push(myString2);
-  
-  for (let i = myNumber + 1; i < myNewString1.length; i++) {
-    myNewString2.push(myNewString1[i]);
-  }
-  
-  myNewString2 = myNewString2.join(' ');
-  
-  return myNewString2;
+  return newArray.join(' ');
 }
 
 module.exports = addString;

@@ -1,13 +1,5 @@
 function countString(myString) {
-  myNewString = [];
-  
-  for (let i = 0; i < myString.length; i++) {
-    if (!myNewString.includes(myString[i])) {
-      myNewString.push(myString[i]);
-      
-      console.log(i + ' : ' + myString[i]);
-    }
-  }
+  new Set(myString).forEach(element => console.log(element));
 }
 
 module.exports = countString;

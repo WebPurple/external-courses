@@ -1,18 +1,13 @@
 function stringLowerCamelCase(myString) {
-  let myNewString =[];
+  let myNewString = myString.toLowerCase().split(' ');
   
-  for (let i = 0; i < myString.length; i++) {
-    myNewString[i] = myString[i].toLowerCase();
-    
-    if (myNewString[i - 1] === ' ') {
-      myNewString[i] = myNewString[i].toUpperCase();
-      myNewString[i - 1] = '';
+  for (i=1; i < myNewString.length; i++) {
+    if (myNewString.hasOwnProperty(i)) {
+      myNewString[i] = myNewString[i][0].toUpperCase() + myNewString[i].slice(1);
     }
   }
   
-  myNewString = myNewString.join('');
-  
-  return myNewString;
+  return myNewString.join('');
 }
 
 module.exports = stringLowerCamelCase;

@@ -1,13 +1,9 @@
 function stringWithoutSpaces(myString) {
-  let myNewString =[];
+  if (myString[0] === ' ' && myString[myString.length-1] === ' ') {
+		return myString.slice(1, -1);
+  } 
   
-  for (let i = 0; i < myString.length - 2; i++) {
-    myNewString[i] = myString[i + 1];
-  }
-  
-  myNewString = myNewString.join('');
-  
-  return myNewString;
+  return myString;
 }
 
 module.exports = stringWithoutSpaces;

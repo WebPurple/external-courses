@@ -1,14 +1,5 @@
-function stringFirstCapital(myString) {
-  let myNewString =[];
-  
-  for (let i = 0; i < myString.length; i++) {
-    myNewString[i] = myString[i];
-  }
-  
-  myNewString[0] = myNewString[0].toUpperCase();
-  myNewString = myNewString.join('');
-  
-  return myNewString;
+function stringFirstSymbolCapital(myString) {
+  return myString[0].toUpperCase() + myString.slice(1);
 }
 
-module.exports = stringFirstCapital;
+module.exports = stringFirstSymbolCapital;
