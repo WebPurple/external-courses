@@ -1,9 +1,11 @@
 function returnValueObj(prop, obj) {
-  if (obj.hasOwnProperty(prop)) {
-    return undefined;
+  for (let key in obj) {
+    if (!obj.hasOwnProperty(prop)) {
+      return obj[prop];
+    }
   }
 
-  return obj[prop];
+  return undefined;
 }
 
 module.exports = returnValueObj;

@@ -1,6 +1,5 @@
 function sumNum(num1, num2) {
-  const sum = num1 + num2;
-  return Number(sum.toFixed(3));
+  return Number((num1 + num2).toFixed(3));
 }
 
 module.exports = sumNum;
