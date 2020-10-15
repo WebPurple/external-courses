@@ -1,15 +1,17 @@
-const polifilReduce = function (arr, call) {
-  let newArr = 0;
-
-  for (let i = 0; i < arr.length; i++) {
-    let j = i;
-    let item = arr[j];
-    let array = arr;
-
-    newArr += call(item, j, array);
+const polifilReduce = function (array, callback, initialValue) {
+  const begining = initialValue === undefined ? 1 : 0;
+  let previousValue;
+  
+  if (begining === 1) {
+    previousValue = array[0];
+  } else {
+    previousValue = initialValue;
   }
 
-  return newArr;
-};
+  for (let i = begining; i < array.length; i++) {
+    previousValue = callback(previousValue, array[i], i, array);
+  }
 
+  return previousValue;
+};
 module.exports = polifilReduce;
