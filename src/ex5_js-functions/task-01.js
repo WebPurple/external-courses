@@ -1,70 +1,45 @@
-function calc(value = 0) {
-  let compute = 0;
+class Calculator {
 
-  this.add = function (value = 0) {
-    return compute += value
+  constructor(compute = 0) {
+    this.compute = 0;
+
+    this.add = (value = 0) => {
+      this.compute += value;
+      console.log(this.compute);
+
+      return this.add
+    }
+
+    this.subtract = (value = 0) => {
+      this.compute -= value;
+      console.log(this.compute);
+
+      return this.subtract
+    }
+
+    this.divide = (value = 0) => {
+      this.compute /= value;
+      console.log(this.compute);
+
+      return this.divide
+    }
+
+    this.multiply = (value = 0) => {
+      this.compute *= value;
+      console.log(this.compute);
+
+      return this.multiply;
+    }
   }
 
-  this.subtract = function (value = 0) {
-    return compute -= value
+  getResult() {
+    return this.compute;
   }
 
-  this.divide = function (value = 0) {
-    return compute /= value
+  reset() {
+    this.compute = 0;
+    return this.compute;
   }
-
-  this.multiply = function (value = 0) {
-    return compute *= value
-  }
-
-  this.getResult = function (){
-    return console.log(compute)
-  }
-
-  this.reset = function () {
-    return compute = 0
-  }
-
 }
 
-const Calculator = new calc();
-
-Calculator.add(2);
-Calculator.add(2);
-Calculator.subtract(2);
-console.log(Calculator.add(2))
-
-
-// class Calculator {
-//   constructor(value = 0) {
-//     this.value = value;
-//   }
-//
-//   add(value) {
-//     return value * 2
-//   }
-//
-//   subtract() {
-//
-//   }
-//
-//   divide() {
-//
-//   }
-//
-//   multiply() {
-//
-//   }
-//
-//   getResult() {
-//
-//   }
-//
-//   reset() {
-//
-//   }
-// }
-//
-// const calculator = new Calculator();
-// console.log(calculator);
-// console.log(calculator.add(2));
+const сalculator = new Calculator();
