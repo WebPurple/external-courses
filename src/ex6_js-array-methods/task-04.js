@@ -1,5 +1,3 @@
-const polifilEvery = require("./task-03");
-
 const polifilFilter = function (arr, call) {
   const newArr = [];
 
