@@ -1,13 +1,11 @@
 function stringAllWordsCapital(myString) {
-  let myNewString = myString.split(' ');
+  let myNewObjectString = myString.split(' ');
   
-  for (i in myNewString) {
-    if (myNewString.hasOwnProperty(i)) {
-      myNewString[i] = myNewString[i][0].toUpperCase() + myNewString[i].slice(1);
-    }
+  for (let key = 0; key < myNewObjectString.length; key++) {
+    myNewObjectString[key] = myNewObjectString[key][0].toUpperCase() + myNewObjectString[key].slice(1);
   }
   
-  return myNewString.join(' ');
+  return myNewObjectString.join(' ');
 }
 
 module.exports = stringAllWordsCapital;
