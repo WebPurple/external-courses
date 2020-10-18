@@ -1,41 +1,50 @@
-let Calculator = {
-  result: 0,
-  add: function add(value) {
-    if (value !== undefined) {
-      Calculator.result += value;
-    }
-
-    return add;
-	},
-	subtract: function subtract(value) {
-    if (value !== undefined) {
-      Calculator.result -= value;
-    }
-
-    return subtract;
-	},
-	divide: function divide(value) {
-    if (value !== undefined) {
-      Calculator.result /= value;
-    }
-
-		return divide;
-	},
-	multiply: function multiply(value) {
-    if (value !== undefined) {
-      Calculator.result *= value;
-    }
-
-		return multiply;
-	},
-	getResult() {
-		return Calculator.result;
-	},
-	reset() {
-    Calculator.result = 0;
+class MyConstructor {
+  constructor() {
+    this.result = 0;
     
-		return Calculator.result;
-	},
-};
+    this.add = (el) => {
+      if (el !== undefined) {
+        this.result += el;
+      }
 
-module.exports = Calculator;
+      return this.add;
+    };
+    
+    this.subtract = (el) => {
+      if (el !== undefined) {
+        this.result -= el;
+      }
+
+      return this.subtract;
+    };
+    
+    this.divide = (el) => {
+      if (el !== undefined) {
+        this.result /= el;
+      }
+
+      return this.divide;
+    };
+    
+    this.multiply = (el) => {
+      if (el !== undefined) {
+        this.result *= el;
+      }
+
+      return this.multiply;
+    };
+    
+    this.getResult = () => {
+      return this.result;
+    };
+    
+    this.reset = () => {
+      this.result = 0;
+
+      return this.result;
+    };
+  }
+}
+
+const newConstructor = new MyConstructor();
+module.exports = newConstructor;
