@@ -5,28 +5,24 @@ class Calculator {
 
     this.add = (value = 0) => {
       this.compute += value;
-      console.log(this.compute);
 
-      return this.add
+      return this.add;
     }
 
     this.subtract = (value = 0) => {
       this.compute -= value;
-      console.log(this.compute);
 
-      return this.subtract
+      return this.subtract;
     }
 
     this.divide = (value = 0) => {
       this.compute /= value;
-      console.log(this.compute);
 
-      return this.divide
+      return this.divide;
     }
 
     this.multiply = (value = 0) => {
       this.compute *= value;
-      console.log(this.compute);
 
       return this.multiply;
     }
@@ -38,6 +34,7 @@ class Calculator {
 
   reset() {
     this.compute = 0;
+
     return this.compute;
   }
 }
