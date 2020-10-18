@@ -6,44 +6,44 @@ function mySlice(array, startIndex, endIndex) {
   let returnedArray = [];
 
   if (endIndex === undefined) {
-      if (startIndex === undefined) {
-          count = array.length;
-          from = 0;
-      } else {
-          if (startIndex > 0) {
-              count = array.length - startIndex;
-              from = startIndex;
-          } else {
-              from = array.length + startIndex;
-              count = startIndex * -1;
-          }
-      }
+    if (startIndex === undefined) {
+      count = array.length;
+      from = 0;
+    } else {
+      if (startIndex > 0) {
+        count = array.length - startIndex;
+        from = startIndex;
+       } else {
+         from = array.length + startIndex;
+         count = startIndex * -1;
+       }
+    }
   } else {
-      if (endIndex > 0) {
-          if (endIndex <= array.length) {
-              count = endIndex - 1;
-          } else {
-              count = array.length - 1;
-          }
-
-          if (startIndex < 0) {
-              from = 0;
-              count = 0;
-          }
-
-          from = startIndex;
-
+    if (endIndex > 0) {
+      if (endIndex <= array.length) {
+        count = endIndex - 1;
       } else {
-          if (Math.abs(endIndex) <= array.length) {
-              count = array.length + endIndex - 1;
-          } else {
-              count = 0;
-          }
-      }
+        count = array.length - 1;
+       }
 
-      if (startIndex < 0) {
-          from = array.length + startIndex;
+       if (startIndex < 0) {
+         from = 0;
+         count = 0;
+        }
+
+        from = startIndex;
+
+    } else {
+      if (Math.abs(endIndex) <= array.length) {
+        count = array.length + endIndex - 1;
+      } else {
+        count = 0;
       }
+    }
+
+    if (startIndex < 0) {
+        from = array.length + startIndex;
+    }
   }
 
   for (let i = 0; i < count; ++i, ++from) {
