@@ -1,46 +1,45 @@
-let Calculator = 
-{
-  state : 0,
+function Calculator() {
+  this.state = 0;
 
-  add: function(num) {
+  this.add = (num = 0) => {
     if (!isNaN(num)) {    
-      Calculator.state += num;
+      this.state += num;
     }
     
-    return Calculator.add;
-  },
+    return this.add;
+  };
 
-  multiply: function(num) {
+  this.multiply = (num = 1) => {
     if (!isNaN(num)) {    
-      Calculator.state *= num;
+      this.state *= num;
     }
     
-    return Calculator.multiply;
-  },
+    return this.multiply;
+  };
 
-  subtract: function(num) {
+  this.subtract = (num) => {
     if (!isNaN(num)) {    
-      Calculator.state -= num;
+      this.state -= num;
     }
     
-    return Calculator.subtract;
-  },
+    return this.subtract;
+  };
 
-  divide: function(num) {
+  this.divide = (num = 1) => {
     if (!isNaN(num)) {    
-      Calculator.state /= num;
+      this.state /= num;
     }
     
-    return Calculator.divide;
-  },
+    return this.divide;
+  };
 
-  getResult: function() {
+  this.getResult = () => {
     return this.state;
-  },
+  };
   
-  reset: function() {
+  this.reset = () => {
     this.state = 0;
-  },
+  };
 }
 
-module.exports = Calculator;
+module.exports = new Calculator();
