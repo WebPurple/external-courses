@@ -1,36 +1,53 @@
 'use strict'
 
 function mySlice(array, startIndex, endIndex) {
+  let from = 0;
+  let count = 0;
   let returnedArray = [];
-  let thisStartIndex= 0;
-  let thisEndIndex = 0;
 
-  if (startIndex > 0) {
-    thisStartIndex = startIndex;
-  }
-    
-  if (endIndex > 0) {
-    thisEndIndex = endIndex;
+  if (endIndex === undefined) {
+      if (startIndex === undefined) {
+          count = array.length;
+          from = 0;
+      } else {
+          if (startIndex > 0) {
+              count = array.length - startIndex;
+              from = startIndex;
+          } else {
+              from = array.length + startIndex;
+              count = startIndex * -1;
+          }
+      }
+  } else {
+      if (endIndex > 0) {
+          if (endIndex <= array.length) {
+              count = endIndex - 1;
+          } else {
+              count = array.length - 1;
+          }
+
+          if (startIndex < 0) {
+              from = 0;
+              count = 0;
+          }
+
+          from = startIndex;
+
+      } else {
+          if (Math.abs(endIndex) <= array.length) {
+              count = array.length + endIndex - 1;
+          } else {
+              count = 0;
+          }
+      }
+
+      if (startIndex < 0) {
+          from = array.length + startIndex;
+      }
   }
 
-  if (endIndex < 0 && startIndex < 0) { 
-    thisStartIndex = endIndex * -1 - 1;
-    thisEndIndex = startIndex * -1 - 1;
-  } else if (endIndex < 0) {
-    thisEndIndex = array.length - 1;
-  }
-
-  if (startIndex === undefined) {
-    thisStartIndex = 0;
-  }
-
-  if (endIndex === undefined ){
-    thisEndIndex = array.length;
-  }
-
-  while (thisStartIndex < thisEndIndex) {
-    returnedArray.push(array[thisStartIndex]);
-    ++thisStartIndex;
+  for (let i = 0; i < count; ++i, ++from) {
+      returnedArray.push(array[from]);
   }
 
   return returnedArray;

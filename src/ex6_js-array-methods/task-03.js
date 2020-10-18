@@ -1,6 +1,6 @@
 'use strict'
 
-function mySomeV2(array, callback) {
+function myEvery(array, callback) {
   let result = 0;
 
   for (let i = 0; i < array.length; ++i) {
@@ -10,10 +10,10 @@ function mySomeV2(array, callback) {
   }
 
   if (result === array.length) {
-    return false;
+    return true;
   } 
 
-  return true;
+  return false;
 }
 
-module.exports = mySome;
+module.exports = myEvery;
