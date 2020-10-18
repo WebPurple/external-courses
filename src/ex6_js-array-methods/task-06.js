@@ -1,14 +1,12 @@
 'use strict'
 
 function myReduce(array, callback, initialValue) {
-  let index = 0;
-  let previousValue = 0;
+  let index = 1;
+  let previousValue = array[0];
 
   if (initialValue !== undefined) {
     previousValue = initialValue;
-  } else {
-    previousValue = array[0];
-    index = 1;
+    index = 0;
   }
 
   for (let i = index; i < array.length; ++i) {
