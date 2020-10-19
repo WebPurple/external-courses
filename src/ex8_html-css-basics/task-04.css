@@ -1,0 +1,37 @@
+.firstOl {
+  background-color: rgb(64, 160, 177);
+}
+
+.firstUl {
+  background-color: #5d745d;
+}
+
+.firstDl {
+  background-image: url("https://lenta.ua/storage/03/12/22/19/890_450_5c6c341968d62.jpg");
+}
+
+.greenDiv{
+    background-color: green;
+}
+
+.firstUl li:nth-child(1) {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+.firstUl li:nth-child(2) {
+  font-size: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.firstUl li:nth-child(3) {
+  font-size: 90%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.firstUl li:nth-child(4) {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.firstUl li:nth-child(5) {
+  font-size: 5ex;
+  font-family: cursive;
+}

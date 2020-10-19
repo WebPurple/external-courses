@@ -1,0 +1,23 @@
+.border1 {
+  margin: 20px;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border: 5px solid green;
+}
+
+.border2 {
+  margin: 20px;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 0px 0px 5px blue;
+}
+
+.border3 {
+    margin: 20px;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    outline:5px solid black;
+  }
