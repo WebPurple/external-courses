@@ -5,8 +5,8 @@ function analogReduce(array, callback, initialValue) {
     previousValue = callback(initialValue, array[0], 0, array);
   }
   
-  for (let key = 0; key < array.length - 1; key++) {
-    previousValue = callback(previousValue, array[key + 1], (key + 1) , array);
+  for (let key = 1; key < array.length; key++) {
+    previousValue = callback(previousValue, array[key], key, array);
   }
   
   return previousValue;
