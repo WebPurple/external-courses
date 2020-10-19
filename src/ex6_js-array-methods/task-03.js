@@ -1,8 +1,6 @@
 function analogEvery(array, callback) {
   for (let i = 0; i < array.length; i++) {
-    let item = array[i];
-    
-    if (callback(item, i, array) === false) {
+    if (!callback(array[i], i, array)) {
       return false;
     }    
   }

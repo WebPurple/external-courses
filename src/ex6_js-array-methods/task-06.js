@@ -1,24 +1,15 @@
 function analogReduce(array, callback, initialValue) {
-  let result = 0;
-  let newArray = array.slice();
-  let previousValue = newArray[0];
-  let i = 1;
-  
+  let previousValue = array[0];
+
   if (initialValue !== undefined) {
-    newArray.unshift(initialValue);
-    previousValue = initialValue;
-    i = 0;
+    previousValue = callback(initialValue, array[0], 0, array);
   }
   
-  for (let key = 0; key < newArray.length - 1; key++) {
-    let currentItem = newArray[key+1];
-    
-    result = callback(previousValue, currentItem, i, array);
-    i++;
-    previousValue = result;
+  for (let key = 0; key < array.length - 1; key++) {
+    previousValue = callback(previousValue, array[key + 1], (key + 1) , array);
   }
   
-  return result;
+  return previousValue;
 }
 
 module.exports = analogReduce;
