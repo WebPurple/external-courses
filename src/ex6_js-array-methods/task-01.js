@@ -3,12 +3,17 @@ function analogSlice(arr, begin = 0, end = arr.length) {
 
   if (begin < 0 && end < 0) {
     arr.reverse();
-    for (let i = Math.abs(begin) - 1; i >= Math.abs(end); i--) {
-      result.push(arr[i])
-    }
+    for (let i = Math.abs(end); i < Math.abs(begin); i++) result.push(arr[i]);
 
-    return result;
+    return result.reverse();
   }
+  if (begin < 0) {
+    arr.reverse();
+    for (let i = 0; i < Math.abs(begin); i++) result.push(arr[i]);
+
+    return result.reverse();
+  }
+
   for (let i = begin; i < end; i++) result.push(arr[i]);
 
   return result;
