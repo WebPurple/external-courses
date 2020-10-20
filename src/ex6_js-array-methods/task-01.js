@@ -11,6 +11,10 @@ function polSlice(arr, beginArr = 0, endArr) {
     end = arr.length + end;
   }
 
+  if (end > arr.length) {
+    end = arr.length - 1;
+  }
+
   if (begin < 0) {
     begin = arr.length + begin;
   }
