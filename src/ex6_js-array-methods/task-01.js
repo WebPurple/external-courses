@@ -1,20 +1,23 @@
 function analogSlice(arr, begin = 0, end = arr.length) {
   const result = [];
 
-  if (begin < 0 && end < 0) {
-    arr.reverse();
-    for (let i = Math.abs(end); i < Math.abs(begin); i++) result.push(arr[i]);
+  if (begin > 0 && end < 0) {
+    for (let i = begin; i < arr.length + end; i++) {
+      if (arr[i] !== undefined) result.push(arr[i]);
+    }
 
-    return result.reverse();
+    return result;
   }
-  if (begin < 0) {
-    arr.reverse();
-    for (let i = 0; i < Math.abs(begin); i++) result.push(arr[i]);
+  if (begin < 0 || end < 0) {
+    for (let i = arr.length + begin; i < arr.length + end; i++) {
+      if (arr[i] !== undefined) result.push(arr[i]);
+    }
 
-    return result.reverse();
+    return result;
   }
-
-  for (let i = begin; i < end; i++) result.push(arr[i]);
+  for (let i = begin; i < end; i++) {
+    if (arr[i] !== undefined) result.push(arr[i]);
+  }
 
   return result;
 }
