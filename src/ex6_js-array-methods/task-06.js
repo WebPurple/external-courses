@@ -1,11 +1,13 @@
 function analogReduce(arr, callback, intialValue) {
   let result = arr[0];
+  let i = 1;
 
   if (intialValue !== undefined) {
-    result = callback(intialValue, arr[0], 0, arr);
+    result = intialValue;
+    i = 0;
   }
 
-  for (let i = 1; i < arr.length; i++) {
+  for (i; i < arr.length; i++) {
     result = callback(result, arr[i], i, arr);
   }
 
