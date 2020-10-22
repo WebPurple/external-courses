@@ -2,15 +2,15 @@
     background-color: green;
 }
 
-.bacground-red {
+.background-red {
     background-color: #f00;
 }
 
-.bacground-blue__rgb {
+.background-blue__rgb {
     background-color: rgb(0, 0, 255);
 }
 
-.bacground-yellow__rgba {
+.background-yellow__rgba {
     background-color: rgba(240, 240, 214, 0.8);
 }
 
