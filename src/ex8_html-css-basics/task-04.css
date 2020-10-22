@@ -1,0 +1,31 @@
+.container__green {
+    background-color: green;
+}
+
+.background-red {
+    background-color: #f00;
+}
+
+.background-blue__rgb {
+    background-color: rgb(0, 0, 255);
+}
+
+.background-yellow__rgba {
+    background-color: rgba(240, 240, 214, 0.8);
+}
+
+.block-100 {
+    width: 100%;
+}
+
+.block-300px{
+    width: 300px;
+}
+
+.block-20rem{
+    width: 20rem;
+}
+
+.block-90vw{
+    width: 90vw;
+}

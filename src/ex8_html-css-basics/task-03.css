@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.block {
+    width: 10rem;
+    height: 7rem;
+    background-color: red;
+    margin: 1.5rem;
+}
+
+.block-style__one {
+    border: 10px solid blue;
+}
+
+.block-style__two {
+    outline: 10px solid blue;
+}
+
+.block-style__three {
+    box-shadow: 0 0 0 10px blue;
+}
