@@ -1,0 +1,35 @@
+.outer {
+  width: 265px;
+  height: 78px;
+  border: 2px solid #666666;
+  border-radius: 20px;
+  position: relative;
+  left: 20px;
+  top: 22px;
+}
+
+.inner {
+  width: 247px;
+  height: 58px;
+  border: 1px solid #666666;
+  border-radius: 11px;
+  position: relative;
+  left: 8px;
+  top: 8px;
+  box-shadow: 0 0 0 6px #cbcbcb;
+  background: linear-gradient(0deg, #afafaf, #e2e2e2);
+}
+
+.textButton {
+  font-family: Roboto;
+  font-size:1.5em;
+  font-weight: 900;
+  line-height: 58px;
+  text-align: center;
+  text-shadow: -1px 0px #e0dcdc, 0 1px 0 #e0dcdc;
+  color: #888888;
+}
+
+.textButton span {
+  color: #555555;
+}
