@@ -1,0 +1,25 @@
+body {
+  padding: 30px;
+}
+.grid_decision{
+  display: grid;
+  grid-template-columns: 80% 80%;
+}
+header {
+  background: lightblue;
+}
+section {
+  background: lightgreen;
+  width: 100% - 1rem;
+}
+article {
+  background: white;
+  margin: 0 0 1rem 0;
+}
+aside {
+  background: pink;
+  width: 25%;
+}
+header, article, section, .module {
+  padding: 1rem;
+}
