@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>task-04</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="ex8_html-css-basics/task-04">
+    <link rel="stylesheet" href="task-04.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      td, th {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="text-align:center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png" alt="html5" width="140" height="140">
+    </p>
+    <h1>HTML. Basic level.</h1>
+    <h2 style="color:red;">HTML</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd> ...Hyper Text Markup Language служит для описания веб-страниц, представляет собой набор тегов для разметки, которые описывают контент документа</dd>
+      
+      <dt>HTML-документы или веб-страницы</dt>
+      <dd>...содержат HTML-теги и обычный текст</dd>
+      
+      <dt>Предназначение HTML</dt>
+      <dd>...описывает структуру веб-страницы, чтобы браузер знал, как ее отобразить. При посещении веб-страницы браузер отрисовывает код HTML</dd>
+      
+      <dt>Любой HTML-документ</dt>
+      <dd>...множество элементов с открывающим и закрывающим тегом, т.е. специальным маркером, который определяет свойства отображения и расположения его внутреннего содержимого</dd>
+    </dl>
+    <h3>Структура страницы</h3>
+    <ul>
+      <li>DOCTYPE - определяет тип документа и версию HTML, чтобы браузер корректно его обработал</li>
+      <li>html - корневой элемент, начинающий и заканчивающий веб-страницу</li>
+      <li>head - инструкции для браузера. Они не видны пользователю, кроме title</li>
+      <li>body - содержит весь видимый контент.</li>
+    </ul>
+    <h3>Пример HTML-документа:</h3>
+    <div class="contentCode">
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page title goes here&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Content goes here!
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </div>
+    <h3>Кодировка</h3>
+    <p>Кодировка символов веб-страницы</p>
+    <div class="contentCode">
+      <pre>
+&lt;meta http-equiv="Content-Type" content="text/html; charset=encoding name"&gt;
+      </pre>
+    </div>
+    <p>Для операционных систем семейства Windows и кириллицы обычно используется utf-8 или windows-1251:</p>
+    <div class="contentCode">
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title>Encoding&lt;/title&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;
+      Cyrillic
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </div>
+    <h3>Meta-теги</h3>
+    <p>
+    Мета-теги — часть программного HTML-кода, заключенная между тегом &lt;head&gt;...&lt;/head&gt; (заголовок страницы).<br>
+    Эти атрибуты не являются обязательными: они не видны пользователю, но сообщают определенную информацию поисковой системе 
+    (описание, заголовок, ключевые слова и т.д.).
+    </p>
+    <dl>
+      <dt>description</dt>
+      <dd>- краткий «анонс» страницы в результатах поиска. Несколько коротких предложений, в которых используются ключевые слова (не все — наиболее значимые) конкретной страницы. Рекомендуемая длина meta тега — 160-200 символов.</dd>
+      
+      <dt>keywords </dt>
+      <dd> - сообщает поисковому роботу ключевые слова, под которые «заточен» контент. Поисковый робот сверяет фразы в содержимом страницы с указанными в данном теге, а полученные результаты учитывает в дальнейшем при определении позиций ресурса. Сейчас поисковики не придают данному атрибуту такой вес, как раньше. Но грамотное использование его не будет лишним.</dd>
+    
+    </dl>
+    <div class="contentCode">
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;Meta&lt;/title&gt;
+  &lt;meta name="description" content="WebPurple - front-end community"&gt;
+  &lt;meta name="keywords" content="Web, Front-end, courses, community"&gt;
+ &lt;/head&gt; 
+ &lt;body&gt; 
+  &lt;p&gt;...&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </div>
+    <h3>HTML-теги</h3>
+    <p>
+		HTML-теги представляют собой ключевые слова, заключенные в угловые скобки, например, &lt;html&gt;<br>
+		Часто теги являются парными, т.е. существует открывающий (&lt;b&gt;) и закрывающий (&lt;/b&gt;) теги.<br>
+		Теги не являются регистрозависимыми, т.е. &lt;b&gt; воспринимается браузером так же, как и &lt;B&gt;. 
+		Однако рекомендуется использовать нижний регистр.<br>
+		Каждый HTML-тег влияет на свое содержимое каким-либо образом. Например, тег &lt;i&gt; предназначен для отображения 
+		текста курсивом, тег &lt;h1&gt; определяет заголовок первого уровня, а тег &lt;img&gt; предназначен для отображения на 
+		веб-странице изображения.<br>
+    Все теги и их предназначение можно посмотреть <a href="http://htmlbook.ru/html">тут</a>.
+    </p>
+    <h3>Атрибуты</h3>
+    <p>
+    Атрибуты используются для расширения возможностей тегов, для добавления гибкости и для управления содержимым контейнера.<br>
+		Иными словами, тег говорит браузеру, что нужно сделать, а атрибут - как align="center". 
+    Например, атрибут align="center" означает, что содержимое нужно выровнять по центру.<br>
+    </p>
+    <p style="text-align:center;">
+      <img src="https://learn.webpurple.net/static/8246dbec67ba9f9a2c8634645ad7bb6f/95e27/attr_1_.png" alt="attribute" width="700">
+    </p>
+    <h3>Комментарии</h3>
+    <p>
+		Для вставки комментариев используются теги &lt;!-- и --&gt;.<br> 
+		Комментарии не отображаются браузером. Они могут помочь в разработке и отладке HTML.
+    </p>
+    <h3>Теги по цели</h3>
+    <p>Теги можно разделить по цели их применения.</p>
+    <h4>Секционные элементы</h4>
+    <p>Заголовки позволяют разделить текст на секции.</p>
+    <div class="contentCode">
+      <pre>
+&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt;
+      </pre>
+    </div>
+    <p>Большинство секционных элементов было добавлено в стандарте языка HTML5. Вот некоторые из них:</p>
+    <dl>
+      <dt>&lt;article&gt;</dt>
+      <dd>- раздел контента, образующий независимую часть документа или сайта</dd>
+      
+      <dt>&lt;section&gt;</dt>
+      <dd>- логическая область (раздел) страницы, обычно с заголовком</dd>
+      
+      <dt>&lt;nav&gt;</dt>
+      <dd>- раздел документа, содержащий навигационные ссылки по сайту</dd>
+      
+      <dt>&lt;aside&gt;</dt>
+      <dd>- контент страницы, имеющий косвенное отношение к основному контенту</dd>
+      
+      <dt>&lt;header&gt;</dt>
+      <dd>- секция для вводной информации сайта или группы навигационных ссылок</dd>
+      
+      <dt>&lt;footer&gt;</dt>
+      <dd> - секция для нижнего колонтитула документа или раздела</dd>
+    </dl>
+    <h4>Группировка содержимого</h4>
+    <h5>Division</h5>
+    <p>Тег &lt;div&gt; (division) обозначает блочный элемент и предназначен для выделения части контента для его стилизации.</p>
+    <div class="contentCodeOverflow">
+      <pre>
+&lt;div&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum, ligula vitae rhoncus elementum, justo orci lacinia diam, vitae egestas mi dolor nec dui. Vivamus scelerisque dui quis mattis finibus. Curabitur erat velit, bibendum eu odio non, malesuada efficitur dolor. Morbi in vestibulum justo.
+&lt;/div&gt;
+      </pre>
+    </div>
+    <div class="contentCodeCss">
+      <pre>
+div {
+  width: 300px;
+  background-color: lightgreen;
+  border: 10px solid red;
+}
+      </pre>
+    </div>
+    <p>Результат</p>
+    <div style="width: 300px; background-color: lightgreen; border: 10px solid red;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum, ligula vitae rhoncus elementum, justo orci lacinia diam, vitae egestas mi dolor nec dui. Vivamus scelerisque dui quis mattis finibus. Curabitur erat velit, bibendum eu odio non, malesuada efficitur dolor. Morbi in vestibulum justo.
+    </div>
+    <h5>Параграф</h5>
+    <p>Тег &lt;p&gt; определяет параграф текста. По умолчанию параграфы разделены небольшими отступами, называемыми margin.</p>
+    <h5>Маркированный список</h5>
+    <p>Тег &lt;ul&gt; создает маркированный список. Каждый элемент списка должен быть заключен в парный тег &lt;li&gt;.</p>
+    <h5>Нумерованный  список</h5>
+    <p>Тег &lt;ol&gt; создает нумерованный список. Каждый элемент списка должен быть заключен в парный тег &lt;li&gt;.</p>
+    <h5>Вложенные списки</h5>
+    <div class="contentCode">
+      <pre>
+&lt;ol&gt;
+  &lt;li&gt;Hamburger&lt;/li&gt;
+  &lt;li&gt;Pizza
+    &lt;ul&gt;
+      &lt;li&gt;Tomato&lt;/li&gt;
+      &lt;li&gt;Cheese&lt;/li&gt;
+      &lt;li&gt;Sausage&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Chips&lt;/li&gt;
+  &lt;li&gt;Pie&lt;/li&gt;
+&lt;/ol&gt;
+      </pre>
+    </div>
+    <ol>
+      <li>Hamburger</li>
+      <li>Pizza
+        <ul>
+          <li>Tomato</li>
+          <li>Cheese</li>
+          <li>Sausage</li>
+        </ul>
+      </li>
+      <li>Chips</li>
+      <li>Pie</li>
+    </ol>
+    <h5>Список определений</h5>
+    <p>Тег &lt;dl&gt; создает список определений. Он включает тег &lt;dt&gt;, т.е. сам термин, и тег &lt;dd&gt;, т.е. определение термина.</p>
+    <div class="contentCode">
+      <pre>
+&lt;dl&gt;
+  &lt;dt>HTML&lt;/dt&gt;
+  &lt;dd>HyperText Markup Language&lt;/dd&gt;
+  
+  &lt;dt>CSS&lt;/dt&gt;
+  &lt;dd>Cascading Style Sheets&lt;/dd&gt;
+  
+  &lt;dt>JS&lt;/dt&gt;
+  &lt;dd>JavaScript&lt;/dd&gt;
+&lt;/dl&gt;
+      </pre>
+    </div>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+      
+      <dt>JS</dt>
+      <dd>JavaScript</dd>
+    </dl>
+    <h5>Горизонтальная линия</h5>
+    <p>Тег &lt;hr&gt; (horizontal rule) добавляет горизонтальную линию. Не имеет закрывающего тега.</p>
+    <div class="contentCode">
+      <pre>
+&lt;dl&gt;
+&lt;p&gt;One&lt;/p&gt;>
+&lt;hr&gt;
+&lt;p&gt;Two&lt;/p&gt;
+&lt;hr&gt;
+      </pre>
+    </div>
+    <p>One</p>
+    <hr>
+    <p>Two</p>
+    <hr>
+    <h4>Встроенное содержимое</h4>
+    <h5>Изображения</h5>
+    <p>Для вставки изображений используется тег &lt;img&gt;. Источник изображения определяется атрибутом src, 
+    текст, показываемый при отсутствии изображения, определяется атрибутом alt.</p>
+    <div class="contentCode">
+      <pre>
+&lt;img src="http://images7.alphacoders.com/326/326183.jpg" alt="Cute cat" width="400"/&gt;
+      </pre>
+    </div>
+    <img src="http://images7.alphacoders.com/326/326183.jpg" alt="Cute cat" width="400">
+    <h5>Встроенные элементы</h5>
+    <p>Тег &lt;iframe&gt; (HTML Inline Frame Element) определяет встроенную в веб-страницу область, 
+    которая может отображать содержимое отдельно взятого документа (например, *.pdf), медиа-контента 
+    или другого веб-сайта в заданном пространстве. Содержимое внутри области существует независимо от 
+    окружающей страницы.
+    </p>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ef6d94bd7c1b8b5a79b70449a9657b3acfe8b5577a55f62a1eaae1127bacf24&amp;source=constructor" width="500" height="400"></iframe>
+    <h5>Аудио и видео</h5>
+    <p>Тег &lt;audio&gt; добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице. 
+    Путь к файлу задается через атрибут src или вложенный тег &lt;source&gt;. 
+    Внутри контейнера &lt;audio&gt; можно написать текст, который будет выводиться в браузерах, не работающих с этим тегом.<br>
+    Тег &lt;video&gt; добавляет, воспроизводит и управляет настройками видеоролика на веб-странице. 
+    Путь к файлу задается через атрибут src или вложенный тег &lt;source&gt;.
+    </p>
+    <h4>Формы</h4>
+    <p>Формы предназначены для ввода пользовательской информации и ее сохранения. </p>
+    <h4>Форматирование текста</h4>
+    <h5>Ссылки</h5>
+    <p>Для создания ссылок в документе служит тег &lt;a&gt;. Атрибут href определяет адрес документа, на который следует перейти,	
+    name устанавливает имя якоря внутри документа.</p>
+    <div class="contentCode">
+      <pre>
+&lt;a&gt; href="https://www.webpurple.net/">Our WebPurple Community&lt;a&gt;
+      </pre>
+    </div>
+    <a href="https://www.webpurple.net/">Our WebPurple Community</a>
+    <p>Однако, большинство форматирующих тегов больше не используются. Для этой цели обычно используется CSS.</p>
+    <div class="contentCode">
+      <pre>
+&lt;b&gt;Bold&lt;/b&gt;
+&lt;i&gt;Italic&lt;i/&gt;
+&lt;tt&gt;Teletype text&lt;/tt&gt;
+&lt;big&gt;Big text&lt;/big&gt;
+&lt;small&gt;Small text&lt;/small&gt;
+&lt;s&gt;Strike&lt;/s&gt;
+&lt;strike&gt;The same strike&lt;/strike&gt;
+&lt;sub&gt;Subscript&lt;/sub&gt;
+&lt;u&gt;Underline&lt;/u&gt;
+&lt;sup&gt;Supscript&lt;/sup&gt;
+      </pre>
+    </div>
+    <b>Bold</b>
+    <i>Italic</i>
+    <span style="font-family: monospace;">Teletype text</span>
+    <span style="font-size:1.2em">Big text</span>
+    <small>Small text</small>
+    <s>Strike</s>
+    <span style="text-decoration:line-through;">The same strike</span>
+    <sub>Subscript</sub>
+    <u>Underline</u>
+    <sup>Supscript</sup>
+    <h4>Табличные данные</h4>
+    <p>
+		В HTML для создания таблицы используется тег &lt;table&gt;. Строки таблицы создаются с помощью тега &lt;tr&gt;, ячейки - &lt;td&gt;. 
+		Многие таблицы имеют заголовки, для этого используется тег &lt;th&gt;. 
+		Для того, чтобы ячейка таблицы объединяла несколько столбцов, используется атрибут colspan. 
+		Атрибут rowspan аналогичен colspan, но служит для объединения строк. 
+		Таблицы могут быть разделены на три части: хедер (head), основную (body), футер (foot). 
+		Их предназначение аналогично соответствующим частям веб-страницы. 
+		Для их создания используются теги &lt;thead&gt;, &lt;tbody&gt; &lt;tfoot&gt;.<br>
+		Например:
+    </p>
+    <div class="contentCode">
+      <pre>
+&lt;table&gt;
+
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th colspan="2">Caption 1&lt;/th&gt;
+      &lt;th>Caption 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 1.1&lt;/td&gt;
+      &lt;td&gt;Row 1.2&lt;/td&gt;
+      &lt;td&gt;Row 1.3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 2.1&lt;/td&gt;
+      &lt;td colspan="2"&lt;Row 2.2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td rowspan="2"&lt;Row 3.1&lt;/td&gt;
+      &lt;td&gt;Row 3.2&lt;/td&gt;
+      &lt;td&gt;Row 3.3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 3.4&lt;/td&gt;
+      &lt;td&gt;Row 3.5&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan="3">Footer&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+
+&lt;/table>
+      </pre>
+    </div>
+    <div class="contentCodeCss">
+      <pre>
+table {
+		  border-collapse: collapse;
+		}
+    td, th {
+      border: 2px solid black;
+    }
+      </pre>
+    </div>		
+		<table>
+
+			<thead>
+				<tr>
+					<th colspan="2">Caption 1</th>
+					<th>Caption 2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				  <td>Row 1.1</td>
+				  <td>Row 1.2</td>
+				  <td>Row 1.3</td>
+				</tr>
+				<tr>
+				  <td>Row 2.1</td>
+				  <td colspan="2">Row 2.2</td>
+				</tr>
+				<tr>
+				  <td rowspan="2">Row 3.1</td>
+				  <td>Row 3.2</td>
+				  <td>Row 3.3</td>
+				</tr>
+				<tr>
+				  <td>Row 3.4</td>
+				  <td>Row 3.5</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+				  <td colspan="3">Footer</td>
+				</tr>
+			</tfoot>
+    </table>
+    <h3>HTML5</h3>
+    <p>
+		Это пятая версия стндарта HTML. Хотя стандарт был завершён только в 2014 году (предыдущая, четвёртая, версия была опубликована 
+		аж в 1999 году), уже с 2013 года браузерами оперативно осуществлялась поддержка, а разработчиками — использование рабочего прототипа. 
+		Цель разработки HTML5 — улучшение уровня поддержки мультимедиа-технологий с одновременным сохранением обратной совместимости, 
+		удобочитаемости кода для человека и простоты анализа для парсеров.<br> 
+		Для разработчиков HTML5 помогает писать понятный семантический код, позволяет управлять многими процессами на 
+		странице своими стандартными методами, без использования javascript или сторонних плагинов и сервисов. 
+		Это означает, что решаются некоторые проблемы кроссбраузерности, поскольку браузеры одинаково реализуют новые возможности.
+    </p>
+    <h3>Цели HTML5</h3>
+    <p>Кратко цели HTML5 можно назвать так:</p>
+    <ul>
+      <li>Ликвидация плагинов, таких как Flash, для общих функций, которые необходимы каждому. Построить собственную поддержку для 
+      таких вещей, как аудио, видео и т.д.;</li>
+      <li>Снижение потребности в JavaScript и дополнительном коде, благодаря использованию новых html5 элементов;</li>
+      <li>Обеспечение согласованности между браузерами и устройствами;</li>
+      <li>Сделать все это настолько прозрачным, насколько это возможно.</li>
+    </ul>
+    <h3>Валидация</h3>
+    <p>
+    Валидация используется для проверки документа на соответствие веб-стандартам и отсутствие ошибок. 
+		Эти стандарты называются спецификацией, которая разработана <a href="https://www.w3.org/">W3C</a>. 
+		Программа-валидатор работает следующим образом: определяет тип документа (!DOCTYPE), проверяет корректность HTML-кода. 
+		В то же время проверяется правильное использование имен тегов.<br> 
+		Валидатор проверяет следующее:
+    </p>
+    <ol>
+      <li>Синтаксис</li>
+      <li>Вложенность тегов</li>
+      <li>DTD (Document Type Definition — определение типа документа)</li>
+      <li>Посторонние элементы</li>
+    </ol>
+    <p>
+    Если хотя бы один из тестов не пройден, HTML считается невалидным.Главным преимуществом валидирования является проверка 
+		кроссбраузерности, т.е. корректного отображения документа во всех браузерах. К недостаткам можно отнести лишнюю строгость 
+		и отсутствие поддержки специфичных требований. Тем не менее, валидировать HTML-документы очень рекомендуется, т.к. это помогает 
+		обнаружить существующие уязвимости и писать корректный код. Для валидации можно использовать валидатор <a href="http://validator.w3.org/">w3c</a>.
+    </p>
+    <h3>Полезные ссылки</h3>
+    <ul>
+      <li><a href="http://htmlbook.ru/samhtml">Самоучитель HTML</a></li>
+      <li><a href="https://habrahabr.ru/post/72141/">Какие бывают META теги и зачем они нужны</a></li>
+      <li><a href="http://htmlbook.ru/content/metategi">Метатеги</a></li>
+    </ul>
+    <p style="text-align:center;">
+      <img src="https://i.gifer.com/1amk.gif" alt="the end" width="1280" height="720">
+    </p>
+  </body>
+</html>

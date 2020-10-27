@@ -1,0 +1,44 @@
+body {
+  background-image:url("http://bgrounds.ru/_include/img/bgs/white-paper.png");
+}
+
+dt {
+  font-family: inherit;
+  font-size: 0.9em;
+  font-weight: 900;
+  color: rgb(177,14,14);
+}
+
+dd {
+  font-family: inherit;
+  font-size: 14px;
+  padding-bottom: 10px;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align:center;
+}
+
+h1, h2 {
+  font-family: Roboto;
+  font-weight: 900;
+}
+
+.contentCode {  
+  color:white;
+  background-color:#6f6969;
+  box-shadow: 0 0 10px #e34f26;
+}
+
+.contentCodeCss {
+  color:white;
+  background-color:#6f6969;
+  outline: 3px solid #e34f26;
+}
+
+.contentCodeOverflow {
+  color:white;
+  background-color:#6f6969;
+  overflow: auto;
+  box-shadow: 0 0 10px #e34f26;  
+}
