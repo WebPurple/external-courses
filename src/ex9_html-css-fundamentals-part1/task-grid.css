@@ -24,7 +24,7 @@ article {
   margin: 0 0 1rem 0;
 }
 aside {
-  grid-area: 2 / 2 / 3 / 3;   
+  grid-area: 2 / 2 / 3 / 3;
   background: pink;
 }
 
