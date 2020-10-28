@@ -1,0 +1,32 @@
+table {
+	border-collapse: collapse;
+	width: 70%;
+	color: #4c78bb;
+	font-family: Roboto;
+	font-size:11px;
+}
+
+td, th {
+	border: 2px solid black;
+  border-color: white;
+  height: 30px;
+	text-align: center;
+}
+	
+
+thead {
+	text-transform: uppercase;
+}
+
+td:nth-child(1) {
+	text-transform: capitalize;
+}
+
+tr:hover {
+	
+	background-color: #cccccc;
+}
+
+tbody tr:-child() {
+	background-color: red;
+}
