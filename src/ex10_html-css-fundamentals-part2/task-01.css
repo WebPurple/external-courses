@@ -1,0 +1,10 @@
+.task__img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.task__img2 {
+    max-width: 300px;
+    clip-path: circle(50% at 50% 50%);
+    display: block;
+}
