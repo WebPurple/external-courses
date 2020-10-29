@@ -1,33 +1,25 @@
 table {
   border-collapse: collapse;
   text-align:center;
-	width: 70%;
-	color: #4c78bb;
-	font-family: Roboto;
-	font-size:11px;
+  width: 70%;
+  font-family: Roboto;
+  font-size: 11px;
+  color: #4c78bb;
 }
 
 td, th {
-	border: 2px solid black;
-  border-color: white;
-  height: 30px;
-	text-align: center;
+  border: 2px solid white; 
+  line-height: 30px;
 }
-	
 
 thead {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 td:nth-child(1) {
-	text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 tr:hover {
-	
-	background-color: #cccccc;
-}
-
-tbody tr:-child() {
-	background-color: red;
+  background-color: #cccccc;
 }
