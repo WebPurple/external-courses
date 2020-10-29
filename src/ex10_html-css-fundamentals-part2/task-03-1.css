@@ -1,5 +1,6 @@
 table {
-	border-collapse: collapse;
+  border-collapse: collapse;
+  text-align:center;
 	width: 70%;
 	color: #4c78bb;
 	font-family: Roboto;
