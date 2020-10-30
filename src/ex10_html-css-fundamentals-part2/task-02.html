@@ -12,9 +12,9 @@
 <form action="http://httpbin.org/get" class="form" enctype="multipart/form-data" method="get">
   <fieldset>
     <legend>Personal data</legend>
-    <label class="d-block">Surname <input type="text" name=""></label>
-    <label class="d-block">First Name <input type="text" name=""></label>
-    <label class="d-block">Middle name <input type="text" name=""></label>
+    <label class="d-block">Surname <input type="text" name="surname"></label>
+    <label class="d-block">First Name <input type="text" name="firstname"></label>
+    <label class="d-block">Middle name <input type="text" name="middlename"></label>
     <div class="d-block">You are
       <label for="male"><input type="radio" id="male" name="gender"> Male </label>
       <label for="female"><input type="radio" id="female" name="gender"> Female </label>
@@ -22,7 +22,7 @@
     <label class="d-block">Age <input type="number" min="18" max="101"></label>
     <label class="d-block">Country of Residents
       <select>
-        <option disabled selected value class="d-none"></option>
+        <option disabled selected value class="d-none">-</option>
         <option value="RUS">RUS</option>
         <option value="USA">USA</option>
         <option value="UK">UK</option>
@@ -35,7 +35,7 @@
     <label class="d-block">Photorgrafy <input type="file"></label>
     <hr>
     <label class="d-block">Title
-      <select name="" id="" size="8">
+      <select size="8">
         <optgroup label="Technologies">
           <option>WebMaster</option>
           <option>DataBase administrator</option>
@@ -49,7 +49,7 @@
       </select>
     </label>
     <label class="d-block">Salary <input type="range"></label>
-    <textarea name="" cols="30" rows="10" placeholder="Tell is about us yourself...."></textarea>
+    <textarea cols="30" rows="10" placeholder="Tell is about us yourself...."></textarea>
   </fieldset>
   <fieldset>
     <legend>Contact Information</legend>
@@ -58,7 +58,7 @@
     <label class="d-block">Phone <input type="text"></label>
   </fieldset>
   <label class="d-block">Password <input type="password" required></label>
-  <button type="submit" name="">Отправить</button>
+  <button type="submit">Отправить</button>
   <button type="reset">Сбросить</button>
 </form>
 </body>
