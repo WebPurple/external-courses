@@ -1,14 +1,10 @@
-p {
-  text-align: center;
-}
-
 img {
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
 }
 
 .circleOne {
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 .circleTwo {

@@ -1,89 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>task-04</title>
+    <title>task-02</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="description" content="ex8_html-css-basics/task-04">
+    <meta name="description" content="ex8_html-css-basics/task-02">
 	<link rel="stylesheet" href="task-02.css">
 	</head>
 	<body>
 		<form action="http://httpbin.org/get" method="get">
 			<fieldset>
-				<legend>Personal data</legend>
-				<label>Surname
-					<input type="text" name="Surname">
-				</label>
-				<label>First name
-					<input type="text" name="FirstName">
-				</label>
-				<label>Middle name
-					<input type="text" name="MiddleName">
-				</label>
-				<label>You are
-          <input type="radio" name="gender" value="male"> male
+        <legend>Personal data</legend>
+        <label for="Surname">Surname</label>
+        <input type="text" name="Surname" id="Surname"><br>
+        <label for="FirstName">First name</label>
+        <input type="text" name="FirstName" id="FirstName"><br>
+        <label for="MiddleName">Middle name</label>
+        <input type="text" name="MiddleName" id="MiddleName"><br>
+        You are
+        <label>
+        <input type="radio" name="gender" value="male"> male
         </label>
         <label>
-					<input type="radio" name="gender" value="female"> female
-				</label>
-				<label>Age
-					<input type="number" min="18" max="101" name="age">
-				</label>
-				<label>Country of Residence
-					<select name="country">
-						<option label=" " disabled selected></option>
-						<option value="Russia">Россия</option>
-					</select>
-				</label>
-				<label>City
+        <input type="radio" name="gender" value="female"> female
+        </label><br>
+        <label for="age">Age</label>
+        <input type="number" min="18" max="101" name="age" id="age"><br>
+        <label>Country of Residence
+          <select name="country">
+            <option value = "" label="" disabled selected></option>
+            <option value="Russia">Россия</option>
+          </select>
+        </label><br>
+        City
+        <label>
           <input type="checkbox" name="city" value="Ryazan"> Ryazan
         </label>
         <label>
 					<input type="checkbox" name="city" value="Moscow"> Moscow
-				</label>
-				<label>Photography
-					<input type="file" name="file">
-				</label>
-				<hr>
-			  <label>
-					<select name="skills" size="8" multiple>
-						<option value="Technologies" disabled class ="disable">Technologies</option>
-						<option value="WebMaster" class ="skillsOption">Web Master</option>
-						<option value="DatabaseAdministrator" class ="skillsOption">Database Administrator</option>
-						<option value="Computer-aidedDesignAdministrator" class ="skillsOption">Computer-aided design Administrator</option>
-						<option value="Finance" disabled class ="disable">Finance</option>
-						<option value="EconomicPlanning" class ="skillsOption">Economic Planning</option>
-						<option value="ManagementAccounting" class ="skillsOption">Management accounting</option>
-						<option value="BudgetingAndPlanning" class ="skillsOption">Budgeting and planning</option>
-					</select>
-				</label>
-				<label>Salary
-					<input type="range" name="Salary">
-				</label>
-				<label>
-					<textarea cols="60" rows="8" name="comment">Tell us about yourself...</textarea>
-				</label>
-			</fieldset>
-			<fieldset>
-				<legend>Contact Information</legend>
-				<label>Site
-					<input type="url" name="website">
-				</label>
-				<label>E-mail
-					<input type="email" name="email-address">
-				</label>
-				<label>Phone
-					<input type="tel" name="phone-number">
-				</label>
-			</fieldset>
-				<label>Password
-					<input type="password" name=" password" required>
-				</label>
-				<label>
-          <input type="submit" name="submit" value="Отправить">
+        </label><br>
+        <label>Photography
+          <input type="file" name="file">
         </label>
+        <hr>
+        <label>Title
+          <select name="skills" size="8" multiple>
+            <option value="Technologies" disabled class ="disable">Technologies</option>
+            <option value="WebMaster" class ="skillsOption">Web Master</option>
+            <option value="DatabaseAdministrator" class ="skillsOption">Database Administrator</option>
+            <option value="Computer-aidedDesignAdministrator" class ="skillsOption">Computer-aided design Administrator</option>
+            <option value="Finance" disabled class ="disable">Finance</option>
+            <option value="EconomicPlanning" class ="skillsOption">Economic Planning</option>
+            <option value="ManagementAccounting" class ="skillsOption">Management accounting</option>
+            <option value="BudgetingAndPlanning" class ="skillsOption">Budgeting and planning</option>
+          </select>
+        </label><br>
+        <label>Salary
+          <input type="range" name="Salary">
+        </label><br>
         <label>
-					<input type="reset" name="reset" value="Сбросить">
-				</label>
+          <textarea cols="60" rows="8" name="comment">Tell us about yourself...</textarea>
+        </label>
+      </fieldset>
+
+			<fieldset>
+        <legend>Contact Information</legend>
+				<label>Site
+          <input type="url" name="website">
+        </label><br>
+        <label>E-mail
+          <input type="email" name="email-address">
+        </label><br>
+        <label>Phone
+          <input type="tel" name="phone-number">
+        </label>
+      </fieldset>
+      
+      <label>Password
+        <input type="password" name=" password" required>
+      </label><br>
+      <label>
+        <input type="submit" name="submit" value="Отправить">
+      </label>
+      <label>
+        <input type="reset" name="reset" value="Сбросить">
+      </label>
 		</form>
 	</body>
 </html>

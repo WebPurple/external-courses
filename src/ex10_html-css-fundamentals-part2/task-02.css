@@ -2,8 +2,7 @@ body {
   margin: 20px;
 }
 
-label {
-  display: block;
+input, textarea {
   margin-top: 10px;
 }
 
