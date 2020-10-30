@@ -1,0 +1,29 @@
+.div {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.label {
+    position: absolute;
+    transform: translateY(10px);
+    color: blue;
+    transition: .5s;
+    top: -24px;
+    left: 0;
+    opacity: 0;
+}
+
+.input {
+    color: green;
+    transition: .5s;
+}
+
+.input:valid + .label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.input:focus {
+    outline: none;
+}

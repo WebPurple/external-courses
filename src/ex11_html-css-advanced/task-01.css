@@ -1,0 +1,128 @@
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid red;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: red transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.anime-ball {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.anime-ball .square {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.anime-ball .ball {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    animation-name: ball-jump;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ball-jump {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-50px, -50px);
+    }
+    50% {
+        transform: translate(-100px, 0);
+    }
+    75% {
+        transform: translate(-50px, -50px);
+    }
+    100% {
+        transform: translate(0, 0);
+
+    }
+}
+
+.true-animation {
+    background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+    background-size: 300%;
+    margin: 200px auto 0;
+    width: 200px;
+    height: 200px;
+    animation-name: animation-true;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animation-true {
+    0% {
+        border-radius: 0;
+        background-position: 0 50%;
+    }
+    7% {
+        border-radius: 50%;
+        background-position: 0 100%;
+    }
+    14% {
+        border-radius: 0;
+        background: linear-gradient(crimson, gold, crimson);
+        transform: scale(1);
+    }
+    28% {
+        transform: scale(1.2) skew(0, 10deg);
+    }
+    35% {
+        transform: scale(1) skew(0, 0);
+    }
+    42%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    70%{
+        background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+    }
+    100%{
+        border-radius: 50%;
+    }
+}
