@@ -1,0 +1,33 @@
+.demoButton {
+  position:relative;
+  top:15px;
+  padding:9px;
+  border: 0.5px solid #666666;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #ababab52, 0 0 0 4px #cbcbcb;
+  text-shadow: -0.5px 0px #e0dcdc, 0 0.5px 0 #e0dcdc;
+  font-family: Roboto;
+  font-size:15px;
+  text-decoration:none;
+  color:#8f8f8f;
+  background: linear-gradient(0deg, #afafaf, #e2e2e2);
+}
+
+.demoButton span {
+  font-weight: 900;
+  color: #555555;
+}
+
+.demoButton::before {
+  display:block;
+  content:"";
+  position:absolute;
+  z-index:-1;
+  left:-6px;
+  top:-6px;
+  padding:5px;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  width:100%;
+  height:100%;
+}
