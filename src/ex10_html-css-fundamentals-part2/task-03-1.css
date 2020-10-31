@@ -20,6 +20,14 @@ td:nth-child(1) {
   text-transform: capitalize;
 }
 
+tbody tr:nth-child(odd)  {
+  background-color: #cff2f7;
+}
+
+tbody tr:nth-child(even)  {
+  background-color: #ded9d9;
+}
+
 tr:hover {
-  background-color: #cccccc;
+  background-color: #cccccc !important;
 }

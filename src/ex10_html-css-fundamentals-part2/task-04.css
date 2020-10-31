@@ -1,0 +1,274 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1171px;
+  margin: 0 auto;
+  margin-top:55px;
+}
+
+a {
+  text-decoration: none;
+}
+header .logo {
+  color: #3687C4;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 41px;
+  background-image: url(http://exa62.ru/logo@1X.png);
+  width: 403px;
+  display: flex;
+  height: 93px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+header .social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 231px;
+  height: 107px;
+  text-align: center;
+}
+
+header .social span {
+  flex-basis: 100%;
+  line-height: 40px;
+  align-content: center;
+  text-align: center;
+}
+
+.social > svg:hover {
+  fill: #1FAAE2;
+}
+
+nav {
+  max-width: 1171px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  width: calc(64% - 40px);
+  color: #6d6e71;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  margin-top: 55px;
+  width: 1171px;
+}
+
+.nav > li {
+  margin: 0 auto;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+.nav > li:hover{
+	color:#1FAAE2;
+}
+
+input {
+  color:#6D6E71;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin-left: 13px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  width: 228px;
+  height: 50px;
+  position: relative;
+  border: 1px solid #aaa;
+  align-self: flex-start;
+}
+
+.block:after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  right: 43%;
+  border-bottom: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: white;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1159px;
+  margin: 0 auto;
+}
+
+.contentImg {
+  vertical-align: top;
+}
+
+.contentText {
+  display:inline-block;
+  width: 385px;
+  margin-left: 30px;
+}
+
+.contentText h2 {
+  color: #6D6E71;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.contentText p {
+  color: #6D6E71;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.title h1 {
+  line-height: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 42px;
+}
+
+.title p {
+  line-height: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+}
+
+.slider {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.sliderImg {
+  position: relative;
+  width: 322px;
+  height: 241px;
+}
+
+.sliderImg2 {
+  position: relative;
+  width: 112px;
+  height: 241px;
+  background-color: #f4f4f4;
+}
+
+.sliderText {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 322px;
+  height: 51px;
+  padding-top: 15px;
+}
+
+.sliderText img {
+  vertical-align: middle;
+}
+
+.sliderText span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 33px;
+  font-weight: bold;
+}
+
+.slider > div:nth-child(1) > div {
+  background-color:#8aca51e6;
+}
+
+.slider > div:nth-child(2) > div {
+  background-color: #feeb75e6;
+}
+
+body > .slider > div:nth-child(2) > div > span {
+  color: #CC9800;
+}
+
+.arrow {
+  text-align: center;
+  position: absolute;
+  bottom: calc(50% - 20px);
+  left: calc(50% - 12px);
+}
+
+@media screen and (max-width: 1345px) {
+  .social {
+    display: none!important;
+  }
+  
+  .slider {
+    display: none!important;
+  }
+  
+  .nav {
+    display: none!important;
+  }
+  
+  nav {
+    margin: 0 0!important;
+  }
+  
+  .menu {
+    width: auto;
+  }
+  
+  header {
+    flex-wrap: nowrap;
+    margin-bottom: 19px;
+  }
+  header:before {
+    content: url("http://exa62.ru/min menu.png");
+  }
+  
+  .content {
+    flex-direction: column!important;
+  }
+  
+  .contentText {
+    width: calc(100% - 140px);
+  }
+  
+  header .logo {
+    color: #3687C4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 41px;
+    background-image: url(http://exa62.ru/logo@34.png);
+    background-position-y: center;
+    width: 403px;
+    display: flex;
+    height: 78px;
+    vertical-align: middle;
+  }
+}
