@@ -28,6 +28,6 @@ tbody tr:nth-child(even)  {
   background-color: #ded9d9;
 }
 
-tr:hover {
-  background-color: #cccccc !important;
+tbody tr:hover {
+  background: url("http://exa62.ru/baack.png") repeat-x;
 }

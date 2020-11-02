@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   max-width: 1171px;
   margin: 0 auto;
-  margin-top:55px;
+  margin-top: 55px;
 }
 
 a {
@@ -30,46 +30,66 @@ a {
 }
 
 .social {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-around;
   width: 231px;
   height: 107px;
-  text-align: center;
-}
-
-.social span {
-  flex-basis: 100%;
-  line-height: 40px;
-  align-content: center;
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #6D6E71;
 }
 
+.logos {
+  width: 100%;
+  height: 56px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #6d6e71;
+}
+
+.logos > img:nth-child(even) {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 2px solid #BCBEC3;
+  border-right: 2px solid #BCBEC3;
+}
+
 .block {
-  width: 228px;
-  height: 50px;
   position: relative;
-  border: 1px solid #aaa;
-  align-self: flex-start;
+  width: calc(100% - 2px);
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid #00000061;
+  border-radius: 7px;
+}
+
+.block:before, .block:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.block:before {
+  right: 102px;
+  bottom: -11px;
+  z-index: 1;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 11px solid #b5b6b9f7;
 }
 
 .block:after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -10px;
-  right: 45%;
-  width: 18px;
-  height: 18px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  border-bottom: 1px solid #aaa;
-  border-left: 1px solid #aaa;
-  background: white;
+  right: 101px;
+  bottom: -9px;
+  z-index: 2;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 12px solid #fff;
 }
 
 .icon:not(:hover) {
@@ -77,29 +97,39 @@ a {
   -webkit-filter: saturate(0%);
 }
 
+.menu * {
+  margin: 0;
+  padding: 0;
+}
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 55px;
-  margin-bottom: 30px;
   width: 1171px;
 }
 
 .menu > ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
-  width: calc(64% - 40px);
-  color: #6d6e71;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
   font-weight: bold;
 }
 
 .menu > ul > li {
   position: relative;  
+}
+
+.menu > ul li a {
+  display: block;
+  background: #ececed;
+  padding: 38px 27px 38px 27px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  color: #454547;
+  text-decoration: none;
 }
 
 .menu > ul > li:after {
@@ -108,7 +138,7 @@ a {
   width: 0;
   height: 0;
   left: calc(50% - 18px);
-  bottom: -34px;
+  bottom: 0px;
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
   border-bottom: 9px solid #1FAAE2;
@@ -124,11 +154,19 @@ a {
   color: #1FAAE2;
 }
 
-input {
+.fa-search {
   color: #6D6E71;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  margin-right: 15px;
+  font-size: 26px;
+}
+
+input {
+  width: 161px;
   margin-left: 13px;
+  border: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #6D6E71;
+  font-size: 15px;
 }
 
 form {
@@ -149,12 +187,6 @@ form {
   width: 100%;
 }
 
-.bannerText {
-  position: absolute;
-  left: 31%;
-  top: 27%;
-}
-
 .title {
   position: absolute;
   left: 33%;
@@ -166,7 +198,7 @@ form {
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: #FFFFFF;
 }
 
@@ -191,8 +223,7 @@ form {
   position: absolute;
   bottom: 5%;
   right: 10%;
-  display: flex;
-  flex-wrap: nowrap;
+  display: flex;  
 }
 
 .sliderImg {
@@ -271,17 +302,17 @@ form {
 }
 
 .contentText h3 {
-  color: #6D6E71;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 26px;
   margin-top: 20px;
   margin-bottom: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  color: #6D6E71;
 }
 
 .contentText p {
-  color: #6D6E71;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  color: #6D6E71;
 }
 
 @media screen and (max-width: 1345px) {
@@ -290,15 +321,10 @@ form {
   }
   
   header .logo {
-    display: flex;
-    vertical-align: middle;
     width: 403px;
     height: 78px;
     background-image: url(http://exa62.ru/logo@34.png);
     background-position-y: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 41px;
-    color: #3687C4;
   }
   
   header:before {
@@ -306,28 +332,24 @@ form {
   }
 
   .social {
-    display: none!important;
+    display: none;
   }
   
   .menu > ul {
-    display: none!important;
+    display: none;
   }
   
   .menu {
     width: auto;
-    margin: 0 0!important;
-  }
-  
-  .menu > ul {
-    display: none!important;
+    margin: 0 0;
   }
   
   .slider {
-    display: none!important;
+    display: none;
   }
   
   .content {
-    flex-direction: column!important;
+    flex-direction: column;
     max-width: 915px;
   }
   
