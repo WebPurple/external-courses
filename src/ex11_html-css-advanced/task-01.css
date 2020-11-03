@@ -18,15 +18,15 @@
     border-color: red transparent transparent transparent;
 }
 
-.lds-ring div:nth-child(1) {
+.lds-ring .lds-ring__first {
     animation-delay: -0.45s;
 }
 
-.lds-ring div:nth-child(2) {
+.lds-ring .lds-ring__two {
     animation-delay: -0.3s;
 }
 
-.lds-ring div:nth-child(3) {
+.lds-ring .lds-ring__three {
     animation-delay: -0.15s;
 }
 
@@ -42,7 +42,7 @@
 .anime-ball {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 3rem;
+    margin-top: 40px;
 }
 
 .anime-ball .square {
@@ -77,35 +77,34 @@
     }
     100% {
         transform: translate(0, 0);
-
     }
 }
 
 .true-animation {
-    background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
-    background-size: 300%;
+    background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
     margin: 200px auto 0;
     width: 200px;
     height: 200px;
     animation-name: animation-true;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    background-size: 600% 100%;
 }
 
 @keyframes animation-true {
     0% {
         border-radius: 0;
-        background-position: 0 50%;
+        background-position: 0%
     }
     7% {
         border-radius: 50%;
-        background-position: 0 100%;
+        background-position: 100%;
     }
     14% {
         border-radius: 0;
-        background: linear-gradient(crimson, gold, crimson);
         transform: scale(1);
+        background-position: 0%
     }
     28% {
         transform: scale(1.2) skew(0, 10deg);
@@ -113,16 +112,18 @@
     35% {
         transform: scale(1) skew(0, 0);
     }
-    42%{
+    42% {
         transform: rotate(180deg);
     }
-    50%{
+    50% {
         transform: rotate(0);
     }
-    70%{
-        background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
-    }
-    100%{
+    70% {
+        background-position: 100%;
         border-radius: 50%;
+    }
+    100% {
+        background-position: 0%;
+        border-radius: 0;
     }
 }
