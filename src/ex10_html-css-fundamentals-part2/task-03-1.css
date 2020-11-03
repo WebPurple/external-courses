@@ -1,0 +1,46 @@
+@import "task-03-2.css";
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table thead tr {
+    background-color: #E3EAF3;
+}
+
+table thead tr th {
+    text-transform: uppercase;
+    color: #8B8DA6;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+table tbody tr {
+    transition: background-color .5s;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #F2F6FA;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #E8EDF4;
+}
+
+table tbody tr:hover {
+    background-color: #E2E5E9;
+}
+
+table tbody td {
+    color: #7E84AE;
+    padding: 12px;
+}
+table tbody td:first-child {
+    text-transform: capitalize;
+}
+
+
+

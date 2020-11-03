@@ -1,0 +1,13 @@
+.form {
+    max-width: 700px;
+    margin: 3rem auto 3rem;
+}
+
+.d-block {
+    display: block;
+    margin: 1rem 0;
+}
+
+.d-none {
+    display: none;
+}
