@@ -6,9 +6,24 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="task-01.css">
 </head>
 <body>
+<style>
+    .task__img {
+        max-width: 300px;
+        border-radius: 50%;
+    }
+
+    .task__img2 {
+        max-width: 300px;
+        clip-path: circle(50% at 50% 50%);
+        display: block;
+    }
+
+    .task__img3 {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+</style>
 <img src="http://kvant.space/sites/default/files/images/kosmos18.jpg" class="task__img" alt="img">
 <img src="http://kvant.space/sites/default/files/images/kosmos18.jpg" class="task__img2" alt="img">
 <img src="http://kvant.space/sites/default/files/images/kosmos18.jpg" class="task__img task__img3" alt="img">
