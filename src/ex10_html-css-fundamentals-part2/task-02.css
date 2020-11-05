@@ -1,0 +1,16 @@
+body {
+  margin: 20px;
+}
+
+input, textarea {
+  margin-top: 10px;
+}
+
+.skillsOption {
+  padding-left: 20px;
+}
+
+.disable {
+  font-weight:bold;
+  color: black;
+}

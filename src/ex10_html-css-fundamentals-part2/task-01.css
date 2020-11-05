@@ -1,0 +1,16 @@
+img {
+  display: block;
+  margin: auto;
+}
+
+.circleOne {
+  border-radius: 50%;
+}
+
+.circleTwo {
+  clip-path: circle(30% at 50% 50%);
+}
+
+.circleThree {  
+  clip-path: polygon(9% 100%, 11% 66%, 18% 44%, 10% 31%, 12% 12%, 18% 0%, 33% 11%, 38% 21%, 59% 57%, 76% 60%, 71% 80%, 65% 100%);
+}

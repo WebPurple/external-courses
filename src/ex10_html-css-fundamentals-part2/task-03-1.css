@@ -1,0 +1,33 @@
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 70%;
+  font-family: Roboto;
+  font-size: 11px;
+  color: #4c78bb;
+}
+
+td, th {
+  border: 2px solid white; 
+  line-height: 30px;
+}
+
+thead {
+  text-transform: uppercase;
+}
+
+td:nth-child(1) {
+  text-transform: capitalize;
+}
+
+tbody tr:nth-child(odd)  {
+  background-color: #cff2f7;
+}
+
+tbody tr:nth-child(even)  {
+  background-color: #ded9d9;
+}
+
+tbody tr:hover {
+  background: url("http://exa62.ru/baack.png") repeat-x;
+}

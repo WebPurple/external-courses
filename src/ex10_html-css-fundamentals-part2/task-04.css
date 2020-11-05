@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1171px;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 403px;
+  height: 93px;
+  background-image: url(http://exa62.ru/logo@1X.png);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 41px;
+  color: #3687C4;
+}
+
+.social {
+  width: 231px;
+  height: 107px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #6D6E71;
+}
+
+.logos {
+  width: 100%;
+  height: 56px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #6d6e71;
+}
+
+.logos > img:nth-child(even) {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 2px solid #BCBEC3;
+  border-right: 2px solid #BCBEC3;
+}
+
+.block {
+  position: relative;
+  width: calc(100% - 2px);
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid #00000061;
+  border-radius: 7px;
+}
+
+.block:before, .block:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.block:before {
+  right: 102px;
+  bottom: -11px;
+  z-index: 1;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 11px solid #b5b6b9f7;
+}
+
+.block:after {
+  right: 101px;
+  bottom: -9px;
+  z-index: 2;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 12px solid #fff;
+}
+
+.icon:not(:hover) {
+  filter: saturate(0%);
+  -webkit-filter: saturate(0%);
+}
+
+.menu * {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+  width: 1171px;
+}
+
+.menu > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-weight: bold;
+}
+
+.menu > ul > li {
+  position: relative;  
+}
+
+.menu > ul li a {
+  display: block;
+  background: #ececed;
+  padding: 38px 27px 38px 27px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  color: #454547;
+  text-decoration: none;
+}
+
+.menu > ul > li:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: calc(50% - 18px);
+  bottom: 0px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 9px solid #1FAAE2;
+  transform: scale(0);
+  transition: all .3s;
+}
+
+.menu > ul > li:hover::after {
+  transform: scale(1);
+}
+
+.menu > ul > li:hover{
+  color: #1FAAE2;
+}
+
+.fa-search {
+  color: #6D6E71;
+  margin-right: 15px;
+  font-size: 26px;
+}
+
+input {
+  width: 161px;
+  margin-left: 13px;
+  border: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #6D6E71;
+  font-size: 15px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  position: relative;
+}
+
+.banner {
+  position: relative;
+  z-index: -1;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  left: 33%;
+  top: 27%;
+}
+
+.title p {
+  position: relative;  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+}
+
+.title p:after {
+  content: "LET'S DRAW SOME ARTS";
+  position: absolute; 
+  z-index: 1;
+  top: -10px;
+  left: -20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 42px;  
+  color:#FFFFFF;
+}
+
+.title p span{  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 72px;  
+  color: #bbedff;
+}
+
+.slider {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  display: flex;  
+}
+
+.sliderImg {
+  position: relative;
+  width: 322px;
+  height: 241px;
+}
+
+.sliderImg2 {
+  position: relative;
+  width: 112px;
+  height: 241px;
+  background-color: #f4f4f4;
+}
+
+.sliderText {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 322px;
+  height: 51px;
+  padding-top: 15px;
+}
+
+.sliderText img {
+  vertical-align: middle;
+}
+
+.sliderText span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 33px;
+  font-weight: bold;
+}
+
+.slider > div:nth-child(1) > div {
+  background-color: #8aca51e6;
+}
+
+.slider > div:nth-child(2) > div {
+  background-color: #feeb75e6;
+}
+
+.slider > div:nth-child(2) > div > span {
+  color: #CC9800;
+}
+
+.arrow { 
+  position: absolute;
+  bottom: calc(50% - 20px);
+  left: calc(50% - 12px);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1159px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  display: none;
+}
+
+.contentImg {
+  vertical-align: top;
+}
+
+.contentText {
+  display: inline-block;
+  width: 385px;
+  margin-left: 30px;
+}
+
+.contentText h3 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  color: #6D6E71;
+}
+
+.contentText p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #6D6E71;
+}
+
+@media screen and (max-width: 1345px) {
+  header {
+    flex-wrap: nowrap;
+  }
+  
+  header .logo {
+    width: 403px;
+    height: 78px;
+    background-image: url(http://exa62.ru/logo@34.png);
+    background-position-y: center;
+  }
+  
+  header:before {
+    content: url("http://exa62.ru/min menu.png");
+  }
+
+  .social {
+    display: none;
+  }
+  
+  .menu > ul {
+    display: none;
+  }
+  
+  .menu {
+    width: auto;
+    margin: 0 0;
+  }
+  
+  .slider {
+    display: none;
+  }
+  
+  .content {
+    flex-direction: column;
+    max-width: 915px;
+  }
+  
+  .contentText {
+    width: calc(100% - 140px);
+  }  
+}
