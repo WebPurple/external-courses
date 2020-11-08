@@ -4,8 +4,10 @@ body {
   flex-direction: column;
   height: 200px;
   justify-content: space-between;
-  background: #0067a3;
-  height: 98vh;
+  background: #0079BF;
+  height: 100vh;
+  padding:0;
+  margin:0;
 }
 header {
   display: flex;
@@ -18,7 +20,6 @@ header {
   display: flex;
 
   align-items: center;
- 
 }
 footer {
   display: flex;
@@ -71,7 +72,6 @@ footer {
 
 .header1 p {
   width: 331px;
-
 
   font-family: Roboto;
   font-style: normal;
