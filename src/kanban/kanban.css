@@ -18,7 +18,6 @@ header {
 }
 .header1 {
   display: flex;
-
   align-items: center;
 }
 footer {
@@ -72,22 +71,19 @@ footer {
 
 .header1 p {
   width: 331px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 33px;
-
   color: #ffffff;
 }
 
 .header2 {
   position: relative;
-
   display: flex;
-
   align-items: center;
+  margin-right: 20px;
 }
 
 .header2 .createList p {
@@ -130,6 +126,34 @@ footer {
   border-bottom: 5px solid rgb(255, 255, 255);
   border-left: 5px solid rgb(255, 255, 255);
   transform: rotate(-45deg);
+transition: 1s;
+}
+
+
+.header2_arrow_settings{
+position:absolute;
+right:-10px;
+width: 150px;
+top:50px;
+display: none;
+}
+.header2_arrow_settings_active{
+display:block;
+}
+
+.header2_arrow_settings ul{
+    list-style: none;
+
+}
+.header2_arrow_settings ul li a{
+    text-decoration: none;
+    color:#ffffff;
+    font-family: roboto;
+    border-bottom: 1px solid;
+}
+.header2_arrow_settings ul li {
+    padding:5px;
+  
 }
 
 footer {
