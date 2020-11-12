@@ -1,55 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>task-03</title>
+    <title>task-01</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="description" content="ex9_html-css-fundamentals-part1/task-03">
+    <meta name="description" content="ex12_js_dom/task-01">
     <link rel="stylesheet" href="task-01.css">
   </head>
   <body>
-    <div class="infinity-slider-wrap">
-      <div class="infinity-slider">
-        <img class="img-fluid" src="assets/1.jpg" alt="">
-        <img class="img-fluid" src="assets/2.jpg" alt="">
-        <img class="img-fluid" src="assets/3.jpg" alt="">
-        <img class="img-fluid" src="assets/4.jpg" alt="">
+    <div class="main">
+      <button id="buttonPrev">&lt;</button>
+      <div class="container" id="container">
+        <div class="slide slide_left">          
+        </div>
+        <div class="slide slide_central">          
+        </div>
+        <div class="slide slide_right">
+        </div>
       </div>
+      <button id="buttonNext">&gt;</button>
     </div>
-    <button class="btn_prev">Prev</button>
-    <button class="btn_next">Next</button>
-    
-    <script>
-      let images = document.querySelectorAll('.infinity-slider img');
-      let current = 0;
-      
-      function slider() {
-        for (let i = 0; i < images.length; i++) {
-          images[i].classList.add('opacity-null');
-        }
-        images[current].classList.remove('opacity-null');
-      }
-
-      slider();
-      
-      document.querySelector('.btn_prev').onclick = function() {
-        if (current - 1 == -1) {
-          current = images.length - 1;
-        } else {
-          current--;
-        }
-        
-        slider();
-      };
-
-      document.querySelector('.btn_next').onclick = function() {
-        if (current + 1 == images.length) {
-          current = 0;
-        } else {
-          current++;
-        }
-        
-        slider();
-      };
-    </script>
+    <script src="task-01.js"></script>
   </body>
 </html>
