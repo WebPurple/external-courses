@@ -1,6 +1,6 @@
-function outputElements(arr) {
-    arr.forEach(elem=>(console.log(elem))); 
-    console.log(arr.length);
+function outputElements(arrElem) {
+    arrElem.forEach(elem=>(console.log(elem))); 
+    console.log(arrElem.length);
     return;
 }
 

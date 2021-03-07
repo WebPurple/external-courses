@@ -1,7 +1,7 @@
-function getTypeData(arg) {
-    if (typeof(arg) === "number" && !isNaN(arg)) {
+function getTypeData(numOrStr) {
+    if (typeof(numOrStr) === "number" && !isNaN(numOrStr)) {
         return 'number';
-    } else if (typeof(arg) === "string") {
+    } else if (typeof(numOrStr) === "string") {
         return 'string';
     } else {
         return `undefined`;
