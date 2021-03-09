@@ -1,7 +1,7 @@
-function getMaxNumber(arrNumbers) {
+function getMaxNumber(arr) {
     let maxNumber = 0;
 
-    arrNumbers.filter(elem => {
+    arr.filter(elem => {
         if(elem > maxNumber) {
             maxNumber = elem;
         }

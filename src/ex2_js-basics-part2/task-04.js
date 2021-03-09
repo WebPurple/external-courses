@@ -1,7 +1,7 @@
-function checkUnique(arrElem) {
+function checkUnique(arr) {
     let array = [];
 
-    arrElem.forEach(elem => {
+    arr.forEach(elem => {
         if (!array.includes(elem)) {
             array.push(elem);
         } 

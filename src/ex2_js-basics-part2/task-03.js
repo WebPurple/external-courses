@@ -1,10 +1,10 @@
-function splitByParity(arrElem) {
+function splitByParity(arr) {
     let evenNumbers = 0,
         zeros = 0,
         oddNumbers = 0;
         
 
-    const arrNumbers = arrElem.filter(elem => 
+    const arrNumbers = arr.filter(elem => 
         (typeof(elem) === "number") 
             && (elem != Infinity) 
             && (elem != -Infinity) 
