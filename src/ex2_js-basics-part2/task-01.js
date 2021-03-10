@@ -5,14 +5,14 @@ const checkType = (variableChecked) => {
         return;
     }
 
-    let Type = typeof(variableChecked);
+    let type = typeof(variableChecked);
 
-    if (Type === 'number') {
+    if (type === 'number') {
         console.log('number')
         return;
     }
 
-    if (Type === 'string') {
+    if (type === 'string') {
         console.log('string');
         return;
     }
