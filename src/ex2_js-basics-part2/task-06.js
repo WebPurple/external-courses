@@ -1,4 +1,4 @@
-function cheakPrimeNumber(num) {
+function checkPrimeNumber(num) {
 
     const checkForNumber = typeof(num) === 'number';
     const checkForInfinity = num !== Infinity && num !== -Infinity;
@@ -30,4 +30,4 @@ function cheakPrimeNumber(num) {
     }
 }
 
-module.exports = cheakPrimeNumber;
+module.exports = checkPrimeNumber;
