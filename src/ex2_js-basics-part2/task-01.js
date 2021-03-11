@@ -1,13 +1,13 @@
 function getTypeData(numOrStr) {
     const isNamber = typeof numOrStr === 'number';
     const isString = typeof numOrStr === 'string';
-    const isNaN= !isNaN(numOrStr);
+    const isNotNaN= !isNaN(numOrStr);
 
-    if (isNamber && isNaN)  {
+    if (isNamber && isNotNaN)  {
         return 'number'
     } 
     
-    if (isString === 'string') {
+    if (isString) {
         return 'string';
     }
 
