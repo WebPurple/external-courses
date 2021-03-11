@@ -1,33 +1,30 @@
 function checkPrimeNumber(num) {
+    const isNumber = typeof num === 'number';
+    const isRangeOfNumbers = num >= 0 && num <= 1000;
 
-    const checkForNumber = typeof(num) === 'number';
-    const checkForInfinity = num !== Infinity && num !== -Infinity;
-    const checkForNaN = !isNaN(num); 
-    const checkForRangeOfNumbers = num >= 0 && num <= 1000;
-
-    if  (checkForNumber && checkForInfinity && checkForNaN && checkForRangeOfNumbers) {
-        if(num === 0) {
+    if  (isNumber && isRangeOfNumbers) {
+        if (num === 0) {
             return 'Введен 0';
         } 
 
-        if(num === 1) {
+        if (num === 1) {
             return 'Введена 1';
         }
 
-        else {
+        if (num > 1) {
             let mark = `Число ${num} - простое число`;
 
-            for(let i = 2; i < num; i++) {
-               mark = `Число ${num} - составное число`;
+            for (let i = 2; i < num; i++) {
+               if (num%i === 0) {
+                 mark = `Число ${num} - составное число`;  
+               } 
             }
 
             return mark;
         }
     } 
     
-    else { 
-        return 'Данные неверны'; 
-    }
+    return 'Данные неверны'; 
 }
 
 module.exports = checkPrimeNumber;

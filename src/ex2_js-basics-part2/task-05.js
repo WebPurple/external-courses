@@ -1,14 +1,13 @@
 function getMaxNumber(arrNumbers) {
-
-    let maxNumber = 0;
+    let maxNumber = arrNumbers[0];
 
     arrNumbers.forEach(elem => {
-        if(elem > maxNumber) {
+        if (elem > maxNumber) {
             maxNumber = elem; 
         }
     });
 
-    if(maxNumber !== 0) {
+    if (maxNumber > 0) {
         return maxNumber;
     }
 }

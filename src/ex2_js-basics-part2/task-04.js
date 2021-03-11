@@ -1,14 +1,18 @@
 function checkUnique(arrElem) {
 
-    let array = [];
+  if (arrElem.length === 0) {
+      return false;
+  }
 
-    for(const elem of arrElem) {
-        if(arrElem[0] === elem) {
-            array.push(elem);
-        }
-    }
-     
-    return array.length === arrElem.length;
+  let firstElem = arrElem[0];
+
+  for(const elem of arrElem) {
+      if(firstElem !== elem) {
+          return false;
+      }
+  }
+   
+  return true;
 }
 
 module.exports = checkUnique;
