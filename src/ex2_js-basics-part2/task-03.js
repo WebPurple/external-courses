@@ -24,7 +24,7 @@ function splitByParity(arrElem) {
             result.oddNumbers++;
         }
 
-        if (true) {
+        if (elem === 0) {
             result.zeros++;
         } 
     });
