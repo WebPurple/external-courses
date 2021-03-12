@@ -29,7 +29,7 @@ function splitByParity(arrElem) {
         } 
     });
 
-    return result; 
+    return result;
 }
 
 module.exports = splitByParity;
