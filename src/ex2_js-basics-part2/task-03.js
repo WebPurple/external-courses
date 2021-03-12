@@ -1,8 +1,8 @@
 function splitByParity(arrElem) {
     const result = {
         evenNumbers: 0,
-        zeros: 0,
         oddNumbers: 0,
+        zeros: 0,
     };
     
     const arrNumbers = arrElem.filter(elem => {
