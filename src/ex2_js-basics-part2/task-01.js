@@ -11,7 +11,8 @@ function getTypeData(numOrStr) {
         return 'string';
     }
 
-    return 'undefined';
+    return undefined;
 }
+
 
 module.exports = getTypeData;
