@@ -5,7 +5,7 @@ function splitByParity(arrElem) {
         zeros: 0,
     };
     
-    const arrNumbers = arrElem.filter(elem => {
+    const arrNumbers = arrElem.map(elem => {
         const isNumber = typeof elem === 'number';
         const isInfinity = elem !== Infinity && elem !== -Infinity;
         const isNotNaN = !isNaN(elem);
@@ -14,20 +14,20 @@ function splitByParity(arrElem) {
             return elem;
         }
     });         
-
-    arrNumbers.forEach(elem => {
-        if (elem%2 == 0) {
+ 
+    for (let elem of arrNumbers) {
+        if (elem%2 == 0 && elem != 0) {
             result.evenNumbers++;
         } 
 
-        if (elem%2 !== 0) {
+        if (elem%2 !== 0 && elem != undefined) {
             result.oddNumbers++;
         }
 
         if (elem === 0) {
             result.zeros++;
-        } 
-    });
+        }  
+    };
 
     return Object.values(result);
 }
