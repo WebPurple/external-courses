@@ -12,7 +12,7 @@ function getDeepClone(clonedObj) {
     for (let key in clonedObj) {
         if (clonedObj.hasOwnProperty(key)) {
             const valueClonedObj = clonedObj[key];
-            const valueObjClone = ObjClone[key];
+            let valueObjClone = ObjClone[key];
 
             if (typeof valueClonedObj === "object") {
                 valueObjClone = getDeepClone(valueClonedObj);
