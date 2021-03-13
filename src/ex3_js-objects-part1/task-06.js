@@ -6,7 +6,7 @@ function getDeepClone(clonedObj) {
     } 
     
     if (!Array.isArray(clonedObj)) {
-        ObjClone = {}; 
+        ObjClone = clonedObj; 
     }
 
     for (let key in clonedObj) {
