@@ -1,30 +1,31 @@
 function getDeepClone(clonedObj) {
-    let ObjClone; 
+    let clone;
+
+    if (null === clonedObj || typeof clonedObj !== "object") {
+        return clonedObj;
+    }
 
     if (Array.isArray(clonedObj)) {
-        ObjClone = []; 
-    } 
-    
-    if (!Array.isArray(clonedObj)) {
-        ObjClone = clonedObj; 
-    }
+        clone = [];
 
-    for (let key in clonedObj) {
-        if (clonedObj.hasOwnProperty(key)) {
-            const valueClonedObj = clonedObj[key];
-            let valueObjClone = ObjClone[key];
-
-            if (typeof valueClonedObj === "object") {
-                valueObjClone = getDeepClone(valueClonedObj);
-            }
-
-            if (!(typeof valueClonedObj === "object")) {
-                valueObjClone = valueClonedObj;
-            }
+        for (let i = 0; i < clonedObj.length; i++) {
+            clone[i] = getDeepClone(clonedObj[i]);
         }
+
+        return clone;
     }
 
-    return ObjClone;
+    if (typeof clonedObj === "object") {
+        clone = {};
+
+        for (let elem in clonedObj) {
+            if (clonedObj.hasOwnProperty(elem)) {
+                clone[elem] = getDeepClone(clonedObj[elem]);
+            } 
+        }
+
+        return clone;
+    }
 }
 
 module.exports = getDeepClone;
