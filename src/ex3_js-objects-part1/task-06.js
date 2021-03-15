@@ -12,9 +12,9 @@ function getDeepClone(clonedObj) {
             if (elem < clonedObj.length) {
                 clone[elem] = getDeepClone(clonedObj[elem]);
             }
+            
+            return clone;
         });
-
-        return clone;
     }
 
     clone = {};
@@ -22,10 +22,11 @@ function getDeepClone(clonedObj) {
     for (let elem in clonedObj) {
         if (clonedObj.hasOwnProperty(elem)) {
             clone[elem] = getDeepClone(clonedObj[elem]);
-        } 
+        }     
     }
     
     return clone;
 }
+
 
 module.exports = getDeepClone;
