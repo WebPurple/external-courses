@@ -17,16 +17,15 @@ function getDeepClone(clonedObj) {
         return clone;
     }
 
-    
     clone = {};
 
     for (let elem in clonedObj) {
         if (clonedObj.hasOwnProperty(elem)) {
             clone[elem] = getDeepClone(clonedObj[elem]);
         } 
-
-        return clone;
     }
+    
+    return clone;
 }
 
 module.exports = getDeepClone;
