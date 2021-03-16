@@ -8,9 +8,7 @@ function getDeepClone(clonedObj) {
     if (Array.isArray(clonedObj)) {
         clone = [];
 
-        clonedObj.forEach(elem => {
-            clone.push(getDeepClone(elem));
-        });
+        clonedObj.forEach(elem => clone.push(getDeepClone(elem)));
         
         return clone;
     }
