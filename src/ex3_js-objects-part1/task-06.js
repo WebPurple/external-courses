@@ -9,7 +9,7 @@ function getDeepClone(clonedObj) {
         clone = [];
 
         clonedObj.forEach(elem => {
-            clone[elem] = getDeepClone(clonedObj[elem]);
+            clone[elem] = getDeepClone(elem);
         });
         
         return clone;
@@ -19,7 +19,7 @@ function getDeepClone(clonedObj) {
 
     for (let elem in clonedObj) {
         if (clonedObj.hasOwnProperty(elem)) {
-            clone[elem] = getDeepClone(clonedObj[elem]);
+            clone[elem] = getDeepClone(elem);
         }     
     }
     
