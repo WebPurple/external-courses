@@ -1,15 +1,12 @@
-function addNewStringInObject (someString, someObject ) {
-    for (let key in someObject) {
-        if (key === someString ) {
-            return someObject;
-        }
+function addNewStringInObject(someString, someObject) {
+  let coppySomeObject = someObject;
+  for (let key in coppySomeObject) {
+    if (key === someString) {
+      return coppySomeObject;
     }
-    someObject[someString] = "new"
-    return someObject;
+  }
+  coppySomeObject[someString] = "new";
+  return coppySomeObject;
 }
-
-// let obj= {a: 1, b: 2, c: 3, d: 4};
-// let string = "a";
-// console.log( addNewStringInObject(string, obj));
 
 module.exports = addNewStringInObject;

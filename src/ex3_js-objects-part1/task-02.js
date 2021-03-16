@@ -1,8 +1,10 @@
-function returnObjectPropertiesAndKeys (someObject) {
-    for (let key in someObject) {
-         console.log(key,someObject[key]);
+function returnObjectPropertiesAndKeys(someObject) {
+  for (let key in someObject) {
+    if (someObject.hasOwnProperty(key)) {
+      console.log(key, someObject[key]);
     }
-    return;
+  }
+  return;
 }
 
 module.exports = returnObjectPropertiesAndKeys;
