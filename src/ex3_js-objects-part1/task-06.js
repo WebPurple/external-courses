@@ -9,12 +9,10 @@ function getDeepClone(clonedObj) {
         clone = [];
 
         clonedObj.forEach(elem => {
-            if (elem < clonedObj.length) {
-                clone[elem] = getDeepClone(clonedObj[elem]);
-            }
-            
-            return clone;
+            clone[elem] = getDeepClone(clonedObj[elem]);
         });
+        
+        return clone;
     }
 
     clone = {};
@@ -27,6 +25,5 @@ function getDeepClone(clonedObj) {
     
     return clone;
 }
-
 
 module.exports = getDeepClone;
