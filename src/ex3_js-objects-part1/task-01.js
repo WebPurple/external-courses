@@ -1,8 +1,8 @@
 const workWithObject = () => {
     let user = {};
 
-    user.name = "object";
-    user["likes pizza"] = true;
+    user.name = 'object';
+    user.likesPizza = true;
     user.age = 21;
     
     delete user.name;
