@@ -6,8 +6,8 @@ const workWithObject = () => {
     user.age = 21;
     
     delete user.name;
-    
+
     return;
 };
 
-module.exports = workWithObject();
+module.exports = workWithObject;
