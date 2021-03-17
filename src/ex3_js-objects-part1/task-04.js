@@ -10,6 +10,6 @@ const modifiedObject = (testString, testObject) => {
     modifiedObject[testString] = 'new';
 
     return modifiedObject;
-}
+};
 
 module.exports = modifiedObject;

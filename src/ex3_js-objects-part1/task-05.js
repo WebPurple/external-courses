@@ -1,5 +1,3 @@
-const copyingObject = (testObject) => {
-    return Object.assign({}, testObject);
-}
+const copyingObject = ((testObject) => Object.assign({}, testObject));
 
 module.exports = copyingObject;

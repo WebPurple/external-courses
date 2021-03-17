@@ -1,7 +1,3 @@
-const copyingObject = (testObject) => {
-    let deepClone = JSON.parse(JSON.stringify(testObject));
-    
-    return deepClone;
-}
+const copyingObject = ((testObject) => JSON.parse(JSON.stringify(testObject)));
 
 module.exports = copyingObject;

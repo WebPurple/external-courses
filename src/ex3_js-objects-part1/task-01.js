@@ -1,14 +1,13 @@
 const workWithObject = () => {
-    let testObject = {};
+    let user = {};
 
-    testObject[isString] = "object";
-    testObject[isBool] = true;
-    testObject[isNumber] = 2;
-    testObject[isNull] = null;
+    user.name = "object";
+    user["likes pizza"] = true;
+    user.age = 21;
     
-    delete testObject[isString];
-
+    delete user.name;
+    
     return;
-}
+};
 
-module.exports = workWithObject;
+module.exports = workWithObject();
