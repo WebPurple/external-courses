@@ -1,26 +1,22 @@
 const checkType = (variableChecked) => {
-
+    let returnType = undefined
     if (isNaN(variableChecked)) {
-        console.log('undefined');
-        return;
+        return returnType;
     }
 
-    let type = typeof(variableChecked);
+    const type = typeof(variableChecked);
 
     if (type === 'number') {
-        console.log('number')
-        return;
+        returnType = "number";
+        return returnType;
     }
 
     if (type === 'string') {
-        console.log('string');
-        return;
+        returnType = "string";
+        return returnType;
     }
-    
-    console.log('undefined');
-    return;
+
+    return returnType;
 };
 
-let variableChecked = Boolean;
-
-module.exports = checkType(variableChecked);
+module.exports = checkType;

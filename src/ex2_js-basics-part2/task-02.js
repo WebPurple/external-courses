@@ -1,12 +1,12 @@
-const arrayOutput = () => {
-    const arr = [1,'Null',3];
+const arrayOutput = (arr) => {
 
     arr.forEach((item, index) => {
-        console.log('Element №' + index, '=', item);
+        console.log(`Element №${index} = ${item}`);
     });
 
-    console.log('Number of array elements =', arr.length);
-    return;
-}
+    console.log(`Number of elements = ${arr.length}`);
 
-module.exports = arrayOutput();
+    return;
+};
+
+module.exports = arrayOutput;

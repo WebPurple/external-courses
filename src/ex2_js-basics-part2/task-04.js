@@ -1,19 +1,22 @@
 const checkArrayForIdenticalValues = (arrGiven) => {
 
-    let lastItem = arrGiven.length - 1;
+    const lastItem = arrGiven.length - 1;
 
-    let resultOfChecking = arrGiven.every(function (item, index) {
+    let countIdenticalValues = arrGiven.reduce(function (previousValue, item, index) {
         if (index === lastItem) {
-            return true;
+            return previousValue + 1;
         }
+
         if (item === arrGiven[index + 1]) {
-            return true;
+            return previousValue + 1;
         }
-        return false;
+
+        return previousValue;
     });
 
-    console.log('All elements of the array are equal:', resultOfChecking);
-    return resultOfChecking;
-}
+    const resultOfChecking = (countIdenticalValues === arrGiven.length) ? true : false;
 
-module.exports = checkArrayForIdenticalValues(arrGiven);
+    return resultOfChecking;
+};
+
+module.exports = checkArrayForIdenticalValues;

@@ -1,25 +1,35 @@
 const arrayOutputParityNumber = (arrGiven) => {
+    let arrEvenNumbers = 0;
+    let arrOddNumbers = 0;
+    let arrZero = 0;
 
-    let arrEvenNumbers = arrGiven.filter(function(number) {
-        return (number % 2 === 0) && (number !== 0) && (number !== null);
+    arrGiven.forEach(function(item) {
+        if (isNaN(item)) {
+            return;
+        }
+
+        if (item === null) {
+            return;
+        }
+
+        if (item === 0) {
+            arrZero = arrZero + 1;
+            return;
+        }
+
+        const remainderOfTheDivision = item % 2;
+
+        if (remainderOfTheDivision === 1) {
+            arrOddNumbers = arrOddNumbers + 1;
+            return;
+        }
+
+        arrEvenNumbers = arrEvenNumbers + 1;
     });
 
-    let arrOddNumbers = arrGiven.filter(function(number) {
-        return (number % 2 === 1) && (number !== 0) && (number !== null);
-    });
-
-    let arrZero = arrGiven.filter(function(number) {
-        return (number === 0) && (number !== null);
-    });
-
-    let arrOutput = [arrEvenNumbers.length, arrOddNumbers.length, arrZero.length];
-
-    console.log('CountEvenNumbers =', arrEvenNumbers.length);
-    console.log('CountOddNumbers =', arrOddNumbers.length);
-    console.log('CountZero =', arrZero.length);
-    console.log('Output array =', arrOutput);
-
+    let arrOutput = [arrEvenNumbers, arrOddNumbers, arrZero];
+    
     return arrOutput;
-}
+};
 
 module.exports = arrayOutputParityNumber;

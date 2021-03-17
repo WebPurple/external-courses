@@ -16,15 +16,15 @@ const checkPrime = (number) => {
         return 'Данные неверны';
     }
 
-    let resultOfChecking = true; //сделаем предположение, что наше число является простым
+    let resultOfChecking = true; 
 
-    const countDivisors = 2; //простое число делиться на 1 и само себя
-    const maximumDivisor = Math.floor(number/2); //если мы делим на число, которое больше половины текущего, то оно всегда будет дробным (за исключением, если делим сами на себя)
-    let countCurrentDivisors = 1; //если число не равно 1 или 0, то оно всегда будет делиться на 1
+    const countDivisors = 2; 
+    const maximumDivisor = Math.floor(number/2); 
+    let countCurrentDivisors = 1; 
     for (i = 2; i <= maximumDivisor; i++) {
-        RemainderOfTheDivision = number % i;
+        const remainderOfTheDivision = number % i;
         
-        if (RemainderOfTheDivision === 0) {
+        if (remainderOfTheDivision === 0) {
             countCurrentDivisors = countCurrentDivisors + 1;
         }
 
@@ -36,10 +36,10 @@ const checkPrime = (number) => {
 
     console.log('This number is simple:', resultOfChecking);
     if (resultOfChecking) {
-        return 'Число ' + number + ' - простое число';
+        return `Число ${number} - простое число`;
     } 
-    return 'Число ' + number + ' - составное число';;
+    return `Число ${number} - составное число`;
     
-}
+};
 
 module.exports = checkPrime;
