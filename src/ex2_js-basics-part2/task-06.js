@@ -1,18 +1,15 @@
 const checkPrime = (number) => {
     if (number === 1) { 
         //the number 1 is neither prime nor composite, since this violates the uniqueness of the prime factorization, which is important for number theory
-        console.log('The number 1 is neither prime nor composite');
         return false;
     }
 
     if (number === 0) {
         //the number 0 is neither prime nor composite, since it is not a natural number
-        console.log('The number 0 is neither prime nor composite');
         return false;
     }
 
     if (number > 1000) {
-        console.log('Error: the entered number is greater than 1000');
         return 'Данные неверны';
     }
 
@@ -34,7 +31,6 @@ const checkPrime = (number) => {
         }
     }
 
-    console.log('This number is simple:', resultOfChecking);
     if (resultOfChecking) {
         return `Число ${number} - простое число`;
     } 

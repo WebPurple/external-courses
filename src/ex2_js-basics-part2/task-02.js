@@ -1,5 +1,4 @@
 const arrayOutput = (arr) => {
-
     arr.forEach((item, index) => {
         console.log(`Element №${index} = ${item}`);
     });

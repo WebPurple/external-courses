@@ -3,33 +3,27 @@ const arrayOutputParityNumber = (arrGiven) => {
     let arrOddNumbers = 0;
     let arrZero = 0;
 
-    arrGiven.forEach(function(item) {
-        if (isNaN(item)) {
-            return;
-        }
+    arrGiven.forEach((item) => {
+            if ((isNaN(item)) || (item === null)) {
+                return;
+            }
 
-        if (item === null) {
-            return;
-        }
+            if (item === 0) {
+                arrZero = arrZero + 1;
+                return;
+            }
 
-        if (item === 0) {
-            arrZero = arrZero + 1;
-            return;
-        }
+            const remainderOfTheDivision = item % 2;
 
-        const remainderOfTheDivision = item % 2;
+            if (remainderOfTheDivision === 1) {
+                arrOddNumbers = arrOddNumbers + 1;
+                return;
+            }
 
-        if (remainderOfTheDivision === 1) {
-            arrOddNumbers = arrOddNumbers + 1;
-            return;
-        }
-
-        arrEvenNumbers = arrEvenNumbers + 1;
-    });
-
-    let arrOutput = [arrEvenNumbers, arrOddNumbers, arrZero];
+            arrEvenNumbers = arrEvenNumbers + 1;
+        });
     
-    return arrOutput;
+    return [arrEvenNumbers, arrOddNumbers, arrZero];
 };
 
 module.exports = arrayOutputParityNumber;
