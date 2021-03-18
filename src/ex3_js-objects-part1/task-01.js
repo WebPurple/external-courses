@@ -1,6 +1,6 @@
 const person = {};
 
-person.name = "Dmitry";
+person.name = 'Dmitry';
 person.age = 26;
 person.maried = false;
 
