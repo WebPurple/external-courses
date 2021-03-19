@@ -1,5 +1,5 @@
 function getRoundedNumber(firstNum, secondNum) {
-    return (firstNum + secondNum).toFixed(3);
+    return parseInt((firstNum + secondNum).toFixed(3));
 }
 
 module.exports = getRoundedNumber;

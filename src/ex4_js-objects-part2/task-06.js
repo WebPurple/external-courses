@@ -7,7 +7,7 @@ function getWordsWithCapitalLetters(string) {
         return elem.replace(elem[0], capitalLetter);
     });
 
-    return arrWordsWithCapLetters.join('');
+    return arrWordsWithCapLetters.join(' ');
 }
 
 module.exports = getWordsWithCapitalLetters;

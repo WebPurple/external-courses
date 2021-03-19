@@ -7,7 +7,7 @@ function trimString(string, number) {
 
     const truncatedArray = arrLetters.filter(elem => arrLetters.indexOf(elem) + 1 < number);
 
-    return truncatedArray.join('') + '...'; 
+    return truncatedArray.join('') + '…'; 
 }
 
 module.exports = trimString;

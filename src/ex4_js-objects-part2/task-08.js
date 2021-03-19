@@ -1,13 +1,11 @@
 function getStringInCamelCase(string) {
     const arrWords = string.split(' ');
 
-    const wordsInCapitalLetter = arrWords.map(elem => {
-        return elem.replace(elem[0], elem[0].toUpperCase());         
+    let arrWordsInCamelCase = arrWords.map(elem => {
+        return elem.toLowerCase().replace(elem[0], elem[0].toUpperCase());;
     });
     
-    const glueString = wordsInCapitalLetter.join('');
-
-    return glueString.replace(glueString[0], glueString[0].toLowerCase());
+    return arrWordsInCamelCase.join('');
 }
 
 module.exports = getStringInCamelCase;
