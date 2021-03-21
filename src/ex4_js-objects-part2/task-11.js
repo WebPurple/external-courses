@@ -1,15 +1,12 @@
 function getNumberOfRepetitions(string) {
   const splitString = string.split('');
-
-  let result = [];
   
-  for (let letter of splitString) {
-    if (!result.includes(letter)) {
-      result.push(letter);
-    }
+  const result = splitString.reduce((result, letter) => (result[letter] = (result[letter] || 0) + 1, result), []);
+  
+  for (let elem in result) {
+    console.log(result[elem])
   }
-
-  console.log(result.length);
 }
+
 
 module.exports = getNumberOfRepetitions;
