@@ -1,21 +1,13 @@
 function getNumberOfRepetitions(string) {
   const splitString = string.split('');
 
-  const result = {};
+  splitString.reduce(function(acc, el) {
+    acc[el] = (acc[el] || 0) + 1;
 
-  for (let i = 0; i < splitString.length; i++) {
-      const elemArr = splitString[i];
+    return acc;
+  }, {});
 
-      if (result[elemArr] !== undefined) {
-        result[elemArr]++;
-      }
-          
-      if (result[elemArr] === undefined) {
-        result[elemArr] = 1;
-      } 
-  }
-  
-  return result;
+  return 
 }
 
 module.exports = getNumberOfRepetitions;
