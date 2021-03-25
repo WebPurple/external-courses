@@ -29,3 +29,5 @@ function Calculator() {
         return this.reset = 0;
     } 
   }
+
+  module.exports = Calculator;
