@@ -28,6 +28,8 @@ function Calculator() {
     this.reset = () => {
         return this.reset = 0;
     } 
-  }
+}
 
-  module.exports = Calculator;
+let calculator = new Calculator();
+
+module.exports =  calculator;
