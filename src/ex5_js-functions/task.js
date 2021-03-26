@@ -10,23 +10,25 @@ function Calculator() {
         this.value -= number;
         return this.subtract;
     }
-  
+
+    this.value = 1;
+
     this.divide = (number = 1) => {
         this.value /= number;
-        return this.divide;
+        return  this.divide;
     }
   
     this.multiply = (number = 1) => {
-        this.value *= number;
+        this.value *= number;   
         return this.multiply;
     }
   
     this.getResult = () => {
-        return this.value;
+        return this.value;  
     }
   
     this.reset = () => {
-        return this.reset = 0;
+        return this.value = 0;
     } 
 }
 
