@@ -3,16 +3,16 @@ function analogReduce(array, callback, initialValue) {
     
     array.forEach(elem => {
         if(initialValue) {
-            result = callback.call(result, elem, i, array);
+            result = callback.call(result, elem, array.indexOf(elem), array);
         }
        
         if(!initialValue) {
-            if(i === 0) {
+            if(array.indexOf(elem) === 0) {
                result = elem 
             }
 
-            if(!i === 0) {
-               result = callback.call(result, elem, i, array);
+            if(!array.indexOf(elem) === 0) {
+               result = callback.call(result, elem, array.indexOf(elem), array);
             }
             
         }
