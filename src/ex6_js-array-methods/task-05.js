@@ -1,8 +1,8 @@
-function analogMap(array, callback) {
+function analogMap(array, callback, thisArg) {
     const filteredArray = [];
 
     for (let item of array) {
-        filteredArray.push(callback.call(item, array.indexOf(item), array)) 
+        filteredArray.push(callback.call(thisArg, item, array.indexOf(item), array)) 
     } 
     
     return filteredArray;  
