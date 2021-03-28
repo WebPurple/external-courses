@@ -9,7 +9,7 @@ function analogReduce(array, callback, initialValue) {
         }
 
         if (initialValue && index > 0) {
-            result = callback.call(result, elem, index, array);
+            result += callback.call(result, elem, index, array);
         }
        
         if (!initialValue && index === 0) {
@@ -17,7 +17,7 @@ function analogReduce(array, callback, initialValue) {
         }
             
         if (!initialValue && index > 0) {
-               result = callback.call(result, elem, index, array);
+               result += callback.call(result, elem, index, array);
         }        
     }
 

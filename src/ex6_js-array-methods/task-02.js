@@ -3,9 +3,9 @@ function analogSome(array, callback, thisArg) {
       if (!callback.call(thisArg, item, array.indexOf(item), array)) {
          return true;
       }
-
-      return false;  
    } 
+   
+   return false; 
 }
  
 module.exports = analogSome;
