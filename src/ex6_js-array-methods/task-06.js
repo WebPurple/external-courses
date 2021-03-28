@@ -4,20 +4,20 @@ function analogReduce(array, callback, initialValue) {
     for (let elem of array) {
         const index = array.indexOf(elem);
 
-        if (initialValue && index === 0) {
+        if (arguments === 3 && index === 0) {
             result = initialValue;
         }
 
-        if (initialValue && index > 0) {
+        if (arguments === 3 && index > 0) {
             result += callback.call(result, elem, index, array);
         }
        
-        if (!initialValue && index === 0) {
+        if (arguments === 2 && index === 0) {
             result === elem;
         }
             
-        if (!initialValue && index > 0) {
-               result += callback.call(result, elem, index, array);
+        if (arguments === 2 && index > 0) {
+            result += callback.call(result, elem, index, array);
         }        
     }
 
