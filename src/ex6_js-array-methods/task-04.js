@@ -1,5 +1,5 @@
 function analogFilter(array, callback) {
-    array.forEach(elem => {
+    for(elem of array) {
         if (callback.call(elem, array.indexOf(elem), array)) {
             const filteredArray = []; 
             
@@ -7,7 +7,7 @@ function analogFilter(array, callback) {
 
             return filteredArray;    
         }
-    }); 
+    } 
 }
 
 module.exports = analogFilter;

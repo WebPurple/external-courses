@@ -1,9 +1,9 @@
 function analogMap(array, callback) {
     const filteredArray = [];
 
-    array.forEach(item => {
+    for(item of array) {
         filteredArray.push(callback.call(item, array.indexOf(item), array)) 
-    }); 
+    } 
     
     return filteredArray;  
 }

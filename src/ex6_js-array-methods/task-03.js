@@ -1,11 +1,11 @@
 function checkTruthOfArrElem(callback, array) {
-   array.forEach(item => {
+   for(item of array) {
       if (callback.call(item, array.indexOf(item), array)) {
          return true;
       }
-   });
 
-   return false;   
+      return false;  
+   }
 }
 
 module.exports = checkTruthOfArrElem;
