@@ -1,6 +1,5 @@
 function analogSome(array, callback) {
-    
-    for(item of array) {
+   for (let item of array) {
       if (!callback.call(item, array.indexOf(item), array)) {
          return false;
       }

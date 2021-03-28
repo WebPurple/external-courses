@@ -29,7 +29,7 @@ function getSliceArr(array, begin, end) {
 
     if (arguments.length === 2) {
         for (let elem of array) {
-            if (index >= begin) {
+            if (array.indexOf(elem) >= begin) {
                 sliceArr.push(elem);
             }
         }

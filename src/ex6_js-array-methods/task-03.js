@@ -1,5 +1,5 @@
-function checkTruthOfArrElem(callback, array) {
-   for(item of array) {
+function checkTruthOfArrElem(array, callback) {
+   for (let item of array) {
       if (callback.call(item, array.indexOf(item), array)) {
          return true;
       }

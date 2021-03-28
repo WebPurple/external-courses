@@ -1,7 +1,7 @@
 function analogMap(array, callback) {
     const filteredArray = [];
 
-    for(item of array) {
+    for (let item of array) {
         filteredArray.push(callback.call(item, array.indexOf(item), array)) 
     } 
     
