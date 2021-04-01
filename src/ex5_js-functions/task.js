@@ -12,7 +12,7 @@ function Calculator() {
     }
 
     this.divide = (number = 1) => {
-        if (this.value = 0) {
+        if (this.value === 0) {
             this.value = 1;
         }
         
@@ -21,7 +21,7 @@ function Calculator() {
     }
   
     this.multiply = (number = 1) => {
-        if (this.value = 0) {
+        if (this.value === 0) {
             this.value = 1;
         }
         
