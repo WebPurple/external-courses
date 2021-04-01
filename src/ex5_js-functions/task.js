@@ -1,19 +1,17 @@
 function Calculator() {
     this.value = 0;
   
-    this.add = () => {
+    this.add = (number = 0) => {
         this.value += number;
         return this.add;
     }
   
-    this.subtract = () => {
+    this.subtract = (number = 0) => {
         this.value -= number;
         return this.subtract;
     }
 
-    this.value = 1;
-
-    this.divide = () => {
+    this.divide = (number = 1) => {
         if (this.value = 0) {
             this.value = 1;
         }
@@ -22,7 +20,7 @@ function Calculator() {
         return  this.divide;
     }
   
-    this.multiply = () => {
+    this.multiply = (number = 1) => {
         if (this.value = 0) {
             this.value = 1;
         }
