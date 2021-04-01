@@ -1,24 +1,32 @@
 function Calculator() {
     this.value = 0;
   
-    this.add = (number = 0) => {
+    this.add = () => {
         this.value += number;
         return this.add;
     }
   
-    this.subtract = (number = 0) => {
+    this.subtract = () => {
         this.value -= number;
         return this.subtract;
     }
 
     this.value = 1;
 
-    this.divide = (number = 1) => {
+    this.divide = () => {
+        if (this.value = 0) {
+            this.value = 1;
+        }
+        
         this.value /= number;
         return  this.divide;
     }
   
-    this.multiply = (number = 1) => {
+    this.multiply = () => {
+        if (this.value = 0) {
+            this.value = 1;
+        }
+        
         this.value *= number;   
         return this.multiply;
     }
