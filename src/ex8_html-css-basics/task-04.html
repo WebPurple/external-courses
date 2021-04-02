@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-04</title>
+    <style>
+        .tables {
+            background: rgb(216, 254, 2);
+        }
+    </style>
+    <style>
+        @import url("task-04-2.css");
+    </style>
+
+    <link rel="stylesheet" href="task-04.css">
+</head>
+<body>
+    <h1>HTML Basics</h1> 
+    <section class="lists">
+        <h2>Lists</h2>  
+            <h3>Ordered list</h3>
+            <ol>
+                <li>first item</li>
+                <li>second item</li>
+                <li>trird item</li>
+                <li>fourth item</li>
+                <li>fifth item</li>
+            </ol>
+            <h3>Unordered list</h3>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+            </ul>
+            <div class="green-block">
+                <h3>Description List</h3>
+                <dl>
+                    <dt>Name</dt>
+                     <dd>Godzilla</dd>
+                    <dt>born</dt>
+                     <dd>1952</dd>
+                    <dt>Birthplace</dt>
+                     <dd>Japan</dd>
+                    <dt>Color</dt>
+                     <dd>Green</dd>
+                </dl>
+                <h3>Nested List</h3>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two with subitems</li>
+                        <ul list-style-type="circle">
+                            <li>Subitem 1</li>
+                                <ul>
+                                    <li>SubSubitem 1</li>
+                                    <li>SubSubitem 2</li>
+                                </ul>
+                            <li>Subitem 2</li>
+                        </ul>
+                    <li>Final list item</li>
+                </ul>
+            </div>
+            <h3>List with links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <hr>
+    </section>
+    <section class="paragraphs">
+        <h2>Paragraphs</h2>
+        <p class="paragraph-1">Lorem ipsum dolor sit amet, <span>consectetur adipiscing elit.</span>  Proin non enim accumsan, condimentum lacus  at, pulvinar massa. Phasellus dignissim, lacus ac accumsan sagittis, dolor tortor facilisis lorem, vehicula dictum turpis tellus in mi. Sed nunc magna, porta sagittis faucibus ut, egestas quis justo.
+        </p>
+        <p class="paragraph-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Curabitur tempor tortor at turpis convallis, id pharetra augue vehicula.<br>
+        Ut eu est ultrices, maximus ex eu, commodo massa.<br>
+        Curabitur aliquam quam sed ullamcorper iaculis.<br>
+        <span>Sed interdum enim in arcu commodo, ut luctus purus imperdiet.</span><br>
+        Morbi vitae ipsum quis leo tincidunt semper.<br>
+        Vivamus sodales sem quis lorem mattis lacinia.<br>
+        Nullam pulvinar magna sed turpis malesuada, quis congue nulla pulvinar.<br>
+        Sed sit amet odio rhoncus odio tempus tincidunt.<br>
+        Integer non urna viverra metus sagittis pretium.<br>
+        </p>  
+        <hr>
+    </section>
+    <section class="tables">
+        <h2>Tables</h2>
+        <table>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Dow</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Dow</td>
+            </tr>
+        </table>
+        <hr>
+    </section>
+    <section style="background-color: rosybrown;">
+        <h2>Image</h2>
+        <img src="task-02.jpg" alt="Cat" width="200" height="100">
+        <hr>
+    </section>
+    <section class="pre-tag">
+        <h2>Pre tag</h2>
+        <pre>
+    if (time = 20) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening"; 
+    }
+        </pre>
+    </section>
+    <section class="blocks">
+        <h2>blocks</h2>
+        <div class="block-1"></div>
+        <div class="block-2"></div>
+        <div class="block-3"></div>
+        <div class="block-4">
+            <div class="block-5"></div>
+        </div>
+        <div class="block-6"></div>
+        <div class="block-7"></div>
+    </section>
+</body>
+</html>
