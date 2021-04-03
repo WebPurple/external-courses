@@ -11,20 +11,14 @@ function Calculator() {
         return this.subtract;
     }
 
+    this.value = 1;
+
     this.divide = (number = 1) => {
-        if (this.value === 0) {
-            this.value = 1;
-        }
-        
         this.value /= number;
         return  this.divide;
     }
   
     this.multiply = (number = 1) => {
-        if (this.value === 0) {
-            this.value = 1;
-        }
-        
         this.value *= number;   
         return this.multiply;
     }
