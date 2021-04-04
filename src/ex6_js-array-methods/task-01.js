@@ -22,12 +22,14 @@ function getSliceArr(array, begin, end) {
     }
 
     if (arguments.length === 2) {
-        return sliceArr.concat(array.splice(begin, array.length - begin));
+        array.splice(0, begin);
+        return sliceArr.concat(array);
     }
 
     if (arguments.length === 1) {
-        return  sliceArr.concat(array)
+        return  sliceArr.concat(array);
     }
 }
+
 
 module.exports = getSliceArr;
