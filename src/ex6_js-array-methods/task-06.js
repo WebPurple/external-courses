@@ -1,7 +1,7 @@
 function analogReduce(array, callback, initialValue) {
     let result = 0; 
 
-    if (arguments.length === 3) {
+    if (initialValue) {
         result = initialValue;
 
         array.forEach(elem => {
@@ -9,7 +9,7 @@ function analogReduce(array, callback, initialValue) {
         });
     }
 
-    if (arguments.length === 2) {
+    if (!initialValue) {
        array.forEach(elem => {
             result = callback.call(null, result, elem, array.indexOf(elem), array); 
         });

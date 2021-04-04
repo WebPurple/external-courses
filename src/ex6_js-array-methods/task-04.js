@@ -1,9 +1,8 @@
 function analogFilter(array, callback, thisArg) {
     const filteredArray = []; 
 
-    for (let elem of array) {
-        if (callback.call(thisArg, elem, array.indexOf(elem), array)) { 
-            
+    for (let i = 0; i < array.length; i++) {
+        if (callback.call(thisArg, arr[i], i, array)) { 
             filteredArray.push(elem);    
         }
     }
