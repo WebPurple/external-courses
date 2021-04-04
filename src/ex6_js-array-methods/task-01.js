@@ -3,7 +3,7 @@ function getSliceArr(array, begin, end) {
 
     if (arguments.length === 3) {
         if (end > 0) {
-            sliceArr.concat(array.splice(begin, array.length - (end + begin)));
+           return sliceArr.concat(array.splice(begin, end-begin));
         }
         
         if (end < 0) {
@@ -17,10 +17,8 @@ function getSliceArr(array, begin, end) {
                 }
             }
 
-            sliceArr.reverse();
-        }
-
-        return sliceArr;
+            return sliceArr.reverse();
+        }   
     }
 
     if (arguments.length === 2) {
@@ -28,7 +26,7 @@ function getSliceArr(array, begin, end) {
     }
 
     if (arguments.length === 1) {
-        return  sliceArr.concat(array);
+        return  sliceArr.concat(array)
     }
 }
 
