@@ -22,8 +22,13 @@ function getSliceArr(array, begin, end) {
     }
 
     if (arguments.length === 2) {
-        array.splice(0, begin);
-        return sliceArr.concat(array);
+        for (let elem of array) {
+            if (array.indexOf(elem) >= begin) {
+                sliceArr.push(elem);
+            }
+        }
+        
+        return sliceArr;
     }
 
     if (arguments.length === 1) {
