@@ -22,7 +22,7 @@ function getSliceArr(array, begin, end) {
     }
 
     if (arguments.length === 2) {
-        return sliceArr.concat(array.splice(begin, array.length));
+        return sliceArr.concat(array.splice(begin, array.length - begin));
     }
 
     if (arguments.length === 1) {

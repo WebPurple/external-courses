@@ -3,7 +3,7 @@ function analogFilter(array, callback, thisArg) {
 
     for (let i = 0; i < array.length; i++) {
         if (callback.call(thisArg, array[i], i, array)) { 
-            filteredArray.push(elem);    
+            filteredArray.push(array[i]);    
         }
     }
      
