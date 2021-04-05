@@ -5,7 +5,7 @@ calculator = {
             return this.add; 
         }
 
-        this.result = calculator.result + number;
+        calculator.result = calculator.result + number;
 
         return this.add;
     },
@@ -14,7 +14,7 @@ calculator = {
             return this.subtract; 
         }
 
-        this.result = calculator.result - number;
+        calculator.result = calculator.result - number;
 
         return this.subtract;
     },
@@ -23,7 +23,7 @@ calculator = {
             return this.divide; 
         }
 
-        this.result = calculator.result / number;
+        calculator.result = calculator.result / number;
 
         return this.divide;
     },
@@ -32,7 +32,7 @@ calculator = {
             return this.multiply; 
         }
 
-        this.result = calculator.result * number;
+        calculator.result = calculator.result * number;
 
         return this.multiply;
     },
@@ -45,5 +45,7 @@ calculator = {
     }
 };
 
+calculator.add(1)(1);
+console.log(calculator.getResult())
 module.exports = calculator;
  
