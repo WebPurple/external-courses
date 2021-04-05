@@ -5,7 +5,8 @@ const getPropertyInPrototype = (findProperty, inputObj) => {
         }
     }
 
-    return undefined;
+    // eslint-disable-next-line consistent-return
+    return;
 };
 
 module.exports = getPropertyInPrototype;

@@ -1,12 +1,15 @@
 const getStringWithCapitalLettersInWords = (inputString) => {
-    let arrayForString = inputString.split(" ");
-    let resultString = "";
+    let arrayForString = inputString.split(' ');
+    let resultString = '';
 
     arrayForString.forEach((item) => {
-        if (resultString !== "") {
-            resultString = resultString + " ";
+        if (resultString !== '') {
+            resultString = resultString + ' ';
         }
-        resultString = resultString + item[0].toUpperCase() + item.slice(1,item.length);
+
+        if (item.length !== 0) {
+            resultString = `${resultString}${item[0].toUpperCase()}${item.slice(1,item.length)}`;
+        }
     });
 
     return resultString;
