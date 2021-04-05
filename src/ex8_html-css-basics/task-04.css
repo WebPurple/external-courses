@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'balqis';
+    src: url("balqis.woff2") format('woff2'),
+         url("balqis.woff") format('woff');
+}
+
+.green-block {
+    background: green;
+}
+
+.lists {
+    background-color: #138574;
+}
+
+.paragraphs {
+    background-image: url(task-04.jpg);
+}
+
+.paragraph-1 {
+    font-family: 'balqis';
+    font-size: 40px;
+}
+
+.paragraph-1 span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+.paragraph-2 span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.blocks {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background: aquamarine; 
+   height: 30Vh;
+}
+
+.block-1 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+
+.block-2 {
+    background-color: red;
+    width: 10%;
+    height: 40%;
+}
+
+.block-3 {
+    background-color: blue;
+    width: 10%;
+    height: 40%;
+}
+
+.block-4 {
+    background-color: rgb(238, 255, 0);
+    width: 9em;
+    height: 9em;
+}
+
+.block-5 {
+    background-color: rgb(162, 0, 255);
+    width: 7rem;
+    height: 7rem;
+}
+
