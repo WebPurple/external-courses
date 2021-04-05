@@ -5,7 +5,7 @@ calculator = {
             return this.add; 
         }
 
-        calculator.result = calculator.result + number;
+        this.result = calculator.result + number;
 
         return this.add;
     },
@@ -14,7 +14,7 @@ calculator = {
             return this.subtract; 
         }
 
-        calculator.result = calculator.result - number;
+        this.result = calculator.result - number;
 
         return this.subtract;
     },
@@ -23,7 +23,7 @@ calculator = {
             return this.divide; 
         }
 
-        calculator.result = calculator.result / number;
+        this.result = calculator.result / number;
 
         return this.divide;
     },
@@ -32,7 +32,7 @@ calculator = {
             return this.multiply; 
         }
 
-        calculator.result = calculator.result * number;
+        this.result = calculator.result * number;
 
         return this.multiply;
     },

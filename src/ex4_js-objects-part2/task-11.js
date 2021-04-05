@@ -1,8 +1,8 @@
 const getStringWithAdditionalString = (inputString) => {
     let objectResult = {};
-    let ArraySymbol = inputString.split("");
+    let arraySymbol = inputString.split("");
 
-    ArraySymbol.forEach((item) => {
+    arraySymbol.forEach((item) => {
         if (findingProperty(item, objectResult)) {
             objectResult[`${item}`] = objectResult[`${item}`] + 1;
         } else {
