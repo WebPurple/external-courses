@@ -1,51 +1,50 @@
-calculator = {
-    result : 0,
-    add : function(number) {
-        if (typeof(number) == "undefined") {
-            return this.add; 
+function calculator() {
+    let result = 0;
+    
+    return {
+        add(number) {
+            if (typeof(number) == "undefined") {
+                return this.add; 
+            }
+            
+            result = result + number; 
+            return this.add;
+        },
+        subtract(number) {
+            if (typeof(number) == "undefined") {
+                return this.subtract; 
+            }
+            
+            result = result - number;
+            
+            return this.subtract;
+        },
+        divide(number) {
+            if (typeof(number) == "undefined") {
+                return this.divide; 
+            }
+            
+            result = result / number;
+            
+            return this.divide;
+        },
+        multiply(number) {
+            if (typeof(number) == "undefined") {
+                return this.multiply; 
+            }
+        
+            result = result * number;
+        
+            return this.multiply;
+        },
+        getResult(){
+            return result;
+        },
+        reset() {
+            result = 0;
         }
-
-        calculator.result = calculator.result + number;
-
-        return this.add;
-    },
-    subtract : function(number) {
-        if (typeof(number) == "undefined") {
-            return this.subtract; 
-        }
-
-        calculator.result = calculator.result - number;
-
-        return this.subtract;
-    },
-    divide : function(number) {
-        if (typeof(number) == "undefined") {
-            return this.divide; 
-        }
-
-        calculator.result = calculator.result / number;
-
-        return this.divide;
-    },
-    multiply : function(number) {
-        if (typeof(number) == "undefined") {
-            return this.multiply; 
-        }
-
-        calculator.result = calculator.result * number;
-
-        return this.multiply;
-    },
-    getResult : function() {
-        return this.result;
-    },
-    reset : function() {
-        this.result = 0;
-        return this.result;
     }
 };
 
-calculator.add(1)(1);
-console.log(calculator.getResult())
-module.exports = calculator;
- 
+let testCalculator = calculator();
+module.exports = testCalculator;
