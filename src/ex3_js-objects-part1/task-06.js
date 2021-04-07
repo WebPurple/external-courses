@@ -11,7 +11,7 @@ function getDeepClone(clonedObj) {
         clonedObj.forEach(elem => {
             clone.push(getDeepClone(elem));
         });
-
+        
         return clone;
     }
 
@@ -22,6 +22,7 @@ function getDeepClone(clonedObj) {
             clone[elem] = getDeepClone(clonedObj[elem]);
         } 
     }
+
     return clone;
 }
 
