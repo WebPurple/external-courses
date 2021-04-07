@@ -22,7 +22,6 @@ function getDeepClone(clonedObj) {
             clone[elem] = getDeepClone(clonedObj[elem]);
         } 
     }
-
     return clone;
 }
 
