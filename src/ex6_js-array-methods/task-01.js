@@ -9,9 +9,11 @@ function getSliceArr(array, begin, end) {
         if (end < 0) {
             array.reverse();
 
-            for (let i = 0; i < array.length; i++) {
-                if (i < Math.abs(begin) && i >= Math.abs(end)) {
-                    sliceArr.push(i);
+            for (let elem of array) {
+                const index = array.indexOf(elem);
+
+                if (index < Math.abs(begin) && index >= Math.abs(end)) {
+                    sliceArr.push(elem);
                 }
             }
 
@@ -20,7 +22,12 @@ function getSliceArr(array, begin, end) {
     }
 
     if (arguments.length === 2) {
-        return sliceArr.concat(array.splice(begin, array.length - begin));
+        for (let i = 0; i < array.length; i++) {
+            if (i >= begin) {
+                sliceArr.push(i);
+            }
+        }
+        return sliceArr;
     }
 
     if (arguments.length === 1) {
