@@ -2,10 +2,14 @@ function getSliceArr(array, begin, end) {
     const sliceArr = [];
 
     if (arguments.length === 3) {
-        if (end > 0) {
-            return sliceArr.concat(array.splice(begin, end-begin));
+        for (let elem of array) {
+            const index = array.indexOf(elem);
+
+            if (index>= begin && index < end) {
+                sliceArr.push(elem);
+            }  
         }
-        
+
         if (end < 0) {
             array.reverse();
 
@@ -17,21 +21,28 @@ function getSliceArr(array, begin, end) {
                 }
             }
 
-            return sliceArr.reverse();
+            sliceArr.reverse();
         }
+
+        return sliceArr;
     }
 
     if (arguments.length === 2) {
-        for (let i = 0; i < array.length; i++) {
-            if (i >= begin) {
-                sliceArr.push(i);
+        for (let elem of array) {
+            if (array.indexOf(elem) >= begin) {
+                sliceArr.push(elem);
             }
         }
+
         return sliceArr;
     }
 
     if (arguments.length === 1) {
-        return  sliceArr.concat(array);
+        for (let elem of array) {
+             sliceArr.push(elem);
+        }
+
+        return sliceArr;
     }
 }
 
