@@ -1,28 +1,35 @@
 body {
     padding: 30px;
-  }
-  main {
-    display: grid;
-    grid-template-areas: 
-      "header header"
-      "section aside";
-  }
-  header {
-    background: lightblue;
-    grid-area: header;
-  }
-  section {
-    background: lightgreen;
-    grid-area: section;
-  }
-  article {
-    background: white;
-    margin: 0 0 1rem 0;
-  }
-  aside {
-    background: pink;
-    grid-area: aside;
-  }
-  header, article, section, .module {
-    padding: 1rem;
-  }
+}
+
+main {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "section aside";
+  grid-template-columns: 3fr 1fr;
+}
+
+header {
+  background: lightblue;
+  grid-area: header;
+}
+
+section {
+  background: lightgreen;
+  grid-area: section;
+}
+
+article {
+  background: white;
+  margin: 0 0 1rem 0;
+}
+
+aside {
+  background: pink;
+  grid-area: aside;
+}
+
+header, article, section, .module {
+  padding: 1rem;
+}
