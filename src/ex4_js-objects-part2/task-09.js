@@ -1,6 +1,10 @@
 const getStringWithAdditionalString = (inputString, inputAdditionalString, numberWord) => {
     let numberSymbol = 0;
 
+    if (numberWord > inputString.split(' ').length) {
+        return inputString;
+    }
+
     for (let i = 0; i < numberWord + 1; i++) {
         numberSymbol = inputString.indexOf(" ", numberSymbol) + 1;
     }

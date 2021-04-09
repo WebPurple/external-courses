@@ -1,3 +1,3 @@
-const createEmptyObject = ((findProperty, inputObj) => Object.create(null));
+const createEmptyObject = () => Object.create(null);
 
 module.exports = createEmptyObject;
