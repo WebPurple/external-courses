@@ -1,0 +1,28 @@
+table, a, img {
+    margin-top: 20px;
+}
+
+.background {
+    height: 100px;
+    width: 100px;
+    background: #8B008B;
+}
+
+table {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    
+}
+
+th {
+    border: 1px solid #000;
+}
+
+td {
+    border: 1px solid #000;
+}
+
+a {
+    display: block;
+}
