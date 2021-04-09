@@ -8,12 +8,8 @@ function getSliceArr(array, begin, end) {
             sliceArr.push(elem);
         } 
         
-        if (end < 0 && index < Math.abs(begin) && index >= Math.abs(end)) {
-            array.reverse();
-
+        if (end < 0 && index < Math.abs(begin)-1 && index >= Math.abs(end)-1) {
             sliceArr.push(elem);
-
-            sliceArr.reverse();
         }
 
         if (arguments.length === 2 && index >= begin) {    

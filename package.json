@@ -1,41 +1,42 @@
 {
-  "name": "webpurple-external-courses",
-  "version": "1.0.0",
-  "description": "WebPurple JavaScript course template",
-  "scripts": {
-    "test": "jest || true",
-    "lint": "eslint **/*.js",
-    "test:ci": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/webpurple/external-courses.git"
-  },
-  "author": "Igor Fedyukin <Igor_Fedyukin@epam.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/webpurple/external-courses/issues"
-  },
-  "homepage": "https://github.com/webpurple/external-courses#readme",
-  "devDependencies": {
-    "css-validator": "0.8.0",
-    "eslint": "5.4.0",
-    "html-validator": "3.1.2",
-    "jest": "24.9.0",
-    "pre-commit": "1.2.2"
-  },
-  "pre-commit": [
-    "test",
-    "lint"
-  ],
-  "eslintIgnore": [
-    "**/test/**/*",
-    "/__tests__/**/*",
-    "/node_modules"
-  ],
-  "jest": {
-    "moduleNameMapper": {
-      "~utils": "<rootDir>/test-utils.js"
+    "name": "webpurple-external-courses",
+    "version": "1.0.0",
+    "description": "WebPurple JavaScript course template",
+    "scripts": {
+      "test": "jest || true",
+      "lint": "eslint **/*.js",
+      "test:ci": "jest"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/webpurple/external-courses.git"
+    },
+    "author": "Igor Fedyukin <Igor_Fedyukin@epam.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/webpurple/external-courses/issues"
+    },
+    "homepage": "https://github.com/webpurple/external-courses#readme",
+    "devDependencies": {
+      "css-validator": "0.8.0",
+      "eslint": "5.4.0",
+      "html-validator": "3.1.2",
+      "jest": "24.9.0",
+      "pre-commit": "1.2.2"
+    },
+    "pre-commit": [
+      "test",
+      "lint"
+    ],
+    "eslintIgnore": [
+      "**/test/**/*",
+      "/__tests__/**/*",
+      "/node_modules"
+    ],
+    "jest": {
+      "moduleNameMapper": {
+        "~utils": "<rootDir>/test-utils.js"
+      }
     }
   }
-}
+ 
