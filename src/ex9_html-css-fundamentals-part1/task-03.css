@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 260px;
+    height: 73px;
+    background: linear-gradient(180deg, rgba(183,183,183,0.21) 50%, rgba(221,221,221,1) 50%);
+    border-radius: 16px;
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #666666;
+    border: 6px solid #cbcbcb;
+    font-size: 23px;
+    font-weight: 700;
+    text-shadow: 1px 0px 0px #666666;
+    color: #555555;
+}
+
+.button::before, .button::after {
+    content: "\2605";
+    color: #888888;
+    text-shadow: 0px -1px 1px #a3a3a3;
+    font-size: 23px;
+}
+
+.button::before {
+    padding-right: 12px;
+}
+
+.button::after {
+    padding-left: 12px;
+}
