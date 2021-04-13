@@ -1,0 +1,22 @@
+.col-1, .col-2, .col-3, .col-4{
+    height: 50px;
+    padding-left: 15px;
+}
+
+.col-1 {
+    width: 130px;
+    text-transform: capitalize;
+}
+
+.col-2 {
+    width: 133px;
+}
+
+.col-3 {
+    width: 192px;
+}
+
+.col-4 {
+    width: 114px;
+}
+

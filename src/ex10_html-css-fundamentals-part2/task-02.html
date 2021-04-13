@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task-02</title>
+</head>
+
+<body>
+  <form action="http://httpbin.org/get" method="GET" id="form"></form>
+  <fieldset>
+    <legend>Personal data</legend>
+    <p><label for="name">Surname </label><input type="text" id="Surname"></p>
+    <p><label for="First-name">First Name </label><input type="text" id="First-name"></p>
+    <p><label for="Middle-name">Middle name </label><input type="text" id="Middle-name"></p>
+    <p><label for="gender"></label>You are </label>
+      <input type="radio" name="gender"><label for="gender">male </label>
+      <input type="radio" name="gender"><label for="gender">female </label>
+    </p>
+    <p><label for="Age"></label>Age </label><input type="number" id="Age" min="18" max="101">
+    <p><label for="Country"></label>Country of Residence </label>
+      <select name="Country">
+        <option value="Russia">Russia</option>
+        <option value="Germany">Germany</option>
+        <option value="China">China</option>
+        <option value="Italy">Italy</option>
+        <option value="France">France</option>
+      </select>
+    </p>
+    <p><label for="City"></label>City </label>
+      <input type="checkbox" id="City"><label for="City">Ryazan </label>
+      <input type="checkbox" id="City"><label for="City">Moscow </label>
+    </p>
+    <p><label for="image"></label>Photography </label><input type="file" name="image" formaction="POST"
+        formmethod="http://httpbin.org/post"></p>
+    <hr>
+    <p><label for="title"></label>Title </label>
+      <select name="day" multiple size="8">
+        <optgroup label="Technologies">
+          <option value="Web Master">Web Master</option>
+          <option value="Database Administrator">Database Administrator</option>
+          <option value="Computer-aided design">Computer-aided design</option>
+        </optgroup>
+        <optgroup label="Finance">
+          <option value="Economic Planning">Economic Planning</option>
+          <option value="Management accouting">Management accouting</option>
+          <option value="Budgeting and planning">Budgeting and planning</option>
+        </optgroup>
+      </select>
+    </p>
+    <p><label for="salary"></label>Salary </label><input type="range" id="salary"></p>
+    <textarea name="about" cols="45" rows="10" placeholder="Tell us about yourself..."></textarea>
+  </fieldset>
+  <fieldset>
+    <legend>Contact information</legend>
+    <p><label for="site"></label>Site </label><input type="url" name="site" formaction="POST"
+        formmethod="http://httpbin.org/post"></p>
+    <p><label for="mail"></label>Email </label><input type="email" name="mail" formaction="POST"
+        formmethod="http://httpbin.org/post"></p>
+    <p><label for="phone"></label>Phone </label><input type="tel" name="phone" formaction="POST"
+        formmethod="http://httpbin.org/post"></p>
+  </fieldset>
+  <p><label for="password"></label>Password </label><input type="password" name="password" required formaction="POST"
+      formmethod="http://httpbin.org/post"></p>
+  </form>
+  <p><input type="submit" value="Отправить" form="form">
+    <input type="reset" value="Сбросить" form="form"></p>
+</body>
+</html>
