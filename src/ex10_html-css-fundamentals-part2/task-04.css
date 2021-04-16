@@ -167,7 +167,6 @@ button {
 
 ::-moz-placeholder {
     color: #6d6e71;
-    font-family: 'OpenSans' 'Times New Roman';
     font-size: 15px;
     line-height: 27px;
 }
@@ -327,7 +326,6 @@ button {
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
-    
 }
 
 .about__article {
