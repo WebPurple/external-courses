@@ -1,0 +1,62 @@
+.space { 
+    position: relative; 
+    font-family: Arial;  
+    font-weight: bold; 
+    display: inline-block; 
+}
+
+.label { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    transition: all .2s linear; 
+    color:#999; 
+    font-size: 12px; 
+    padding: 3px 0 3px 2px;
+}
+
+.field { 
+    padding: 17px 2px 10px 2px; 
+    display: block;
+    border: none;
+    font-size: 25px;
+    border-bottom: 1px solid #999;
+}
+
+.title,
+.descr {
+    width: 806px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.price {
+    width: 200px;
+    border-right: 1px solid #999;
+}
+
+.location {
+    width: 600px;
+}
+
+.descr {
+    border: none;
+}
+
+.field:invalid + .label { 
+    opacity: 0; 
+}
+
+.field:valid + .label { 
+    opacity: 1;
+}
+
+.field:focus { 
+    outline: none; 
+}
+
+.field:focus + .label { 
+    color:#1faae2; 
+}
