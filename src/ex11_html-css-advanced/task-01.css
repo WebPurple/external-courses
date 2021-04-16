@@ -43,7 +43,7 @@
     25% { bottom: 0; width: 100px; height: 100px; }
     30% { bottom: 0; height: 50px; width: 110px; }
     35% { bottom: 0; width: 100px; height: 100px; }
-    70% { bottom: 100; }
+    70% { bottom: 100px; }
     100% { bottom: 100%; }
 }
 
