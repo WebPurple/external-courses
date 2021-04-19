@@ -1,7 +1,6 @@
 .table {
-  color: #777f8b;
-  font-family: Arial, Helvetica, sans-serif;
-  
+    color: #777f8b;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .odd-row:hover, .even-row:hover {

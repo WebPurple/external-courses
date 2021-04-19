@@ -33,13 +33,20 @@ button {
 
 .header__top-socials {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-    width: 182px;
 }
 
 .header__top-social {
-    position:relative;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__top-social + .header__top-social {
+    margin-right: 20px;
 }
 
 .pop-up {
@@ -57,7 +64,7 @@ button {
     display:block;
     position:absolute;
     top:-65px;
-    right:-115px;
+    right:-107px;
     width:200px;
     height: 15px;
 }
@@ -97,7 +104,7 @@ button {
     width: 1px;
     height: 24px;
     background-color: #87888a;
-    margin-bottom: 8px;
+    margin-right: 20px;
 }
 
 .header__bottom {
@@ -157,6 +164,7 @@ button {
 .header__bottom-search {
     outline: none;
     border: none;
+    width: 175px;
 }
 
 ::-webkit-input-placeholder {
@@ -196,6 +204,7 @@ button {
     background: url(image/bg.png) no-repeat top center;
     height: 885px;
     z-index: 1;
+    position: relative;
 }
 
 .presentation__title {
@@ -206,41 +215,46 @@ button {
 }
 
 .presentation__title-main {
-    font-size: 58px;
     color: #fff;
-    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
     z-index: 3;
+    position: relative;
+    font-weight: 700;
+    font-size: 51px;
 }
 
 .presentation__and {
     color: #bbedff;
     font-size: 25px;
     position: absolute;
-    left: 293px;
-    top: 251px;
-    font-size: 124px;
+    left: 4px;
+    top: -13px;
+    font-size: 106px;
     font-weight: 700;
-    z-index: 2;
+    z-index: -1;
 }
 
-.presentation__title-main span {
+.presentation__title-sub {
     position: absolute;
-    left: 389px;
-    top: 337px;
-    width: 54%;
+    left: 92px;
+    top: 63px;
+    width: 667px;
     font-weight: 300;
-    font-size: 45px;
+    font-size: 34px;
+    color: #fff;
 }
 
 .presentation__slider-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 153px;
+    margin-left: 0;
 }
 
 .presentation__slider {
     display: flex;
-    transform: translateX(35%);
 }
 
 .presentation__slider-image-1 {
@@ -322,7 +336,7 @@ button {
 }
 
 .about__text {
-    width: 390px;
+    max-width: 390px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
