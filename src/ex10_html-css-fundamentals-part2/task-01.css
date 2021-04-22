@@ -7,7 +7,10 @@
 .image-2 {
   width:300px;
   height:300px;
-  background: url(image/kosmos.jpg);
+  
   -webkit-mask-image: url(image/honey.svg);
-  -webkit-mask-size:300px;
+  -webkit-mask-size: 300px;
+
+  mask-image: url(image/honey.svg);
+  mask-size: 300px;
 }
