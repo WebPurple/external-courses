@@ -1,12 +1,6 @@
-body {
+.body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-}
-
-button {
-    outline: none;
-    border: none;
-    cursor: pointer;
 }
 
 .header {
@@ -15,6 +9,7 @@ button {
     justify-content: space-between;
     align-items: center;
     background: #0067A3;
+    position: relative;
 }
 
 .header__title-wrapper {
@@ -69,14 +64,56 @@ button {
     align-items: center;
 }
 
+.header__create-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header__user-img {
+    background: #fff;
+    border-radius: 50%;
+}
+
 .header__user-list {
     display: flex;
     align-items: center;
     margin-left: 48px;
 }
 
-.header__user-arrow {
+.header__user-wrapper {
+    display: flex;
+    align-items: center;
     cursor: pointer;
+}
+
+.header__user-items {
+    position: absolute;
+    right: 7px;
+    top: 50px;
+    padding: 10px 15px;
+    background: #EBECF0;
+    min-width: 100px;
+    border-radius: 10px;
+    list-style: none;  
+}
+    
+.header__user-item {
+    padding: 7px 10px;
+    transition: all 0.4s ease-out;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.header__user-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header__user-item:hover { 
+    color: #1685c5;
+    transform: scale(1.1);
 }
 
 .header__create-button {
@@ -93,6 +130,16 @@ button {
 
 .header__add-img {
     margin-right: 13px;
+}
+
+.kanban-board {
+    min-height: 576px;
+    background: #0079BF;
+}
+
+.kanban-board__title {
+    margin: 0;
+    color: #0079BF;
 }
 
 .footer {
@@ -118,4 +165,3 @@ button {
 .footer__information {
     margin-right: 24px;
 }
-
