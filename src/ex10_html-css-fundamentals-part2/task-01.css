@@ -7,10 +7,5 @@
 .image-2 {
   width:300px;
   height:300px;
-  
-  -webkit-mask-image: url(image/honey.svg);
-  -webkit-mask-size: 300px;
-
-  mask-image: url(image/honey.svg);
-  mask-size: 300px;
+  clip-path: polygon(32% 10%, 46% 39%, 19% 28%, 43% 47%, 15% 51%, 43% 54%, 15% 77%, 44% 64%, 34% 92%, 55% 69%, 59% 95%, 66% 70%, 91% 90%, 76% 64%, 93% 63%, 77% 54%, 98% 31%, 75% 45%, 89% 15%, 70% 40%, 74% 6%, 63% 35%, 55% 1%, 54% 35%);
 }
