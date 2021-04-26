@@ -1,14 +1,3 @@
-const listTemplate = `
-    <ul class="header__user-items">
-        <li class="header__user-item"><a href="#" class="header__user-link">My account</a></li>
-        <li class="header__user-item"><a href="#" class="header__user-link">My project</a></li>
-        <li class="header__user-item"><a href="#" class="header__user-link">My tasks</a></li>
-        <li class="header__user-item"><a href="#" class="header__user-link">Help</a></li>
-        <li class="header__user-item"><a href="#" class="header__user-link">Sign in</a></li>
-        <li class="header__user-item"><a href="#" class="header__user-link">Sign out</a></li>
-    </ul>
-`;
-
 const userButton = document.querySelector('.header__user-wrapper');
 const userList = document.querySelector('.header__user-list');
 
@@ -18,18 +7,35 @@ userButton.addEventListener('click', expandList = () => {
     const newContainer = document.createElement('div');
 
     if (userContainer === null) {
-        newContainer.classList.add("header__user-container");
-      
-        newContainer.innerHTML = listTemplate;
-      
+        const ulElement = document.createElement('ul');
+        const links = [{ title: 'My account', link: '#' }, { title: 'My project', link: '#' },
+         { title: 'My tasks', link: '#' }, { title: 'Help', link: '#' }, 
+         { title: 'Sign in', link: '#' }, { title: 'Sign out', link: '#' }];
+
+        ulElement.classList.add("header__user-items");
+
         userList.appendChild(newContainer);
 
-        userArrow.setAttribute('src', 'images/arrow-up.png');
+        newContainer.appendChild(ulElement)
+
+        newContainer.classList.add("header__user-container");
+
+        links.forEach(elem => {
+            const liElement = document.createElement('li');
+
+            liElement.classList.add("header__user-item");
+
+            ulElement.append(liElement);
+
+            liElement.innerHTML = elem.title;
+
+            liElement.setAttribute('href', `${elem.link}`);
+        });
     }
 
     if (userContainer !== null) {
         userContainer.remove();
 
         userArrow.setAttribute('src', 'images/arrow-down.png');
-    }   
+    }
 });
