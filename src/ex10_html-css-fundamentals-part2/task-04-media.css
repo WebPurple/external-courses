@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 35px;
+    }
+
+    .presentation__slider-wrapper,
+    .header__top-social,
+    .vertical-line,
+    .header__top,
+    .menu {
+        display: none;
+    }
+
+    .header__bottom {
+        height: 83px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .logo-2{
+        display: block;
+        width: 165px;
+        height: 50px;
+        background-image: url(image/logo-2.png);
+        margin-left: 95px;
+    }
+
+    .about__items {
+        display: block;
+    }
+
+    .about__text {
+        width: 648px;
+    }
+}

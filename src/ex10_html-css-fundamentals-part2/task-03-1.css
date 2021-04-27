@@ -1,0 +1,26 @@
+.table {
+    color: #777f8b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.odd-row:hover, .even-row:hover {
+    background-color: #e2e5e9;
+}
+
+#head-row {
+    height: 24px;
+    text-align: center;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #e3eaf3;
+}
+
+.even-row{
+    background-color: #e3eaf3;
+}
+ 
+.odd-row {
+    background-color: #e8edf4;  
+}
