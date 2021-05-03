@@ -1,8 +1,8 @@
 
-const items = document.querySelector('.slider__items').children;
+const items = document.querySelector('#sliderItems').children;
 const widthSlides = items.length;
-const nextItem = document.querySelector('.nextArrow');
-const prevItem = document.querySelector('.prevArrow');
+const nextItem = document.querySelector('#nextArrow');
+const prevItem = document.querySelector('#prevArrow');
 let index = 0;
 
 nextItem.addEventListener('click', function () {
