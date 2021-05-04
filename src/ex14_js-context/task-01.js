@@ -30,7 +30,7 @@ function Calculator() {
         return this;
     } 
 
-    this.setState = (initialValue) => {
+    this.setState = (initialValue = this.value) => {
         this.value = initialValue;
         return this;
     }
