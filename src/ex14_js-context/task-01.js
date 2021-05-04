@@ -34,9 +34,9 @@ function Calculator() {
     }
 
     this.fetchData = (callback) => {
-        if (callback) {
-            this.value = 500;
-        }
+       return new Promise(callback);
+       
+        
     }
 }
 
