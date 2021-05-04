@@ -27,6 +27,7 @@ function Calculator() {
 
     this.reset = () => {
         this.value = 0;
+        return this;
     } 
 
     this.setState = (initialValue) => {
@@ -34,9 +35,10 @@ function Calculator() {
     }
 
     this.fetchData = (callback) => {
-       return new Promise(callback);
-       
-        
+        setTimeout(() => {
+            this.value = 500;
+            callback(this.value);
+        }, 200);
     }
 }
 
