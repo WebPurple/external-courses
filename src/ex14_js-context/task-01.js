@@ -32,6 +32,7 @@ function Calculator() {
 
     this.setState = (initialValue) => {
         this.value = initialValue;
+        return this;
     }
 
     this.fetchData = (callback) => {
