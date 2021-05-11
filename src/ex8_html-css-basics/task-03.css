@@ -1,0 +1,16 @@
+.border1 {
+	border: 
+		4px double;
+}
+
+.border2 {
+	box-shadow: 
+		inset -1px -1px 0 0 #000000, inset 1px 1px 0 0 #000000,
+		inset 2px 2px 0 0 #fff, inset -2px -2px 0 0 #fff;
+}
+
+.border3 {
+	box-shadow: 
+		0 0 0 1px #ffffff,
+		0 0 0 2px #000000;
+}
