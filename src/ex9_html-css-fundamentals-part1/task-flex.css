@@ -27,5 +27,5 @@ header, article, section, .module {
   
 .test {
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
 }
