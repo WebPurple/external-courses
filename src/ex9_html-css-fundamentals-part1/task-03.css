@@ -1,0 +1,10 @@
+button {
+    border-style: double;
+    border-width: 7.5px;
+    border-radius: 10px 10px 10px 10px;
+
+    background: linear-gradient(to bottom, #fefcea, #c2b75b);
+    padding: 10px;
+
+    text-transform: uppercase;
+}
