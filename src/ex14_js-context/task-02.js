@@ -4,9 +4,7 @@ function Hangman(word) {
     this.invalidLetters = [];
     this.numErrors = 6;
 
-    for (let elem of this.hiddenWord) {
-        this.guessedWord.push("_");
-    }
+    this.guessedWord = this.hiddenWord.map(elem => elem = "_");
 
     this.getWrongSymbols = () => {
         return this.invalidLetters;
@@ -38,15 +36,15 @@ function Hangman(word) {
     }
 
     this.guess = (letter) => {
-        if (this.hiddenWord.indexOf(letter) !== -1) {
-            this.hiddenWord.forEach(elem => {
+        if (this.hiddenWord.includes(letter)) {
+            this.hiddenWord.forEach((elem, index) => {
                 if (letter === elem) {
-                    this.guessedWord[this.hiddenWord.indexOf(elem)] = elem;               
+                    this.guessedWord[index] = elem;               
                 }  
             });
         
             if (this.getGuessedString() !== word) {
-                console.log(`${this.getGuessedString()}`);
+                console.log(this.getGuessedString());
             }
 
             if (this.getGuessedString() === word) {
@@ -56,10 +54,16 @@ function Hangman(word) {
             return this;
         }
 
-        if (this.hiddenWord.indexOf(letter) === -1) {
-            this.numErrors--;
-            this.invalidLetters.push(letter);
-            console.log(`wrong letter, errors left ${this.getErrorsLeft()} | ${this.getWrongSymbols()}`);
+        if (!this.hiddenWord.includes(letter)) {
+            if (this.numErrors > 0) {
+                this.numErrors -= 1;
+                this.invalidLetters.push(letter);
+                console.log(`wrong letter, errors left ${this.getErrorsLeft()} | ${this.getWrongSymbols()}`);
+            }
+
+            if (this.numErrors <= 0) {
+                console.log('There are no more moves, you have lost! Start the game again.');
+            }
 
             return this;
         }
