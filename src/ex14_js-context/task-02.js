@@ -4,7 +4,7 @@ function Hangman(word) {
     this.invalidLetters = [];
     this.numErrors = 6;
 
-    this.guessedWord = this.hiddenWord.map(elem => elem = "_");
+    this.guessedWord = this.hiddenWord.map(elem => "_");
 
     this.getWrongSymbols = () => {
         return this.invalidLetters;
