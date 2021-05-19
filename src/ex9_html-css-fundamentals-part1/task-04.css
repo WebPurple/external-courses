@@ -1,0 +1,58 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.add1 {
+    background-color: rgb(127, 218, 105, 1);
+    position: relative;
+}
+
+.add1::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: rgba(128, 218, 105, 0.75);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+}
+
+.add1::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: rgb(127, 218, 105, 0.5);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: -2;
+}
+
+.add2 {
+    background-color: #4c72b8;
+    box-shadow: 10px 10px 0 0 #5393bd,
+                20px 20px 0 0 #bfcde3;
+}
+
+.add3_1 {
+    background-color: #a1b860;
+    z-index: -2;
+}
+
+.add3_2 {
+    background-color: #c0cd90;
+    position: absolute;
+    z-index: -3;
+    top: 18px;
+    left: 18px;
+}
+  
+.add3_3 {
+    background-color: #dce3bf;
+    position: absolute;
+    z-index: -4;
+    top: 28px;
+    left: 28px;
+}
