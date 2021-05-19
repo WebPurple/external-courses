@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.header {
+	text-align: center;
+	height: 15vh;
+	width: 100%;
+	font-family: 'Pacifico', cursive;
+	font-size: 5.5em;
+	color: rgb(0, 0, 0);
+	display: block;
+	background: linear-gradient(rgb(51, 11, 116), blue);
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+
+.main {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+	background-color: rgb(250, 248, 249);
+}
+
+footer {
+	height: 5vh;
+	background: linear-gradient(180deg, rgb(51, 11, 116), blue);
+	border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+
+.slider {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background: linear-gradient(45deg, rgb(51, 11, 116), blue);
+	box-shadow: 0px 0px 15px rgb(0, 0, 0);
+	height: 600px;
+	width: 60%;
+	border-radius: 7px;
+	border: 1px solid rgb(73, 73, 73);
+}
+
+.slider__picarea {
+	position: relative;
+	height: 80%;
+	margin: 0px;
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider__image {
+	position: absolute;
+	transition: 3s ease-in;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-shadow: 0px 0px 5px rgba(56, 55, 55, 0.5);
+}
+
+@keyframes moveToRight {
+	0% {
+		left: -100px;
+		opacity: 0%;
+	}
+	50% {
+		left: -50px;
+		opacity: 50%;
+	}
+	100% {
+		left: 0px;
+		opacity: 100%;
+	}
+}
+
+@keyframes moveToLeft {
+	0% {
+		left:  100px;
+		opacity: 0%;
+	}
+	50% {
+		left: 50px;
+		opacity: 50%;
+	}
+	100% {
+		left: 0px;
+		opacity: 100%;
+	}
+}
+
+.slider__image_moveToLeft {
+	animation: moveToLeft 0.5s ease-in 0.05s forwards;
+}
+
+.slider__image_moveToRight {
+	animation: moveToRight 0.5s ease-in 0.05s forwards;	
+}
+
+.button {
+	border: none;
+	height: 100px;
+	width: 160px;
+	background: linear-gradient(45deg, rgb(51, 11, 116), blue);
+	transition: opacity 0.1s linear;
+	border: 2px solid rgb(5, 1, 1);
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px rgb(51, 51, 51);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.button__label {
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+	height: 70px;
+	color: rgb(0, 0, 0);
+	padding-bottom: 0px;
+	padding-top: 0px;
+
+}
+.button:hover, .button:focus  {
+	opacity: 100%;
+	cursor: pointer;
+	border: 2px solid rgb(63, 63, 63);
+	box-shadow: 0px 0px 9px rgb(51, 51, 51);
+	outline: none;
+}
+
+.button:active {
+	opacity: 100%;
+	cursor: pointer;
+	border: 3px solid rgb(63, 63, 63);
+}
