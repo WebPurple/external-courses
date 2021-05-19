@@ -1,0 +1,73 @@
+.border1 {
+	border: 
+		4px double;
+}
+
+.border2 {
+	box-shadow: 
+		inset -1px -1px 0 0 #000000, inset 1px 1px 0 0 #000000,
+		inset 2px 2px 0 0 #fff, inset -2px -2px 0 0 #fff;
+}
+
+.border3 {
+	box-shadow: 
+		0 0 0 1px #ffffff,
+		0 0 0 2px #000000;
+}
+
+.backgroundOrderedList {
+	background:
+		blue;
+	font-family:
+		Arial;
+}
+
+.backgroundUnorderedList {
+	background:
+		#ffbf00;
+	font-family:
+		Verdana;
+	text-transform:
+		lowercase;
+}
+
+.backgroundLi {
+	background:
+		#6C8CD5;
+	font-family:
+		"Roboto-Black";
+}
+
+.backgroundBody {
+	background-image:
+		url(Art.jpg);
+}
+
+.backgroundH {
+	background:
+		rgb(30%,80%,80%);
+	font-family:
+		Arial
+}
+
+.backgroundDescriptionList {
+	background:
+		rgb(200, 30, 15);
+}
+
+.backgrounDT {
+	background:
+		#0F0;
+}
+
+.H3 {
+	background:
+		red;
+}
+
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: local('Roboto-Black'), 
+         url('/Roboto-Black.ttf') format('truetype');
+}

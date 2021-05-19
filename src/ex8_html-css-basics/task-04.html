@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>HTML Basics</title>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" href="task-04.css">
+		<style>
+			div {
+                background-color: #057417;
+				width: 320px;
+				padding: 10px;
+				border: 5px solid gray;
+				margin: 0;
+            }
+			.em {
+				font-size: 1em;
+			}
+			.ex {
+				font-size: 1ex;
+			}
+			.in { 
+				font-size: 0.6in;
+			}
+			.mm { 
+				font-size: 5mm;
+			} 
+			.pt { 
+				font-size: 20pt;
+			}
+			.pc {
+				font-size: 0.3pc;
+			}
+			.cm {
+				font-size: 1.5cm;
+			}
+		</style>
+    </head>
+
+    <body class="backgroundBody">
+        <h2 class="backgroundH">List</h2>
+
+        <h3 class="em">Ordered list</h3>
+        <ol class="backgroundOrderedList">
+            <li class="backgroundLi">first items</li>
+            <li>second items</li>
+            <li>third items</li>
+            <li>fourth items</li>
+            <li>fifth items</li>
+        </ol> 
+        
+        <h3 class="ex">Unordered list</h3>
+        <ul class="backgroundUnorderedList">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+        </ul>
+
+        <div>
+            <h3 class="in">Description List</h3>
+            <dl class="backgroundDescriptionList">
+                <dt>Name</dt>
+                  <dd>Godzilla</dd>
+                <dt>Born</dt>
+                  <dd>1952</dd>
+                <dt>Birthplace</dt>
+                  <dd>Japan</dd>
+                <dt>Color</dt>
+                  <dd>Green</dd>
+            </dl>
+
+            <h3 class="mm">Nested List</h3>
+            <ul class="backgrounDT">
+                <li>List item one</li>
+                <li>List item two with subitems:
+                    <ul>
+                        <li>Subitem 1
+                            <ul>
+                               <li>SubSubitem 1</li>
+                                <li>SubSubitem 2</li>
+                            </ul>
+                        </li>
+                        <li>Subitem 2</li>
+                    </ul>
+                </li>
+                <li>Final list item</li>
+            </ul>
+        </div>
+
+        <h3 class="pt">List with links</h3>
+		<ul>
+			<li><a href="https://jut.su">Home</a></li>
+            <li><a href="https://jut.su">News</a></li>
+            <li><a href="https://jut.su">Contact</a></li>
+            <li><a href="https://jut.su">About</a></li>
+        </ul>
+        <hr>
+
+        <h2 class="pc">Paragraphs</h2>
+        <p style="background: #cd66cc; white-space: nowrap; word-spacing: 2px; letter-spacing: 2px;">Lorem    ipsum    dolor sit amet, consectetur adipiscing elit. 
+        Sed finibus pellentesque orci vel vulputate. 
+        Duis semper neque eget enim vestibulum     vulputate. 
+        Vivamus non suscipit leo, id gravida turpis. Fusce nec felis mollis, faucibus metus vitae, faucibus turpis. 
+        Nulla scelerisque est ut sapien aliquet, id lacinia leo suscipit. 
+        Donec tincidunt sollicitudin lacus non sodales. Cras mattis vitae erat at imperdiet. 
+        Curabitur lorem lorem, fringilla volutpat erat sed, mollis elementum neque. Ut porta urna id scelerisque pellentesque. 
+        Aliquam nisl quam, laoreet eu augue at, condimentum cursus libero. Praesent fringilla vel odio in porta. Fusce consectetur vel tortor sagittis dignissim. 
+        In iaculis mi metus, dapibus euismod odio molestie quis. 
+        Duis posuere, lectus eget finibus vulputate, erat libero lobortis ex, id semper nulla nibh sed tortor.<br>
+
+        Sed commodo faucibus enim.<br>
+        Vivamus convallis ligula nisi, in convallis nunc tincidunt eu.<br>
+        Maecenas mi ex, rhoncus ac neque non, pellentesque vestibulum enim.<br>
+        In dapibus ut nunc non vestibulum.<br>
+        Nam in est at risus molestie sodales.<br>
+        Interdum et malesuada fames ac ante ipsum primis in faucibus.<br>
+        Aliquam erat volutpat.<br>
+        Integer aliquam neque et consectetur tristique.<br>
+        Proin tincidunt a ante sed lacinia.<br>
+        Nullam bibendum dictum massa vel dignissim.<br>
+        Suspendisse congue neque a libero dapibus congue.<br>
+        Nunc quis euismod erat.</p>
+        <hr>
+
+        <h2 class="cm">Tables</h2>
+        <table> 
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h2>Image1</h2>
+        <img src = "/Art.jpg" alt = "Красивый арт" width="200" height="200"/>
+        <hr>
+		
+		<h2>Image2</h2>
+        <img src = "/Art.jpg" alt = "Красивый арт" width="25%" height="25%"/>
+        <hr>
+		
+		<h2>Image3</h2>
+        <img src = "/Art.jpg" alt = "Красивый арт" width="200px" height="200px"/>
+        <hr>
+
+        <h2>Pre tag</h2>
+        <pre>
+            if (time = 20) {
+                greeting = "Good gay";
+            } else {
+                greeting = "Good evening";
+            }
+        </pre>
+    </body>
+</html>
