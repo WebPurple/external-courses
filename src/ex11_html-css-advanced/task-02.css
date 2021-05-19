@@ -1,0 +1,43 @@
+.input-form {
+	padding-top: 30px;
+	position: relative;
+}
+
+.input-field {
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background: transparent;
+}
+
+.input-field:required {
+	border: none;
+	box-shadow: none;
+	border-bottom: 1px solid lightgray;
+}
+
+.placeholder {
+	font-size: 16px;
+	color: lightgray;
+	position: absolute;
+	top: 28px;
+	padding-left: 5px;
+	z-index: -1;
+	transition: font-size 0.01s ease-in-out 0.01s;
+	transition: color 0.5s ease-in-out 0.01s;
+}
+
+.input-field:focus + .placeholder, .input-field:valid + .placeholder {
+	color: royalblue;
+	font-size: 12px;
+	animation: movePlaceholder 0.2s ease-in forwards;
+}
+
+.input-field:not(:focus) + .placeholder {
+	color: gray;
+}
+
+@keyframes movePlaceholder {
+	to {
+		transform: translateY(-15px);
+	}
+}

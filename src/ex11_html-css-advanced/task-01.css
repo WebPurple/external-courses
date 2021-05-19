@@ -1,0 +1,68 @@
+.loader {
+	background-image: url(https://static.thenounproject.com/png/1106623-200.png);
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+	margin: 100px;
+}
+
+@keyframes rotate {
+	to { transform: rotate(360deg); }
+}
+
+@keyframes circle {
+	to {transform: translateY(400px); }
+}		 
+
+.loader {
+	animation: rotate 1s infinite linear;
+}
+
+.loader:hover {
+	animation-duration: 0.5s;
+}
+
+.platform {
+	width: 100px;
+	height: 50px;
+	background-color: lightgray;
+}
+
+.spaceForCircle {
+	height: 500px;
+	width: 100px;
+	background-color: lightblue;
+	position: relative;
+}
+
+.circle {
+	position: absolute;
+	animation: circle 1s infinite alternate;
+	display: block;
+	background: black;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin: 0;
+	z-index: 1;
+}
+
+@keyframes toSquare {
+	10% { border-radius: 50%; transform: scale(1);  background: linear-gradient(to top left, #737AAF, pink); }
+	20% { border-radius: 40%; transform: scale(0.8); background: linear-gradient(to top left, #5D66AF, pink); }
+	40% { border-radius: 30%; transform: scale(1);  background: linear-gradient(to top left, #232A5F, pink); transform: rotate(30deg); }
+	60% { border-radius: 20%; transform: scale(0.8); background: linear-gradient(to top left, #262A47, pink); transform: skew(-10deg);}
+	80% { border-radius: 10%; transform: scale(1); background: linear-gradient(to top left, #0B113E, pink); transform: skew(-20deg);}
+	100% { border-radius: 0; transform: scale(0.8); background: linear-gradient(to top left, #0B190E, pink);}
+}
+
+.animation {
+	background: linear-gradient(to top left, #737AAF, pink);
+	margin-top: 20px;
+	display: block;
+	height: 400px;
+	width: 400px;
+	border-radius: 50%;
+	animation: toSquare 4s infinite linear, toSquare 4s infinite linear reverse;
+}
