@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body">
     <header class="header">
         <div class="header__title-wrapper">
             <div class="header__main-list">
@@ -36,12 +36,17 @@
                 <img src="images/add-list.png" alt="#" class="header__add-img">
                 Create new list
             </button>
-            <div class="header__user-list">
-                <img src="images/user-avatar.png" alt="#" class="header__user-img">
-                <img src="images/arrow-down.png" alt="#" class="header__user-arrow">
-            </div> 
+            <nav class="header__user-list">
+                <div class="header__user-wrapper">
+                    <img src="images/user-avatar.png" alt="#" class="header__user-img">
+                    <img src="images/arrow-down.png" alt="#" class="header__user-arrow">
+                </div>
+            </nav>
         </div>
     </header>
+    <section class="kanban-board">
+        <h2 class="kanban-board__title">.</h2>
+    </section>
     <footer class="footer">
         <div class="footer__tasks">
             <div class="footer__active-task">Active tasks: 0</div>
@@ -49,5 +54,7 @@
         </div>
         <div class="footer__information">Kanban board by Nikolai Gogin, 2021</div>
     </footer>
+
+    <script src="kanban.js"></script>
 </body>
 </html>
