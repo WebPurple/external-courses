@@ -15,7 +15,10 @@ module.exports = (exerciseName, read = false, taskExt = 'js') => {
             const moduleExport = read ? readCode(pathToTask) : softRequire(pathToTask);
 
             const conditionalDescribe = moduleExport ? describe : xdescribe;
-            conditionalDescribe(`Task ${taskNo}`, () => taskCb(moduleExport));
+            conditionalDescribe(`Task ${taskNo}`, () => {
+                taskCb(moduleExport);
+                return;
+            });
         },
         html: markup => done => {
             validateHTML({data: markup, format: 'json'})
