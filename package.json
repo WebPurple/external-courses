@@ -4,8 +4,9 @@
   "description": "WebPurple JavaScript course template",
   "scripts": {
     "test": "jest || true",
-    "lint": "eslint **/*.js",
-    "test:ci": "jest"
+    "lint": "eslint --ext .js ./ --fix",
+    "test:ci": "jest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -18,16 +19,14 @@
   },
   "homepage": "https://github.com/webpurple/external-courses#readme",
   "devDependencies": {
-    "css-validator": "0.8.0",
-    "eslint": "5.4.0",
-    "html-validator": "3.1.2",
-    "jest": "24.9.0",
-    "pre-commit": "1.2.2"
+    "css-validator": "^0.10.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "html-validator": "5.1.17",
+    "husky": "7.0.0",
+    "jest": "27.1.0"
   },
-  "pre-commit": [
-    "test",
-    "lint"
-  ],
   "eslintIgnore": [
     "**/test/**/*",
     "/__tests__/**/*",

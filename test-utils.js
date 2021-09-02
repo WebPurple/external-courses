@@ -1,103 +1,103 @@
+/* eslint-disable */
 const validateHTML = require('html-validator');
 const validateCSS = require('css-validator');
-const {readFileSync} = require('fs');
+const { readFileSync } = require('fs');
 
 module.exports = (exerciseName, read = false, taskExt = 'js') => {
-    const dirWithTask = `${__dirname}/src/${exerciseName}`;
+  const dirWithTask = `${__dirname}/src/${exerciseName}`;
 
-    return {
-        task: (number, cb) => {
-            const oneParam = typeof number === 'function';
-            const taskCb = oneParam ? number : cb;
-            const taskNo = oneParam ? '' : number;
+  return {
+    task: (number, cb) => {
+      const oneParam = typeof number === 'function';
+      const taskCb = oneParam ? number : cb;
+      const taskNo = oneParam ? '' : number;
 
-            const pathToTask = `${dirWithTask}/task${taskNo ? `-${taskNo}` : taskNo}.${taskExt}`;
-            const moduleExport = read ? readCode(pathToTask) : softRequire(pathToTask);
+      const pathToTask = `${dirWithTask}/task${taskNo ? `-${taskNo}` : taskNo}.${taskExt}`;
+      const moduleExport = read ? readCode(pathToTask) : softRequire(pathToTask);
 
-            const conditionalDescribe = moduleExport ? describe : xdescribe;
-            conditionalDescribe(`Task ${taskNo}`, () => {
-                taskCb(moduleExport);
-                return;
-            });
-        },
-        html: markup => done => {
-            validateHTML({data: markup, format: 'json'})
-                .then(({messages}) => {
-                    const errors = messages.filter(m => m.type === 'error');
+      const conditionalDescribe = moduleExport ? describe : xdescribe;
+      conditionalDescribe(`Task ${taskNo}`, () => {
+        taskCb(moduleExport);
+      });
+    },
+    html: (markup) => (done) => {
+      validateHTML({ data: markup, format: 'json' })
+        .then(({ messages }) => {
+          const errors = messages.filter((m) => m.type === 'error');
 
-                    if (errors.length) {
-                        const report = `\n${errors
-                            .map((e, i) => `${i + 1}. ${e.message}`)
-                            .join('\n')}`;
-                        return done.fail(report);
-                    }
+          if (errors.length) {
+            const report = `\n${errors
+              .map((e, i) => `${i + 1}. ${e.message}`)
+              .join('\n')}`;
+            return done.fail(report);
+          }
 
-                    return done();
-                })
-                .catch(({message}) => {
-                    console.warn(`Internet connection error: ${message}`);
-                    return done();
-                });
-        },
-        css: markup => done => {
-            const compressedHTML = markup.replace(/\s/g, ' ');
-            const styleTag = findStringBetween(compressedHTML, '<style>', '</style>')[0] || '';
-            const hrefs = findStringBetween(compressedHTML, '<link', '>').reduce((hrefs, currentHref) => {
-                if (~currentHref.indexOf('.css') && !~currentHref.indexOf('http')) {
-                    const validLink = findStringBetween(currentHref, 'href=("|\')', '.css')[0];
-                    if (validLink) {
-                        hrefs.push(`${validLink}.css`);
-                    }
-                }
-                
-                return hrefs;
-            }, []);
+          return done();
+        })
+        .catch(({ message }) => {
+          console.warn(`Internet connection error: ${message}`);
+          return done();
+        });
+    },
+    css: (markup) => (done) => {
+      const compressedHTML = markup.replace(/\s/g, ' ');
+      const styleTag = findStringBetween(compressedHTML, '<style>', '</style>')[0] || '';
+      const hrefs = findStringBetween(compressedHTML, '<link', '>').reduce((hrefs, currentHref) => {
+        if (~currentHref.indexOf('.css') && !~currentHref.indexOf('http')) {
+          const validLink = findStringBetween(currentHref, 'href=("|\')', '.css')[0];
+          if (validLink) {
+            hrefs.push(`${validLink}.css`);
+          }
+        }
 
-            const styles = hrefs
-                .map(h => readFileSync(`${dirWithTask}/${h}`, 'utf-8'))
-                .concat(styleTag);
+        return hrefs;
+      }, []);
 
-            for (text of styles) {
-                validateCSS({text, profile: 'css3svg'}, (error, res) => {
-                    if (error) {
-                        console.warn(`Internet connection error: ${error.message}`);
-                        return done();
-                    }
+      const styles = hrefs
+        .map((h) => readFileSync(`${dirWithTask}/${h}`, 'utf-8'))
+        .concat(styleTag);
 
-                    const {errors = []} = res;
+      for (text of styles) {
+        validateCSS({ text, profile: 'css3svg' }, (error, res) => {
+          if (error) {
+            console.warn(`Internet connection error: ${error.message}`);
+            return done();
+          }
 
-                    if (errors.length) {
-                        const report = `\n${errors
-                        .map((e, i) => `${i + 1}. ${e.message} in \n ${e.context}`)
-                        .join('')
-                        .replace(/\s+/g, ' ')}`;
-                        return done.fail(report);
-                    }
+          const { errors = [] } = res;
 
-                    return done();
-                })
-            }
-        },
-    };
+          if (errors.length) {
+            const report = `\n${errors
+              .map((e, i) => `${i + 1}. ${e.message} in \n ${e.context}`)
+              .join('')
+              .replace(/\s+/g, ' ')}`;
+            return done.fail(report);
+          }
+
+          return done();
+        });
+      }
+    },
+  };
 };
 
 const findStringBetween = (str, first, last) => {
-    const matched = str.match(new RegExp(first + '(.*?)' + last, 'gm')) || [];
-    return matched.map(s => s.replace(new RegExp(first), '').replace(new RegExp(last), ''));
+  const matched = str.match(new RegExp(`${first}(.*?)${last}`, 'gm')) || [];
+  return matched.map((s) => s.replace(new RegExp(first), '').replace(new RegExp(last), ''));
 };
 
-const readCode = absolutePath => {
-    try {
-        return readFileSync(absolutePath).toString();
-    } catch (err) {
-        return null;
-    }
+const readCode = (absolutePath) => {
+  try {
+    return readFileSync(absolutePath).toString();
+  } catch (err) {
+    return null;
+  }
 };
 
-const softRequire = modulePath => {
-    try {
-        return require(modulePath);
-    } catch (err) {
-        return null;
-    }
+const softRequire = (modulePath) => {
+  try {
+    return require(modulePath);
+  } catch (err) {
+    return null;
+  }
 };
