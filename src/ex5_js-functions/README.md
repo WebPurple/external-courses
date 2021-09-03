@@ -2,13 +2,17 @@
 
 ## Задание
 
-Создать калькулятор, который может выполнять операции сложения, вычитания, деления и умножения.
+Создать функцию калькулятор `Calculator`, который может выполнять операции сложения, вычитания, деления и умножения, используя замыкания (не используя контекст `this`).
 
 ```js
-Calculator.add();
-Calculator.subtract();
-Calculator.divide();
-Calculator.multiply();
+const calculator = Calculator();
+
+calculator.add();
+calculator.subtract();
+calculator.divide();
+calculator.multiply();
+
+module.exports = calculator;
 ```
 
 Также калькулятор должен обладать следующими возможностями:
@@ -18,48 +22,57 @@ Calculator.multiply();
 -   иметь метод для получения текущего состояния:
 
     ```js
-    console.log(Calculator.getResult()); // 0
+    console.log(calculator.getResult()); // 0
     ```
 
 -   иметь метод для сброса текущего состояния:
 
     ```js
-    console.log(Calculator.reset()); // 0
+    console.log(calculator.reset()); // 0
     ```
 
 -   все операции производятся над текущим состоянием:
 
     ```js
-    Calculator.add(4);
-    Calculator.subtract(1);
+    calculator.add(4);
+    calculator.subtract(1);
 
-    console.log(Calculator.getResult()); // 3
+    console.log(calculator.getResult()); // 3
     ```
 
 -   выполнять арифметические операции также можно следующим образом:
 
     ```js
-    console.log(Calculator.getResult()); // 0
+    console.log(calculator.getResult()); // 0
 
-    Calculator.add(4)(1);
+    calculator.add(4)(1);
 
-    console.log(Calculator.getResult()); // 5
+    console.log(calculator.getResult()); // 5
 
-    Calculator.subtract(1)(1)(1)(2);
+    calculator.subtract(1)(1)(1)(2);
 
-    console.log(Calculator.getResult()); // 0
+    console.log(calculator.getResult()); // 0
     ```
 
 -   все арифметические операции должны корректно работать в случае вызова метода без аргументов:
 
     ```js
-    console.log(Calculator.getResult()); // 0
+    console.log(calculator.getResult()); // 0
 
-    Calculator.add()();
+    calculator.add()();
 
-    console.log(Calculator.getResult()); // 0
+    console.log(calculator.getResult()); // 0
 
-    Calculator.subtract()()()();
+    calculator.subtract()()()();
 
-    console.log(Calculator.getResult()); // 0
+    console.log(calculator.getResult()); // 0
     ```
+
+
+####Критерии оценки: 
+- 0 - задание не выполнено
+- 1 - создана функция `Calculator`, которая возвращает объект с методами `add, subtract, divide, multiply, getResult, reset`, но состояние между операциями не сохраняется
+- 2 - `+` текущее состояние сохраняется
+- 3 - `+` имеется возможность вызывать функции таким образом: `calculator.subtract(1)(1)(1)(2)`
+- 4 - `+` операции корректно работают в случае вызова метода без аргументов `calculator.subtract()()()()`
+- 5 - `+` успешно пройдены тесты и линтеры, исправлены комментарии тренера, если имеются

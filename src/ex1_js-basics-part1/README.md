@@ -9,3 +9,8 @@
 - https://jsbin.com/?js,console
 - https://codepen.io/
 - https://codesandbox.io/
+
+
+####Критерии оценки:
+- 0 - ничего не сделано
+- 5 - задание выполнено
