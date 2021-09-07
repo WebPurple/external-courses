@@ -19,15 +19,15 @@
   },
   "homepage": "https://github.com/webpurple/external-courses#readme",
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "css-validator": "^0.10.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.2",
+    "babel-eslint": "10.1.0",
+    "css-validator": "0.10.0",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.24.2",
     "html-validator": "5.1.17",
     "husky": "7.0.0",
     "jest": "24.9.0",
-    "lint-staged": "^11.1.2"
+    "lint-staged": "11.1.2"
   },
   "eslintIgnore": [
     "**/test/**/*",
