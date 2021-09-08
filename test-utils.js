@@ -1,6 +1,4 @@
-/* eslint-disable */
-const validateHTML = require('html-validator');
-const validateCSS = require('css-validator');
+/* eslint-disable no-use-before-define */
 const { readFileSync } = require('fs');
 
 module.exports = (exerciseName, read = false, taskExt = 'js') => {
@@ -20,70 +18,7 @@ module.exports = (exerciseName, read = false, taskExt = 'js') => {
         taskCb(moduleExport);
       });
     },
-    html: (markup) => (done) => {
-      validateHTML({ data: markup, format: 'json' })
-        .then(({ messages }) => {
-          const errors = messages.filter((m) => m.type === 'error');
-
-          if (errors.length) {
-            const report = `\n${errors
-              .map((e, i) => `${i + 1}. ${e.message}`)
-              .join('\n')}`;
-            return done.fail(report);
-          }
-
-          return done();
-        })
-        .catch(({ message }) => {
-          console.warn(`Internet connection error: ${message}`);
-          return done();
-        });
-    },
-    css: (markup) => (done) => {
-      const compressedHTML = markup.replace(/\s/g, ' ');
-      const styleTag = findStringBetween(compressedHTML, '<style>', '</style>')[0] || '';
-      const hrefs = findStringBetween(compressedHTML, '<link', '>').reduce((hrefs, currentHref) => {
-        if (~currentHref.indexOf('.css') && !~currentHref.indexOf('http')) {
-          const validLink = findStringBetween(currentHref, 'href=("|\')', '.css')[0];
-          if (validLink) {
-            hrefs.push(`${validLink}.css`);
-          }
-        }
-
-        return hrefs;
-      }, []);
-
-      const styles = hrefs
-        .map((h) => readFileSync(`${dirWithTask}/${h}`, 'utf-8'))
-        .concat(styleTag);
-
-      for (text of styles) {
-        validateCSS({ text, profile: 'css3svg' }, (error, res) => {
-          if (error) {
-            console.warn(`Internet connection error: ${error.message}`);
-            return done();
-          }
-
-          const { errors = [] } = res;
-
-          if (errors.length) {
-            const report = `\n${errors
-              .map((e, i) => `${i + 1}. ${e.message} in \n ${e.context}`)
-              .join('')
-              .replace(/\s+/g, ' ')}`;
-            return done.fail(report);
-          }
-
-          return done();
-        });
-      }
-    },
   };
-};
-
-const findStringBetween = (str, first, last) => {
-  const matched = str.match(new RegExp(`${first}(.*?)${last}`, 'gm')) || [];
-  return matched.map((s) => s.replace(new RegExp(first), '').replace(new RegExp(last), ''));
 };
 
 const readCode = (absolutePath) => {
@@ -96,6 +31,7 @@ const readCode = (absolutePath) => {
 
 const softRequire = (modulePath) => {
   try {
+    // eslint-disable-next-line import/no-dynamic-require, global-require
     return require(modulePath);
   } catch (err) {
     return null;
