@@ -26,13 +26,13 @@ describe('Ex3. JS Objects Part 1', () => {
         const obj = {a: 1};
 
         it('should leave property unchanged if it exists', () => {
-            code('a', obj);
-            expect(obj.a).toBe(1);
+            const newObj = code('a', obj);
+            expect(newObj.a).toBe(1);
         });
 
-        it("should set 'new' to property if it doesn't exist", () => {
-            code('b', obj);
-            expect(obj.b).toBe('new');
+        it("should set 'new' to property if it doesn't exist", () => {            
+            const newObj = code('b', obj);
+            expect(newObj.b).toBe('new');
         });
     });
 
