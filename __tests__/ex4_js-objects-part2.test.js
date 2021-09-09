@@ -19,24 +19,38 @@ describe('Ex4. JS Objects Part 2', () => {
     });
 
     describe('Strings', () => {
-        task('03', code =>
-            it('should remove first and last spaces from string', () =>
-                expect(code(' abc ')).toBe('abc')),
-        );
+        task('03', code => {
+                it('should remove first and last spaces from string', () => {
+                    expect(code(' abc ')).toBe('abc');
+                });
 
-        task('04', code =>
-            it('should capitalize input string', () => expect(code('abc')).toBe('Abc')),
-        );
+                it('should remove first and last spaces from string', () => {
+                    expect(code('  abc  ')).toBe(' abc ');
+                });
+        });
+
+        task('04', code => {
+            it('should capitalize input string', () => {
+                expect(code('abc')).toBe('Abc');
+                expect(code('hello world')).toBe('Hello world');
+                expect(code('hello World')).toBe('Hello World');
+            });
+        });
 
         task('05', code => {
             it('should return `true` if substring was founded', () => {
                 expect(code('I love cats', 'cats')).toBe(true);
+                expect(code('I love cats', 'cats ')).toBe(false);
                 expect(code('', 'cats')).toBe(false);
             });
         });
 
         task('06', code =>
-            it('should camelize input string', () => expect(code('I am cool')).toBe('I Am Cool')),
+            it('should camelize input string', () => {
+                expect(code('I am cool')).toBe('I Am Cool');
+                expect(code('I Аm cool')).toBe('I Am Cool');
+                expect(code('I aM cool')).toBe('I AM Cool');
+            }),
         );
 
         task('07', code =>

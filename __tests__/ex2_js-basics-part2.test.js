@@ -51,6 +51,15 @@ describe('Ex2. JS Basics Part 2', () => {
 
         const arr2 = [0, 1];
         it(`should be 'false' for ${JSON.stringify(arr2)}`, () => expect(code(arr2)).toBe(false));
+
+        const arr3 = [1, 1, 1, 1, 1, 1, 1];
+        it(`should be 'true' for ${JSON.stringify(arr1)}`, () => expect(code(arr3)).toBe(true));
+
+        const arr4 = [1, 1, '1', 1, 1];
+        it(`should be 'false' for ${JSON.stringify(arr2)}`, () => expect(code(arr4)).toBe(false));
+
+        const arr5 = [null, null, undefined, null];
+        it(`should be 'false' for ${JSON.stringify(arr2)}`, () => expect(code(arr5)).toBe(false));
     });
 
     task('05', code => {
@@ -61,10 +70,14 @@ describe('Ex2. JS Basics Part 2', () => {
     task('06', code => {
         const simple = 13;
         const complex = 14;
+        const zeroNumber = 0;
+        const oneNumber = 1;
 
         it('should operate correctly with simple, complex & invalid inputs', () => {
             expect(code(simple)).toBe(`Число ${simple} - простое число`);
             expect(code(complex)).toBe(`Число ${complex} - составное число`);
+            expect(code(zeroNumber)).toBe('Не причисляется ни к простым, ни к составным числам');
+            expect(code(oneNumber)).toBe('Не причисляется ни к простым, ни к составным числам');
             expect(code(1001)).toBe('Данные неверны');
         });
     });
