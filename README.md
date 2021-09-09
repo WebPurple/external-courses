@@ -62,7 +62,7 @@ console.log(a); // eslint-disable-line
 console.log(b); // eslint-disable-line no-console
 ```
 
-## Дополнения
+### Дополнения
 
 Все интересующие вопросы могут быть заданы тренеру, ниже представлено дополнение к некоторым моментам руководства в виде пошагового алгоритма.
 
@@ -78,10 +78,50 @@ console.log(b); // eslint-disable-line no-console
 
 Когда тренер зачёл практическую работу и все проверки тестов и линтера были выполнены, становится активной (зелёной) кнопка "Merge pull request", по нажатию на которую можно влить изменения из ветки практической работы в ветку _master_, что означает сдачу практической работы.
 
+##### Подробнее про работу с Github тут -  [Как создать ветку, коммит, pull request с домашней работой в Github](https://github.com/WebPurple/external-courses/blob/master/how-to/how-to-do-homework.md) 
+
 ## Настройка автоматических проверок теста и линтера
 
 Настройка проверок тестов и линтера производится после того, как репозиторий скопирован в профиль.
 Необходимо зайти на [travis-ci.com](https://www.travis-ci.com/), авторизоваться через аккаунт GitHub, в списке репозиториев нажать на плюс, в открывшемся интерфейсе выбрать свой репозиторий и перевести соответствующий переключатель в положение "активно" (зелёный цвет).
+
+## Style-guide
+Хорошая практика, особенно на начальных этапах, - придерживаться руководству по стилю программирования. Одним из таких руководств является [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript), с ним необходимо ознакомиться перед началом курса. Так же в заданиях установлен линтер от Airbnb, который будет проверять код на соответствие данным правилам и подсказывать что необходимо исправить.
+
+## Среда разработки
+
+Для разработки вам понадобится [VS Code](https://code.visualstudio.com/download). 
+
+Необходимо установить следующие расширения:
+- [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [CSS Formatter](https://marketplace.visualstudio.com/items?itemName=aeschli.vscode-css-formatter)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+Опционально:
+- [Git lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [TabNine - AI Assistant](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
+- [Code runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+
+
+Далее установите следующую конфигурацию VS Code: (F1 -> начните вводить `Open setting (JSON)`) и вставьте/добавьте конфигурацию ниже: 
+
+```json
+{
+  "files.autoSave": "onFocusChange",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "[css]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "aeschli.vscode-css-formatter",
+  },
+  "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true,
+  },
+}
+```
 
 ## Feedback
 
