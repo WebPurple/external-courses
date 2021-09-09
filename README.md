@@ -62,7 +62,7 @@ console.log(a); // eslint-disable-line
 console.log(b); // eslint-disable-line no-console
 ```
 
-## Дополнения
+### Дополнения
 
 Все интересующие вопросы могут быть заданы тренеру, ниже представлено дополнение к некоторым моментам руководства в виде пошагового алгоритма.
 
@@ -77,6 +77,8 @@ console.log(b); // eslint-disable-line no-console
 В случае, если тренер оставил замечания к _pull request_ и не зачёл практическую работу, необходимо исправить замечания и выполнить _push_ изменений в соответствующую ветку, после чего ответить на комментарии тренера, где описать результат проделанной работы.
 
 Когда тренер зачёл практическую работу и все проверки тестов и линтера были выполнены, становится активной (зелёной) кнопка "Merge pull request", по нажатию на которую можно влить изменения из ветки практической работы в ветку _master_, что означает сдачу практической работы.
+
+##### Подробнее про работу с Github тут -  [Как создать ветку, коммит, pull request с домашней работой в Github](https://github.com/WebPurple/external-courses/blob/master/how-to/how-to-do-homework.md) 
 
 ## Настройка автоматических проверок теста и линтера
 
@@ -94,13 +96,15 @@ console.log(b); // eslint-disable-line no-console
 - [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [CSS Formatter](https://marketplace.visualstudio.com/items?itemName=aeschli.vscode-css-formatter)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+Опционально:
 - [Git lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [TabNine - AI Assistant](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 - [Code runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
 
-Установите следующую конфигурацию VS Code: (F1 -> начните вводить `Open setting (JSON)`) и вставьте/добавьте конфигурацию ниже: 
+Далее установите следующую конфигурацию VS Code: (F1 -> начните вводить `Open setting (JSON)`) и вставьте/добавьте конфигурацию ниже: 
 
 ```json
 {
