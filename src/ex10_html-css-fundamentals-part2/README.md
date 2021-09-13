@@ -7,7 +7,8 @@
 ## Задание 2
 
 Создайте HTML-страницу с формой, используя типы для инпутов.
-Макет скачать по [ссылке](https://drive.google.com/drive/folders/1NS38C7K_qvMdKjj85KeeUXjfVk3yCiQB) - Form.png
+<br />
+![Макет](assets/images/Form.png)
 
 -   Поле "Country of Residence" должно быть выпадающим списком
 
@@ -38,19 +39,13 @@
 -   Выполните задание, используя селекторы по ID и классы
 
 -   Используйте несколько CSS-файлов, назвать можно task-03-1.css, task-03-2.css
+ 
+Макет:<br />
+![Table](assets/images/table.png)<br />
+![Table](assets/images/table2.png)
 
-<p align="center">
-    <img
-        width='500'
-        title='Task'
-        src="https://s3.amazonaws.com/media-p.slid.es/uploads/130700/images/1871914/pasted-from-clipboard.png"
-    />
-</p>
-
-<p align="center">
-    <img
-        width='525'
-        title='Task'
-        src="https://s3.amazonaws.com/media-p.slid.es/uploads/130700/images/1871915/pasted-from-clipboard.png"
-    />
-</p>
+#### Критерии оценки:
+- 0 - задания не выполнены
+- 1-3 - задания выполнены, но есть существенные недоработки
+- 4 - выполнены все задания, но есть небольшие несоответствия макетам (з.2-3)
+- 5 - задания выполнены, соответствуют макетами(з.2-3) и исправлены комментарии тренера, если имеются
