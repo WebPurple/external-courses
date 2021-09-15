@@ -14,16 +14,21 @@ describe('Ex3. JS Objects Part 1', () => {
 
     task('03', code => {
         const obj = {a: 1};
+        const objWithProto = Object.create({ c: 3 });
 
         it("should return 'true' if key exists in object", () =>
             expect(code('a', obj)).toBe(true));
 
         it("should return 'false' if key not exists in object", () =>
             expect(code('b', obj)).toBe(false));
+
+        it("should return 'false' if key not exists in object", () =>
+            expect(code('c', objWithProto)).toBe(false));
     });
 
     task('04', code => {
         const obj = {a: 1};
+        const objWithProto = Object.create({ b: 3 });
 
         it('should leave property unchanged if it exists', () => {
             const newObj = code('a', obj);
@@ -32,6 +37,11 @@ describe('Ex3. JS Objects Part 1', () => {
 
         it("should set 'new' to property if it doesn't exist", () => {            
             const newObj = code('b', obj);
+            expect(newObj.b).toBe('new');
+        });
+
+        it("should set 'new' to property if it doesn't exist", () => {            
+            const newObj = code('b', objWithProto);
             expect(newObj.b).toBe('new');
         });
     });
