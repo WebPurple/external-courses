@@ -4,7 +4,7 @@
   "description": "WebPurple JavaScript course template",
   "scripts": {
     "test": "jest",
-    "lint": "eslint --ext --cache .js ./ --fix",
+    "lint": "eslint --ext .js --cache ./src --fix",
     "test:ci": "jest",
     "prepare": "husky install"
   },
