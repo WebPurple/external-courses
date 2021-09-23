@@ -10,4 +10,4 @@ function ArrayAlements (Array) {
 
 }
 
-module.exports = NumberOrString;
+module.exports = ArrayAlements;
