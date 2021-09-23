@@ -27,14 +27,14 @@ describe('Ex6. JS Array methods', () => {
         it("should return 'true' if callback returns 'true' for one of all elements", () => {
             expect(code(arr, function(item, i, array) {return (item*i-array.length) > 0;})).toBe(true);
             expect(code(arr, function(item, i, array) {return (item*i-3*array.length) > 0;})).toBe(false);
-            
+
             code(simpleArr, (item, i, array) => {
                 countIter = countIter + 1;
 
                 return item > 3;
             });
 
-            countIter.toBe(4);
+            expect(countIter).toBe(4);
         });
     });
 
@@ -54,7 +54,7 @@ describe('Ex6. JS Array methods', () => {
                 return item < 3;
             });
 
-            countIter.toBe(3);
+            expect(countIter).toBe(3);
         });
     });
 
