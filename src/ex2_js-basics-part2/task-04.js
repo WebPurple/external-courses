@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-function SameArray (VerifiableArray) {
+function SameArray(VerifiableArray) {
     let Same;
     for (let i = 1; i < VerifiableArray.length; i++) {
         if (VerifiableArray[0] === VerifiableArray[i]) {
@@ -10,11 +10,7 @@ function SameArray (VerifiableArray) {
             break;
         }
     }
-    if (Same) {
-        console.log('Array is the same');
-    }  else {
-        console.log('Array is not the same'); 
-    }
+    return Same;
 }
 
 module.exports = SameArray;

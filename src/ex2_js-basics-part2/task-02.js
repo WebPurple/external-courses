@@ -1,10 +1,10 @@
-'use strict'
+'use strict';
 
-function ArrayAlements (Array) {
+function ArrayAlements(Array) {
     for (let i = 0; i < Array.length; i++) {
         console.log(Array[i]);
     }
-    console.log('Array lenght: ' + Array.length);
+    console.log(`Array lenght: ${Array.length}`);
     return null;
 }
 

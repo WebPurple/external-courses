@@ -1,27 +1,28 @@
-'use strict'
+'use strict';
 
 function typeNumber(variable) {
+    let typeVariable;
     if (Number.isInteger(variable) && variable < 1001 && variable > -1) {
         if (variable === 0) {
             console.log('It is Null!');
-            return null;
+            typeVariable = 'Не причисляется ни к простым, ни к составным числам';
         } else if (variable === 1) {
             console.log('It is 1!');
-            return null;
-        } 
+            typeVariable = 'Не причисляется ни к простым, ни к составным числам';
+        }
         for (let i = 2; i < variable; i++) {
             if (variable % i !== 0) {
-                console.log(`Variable ${variable} is simple!!!`);
-                return null;
+                typeVariable = `Число ${variable} - простое число`;
             } else {
-                console.log(`Variable ${variable} is not simple!!!`);
-                return null;
+                typeVariable = `Число ${variable} - составное число`;
+                break;
             }
         }
     } else {
-        console.log('Data Error');
-        return null;
+        console.log('Данные неверны');
+        typeVariable = 'Данные неверны';
     }
+    return typeVariable;
 }
 
 module.exports = typeNumber;
