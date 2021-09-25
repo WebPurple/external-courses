@@ -48,7 +48,7 @@ describe('Ex4. JS Objects Part 2', () => {
         task('06', code =>
             it('should camelize input string', () => {
                 expect(code('I am cool')).toBe('I Am Cool');
-                expect(code('I Аm cool')).toBe('I Am Cool');
+                expect(code('I Am cool')).toBe('I Am Cool');
                 expect(code('I aM cool')).toBe('I AM Cool');
             }),
         );
