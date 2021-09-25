@@ -1,16 +1,9 @@
-const SameElementArray = (array) => {
-  let val = true;
-  array.sort((a, b) => a - b)
-    .forEach((value, index, arr) => {
-      if (index !== arr.length - 1) {
-        if (value !== arr[index + 1]) {
-          val = false;
-          return val;
-        }
-      }
-      return false;
-    });
-  return val;
+const sameElementArray = (array) => {
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[0] !== array[i]) return false;
+  }
+
+  return true;
 };
 
-module.exports = SameElementArray;
+module.exports = sameElementArray;

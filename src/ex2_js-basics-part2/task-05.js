@@ -1,7 +1,7 @@
-const MaxValueInArray = (array) => {
+const maxValueInArray = (array) => {
   array.sort((a, b) => b - a);
-  if (array[0] > 0) return array[0];
-  return null;
+
+  return array[0];
 };
 
-module.exports = MaxValueInArray;
+module.exports = maxValueInArray;

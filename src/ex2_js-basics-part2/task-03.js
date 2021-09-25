@@ -1,4 +1,4 @@
-function CountOddEvenZero(array) {
+function countOddEvenZero(array) {
   let zero = 0;
   let odd = 0;
   let even = 0;
@@ -15,11 +15,9 @@ function CountOddEvenZero(array) {
     }
   });
 
-  let str = `четных: ${even}; нечетных: ${odd};`;
-  if (zero) str += ` нуль: ${zero};`;
-  console.log(str);
+  console.log(`четных: ${even}; нечетных: ${odd}; нуль: ${zero};`);
 
   return [even, odd, zero];
 }
 
-module.exports = CountOddEvenZero;
+module.exports = countOddEvenZero;

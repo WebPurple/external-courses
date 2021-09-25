@@ -1,14 +1,17 @@
-function TypeValue(value) {
-  let val;
+function typeValue(value) {
   if (typeof (value) === 'string') {
-    val = 'string';
-  } else if (typeof (value) === 'number') {
-    val = 'number';
-  } else if (isNaN(value)) {
-    val = undefined;
+    return 'string';
   }
 
-  return val;
+  if (typeof (value) === 'number') {
+    return 'number';
+  }
+
+  if (isNaN(value)) {
+    return undefined;
+  }
+
+  return undefined;
 }
 
-module.exports = TypeValue;
+module.exports = typeValue;
