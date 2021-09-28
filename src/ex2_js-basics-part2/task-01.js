@@ -1,14 +1,14 @@
 function typeArgument(argument) {
-  let result;
   if (typeof argument === 'string') {
-    result = 'string';
-  } if (typeof argument === 'number') {
-    if (String(argument) === 'NaN') {
-      result = null;
-    }
-    result = 'number';
+    return 'string';
   }
-  return result;
+  if (String(argument) === 'NaN') {
+    return undefined;
+  }
+  if (typeof argument === 'number') {
+    return 'number';
+  }
+  return undefined;
 }
 
 module.exports = typeArgument;
