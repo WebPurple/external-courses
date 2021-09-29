@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    background-color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    flex-flow: column;
+}
+
+input, label, div {
+    display: flex;
+}
+
+.inputblock {
+    flex-flow: column;
+    margin: 10px;
+    width: 300px;
+}
+
+label {
+    position: relative;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: chartreuse;
+    top: -1.2rem;
+    opacity: 0;
+}
+
+textarea {
+    height: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    resize: none;
+}
+
+input:focus ~ label {
+    color: yellow;
+}
+
+input:valid ~ label {
+    animation: labelanimation 1s forwards;
+}
+
+.labelaria {
+    top: -200px;
+}
+
+textarea:focus ~ label {
+    color: yellow;
+}
+
+textarea:valid ~ label {
+    animation: labelariaanimation 1s forwards;
+}
+
+@keyframes labelanimation {
+    to {
+        top: -2.3rem;
+        opacity: 1;
+    }
+}
+
+@keyframes labelariaanimation {
+    to {
+        top: -225px;
+        opacity: 1;
+    }
+}
+
