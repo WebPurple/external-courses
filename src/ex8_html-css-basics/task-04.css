@@ -1,0 +1,21 @@
+.background {
+    background-color: red;
+}
+
+.image {
+    width: 20cm;
+    height: 20cm;
+}
+
+.font-size {
+    font-size: 10px;
+}
+
+h3 {
+    font-family: "AlexandraScriptRegular";
+    src: url('/font/AlexandraScriptRegular.ttf');
+}
+
+.word-spacing {
+    word-spacing: 1px;
+}

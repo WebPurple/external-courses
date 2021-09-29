@@ -1,0 +1,11 @@
+.outline {
+    outline: solid blue;
+}
+
+.border {
+    outline: solid red;
+}
+
+.box-shadow {
+    box-shadow: 0 0 0 1px black;
+}
