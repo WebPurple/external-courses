@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 // const arr = ['string1', 2, 3, 'string4', 5, 6, 7];
 
 function printArray(array) {

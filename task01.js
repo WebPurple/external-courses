@@ -1,14 +1,14 @@
 function getValueType(value) {
   if (typeof value === 'number' && Number.isNaN(value)) {
-    return undefined;
+    return console.log('undefined');
   }
   if (typeof value === 'number') {
-    return Number;
+    return console.log('number');
   }
   if (typeof value === 'string') {
-    return String;
+    return console.log('string');
   }
-  return undefined;
+  return console.log('undefined');
 }
 
 const values = ['simple', 22, false, undefined, parseInt('simple', 10)];
