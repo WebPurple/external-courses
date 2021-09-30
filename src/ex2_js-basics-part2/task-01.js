@@ -1,15 +1,13 @@
-'use strict';
+function numberOrString(taken) {
+  if ((typeof taken === 'number') && (!isNaN(taken))) {
+      return 'number';
+  }
 
-function NumberOrString(taken) {
-    let typeNumber;
-    if ((typeof taken === 'number') && (!isNaN(taken))) {
-        typeNumber = 'number';
-    } else if (typeof taken === 'string') {
-        typeNumber = 'string';
-    } else {
-        typeNumber = undefined;
-    }
-    return typeNumber;
+  if (typeof taken === 'string') {
+      return 'string';
+  }
+
+  return undefined;
 }
 
-module.exports = NumberOrString;
+module.exports = numberOrString;

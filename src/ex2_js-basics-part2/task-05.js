@@ -1,19 +1,17 @@
-'use strict';
+function maxElementArray(currentArray) {
+  let maxElement = currentArray[0];
 
-function maxElementArray(CurrentArray) {
-    let maxElement = CurrentArray[0];
-    for (let i = 0; i < CurrentArray.length; i++){
-        if (Number.isInteger(CurrentArray[i])) {
-            if (CurrentArray[i] > maxElement) {
-                maxElement = CurrentArray[i];
-            }
-        } else {
-            console.log('Array have wrong elements');
-            maxElement = 'wrong array';
-            break;
-        }
-    }
-    return maxElement;
+  for (let i = 0; i < currentArray.length; i++){
+      if (Number.isInteger(currentArray[i])) {
+          if (currentArray[i] > maxElement) {
+              maxElement = currentArray[i];
+          }
+      } else {
+          return 'wrong array';
+      }
+  }
+
+  return maxElement;
 }
 
 module.exports = maxElementArray;

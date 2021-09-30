@@ -1,16 +1,11 @@
-'use strict';
+function sameArray(VerifiableArray) {
+  for (let i = 1; i < VerifiableArray.length; i++) {
+      if (VerifiableArray[0] !== VerifiableArray[i]) {
+          return false;
+      }
+  }
 
-function SameArray(VerifiableArray) {
-    let Same;
-    for (let i = 1; i < VerifiableArray.length; i++) {
-        if (VerifiableArray[0] === VerifiableArray[i]) {
-            Same = true;
-        } else {
-            Same = false;
-            break;
-        }
-    }
-    return Same;
+  return true;
 }
 
-module.exports = SameArray;
+module.exports = sameArray;
