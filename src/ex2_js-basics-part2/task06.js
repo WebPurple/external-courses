@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 function isPrime(n) {
   if (n === 0 || n === 1) {
     return `${n} - не причисляется ни к простым, ни к составным числам`;
@@ -14,6 +13,5 @@ function isPrime(n) {
   }
   return `${n} простое число`;
 }
-console.log(isPrime(0));
 
 module.exports = isPrime;
