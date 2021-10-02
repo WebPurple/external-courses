@@ -1,23 +1,23 @@
 function kindsArrayNumbers(needfullArray) {
-  const NumberArray = [0, 0, 0];
+  const numberArray = [0, 0, 0];
 
   for (let i = 0; i < needfullArray.length; i++) {
      if (typeof needfullArray[i] === 'number') {
           if ((needfullArray[i] % 2 === 0) && (needfullArray[i] !== 0)) {
-              NumberArray[0]++;
+              numberArray[0]++;
           } else if (needfullArray[i] % 2 === 1) {
-              NumberArray[1]++;
+              numberArray[1]++;
           } else {
-              NumberArray[2]++;
+              numberArray[2]++;
           }
       }
   }
 
-  console.log(`Number of Even: ${NumberArray[0]}`);
-  console.log(`Number of Odd:  ${NumberArray[1]}`);
-  console.log(`Number of Null: ${NumberArray[2]}`);
+  console.log(`Number of Even: ${numberArray[0]}`);
+  console.log(`Number of Odd:  ${numberArray[1]}`);
+  console.log(`Number of Null: ${numberArray[2]}`);
 
-  return NumberArray;
+  return numberArray;
 }
 
 module.exports = kindsArrayNumbers;
