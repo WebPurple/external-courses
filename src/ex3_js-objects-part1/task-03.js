@@ -1,9 +1,9 @@
 function existProperty(property, obj) {
-    if (obj.hasOwnProperty(property)) {
-        return true;
-    }
+  if (obj.hasOwnProperty(property)) {
+    return true;
+  }
 
-    return false;
+  return false;
 }
 
 module.exports = existProperty;
