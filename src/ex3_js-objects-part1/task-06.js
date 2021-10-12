@@ -1,13 +1,9 @@
 const deepClone = (obj) => {
-  const newObj = {};
+  const newObj = Array.isArray(obj) ? [] : {};
 
   Object.keys(obj).forEach((key) => {
     if (typeof obj[key] === 'object' && obj[key] !== null) {
-      if (!Array.isArray(obj[key])) {
-        newObj[key] = deepClone(obj[key]);
-      } else {
-        newObj[key] = Object.values(obj[key]);
-      }
+      newObj[key] = deepClone(obj[key]);
     } else {
       newObj[key] = obj[key];
     }
