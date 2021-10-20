@@ -6,7 +6,7 @@
 
 ## Задание 2
 
-[Проверьте знания о `position`](https://htmlacademy.ru/courses/45).
+[Проверьте знания о `position`](https://developer.mozilla.org/ru/docs/Web/CSS/position).
 
 ## Задание 3
 
