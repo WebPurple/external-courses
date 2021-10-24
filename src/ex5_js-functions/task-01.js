@@ -1,49 +1,53 @@
-const calculat = {
-  result: 0,
-  getResult() {
-    return calculat.result;
-  },
-  reset() {
-    calculat.result = 0;
-    return calculat.result;
-  },
-  add(...args) {
-    if (args.length) {
-      calculat.result += args.reduce((acc, value) => acc + value);
-    } else {
-      calculat.result += 0;
-    }
-    return calculat.add;
-  },
-  subtract(...args) {
-    if (args.length) {
-      calculat.result -= args.reduce((acc, value) => acc + value);
-    } else {
-      calculat.result += 0;
-    }
-    return calculat.subtract;
-  },
-  divide(...args) {
-    if (args.length) {
-      calculat.result /= args.reduce((acc, value) => acc * value);
-    } else {
-      calculat.result += 0;
-    }
-    return calculat.divide;
-  },
-  multiply(...args) {
-    if (args.length) {
-      calculat.result *= args.reduce((acc, value) => acc * value);
-    } else {
-      calculat.result += 0;
-    }
-    return calculat.multiply;
-  },
-};
 function Calculator() {
-  return calculat;
+  let result = 0;
+  function getResult() {
+    return result;
+  }
+  function reset() {
+    result = 0;
+    return result;
+  }
+  function add(...args) {
+    if (args.length) {
+      result += args.reduce((acc, value) => acc + value);
+    } else {
+      result += 0;
+    }
+    return add;
+  }
+  function subtract(...args) {
+    if (args.length) {
+      result -= args.reduce((acc, value) => acc + value);
+    } else {
+      result += 0;
+    }
+    return subtract;
+  }
+  function divide(...args) {
+    if (args.length) {
+      result /= args.reduce((acc, value) => acc * value);
+    } else {
+      result += 0;
+    }
+    return divide;
+  }
+  function multiply(...args) {
+    if (args.length) {
+      result *= args.reduce((acc, value) => acc * value);
+    } else {
+      result += 0;
+    }
+    return multiply;
+  }
+  return {
+    getResult,
+    reset,
+    add,
+    subtract,
+    divide,
+    multiply,
+  };
 }
-
 const calculator = Calculator();
 
 module.exports = calculator;
