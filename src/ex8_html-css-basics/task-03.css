@@ -1,0 +1,14 @@
+#div1 {
+    border: 1px solid #682451;
+    margin: 20px;
+}
+
+#div2 {
+    outline: 1px solid #682451;
+    margin: 20px;
+}
+
+#div3 {
+    box-shadow: 0 0 0 1px #682451;
+    margin: 20px;
+}

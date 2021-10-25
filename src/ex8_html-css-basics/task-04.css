@@ -1,0 +1,37 @@
+#lists {
+    background-color: #6f2772;
+}
+
+#paragraph {
+    background-image: url(fon.jpeg);
+}
+
+#list {
+    background-color: green;
+}
+
+#table {
+    background-color: rgb(110, 82, 82);
+}
+
+#image {
+    background-color: rgba(136, 224, 220, 0.5);
+}
+
+#pre {
+    background-color: rgb(60, 160, 113);
+}
+
+p {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+#font {
+    font-family: 'Dancing Script', cursive;
+}
+
+img {
+    width: 40vw;
+    height: 20%;
+}

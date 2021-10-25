@@ -1,0 +1,21 @@
+div {
+    background-color: #FFA07A;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #682451;
+}
+
+th {
+    border: 1px solid #682451;
+}
+
+td {
+    border: 1px solid #682451;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
