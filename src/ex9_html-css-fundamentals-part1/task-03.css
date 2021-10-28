@@ -1,0 +1,22 @@
+.button {
+    height: 45px;
+    width: 180px;
+    margin-top: 300px;
+    margin-left: 600px;
+    color: rgb(88, 88, 88);
+    background: linear-gradient(180deg, #ececec, #a3a3a3);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    display: flex;
+    text-shadow: 0 0.5px 0 rgb(185, 181, 181);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgb(139, 139, 139), 0 0 0 6px rgb(202, 201, 201), 0 0 0 8px rgb(245, 241, 241), 0 0 0 9px rgb(75, 75, 75);
+}
+
+span {
+    padding: 0px 5px 0px 5px;
+    color: #868484;
+}
