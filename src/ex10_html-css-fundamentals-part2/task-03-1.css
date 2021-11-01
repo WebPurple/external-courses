@@ -1,0 +1,25 @@
+table {
+    font-family: Arial, sans-serif;
+    color: rgb(91, 92, 94);
+    border: 2px solid white;
+    text-align: center;
+}
+
+tr {
+    width: 40px;
+    height: 35px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(159, 202, 214);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(227, 241, 245);
+}
+
+.first {
+    text-transform: uppercase;
+    width: 40px;
+    height: 15px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 2</title>
+    <link rel="stylesheet" href="task-02.css" />
+  </head>
+  <body>
+    <form action="http://httpbin.org/post" method="post">
+      <fieldset>
+        <legend>Personal data</legend>
+        <p>
+          <label for="surname">Surname </label
+          ><input type="text" id="surname" />
+        </p>
+        <p>
+          <label for="name">First Name </label> <input type="text" id="name" />
+        </p>
+        <p>
+          <label for="middle">Middle name </label>
+          <input type="text" id="middle" />
+        </p>
+        <p>
+          <label>You are</label>
+          <input type="radio" name="sex" value="male" />male
+          <input type="radio" name="sex" value="female" />female
+        </p>
+        <p>
+          <label>Age</label> <input type="number" id="age" min="18" max="101" />
+        </p>
+        <p>
+          <label for="country">County of Residence</label>
+          <select name="country">
+            <option value="Russia">Russia</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+          </select>
+        </p>
+        <p>
+          <label>City</label>
+          <input type="checkbox" value="Ryazan" />Ryazan
+          <input type="checkbox" value="Moscow" />Moscow
+        </p>
+        <p>
+          <label>Photography </label><input type="file" name="photography" />
+        </p>
+        <hr />
+        <p>
+          <label for="title">Title</label>
+          <select name="title">
+            <optgroup label="Technologies">
+              <option value="1">Web master</option>
+              <option value="2">Database Administrator</option>
+              <option value="3">Computer-aided design</option>
+            </optgroup>
+            <optgroup label="Finance">
+              <option value="f1">Economic Planning</option>
+              <option value="f2">Management Accounting</option>
+              <option value="f3">Budgeting and planning</option>
+            </optgroup>
+          </select>
+        </p>
+        <p><label>Salary</label><input type="range" name="salary" /></p>
+        <textarea name="comment" rows="10" cols="60">
+Tell us about yourself...</textarea
+        >
+      </fieldset>
+    </form>
+    <form action="http://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <p><label>Site </label><input type="text" name="site" /></p>
+        <p><label>Email </label><input type="email" name="email" /></p>
+        <p><label>Phone </label><input type="tel" name="phone" /></p>
+      </fieldset>
+      <p>
+        <label>Password </label
+        ><input type="password" name="password" required />
+      </p>
+      <p>
+        <input type="submit" value="Отправить" />
+        <input type="reset" value="Сбросить" />
+      </p>
+    </form>
+  </body>
+</html>
