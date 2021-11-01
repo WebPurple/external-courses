@@ -1,0 +1,33 @@
+.divbtn {
+    box-sizing: border-box;
+    border: 1px solid rgb(148, 144, 144);
+    border-radius: 15px;
+    height: 60px;
+    width: 170px;
+    background-color: rgb(226, 221, 221);
+}
+
+.divbtn2 {
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 3px;
+    background-color: rgb(226, 221, 221);
+    height: 100%;
+    width: 100%;
+}
+
+.btn {
+    box-sizing: border-box;
+    border: 1px solid rgb(177, 173, 173);
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    color: rgb(161, 156, 156);
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(209, 202, 202));
+}
+
+b {
+    color: rgb(99, 96, 96);
+}
