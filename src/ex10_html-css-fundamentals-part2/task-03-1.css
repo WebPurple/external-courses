@@ -1,0 +1,55 @@
+@import "task-03-2.css";
+
+#table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr;
+    background-color: #fff;
+    grid-gap: 1px;
+
+    width: 600px;
+    height: 500px;
+
+    margin: 50px auto 0 auto;
+}
+
+.table__title {
+    background-color: #d3e2f2;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 5px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(128, 140, 154);
+}
+
+.table__rows {
+    display: contents;
+}
+
+.table__row {
+    background-color: #e3ebf2;
+        
+    text-align: center;
+    padding: 20px 10px;
+
+    font-family: 'Roboro', sans-serif;
+    font-size: 14px;
+    color: rgb(128, 140, 154);
+}
+
+.table__rows div:first-child {
+    text-transform: capitalize;
+}
+
+.table__rows:nth-child(even) div {
+    background-color:rgb(209, 217, 227);
+}
+
+.table__rows:hover div {
+    background-color:rgb(165, 199, 233);
+}

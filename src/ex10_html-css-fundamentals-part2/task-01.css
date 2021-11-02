@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    margin-top: 120px;
+}
+
+.text {
+    text-transform: uppercase;
+    color: #000;
+}
+
+.sun {
+    width: 200px;
+    height: 300px;
+    clip-path: circle(35%);
+}
+
+.moon {
+    width: 200px;
+    height: 300px;
+    clip-path: polygon(50% 0, 80% 50%, 10% 100%, 50% 0);
+}
+
+.plain {
+    width: 300px;
+    height: 200px;
+    margin-top: 60px;
+    margin-left: 60px;
+
+    clip-path: ellipse(140px 130px at 20% 5%);
+}
+
+/*polygon*/
+
+.first-polygon, .first-polygon div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+}
+
+.first-polygon {
+    transform: rotate(-45deg) translateY(10px);
+}
+
+.first-polygon .human {
+    width: 355px;
+    height: 355px;
+    transform: rotate(-45deg) transalteY(-74px);
+}
+
+.first-polygon .human img {
+    width: 100%;
+    height: auto;
+}
+
+.second-polygon, .second-polygon div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.second-polygon {
+    transform: rotate(315deg);
+}
+
+.window {
+    transform: rotate(-315deg);
+}
+
+.third-polygon, .third-polygon div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.third-polygon {
+    transform: rotate(120deg);
+}
+
+.stars1 {
+    transform: rotate(120deg);
+}
+
+.stars2 {
+    transform: rotate(-60deg);
+}
+
+.second .text {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}

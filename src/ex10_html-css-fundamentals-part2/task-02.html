@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task-02.css" rel="stylesheet" type="text/css">
+    <title>Form</title>
+</head>
+<body>
+    <form action="http://httpbin.org/get" method="get">
+        <fieldset class="personal">
+            <legend>Personal data</legend>
+            <label>
+                Surname
+                <input type="text" name="surname">
+            </label>
+            <label>
+                First Name
+                <input type="text" name="name">
+            </label>
+            <label>
+                Middle name
+                <input type="text" name="middle-name"> 
+            </label>
+            <label>
+                You are
+                <input type="radio" name="gender" value="male"> male
+                <input type="radio" name="gender" value="female"> female
+            </label>
+            <label>
+                Age
+                <input type="number" name="age" min="18" max="101">
+            </label>
+            <label>
+                Country of Residence
+                <select name="country">
+                    <option value="Canada" selected>Canada</option>
+                    <option value="China">China</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Spain">Spain</option>
+                </select>
+            </label>
+            <label>
+                City
+                <input type="checkbox" name="city" value="male"> Ryazan
+                <input type="checkbox" name="city" value="female"> Moscow
+            </label>
+            <label>
+                Photography
+                <input type="file" name="photo">
+            </label>
+            <div class="line"></div>
+            <label>
+                Title
+                <select name="titles">
+                    <optgroup label="Technologies"></optgroup>
+                    <option value="Web Master">Web Master</option>
+                    <option value="Database Administrator">Database Administrator</option>
+                    <option value="Computer-aided design">Computer-aided design</option>
+                    <optgroup label="Finance"></optgroup>
+                    <option value="Economic Planning">Economic Planning</option>
+                    <option value="Management accounting">Management accounting</option>
+                    <option value="Budgeting and planning">Budgeting and planning</option>
+                </select>
+            </label>
+            <label>
+                Salary
+                <input type="range" name="salary">
+            </label>
+            <label>
+                <textarea name="about" placeholder="Tell us about yourself..."></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>
+                Site
+                <input type="url" name="site">
+            </label>
+            <label>
+                Email
+                <input type="email" name="email">
+            </label>
+            <label>
+                Phone
+                <input type="tel" name="phone">
+            </label>
+        </fieldset>
+        <label>
+            Password
+            <input type="text" name="password" required>
+        </label>
+    </form>
+    <container class="buttons">
+        <form action="http://httpbin.org/post" method="post">
+            <button name="sent-button" value="sent">Отправить</button>
+        </form>
+        <button type="reset">Сбросить</button>
+    </container>
+</body>
+</html>

@@ -1,0 +1,32 @@
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label {
+    margin-top: 15px;
+}
+
+textarea[name="about"] {
+    width: 400px;
+    height: 200px;
+}
+
+label input[name="password"] {
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.buttons button[type="reset"] {
+    margin-left: 10px;
+}
+
+.line {
+    border: 1px solid rgb(181, 181, 181);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
