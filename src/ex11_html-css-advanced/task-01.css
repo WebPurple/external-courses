@@ -1,0 +1,186 @@
+/* LOADER */
+
+.loader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.loader div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #000;
+    border-radius: 50%;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #000 transparent transparent transparent;
+}
+
+.loader div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.loader div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.loader div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/* BALL */
+
+.ball-animation {
+    position: relative;
+
+    width: 600px;
+    height: 200px;
+
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.ball {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(255, 247, 0);
+    border-radius: 30px;
+    animation: jump 5s linear infinite;
+}
+
+.block1, .block2 {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 255, 42);
+}
+
+.block1 {
+    bottom: 0;
+    left: 150px;
+}
+
+.block2 {
+    bottom: 0;
+    left: 400px;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+        left: 0;
+    }
+
+    10% {
+        bottom: 150px;
+        left: 150px;
+    }
+
+    20% {
+        bottom: 0;
+        left: 275px;
+    }
+
+    30% {
+        bottom: 150px;
+        left: 400px;
+    }
+
+    40% {
+        bottom: 0;
+        left: 500px;
+    }
+
+    50% {
+        bottom: 0;
+        left: 600px;
+    }
+
+    60% {
+        bottom: 0;
+        left: 500px;
+    }
+
+    70% {
+        bottom: 150px;
+        left: 400px;
+    }
+
+    80% {
+        bottom: 0;
+        left: 275px;
+    }
+
+    90% {
+        bottom: 150px;
+        left: 150px;
+    }
+}
+
+/* CIRCLE */
+
+.circle-animation {
+    width: 400px;
+    height: 200px;
+
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color:rgb(255, 183, 0);
+    border-radius: 50px;
+    animation: toSquare 7s ease-in infinite;
+}
+
+@keyframes toSquare {
+    0% {
+        background: linear-gradient(rgb(255, 183, 0), rgb(255, 255, 0));
+    }
+
+    10% {
+        border-radius: 0px;
+    }
+
+    30% {
+        background: linear-gradient(rgb(255, 119, 0), rgb(255, 217, 0));
+    }
+
+    50% {
+        width: 125px;
+        height: 125px;
+        transform: skew(10deg, 10deg)
+    }
+
+    70% {
+        transform: rotate(360deg)
+    }
+
+    80% {
+        background: linear-gradient(rgb(255, 183, 0), rgb(255, 255, 0));
+    }
+
+    90% {
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.header {
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0067A3;
+}
+
+.header__logo {
+    display: flex;
+}
+
+.header__image-logo {
+    width: 45px;
+    height: 45px;
+
+    margin: 13px 0 13px 14px;
+}
+
+.header__title {
+    width: 331px;
+    height: 26px;
+    margin-left: 16px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.header__options {
+    display: flex;
+    align-items: center;
+}
+
+.header__button {
+    display: flex;
+    align-items: center;
+    width: 181px;
+    height: 33px;
+    margin-right: 50px;
+    padding: 8px 0px 9px 9px;
+
+    border: none;
+    border-radius: 5px;
+    background: #FFFFFF;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #000;
+}
+
+.header__button img {
+    width: 22px;
+    height: 22px;
+
+    padding-right: 13px;
+}
+
+.header__account {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.header__image {
+    width: 38px;
+    height: 38px;
+    margin-right: 6px;
+
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.header__arrow {
+    width: 12px;
+    height: 7px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    height: 55px;
+
+    background-color: #0067A3;
+}
+
+.footer__tasks {
+    display: flex;
+    align-items: center;
+
+    margin-left: 67px;
+}
+
+.footer__active-tasks, .footer__finished-tasks, .footer__author {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color:#FFFFFF;
+}
+
+.footer__active-tasks {
+    margin-right: 36px;
+}
+
+.footer__author {
+    margin-right: 27px;
+}
