@@ -1,0 +1,11 @@
+fieldset {
+    border: 1px solid;
+}
+
+legend {
+    margin: 3px;
+}
+
+button {
+    margin: 3px;
+}
