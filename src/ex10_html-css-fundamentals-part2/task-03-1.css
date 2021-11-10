@@ -1,0 +1,12 @@
+@import url(task-03-2.css);
+.string:nth-child(2n+1) {
+    background-color: rgb(217, 215, 228);
+}
+
+.string:nth-child(2n) {
+    background-color: rgb(241, 239, 239);
+}
+
+.string:hover {
+    background-color: rgb(197, 195, 206);
+}
