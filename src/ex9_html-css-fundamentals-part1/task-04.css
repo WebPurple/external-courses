@@ -1,0 +1,61 @@
+div {
+    background-color: blue;
+    height: 200px;
+    width: 300px;
+}
+
+.variant-one {
+    box-shadow: 5px 5px 0 0 rgb(95, 95, 255), 10px 10px 0 0 rgb(133, 133, 255);
+}
+
+.variant-two {
+    position: relative;
+    top: 30px;
+    z-index: 2;
+}
+
+.one {
+    position: relative;
+    bottom: 165px;
+    left: 5px;
+    height: 200px;
+    width: 300px;
+    background-color: rgb(107, 107, 252);
+    z-index: 1;
+}
+
+.two {
+    position: relative;
+    bottom: 360px;
+    left: 10px;
+    height: 200px;
+    width: 300px;
+    background-color: rgb(148, 148, 248);
+    z-index: 0;
+}
+
+.variant-three {
+    position: relative;
+}
+
+.variant-three::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(107, 107, 252);
+    top: 5px;
+    left: 5px;
+    z-index: -1;
+}
+
+.variant-three::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(148, 148, 248);
+    top: 10px;
+    left: 10px;
+    z-index: -2;
+}
