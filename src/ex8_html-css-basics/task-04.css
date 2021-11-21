@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+div {
+    background-color: rgb(214, 119, 135);
+}
+
+pre {
+    background-color: rebeccapurple;
+}
+
+.lorem {
+    background-image: url("https://static9.depositphotos.com/1611805/1080/i/600/depositphotos_10808579-stock-photo-abstract-painted-background.jpg");
+    background-size: cover;
+    border: 3px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 22px;
+    font-family: Arial;
+    height: 110%;
+    width: 90%;
+    text-align: justify;
+}
+
+.list {
+    border: 3px solid purple;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 140px;
+    background-image: linear-gradient(purple, pink, purple);
+}
+
+span {
+    font-family: 'Qahiri', sans-serif;
+    font-size: 38px;
+}
