@@ -1,0 +1,19 @@
+.cell {
+    font-family: 'Arial';
+    padding: 10px;
+}
+
+.cell {
+    text-align: left;
+}
+
+.head {
+    color: rgb(129, 126, 126);
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+}
+
+#name {
+    text-transform: capitalize;
+}

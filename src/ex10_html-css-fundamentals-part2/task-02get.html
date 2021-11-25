@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 02 GET. Work 10</title>
+    <link rel="stylesheet" href="task-02.css" />
+  </head>
+  <body>
+    <form action="http://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal data</legend>
+        <label>Surname: <input type="text" name="surname" /><br /></label>
+        <label>First Name: <input type="text" name="first_name" /><br /></label>
+        <label>
+          Middle Name: <input type="text" name="middle_name" /><br />
+        </label>
+        <label>
+          You are: <input type="radio" value="man" checked name="gender" />male
+        </label>
+        <label>
+          <input type="radio" value="woman" name="gender" />female<br />
+        </label>
+        <label>
+          Age:
+          <input
+            type="number"
+            name="age"
+            min="18"
+            max="109"
+            placeholder="18-109"
+          />
+          <br />
+        </label>
+        <label>
+          Country of Residence:
+          <select>
+            <option>Your country</option>
+            <option value="Russia">Russia</option>
+            <option value="USA">USA</option>
+            <option value="Great Britain">Great Britain</option>
+            <option value="France">France</option>
+          </select>
+          <br />
+        </label>
+        <label>
+          Photography <input type="file" name="photography" /><br />
+        </label>
+        <hr />
+        <label>
+          Title
+          <select size="8">
+            <optgroup label="Technologies">
+              <option value="r1">Web Master</option>
+              <option value="r2">Datebase Administor</option>
+              <option value="r3">Computer-aided design</option>
+            </optgroup>
+            <optgroup label="Finance">
+              <option value="u1">Economic Planning</option>
+              <option value="u2">Management accounting</option>
+              <option value="u3">Budgetting and planning</option>
+            </optgroup>
+          </select>
+          <br />
+        </label>
+        <label>
+          Salary <input type="range" min="0" max="10" name="salary" /><br />
+        </label>
+        <textarea name="comment" cols="60" rows="10">
+Tell us about your self...</textarea
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Contact information</legend>
+        <label>Site: <input type="url" name="site" /><br /></label>
+        <label>
+          Email:
+          <input type="email" name="email" placeholder="name@domain.com" />
+          <br />
+        </label>
+        <label>
+          Phone:
+          <input type="tel" name="phone" placeholder="+*-***-***-**-**" /><br />
+        </label>
+      </fieldset>
+      <label>Password <input type="password" required /> <br /></label>
+      <input type="submit" name="send" value="Отправить" />
+      <input type="reset" name="clear" value="Очистить" />
+    </form>
+  </body>
+</html>
