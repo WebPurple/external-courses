@@ -1,0 +1,72 @@
+footer {
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    left: 0px;
+    top: 645px;
+
+}
+
+footer .rectangle12 {
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    left: 0px;
+    top: 0px;
+
+    background: #0067A3;
+}
+
+.active {
+    /* Active tasks: <N> */
+
+    position: absolute;
+    width: 138px;
+    height: 21px;
+    left: 67px;
+    top: 17px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: white;
+}
+
+.finished {
+    /* Finished tasks: <M> */
+
+    position: absolute;
+    width: 159px;
+    height: 21px;
+    left: 241px;
+    top: 17px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: white;
+}
+
+.author {
+    /* Kanban board by <NAME>, <YEAR> */
+
+    position: absolute;
+    width: 279px;
+    height: 21px;
+    left: 1049px;
+    top: 17px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: white;
+}
