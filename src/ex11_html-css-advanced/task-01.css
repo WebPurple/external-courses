@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  background-color:rgb(240, 255, 242);
+  flex-direction: column;
+}
+
+.loader1 {
+  height: 70px;
+  width: 70px;
+  border: 15px solid rgba(5, 156, 0, 0.5);
+  border-radius: 50%;
+  border-left-color  : #059c00;
+  border-right-color  : #059c00;
+  border-top-color  : #059c00;
+  animation: loader1 15s linear infinite;
+}
+
+.playground {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wall1 {
+  display: flex;
+  width: 25%;
+  height: 80px;
+  background-color: coral;
+}
+
+.wall2 {
+  display: flex;
+  width: 25%;
+  height: 80px;
+  background-color: coral;
+}
+
+.ball {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: rgb(92, 100, 102);
+  border-radius: 50%;
+  border: 10px solid rgb(36, 32, 35);
+  animation: bounce 3s linear infinite;
+}
+
+.infinityAnim {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(60deg, #23ffe2, #990d92);
+  animation: infinityAnimation 10s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes infinityAnimation {
+  0% {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    background-size: 200%;
+    background-position: 75% 50%;
+    transform: none;
+  }
+  20% {
+    border-radius: 0%;
+    width: 300px;
+    height: 300px;
+    background-size: 300%;
+    background-position: 75% 50%;
+    transform: none;
+  }
+  35% {
+    border-radius: 0%;
+    width: 300px;
+    height: 300px;
+    background-size: 300%;
+    background-position: 50% 100%;
+    transform: none;
+}
+  50% {
+    border-radius: 0%;
+    width: 150px;
+    height: 150px;
+    transform: skew(30deg, 30deg);
+    background-size: 300%;
+    background-position: 50% 100%;
+  }
+  65% {
+    transform: skew(30deg, 30deg) rotate(360deg);
+    border-radius: 0%;
+    width: 150px;
+    height: 150px;
+    background-size: 300%;
+    background-position: 50% 100%;
+  }
+  80% {
+    transform: skew(30deg, 30deg) rotate(360deg);
+    border-radius: 0%;
+    width: 150px;
+    height: 150px;
+    background-size: 300%;
+    background-position: 25% 75%;
+  }
+  100% {
+    border-radius: 50%;
+    background-size: 300%;
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes loader1 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    left: 25%;width: 25px; height: 60px;
+  }
+
+  5% {
+    left: 25%; width: 50px; height: 50px;
+  }
+
+  45% { 
+    right: 25%; width: 50px; height: 50px;
+  }
+
+  50% {
+    left: calc(75% - 40px); width: 25px; height: 60px;
+  }
+  
+  55% {
+    right: 25%; width: 50px; height: 50px;
+  }
+
+  95% {
+    right: 25%; width: 50px; height: 50px;
+  }
+
+  100% {
+    left: 25%; width: 25px; height: 60px;
+  }
+}
