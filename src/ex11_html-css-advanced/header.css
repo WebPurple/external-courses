@@ -1,0 +1,91 @@
+header {
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    left: 0px;
+    top: 0px;
+    background-color: #0067A3;
+}
+
+header .name {
+    position: relative;
+    width: 331px;
+    height: 26px;
+    left: 55px;
+    top: -48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.header__btn-container li {
+    position: relative;
+    top: -2px;
+    right: 10px;
+    margin: 0px;
+    line-height: 0.5;
+    color: #fff;
+    font-size: 16px;
+    padding: 0;
+}
+
+.span-container {
+    position: relative;
+    right: 12px;
+    font-size: 18px;
+}
+
+.rectangle10 {
+    position: absolute;
+    top: 10px;
+    left: 1075px;
+    background-color: white;
+    border-radius: 5px;
+    width: 160px;
+    height: 33px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0;
+}
+
+.rectangle10 .text {
+    font-size: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.rectangle10 .image {
+    position: relative;
+    top: 3px;
+}
+
+.user-menu .user-avatar {
+    position: absolute;
+    right: 2%;
+    top: 8px;
+    width: 38.4px;
+    height: 38.4px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.user-menu .arow-down {
+    position: absolute;
+    right: 1%;
+    top: 6px;
+    color: white;
+    font-size: 26px;
+    transform: rotate(90deg);
+}
+
+.avatar {
+    position: relative;
+    left: 5px;
+    top: 1px;
+}
