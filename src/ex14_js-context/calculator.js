@@ -1,51 +1,55 @@
-function Calculator() {
-  let currentValue = 0;
+class Calculator {
+  constructor() {
+    this.currentValue = 0;
+  }
 
-  const add = function add(addValue = 0) {
-    currentValue += addValue;
-    return add;
-  };
-  const subtract = function subtract(subtractValue = 0) {
-    currentValue -= subtractValue;
-    return subtract;
-  };
-  const divide = function divide(divideValue = 1) {
-    currentValue /= divideValue;
-    return divide;
-  };
-  const multiply = function multiply(multiplyValue = 1) {
-    currentValue /= multiplyValue;
-    return multiply;
-  };
-  const getResult = function getResult() {
-    console.log(currentValue);
-    return getResult;
-  };
-  const reset = function reset() {
-    currentValue = 0;
-    return reset;
-  };
-  const changeState = function changeState(changesValue = 0) {
-    currentValue = changesValue;
-    return changeState;
-  };
+  setState(a) {
+    this.currentValue = a;
+  }
 
-  return {
-    add,
-    subtract,
-    divide,
-    multiply,
-    getResult,
-    reset,
-    changeState,
-  };
+  getResult() {
+    console.log(this.currentValue);
+
+    return this;
+  }
+
+  reset() {
+    this.currentValue = 0;
+
+    return this;
+  }
+
+  add(addValue = 0) {
+    this.currentValue += addValue;
+
+    return this;
+  }
+
+  subtract(subtractValue = 0) {
+    this.currentValue += subtractValue;
+
+    return this;
+  }
+
+  divide(divideValue) {
+    this.currentValue /= divideValue;
+
+    return this;
+  }
+
+  multiply(multiplyValue = 0) {
+    this.currentValue *= multiplyValue;
+
+    return this;
+  }
+
+  callback() {
+    this.setState(500);
+
+    return this;
+  }
 }
 
-const calculator = Calculator();
-
-calculator.add();
-calculator.subtract();
-calculator.divide();
-calculator.multiply();
+const calculator = new Calculator();
 
 module.exports = calculator;
