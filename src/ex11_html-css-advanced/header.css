@@ -13,14 +13,12 @@ header .name {
     height: 26px;
     left: 55px;
     top: -48px;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
     line-height: 33px;
     margin: 0;
-
     color: #FFFFFF;
 }
 
@@ -28,7 +26,6 @@ header .name {
     position: relative;
     top: -2px;
     right: 10px;
-
     margin: 0px;
     line-height: 0.5;
     color: #fff;
@@ -46,17 +43,13 @@ header .name {
     position: absolute;
     top: 10px;
     left: 1075px;
-
     background-color: white;
     border-radius: 5px;
-
     width: 160px;
     height: 33px;
-
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-
     padding: 0;
 }
 
@@ -76,10 +69,8 @@ header .name {
     position: absolute;
     right: 2%;
     top: 8px;
-
     width: 38.4px;
     height: 38.4px;
-
     background-color: white;
     border-radius: 50%;
 }
@@ -88,10 +79,8 @@ header .name {
     position: absolute;
     right: 1%;
     top: 6px;
-
     color: white;
     font-size: 26px;
-
     transform: rotate(90deg);
 }
 
