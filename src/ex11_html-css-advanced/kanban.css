@@ -18,3 +18,38 @@ body {
 body .container {
     background: #0079BF;
 }
+
+.dropdown-menu {
+    position: absolute;
+    right: 0%;
+    top: 55px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    column-gap: none;
+    margin: 0;
+}
+
+.dropdown-item {
+    font-size: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    width: 100%;
+    font-weight: normal;
+    border-bottom: 1px solid black;
+    align-content: center;
+    flex-grow: 1;
+}
+
+.dropdown-item:hover {
+    font-size: 20px;
+    background-color: #1590d8;
+    font-weight: bold;
+    transition: all 500ms ease;
+}
