@@ -1,5 +1,8 @@
+// import { boards } from ' ./main.js ';
+
 let mark = true;
 const userMenu = document.createElement('div');
+// const main = document.querySelector('.main');
 
 function userList() {
   if (mark) {
