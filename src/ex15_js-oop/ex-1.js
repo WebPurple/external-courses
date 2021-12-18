@@ -32,15 +32,15 @@ const candy4 = {
 
 const present1 = [candy1, candy2, candy3, candy4];
 
-NewYearPresent.prototype.presentWeight = () => {
+NewYearPresent.prototype.presentWeight = function sum() {
   this.present.forEach((item) => {
     this.weight += (item.weight * item.amount);
-
-    return this.weight;
   });
+
+  return this.weight;
 };
 
-NewYearPresent.prototype.findCandy = (type) => {
+NewYearPresent.prototype.findCandy = function find(type) {
   let amountCundy = 0;
   this.present.forEach((item) => {
     if (item.name === type) {
@@ -52,8 +52,9 @@ NewYearPresent.prototype.findCandy = (type) => {
   return amountCundy;
 };
 
-NewYearPresent.prototype.sortCandy = () => this.present
-  .sort((a, b) => parseFloat(a.weight) - parseFloat(b.weight));
+NewYearPresent.prototype.sortCandy = function sortCandy() {
+  this.present.sort((a, b) => parseFloat(a.weight) - parseFloat(b.weight));
+};
 
 const newYearPresent = new NewYearPresent(present1);
 
