@@ -7,7 +7,6 @@ window.onload = () => {
     };
   }
 
-  document.getElementById('inputDebounced');
   document.addEventListener('input', inpDebounced());
   document.getElementById('inputRegular').addEventListener('input', () => {
     document.getElementById('Regular').innerHTML = document.getElementById('inputRegular').value;
