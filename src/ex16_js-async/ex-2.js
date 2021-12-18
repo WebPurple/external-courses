@@ -1,15 +1,7 @@
 window.onload = () => {
   function inpDebounced() {
-    let mark = false;
-
     return function fIn() {
-      if (mark) return;
-
-      mark = true;
-
       setTimeout(() => {
-        mark = false;
-
         document.getElementById('Debounced').innerHTML = document.getElementById('inputDebounced').value;
       }, 1000);
     };
