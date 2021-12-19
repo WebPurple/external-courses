@@ -23,6 +23,18 @@ const boardsMocks = [
         id: 'task1',
         name: 'Shop page &mdash; performance issues',
       },
+      {
+        id: 'task2',
+        name: 'Sprint bugfix',
+      },
+      {
+        id: 'task3',
+        name: 'Sprint bugfix',
+      },
+      {
+        id: 'task4',
+        name: 'Sprint bugfix',
+      },
     ],
   },
   {
@@ -31,6 +43,18 @@ const boardsMocks = [
       {
         id: 'task1',
         name: 'User page &mdash; performance issues',
+      },
+      {
+        id: 'task2',
+        name: 'Sprint bugfix',
+      },
+      {
+        id: 'task3',
+        name: 'Sprint bugfix',
+      },
+      {
+        id: 'task4',
+        name: 'Sprint bugfix',
       },
     ],
   },
@@ -41,10 +65,55 @@ const boardsMocks = [
         id: 'task1',
         name: 'Main page &mdash; performance issues',
       },
+      {
+        id: 'task2',
+        name: 'Sprint bugfix',
+      },
+      {
+        id: 'task3',
+        name: 'Sprint bugfix',
+      },
+      {
+        id: 'task4',
+        name: 'Sprint bugfix',
+      },
     ],
   },
   // code
 ];
+
+function createTaskBacklog(newBoard, span3Board) {
+  const inputTask = document.createElement('input');
+  newBoard.insertBefore(inputTask, span3Board);
+  inputTask.classList.add('inputTask');
+
+  inputTask.addEventListener('focusout', () => {
+    const newTask = document.createElement('div');
+    newTask.innerHTML = `${inputTask.value}`;
+    newBoard.insertBefore(newTask, span3Board);
+    newTask.classList.add('task');
+    inputTask.remove();
+  });
+}
+
+function createTaskAnother(newBoard, span3Board, i) {
+  const selectTask = document.createElement('select');
+  newBoard.insertBefore(selectTask, span3Board);
+  selectTask.classList.add('selectTask');
+  for (let k = 0; i < 2; k += 1) {
+    const optionTask = document.createElement('option');
+    optionTask.textContent = `${boardsMocks[i - 1].issues[k].name}`;
+    selectTask.appendChild(optionTask);
+  }
+
+  selectTask.addEventListener('click', () => {
+    const newTask = document.createElement('div');
+    newTask.innerHTML = `${selectTask.value}`;
+    newBoard.insertBefore(newTask, span3Board);
+    newTask.classList.add('task');
+    selectTask.remove();
+  });
+}
 
 function createBoard() {
   for (let i = 0; i < boardsMocks.length; i += 1) {
@@ -79,34 +148,9 @@ function createBoard() {
 
     span3Board.addEventListener('click', () => {
       if (newBoard.id === 'backlog') {
-        const inputTask = document.createElement('input');
-        newBoard.insertBefore(inputTask, span3Board);
-        inputTask.classList.add('inputTask');
-
-        inputTask.addEventListener('focusout', () => {
-          const newTask = document.createElement('div');
-          newTask.innerHTML = `${inputTask.value}`;
-          newBoard.insertBefore(newTask, span3Board);
-          newTask.classList.add('task');
-          inputTask.remove();
-        });
+        createTaskBacklog(newBoard, span3Board);
       } else {
-        const selectTask = document.createElement('select');
-        newBoard.insertBefore(selectTask, span3Board);
-        selectTask.classList.add('selectTask');
-        for (let k = 0; i < 2; k += 1) {
-          const optionTask = document.createElement('option');
-          optionTask.textContent = `${boardsMocks[i - 1].issues[k].name}`;
-          selectTask.appendChild(optionTask);
-        }
-
-        selectTask.addEventListener('focusout', () => {
-          const newTask = document.createElement('div');
-          newTask.innerHTML = `${selectTask.value}`;
-          newBoard.insertBefore(newTask, span3Board);
-          newTask.classList.add('task');
-          selectTask.remove();
-        });
+        createTaskAnother(newBoard, span3Board, i);
       }
     });
   }
