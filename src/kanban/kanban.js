@@ -2,7 +2,7 @@ let mark = true;
 const userMenu = document.createElement('div');
 const main = document.querySelector('#main');
 
-const boardsMocks = [
+let boards = [
   {
     title: 'backlog',
     issues: [ // массив задач
@@ -82,7 +82,13 @@ const boardsMocks = [
   // code
 ];
 
-function createTaskBacklog(newBoard, span3Board) {
+if (localStorage.getItem('boards') === null) {
+  localStorage.setItem('boards', JSON.stringify(boards));
+}
+
+const boardsMocks = JSON.parse(localStorage.getItem('boards'));
+
+function createTaskBacklog(item, newBoard, span3Board) {
   const inputTask = document.createElement('input');
   newBoard.insertBefore(inputTask, span3Board);
   inputTask.classList.add('inputTask');
@@ -90,6 +96,10 @@ function createTaskBacklog(newBoard, span3Board) {
   inputTask.addEventListener('focusout', () => {
     const newTask = document.createElement('div');
     newTask.innerHTML = `${inputTask.value}`;
+    item.issues.push({ id: `task${item.issues.length + 1}`, name: `${inputTask.value}` });
+    boards = boardsMocks;
+    localStorage.setItem('boards', JSON.stringify(boardsMocks));
+    console.log(item.issues);
     newBoard.insertBefore(newTask, span3Board);
     newTask.classList.add('task');
     inputTask.remove();
@@ -148,7 +158,7 @@ function createBoard() {
 
     span3Board.addEventListener('click', () => {
       if (newBoard.id === 'backlog') {
-        createTaskBacklog(newBoard, span3Board);
+        createTaskBacklog(item, newBoard, span3Board);
       } else {
         createTaskAnother(newBoard, span3Board, i);
       }
