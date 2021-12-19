@@ -1,8 +1,95 @@
-// import { boards } from ' ./main.js ';
-
 let mark = true;
 const userMenu = document.createElement('div');
-// const main = document.querySelector('.main');
+const main = document.querySelector('#main');
+
+const boardsMocks = [
+  {
+    title: 'backlog',
+    issues: [ // массив задач
+      {
+        id: 'task1',
+        name: 'Login page &mdash; performance issues',
+      },
+      {
+        id: 'task2',
+        name: 'Sprint bugfix',
+      },
+    ],
+  },
+  {
+    title: 'ready',
+    issues: [ // массив задач
+      {
+        id: 'task1',
+        name: 'Shop page &mdash; performance issues',
+      },
+    ],
+  },
+  {
+    title: 'inprogress',
+    issues: [ // массив задач
+      {
+        id: 'task1',
+        name: 'User page &mdash; performance issues',
+      },
+    ],
+  },
+  {
+    title: 'finished',
+    issues: [ // массив задач
+      {
+        id: 'task1',
+        name: 'Main page &mdash; performance issues',
+      },
+    ],
+  },
+  // code
+];
+
+for (let i = 0; i < boardsMocks.length; i += 1) {
+  const item = boardsMocks[i];
+  const newBoard = document.createElement('div');
+  main.appendChild(newBoard);
+  newBoard.id = item.title;
+  newBoard.classList.add('container');
+
+  const span1Board = document.createElement('span');
+  span1Board.innerHTML = `${item.title.charAt(0).toUpperCase() + item.title.slice(1)}`;
+  span1Board.classList.add('span1');
+  newBoard.appendChild(span1Board);
+
+  const span2Board = document.createElement('span');
+  span2Board.innerHTML = '&middot;&middot;&middot;';
+  span2Board.classList.add('span2');
+  newBoard.appendChild(span2Board);
+
+  for (let j = 0; j < item.issues.length; j += 1) {
+    const newTask = document.createElement('div');
+    newTask.innerHTML = `${item.issues[j].name}`;
+    newBoard.appendChild(newTask);
+    newTask.classList.add('task');
+    newTask.id = item.issues[j].id;
+  }
+
+  const span3Board = document.createElement('span');
+  span3Board.innerHTML = '+ Add card';
+  span3Board.classList.add('span3');
+  newBoard.appendChild(span3Board);
+
+  span3Board.addEventListener('click', () => {
+    const inputTask = document.createElement('input');
+    newBoard.appendChild(inputTask);
+    inputTask.classList.add('inputTask');
+
+    inputTask.addEventListener('focusout', () => {
+      const newTask = document.createElement('div');
+      newTask.innerHTML = `${inputTask.value}`;
+      newBoard.insertBefore(newTask, span3Board);
+      newTask.classList.add('task');
+      inputTask.remove();
+    });
+  });
+}
 
 function userList() {
   if (mark) {
