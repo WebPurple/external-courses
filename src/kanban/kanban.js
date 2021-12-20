@@ -109,13 +109,16 @@ function createTaskAnother(item, newBoard, span3Board, i) {
     newTask.id = `task${item.issues.length + 1}`;
     item.issues.push({ id: `task${item.issues.length + 1}`, name: `${selectTask.value}` });
     localStorage.setItem('boards', JSON.stringify(boardsMocks));
-    console.log(item.issues);
+
     selectTask.remove();
 
     for (let k = 0; k < boardsMocks[i - 1].issues.length; k += 1) {
       if (`${selectTask.value}` === `${boardsMocks[i - 1].issues[k].name}`) {
         boardsMocks[i - 1].issues.splice(k, 1);
         localStorage.setItem('boards', JSON.stringify(boardsMocks));
+        const previous = newBoard.previousElementSibling;
+        previous.childNodes[k + 2].remove();
+        console.log(previous);
       }
     }
   });
@@ -151,12 +154,14 @@ function createBoard() {
     span3Board.innerHTML = '+ Add card';
     span3Board.classList.add('span3');
     newBoard.appendChild(span3Board);
-
     span3Board.addEventListener('click', () => {
       if (newBoard.id === 'backlog') {
         createTaskBacklog(item, newBoard, span3Board);
-      } else {
+      } else if (boardsMocks[i - 1].issues.length > 0) {
         createTaskAnother(item, newBoard, span3Board, i);
+      } else {
+        span3Board.classList.add('span3-disable');
+        span3Board.classList.remove('span3');
       }
     });
   }

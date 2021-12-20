@@ -46,6 +46,8 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
+
+    cursor: default;
 }
 
 .inputTask {
@@ -84,14 +86,28 @@
 .span1 {
     display: inline-block;
     width: 280px;
+    cursor: default;
 }
 
 
 .span2 {
     font-size: 30px;
+    cursor: default;
 }
 
 .span3 {
     line-height: 21px;
     color: #5E6C84;
+    cursor: pointer;
+}
+
+.span3:hover {
+    color: #6690d8;
+    text-decoration: underline;
+}
+
+.span3-disable {
+    line-height: 21px;
+    color: #212429;
+    cursor: pointer;
 }
