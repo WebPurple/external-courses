@@ -118,7 +118,6 @@ function createTaskAnother(item, newBoard, span3Board, i) {
         localStorage.setItem('boards', JSON.stringify(boardsMocks));
         const previous = newBoard.previousElementSibling;
         previous.childNodes[k + 2].remove();
-        console.log(previous);
       }
     }
   });
@@ -158,6 +157,7 @@ function createBoard() {
       if (newBoard.id === 'backlog') {
         createTaskBacklog(item, newBoard, span3Board);
       } else if (boardsMocks[i - 1].issues.length > 0) {
+        span3Board.classList.add('span3');
         createTaskAnother(item, newBoard, span3Board, i);
       } else {
         span3Board.classList.add('span3-disable');
