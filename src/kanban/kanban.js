@@ -2,7 +2,7 @@ let mark = true;
 const userMenu = document.createElement('div');
 const main = document.querySelector('#main');
 
-let boards = [
+const boards = [
   {
     title: 'backlog',
     issues: [ // массив задач
@@ -29,11 +29,11 @@ let boards = [
       },
       {
         id: 'task3',
-        name: 'Sprint bugfix',
+        name: 'Shop bug1',
       },
       {
         id: 'task4',
-        name: 'Sprint bugfix',
+        name: 'Shop bug2',
       },
     ],
   },
@@ -46,15 +46,7 @@ let boards = [
       },
       {
         id: 'task2',
-        name: 'Sprint bugfix',
-      },
-      {
-        id: 'task3',
-        name: 'Sprint bugfix',
-      },
-      {
-        id: 'task4',
-        name: 'Sprint bugfix',
+        name: 'Auth bugfix',
       },
     ],
   },
@@ -67,15 +59,7 @@ let boards = [
       },
       {
         id: 'task2',
-        name: 'Sprint bugfix',
-      },
-      {
-        id: 'task3',
-        name: 'Sprint bugfix',
-      },
-      {
-        id: 'task4',
-        name: 'Sprint bugfix',
+        name: 'Main page bugfix',
       },
     ],
   },
@@ -89,6 +73,7 @@ if (localStorage.getItem('boards') === null) {
 const boardsMocks = JSON.parse(localStorage.getItem('boards'));
 
 function createTaskBacklog(item, newBoard, span3Board) {
+  localStorage.setItem('boards', JSON.stringify(boardsMocks));
   const inputTask = document.createElement('input');
   newBoard.insertBefore(inputTask, span3Board);
   inputTask.classList.add('inputTask');
@@ -97,31 +82,42 @@ function createTaskBacklog(item, newBoard, span3Board) {
     const newTask = document.createElement('div');
     newTask.innerHTML = `${inputTask.value}`;
     item.issues.push({ id: `task${item.issues.length + 1}`, name: `${inputTask.value}` });
-    boards = boardsMocks;
     localStorage.setItem('boards', JSON.stringify(boardsMocks));
-    console.log(item.issues);
     newBoard.insertBefore(newTask, span3Board);
     newTask.classList.add('task');
+    newTask.id = `task${item.issues.length + 1}`;
     inputTask.remove();
   });
 }
 
-function createTaskAnother(newBoard, span3Board, i) {
+function createTaskAnother(item, newBoard, span3Board, i) {
+  localStorage.setItem('boards', JSON.stringify(boardsMocks));
   const selectTask = document.createElement('select');
   newBoard.insertBefore(selectTask, span3Board);
   selectTask.classList.add('selectTask');
-  for (let k = 0; i < 2; k += 1) {
+  for (let k = 0; k < boardsMocks[i - 1].issues.length; k += 1) {
     const optionTask = document.createElement('option');
     optionTask.textContent = `${boardsMocks[i - 1].issues[k].name}`;
     selectTask.appendChild(optionTask);
   }
 
-  selectTask.addEventListener('click', () => {
+  selectTask.addEventListener('focusout', () => {
     const newTask = document.createElement('div');
     newTask.innerHTML = `${selectTask.value}`;
     newBoard.insertBefore(newTask, span3Board);
     newTask.classList.add('task');
+    newTask.id = `task${item.issues.length + 1}`;
+    item.issues.push({ id: `task${item.issues.length + 1}`, name: `${selectTask.value}` });
+    localStorage.setItem('boards', JSON.stringify(boardsMocks));
+    console.log(item.issues);
     selectTask.remove();
+
+    for (let k = 0; k < boardsMocks[i - 1].issues.length; k += 1) {
+      if (`${selectTask.value}` === `${boardsMocks[i - 1].issues[k].name}`) {
+        boardsMocks[i - 1].issues.splice(k, 1);
+        localStorage.setItem('boards', JSON.stringify(boardsMocks));
+      }
+    }
   });
 }
 
@@ -160,7 +156,7 @@ function createBoard() {
       if (newBoard.id === 'backlog') {
         createTaskBacklog(item, newBoard, span3Board);
       } else {
-        createTaskAnother(newBoard, span3Board, i);
+        createTaskAnother(item, newBoard, span3Board, i);
       }
     });
   }
