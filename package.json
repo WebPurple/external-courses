@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --ext .js --cache ./src --fix",
+    "lint:ci": "eslint --ext .js --cache ./src",
     "test:ci": "jest",
     "prepare": "husky install"
   },
