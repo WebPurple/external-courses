@@ -10,6 +10,10 @@
 - https://codepen.io/
 - https://codesandbox.io/
 
+## Ссылки для ознакомления:
+- https://github.com/airbnb/javascript
+- https://git-scm.com/docs/git (git clone, git add, git commit, git merge, git pull, git push, git rebase, git status, git checkout, git cherry-pick)
+
 
 #### Критерии оценки:
 - 0 - ничего не сделано
