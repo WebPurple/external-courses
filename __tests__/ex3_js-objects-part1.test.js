@@ -55,6 +55,27 @@ describe('Ex3. JS Objects Part 1', () => {
     });
 
     task('06', code => {
+        const obj = {
+            a: 1,
+            b: {
+                c: 7,
+                v: {
+                    b: 'awf',
+                },
+            },
+        };
+
+        it("should return undefined if the pass is invalid", () =>
+            expect(code(obj, 'a.c')).toBe(undefined));
+
+        it("should return undefined if the pass is invalid", () =>
+            expect(code(obj, 'a.b.c.b')).toBe(false));
+
+        it("should return value if the pass valid", () =>
+            expect(code(obj, 'a.b.v.b')).toBe('awf'));
+    });
+
+    task('07', code => {
         const obj = {a: 1, b: {c: 0}, e: {f: [{g: 1}]}};
         const objCopy = code(obj);
 
