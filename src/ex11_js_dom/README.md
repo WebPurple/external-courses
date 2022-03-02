@@ -1,4 +1,4 @@
-# Практическая работа 12 - JS advanced. DOM, BOM
+# Практическая работа 11 - JS advanced. DOM, BOM
 
 ## Задание 1
 
