@@ -1,4 +1,4 @@
-# Практическая работа 13 - JS advanced. Events
+# Практическая работа 12 - JS advanced. Events
 
 ## Задание 1
 
