@@ -12,6 +12,7 @@ module.exports = {
   },
   rules: {
     'import/prefer-default-export': 0,
+    'linebreak-style': ['error', 'windows'],
     'import/extensions': 0,
     'max-classes-per-file': 0,
     complexity: [0, 11],
