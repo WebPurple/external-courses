@@ -1,8 +1,9 @@
-const arrayParsing = (ARRAY) => {
-  for (let i = 0; i < ARRAY.length; i += 1) {
-    console.log(ARRAY[i]);
+const arrayParsing = (array) => {
+  for (let i = 0; i < array.length; i += 1) {
+    console.log(array[i]);
   }
-  console.log(ARRAY.length);
+
+  console.log(array.length);
 
   return undefined;
 };

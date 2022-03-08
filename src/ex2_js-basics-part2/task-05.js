@@ -1,18 +1,13 @@
-const returnMaxNumber = (ARRAY) => {
-  let sort;
-  const COPY_OF_ARRAY = ARRAY;
+const returnMaxNumber = (array) => {
+  let max = array[0];
 
-  for (let i = 0; i < COPY_OF_ARRAY.length; i += 1) {
-    for (let d = 0; d < COPY_OF_ARRAY.length; d += 1) {
-      if (COPY_OF_ARRAY[d] < COPY_OF_ARRAY[d + 1]) {
-        sort = COPY_OF_ARRAY[d];
-        COPY_OF_ARRAY[d] = COPY_OF_ARRAY[d + 1];
-        COPY_OF_ARRAY[d + 1] = sort;
-      }
+  for (let i = 0; i < array.length; i += 1) {
+    if (max < array[i]) {
+      max = array[i];
     }
   }
 
-  return COPY_OF_ARRAY[0];
+  return max;
 };
 
 module.exports = returnMaxNumber;
