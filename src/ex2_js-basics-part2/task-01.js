@@ -13,5 +13,4 @@ function typeCheck(a) {
 
   return undefined;
 }
-
 module.exports = typeCheck();
