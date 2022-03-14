@@ -1,8 +1,8 @@
 // Задание 1
 
-const Object = {
+const object = {
   id: 1,
   name: 'Name',
 };
 
-console.log(Object);
+console.log(object);
