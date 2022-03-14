@@ -1,7 +1,7 @@
 function newObj(obj) {
-  const newObject = { ...obj };
+  const cloneObj = { ...obj };
 
-  return newObject;
+  return cloneObj;
 }
 
 module.export = newObj();

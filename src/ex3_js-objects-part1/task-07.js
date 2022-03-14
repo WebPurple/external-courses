@@ -1,4 +1,15 @@
-// Задание 7
+function deepCopy(obj) {
+  const objCopy = {};
 
-const a = 1;
-console.log(a);
+  Object.keys(obj).forEach((key) => {
+    if (typeof obj[key] !== 'object' || obj[key] === null) {
+      objCopy[key] = obj[key];
+    } else {
+      objCopy[key] = deepCopy(obj[key]);
+    }
+  });
+
+  return objCopy;
+}
+
+module.export = deepCopy();
