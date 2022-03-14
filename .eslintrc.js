@@ -69,6 +69,8 @@ module.exports = {
     'no-void': 0,
     'no-warning-comments': [0, { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
     'no-with': 2,
+    'no-plusplus' : 0,
+    'no-bitwise' : 0,
     radix: 2,
     'vars-on-top': 0,
     'wrap-iife': [2, 'outside'],
