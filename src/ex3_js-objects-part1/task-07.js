@@ -2,7 +2,7 @@ function deepCloneObject(object) {
   let copyDeepObject = {};
   for (let key in object) {
     if (
-      typeof object[key] === "object" &&
+      typeof object[key] === 'object' &&
       object[key] !== null &&
       !(object[key] instanceof Array)
     ) {

@@ -5,7 +5,7 @@ function addValueInObject(string, object) {
     }
   }
 
-  object[string] = "new";
+  object[string] = 'new';
 
   return object;
 }
