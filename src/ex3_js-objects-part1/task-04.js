@@ -8,4 +8,4 @@ function newObj(str, obj) {
   return clone;
 }
 
-module.export = newObj();
+module.export = newObj;

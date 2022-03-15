@@ -4,4 +4,4 @@ function newObj(obj) {
   return cloneObj;
 }
 
-module.export = newObj();
+module.export = newObj;

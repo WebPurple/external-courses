@@ -12,4 +12,4 @@ function deepCopy(obj) {
   return objCopy;
 }
 
-module.export = deepCopy();
+module.export = deepCopy;
