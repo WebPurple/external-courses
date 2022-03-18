@@ -1,5 +1,7 @@
 function pastWord(str, word, num) {
-  console.log(str.split(' ').splice(num + 1, 0, word));
+  const arr = str.split(' ');
+  arr.splice(num + 1, 0, word);
+  return arr;
 }
 
 module.export = pastWord;
