@@ -1,11 +1,7 @@
 const getReversedString = (string) => {
-  let result = '';
+  const stringToArray = string.split('');
 
-  for (let i = string.length - 1; i >= 0; i -= 1) {
-    result += string[i];
-  }
-
-  return result;
+  return stringToArray.reverse().join('');
 };
 
 module.exports = getReversedString;

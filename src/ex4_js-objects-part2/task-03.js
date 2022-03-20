@@ -1,9 +1,14 @@
 const getStringWithoutSpases = (string) => {
-  if (string[0] && string[string.length - 1]) {
-    return string.slice(1, string.length - 1);
+  let result = string;
+
+  if (string[0] === ' ') {
+    result = result.slice(1);
   }
 
-  return string;
+  if (string[string.length - 1] === ' ') {
+    result = result.slice(0, result.length - 1);
+  }
+  return result;
 };
 
 module.exports = getStringWithoutSpases;
