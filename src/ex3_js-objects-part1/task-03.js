@@ -1,5 +1,5 @@
 function checkPropertyInObject(property, object) {
-  for (let key in object) {
+  for (const key in object) {
     if (property === key && object.hasOwnProperty(key)) {
       return true;
     }

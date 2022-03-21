@@ -1,5 +1,5 @@
 function cloneObject(object) {
-  return Object.assign({}, object);
+  return { ...object };
 }
 
 module.exports = cloneObject;
