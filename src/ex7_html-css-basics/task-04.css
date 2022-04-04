@@ -1,0 +1,49 @@
+body {
+    background-color: #5c5c5c;
+}
+
+.background {
+    background-image: url('https://cdn.create.vista.com/api/media/small/396901800/stock-vector-smile-emoticon-in-white-background');
+    background-size: contain;
+}
+
+.color {
+    background-color: rgb(212, 22, 38);
+}
+
+h1 {
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 5em;
+
+}
+
+dl {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.green {
+    background-color: green;
+}
+
+.border_top {
+    border-top: 2px solid #f5eeee;
+    padding-top: 20px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0ca507;
+    padding-top: 10px;
+}
+
+img {
+    width: 15%;
+}
+
+pre {
+    font-size: 12px;
+}

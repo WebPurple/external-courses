@@ -1,0 +1,20 @@
+.green {
+    background-color: green;
+}
+
+.border_top {
+    border-top: 2px solid #5c5c5c;
+    padding-top: 20px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 15%;
+}
+
+pre {
+    font-size: 12px;
+}
