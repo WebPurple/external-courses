@@ -1,0 +1,14 @@
+img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.point {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}

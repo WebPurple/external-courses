@@ -1,0 +1,15 @@
+#table-header {
+    text-transform: uppercase;
+}
+
+#table-header th {
+    padding: 5px;
+}
+
+.name {
+    text-transform: capitalize;
+}
+
+tr:hover {
+    background-color: rgb(226, 229, 234);
+}
