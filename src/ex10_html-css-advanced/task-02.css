@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  width: 140px;
+  height: 35px;
+  background: #f5f0f3de;
+  color: #c0bdbf;
+  margin-top: 20px;
+  border: 2px solid #f5f0f3;
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+}
+.fa,
+.fa-solid {
+  position: absolute;
+  top: 30%;
+  left: 15px;
+}
+
+.form {
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 50px;
+  width: 100%;
+}
+
+.password {
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.price {
+  width: 100px;
+  border-bottom: 0.1rem solid #bdbdbd;
+}
+
+.location {
+  width: 250px;
+  border-left: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+input {
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  outline: none;
+}
+
+label {
+  padding-left: 10px;
+  color: #bdbdbd;
+  transform: translateY(40px);
+  transform-origin: left top;
+  cursor: text;
+  transition: all 0.3s;
+}
+
+input:focus ~ label {
+  color: #1f14bb;
+  transform: translateY(30px) scale(0.8);
+}
+
+input:not(:placeholder-shown) ~ label {
+  transform: translateY(30px) scale(0.8);
+}

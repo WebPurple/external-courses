@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "FontName bold";
+  src: url(./assets/fonts/Proxima_Nova_Regular.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  color: #69738c;
+}
+main {
+  height: 500px;
+}
+.header,
+.footer {
+  height: 45px;
+  background: #181e2c;
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.header__items,
+.footer__items {
+  display: flex;
+  justify-content: end;
+}
+.navigation {
+  width: 192px;
+  display: flex;
+  align-items: center;
+}
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  display: block;
+  list-style-type: none;
+}
+a {
+  display: inline;
+  text-decoration: none;
+  color: #69738c;
+}
+
+.profile {
+  background: #15a4fa;
+  width: 157px;
+  height: 45px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.questions,
+.settings {
+  width: 55px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.questions {
+  background: #1f2637;
+}
+.settings {
+  background: #15a4fa;
+}
