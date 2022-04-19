@@ -1,0 +1,62 @@
+* {
+    width: 400px;
+    height: 200px;
+}
+
+.first-example,
+.inner_one,
+.inner_two {
+    background-color: rgb(233, 79, 8);
+}
+
+.inner_one,
+.inner_two {
+    position: relative;
+    top: 6px;
+    left: 6px;
+    opacity: 50%;
+}
+
+.inner_two {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    opacity: 30%;
+}
+
+.second-example {
+    position: relative;
+    margin-top: 50px;
+    background-color: rgb(212, 192, 13);
+}
+
+.second-example::before,
+.second-example::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(212, 192, 13);
+}
+
+.second-example::before {
+    top: 5px;
+    left: 5px;
+    opacity: 50%;
+}
+
+.second-example::after {
+    top: 10px;
+    left: 10px;
+    opacity: 30%;
+}
+
+.third_example {
+    margin-top: 30px;
+    background-color: rgb(44, 187, 8);
+    box-shadow: 5px 5px 1px rgba(44, 187, 8, 0.5);
+}
+
+.third_inner {
+    box-shadow: 10px 10px 1px rgba(44, 187, 8, 0.3);
+}
