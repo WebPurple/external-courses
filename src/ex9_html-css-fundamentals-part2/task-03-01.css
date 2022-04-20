@@ -1,0 +1,19 @@
+table {
+    width: 90%;
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: center;
+    color: rgb(90, 92, 94);
+}
+
+tr:nth-child(2n),
+th {
+    background-color: rgb(227, 234, 244);
+}
+
+tr:nth-child(2n - 1) {
+    background-color: rgb(242, 245, 250);
+}

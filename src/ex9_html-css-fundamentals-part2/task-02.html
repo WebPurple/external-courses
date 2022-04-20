@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Karpov M</title>
+  </head>
+  <body>
+    <form action="http://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal data</legend>
+
+        <p>
+          <label
+            >Surname
+            <input type="text" name="surname" />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >First Name
+            <input type="text" name="firstName" />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Middle Name
+            <input type="text" name="middleName" />
+          </label>
+        </p>
+
+        <p>You are</p>
+        <div>
+          <label>male<input type="radio" name="sex" value="male" /></label>
+          <label>female<input type="radio" name="sex" value="female" /></label>
+        </div>
+        <p>
+          <label
+            >Age
+            <input type="number" min="18" max="101" name="age" />
+          </label>
+        </p>
+
+        <p>
+          <label>Country of Residence</label>
+          <select name="country">
+            <option selected disabled></option>
+            <option value="Russia">Russia</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Italy">Italy</option>
+          </select>
+        </p>
+
+        <p>
+          City
+          <label>
+            <input type="checkbox" name="city" />
+            Ryazan
+          </label>
+          <label>
+            <input type="checkbox" name="city" />
+            Moscow
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Photography
+            <input type="file" name="photo" />
+          </label>
+        </p>
+        <hr />
+
+        <p>
+          Title
+          <select multiple>
+            <option>Technologies</option>
+            <option>Web Master</option>
+            <option>Database Administrator</option>
+            <option>Computer-aided design</option>
+            <option>Finance</option>
+            <option>Economic Planing</option>
+            <option>Management accounting</option>
+            <option>Budgeting and planning</option>
+          </select>
+        </p>
+
+        <p>
+          <label
+            >Salary
+            <input type="range" name="salary" />
+          </label>
+        </p>
+
+        <p><textarea placeholder="Tell us about yourself..."></textarea></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact information</legend>
+
+        <p>
+          <label
+            >Site
+            <input type="text" name="site" />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Email
+            <input type="email" name="email" />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Phone
+            <input type="number" name="phone" />
+          </label>
+        </p>
+      </fieldset>
+
+      <p>
+        <label
+          >Password
+          <input type="password" name="password" required />
+        </label>
+      </p>
+
+      <input type="submit" value="Отправить" />
+      <input type="reset" value="Сбросить" />
+    </form>
+  </body>
+</html>
