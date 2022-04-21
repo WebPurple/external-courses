@@ -8,17 +8,21 @@
   margin: 0;
   font-family: sans-serif;
 }
+
 body {
   color: #69738c;
 }
+
 main {
   height: 500px;
 }
+
 .header,
 .footer {
   height: 45px;
-  background: #181e2c;
+  background: #2f3549;
 }
+
 .footer {
   width: 100%;
   position: absolute;
@@ -30,28 +34,39 @@ main {
   display: flex;
   justify-content: end;
 }
+
 .navigation {
   width: 192px;
   display: flex;
   align-items: center;
 }
+
 ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-li {
-  display: block;
+
+li:first-child {
   list-style-type: none;
+  margin-right: 5px;
 }
+
+li {
+  font-size: 14px;
+  color: #000;
+}
+
 a {
   display: inline;
   text-decoration: none;
   color: #69738c;
+  width: 100%;
 }
 
 .profile {
   background: #15a4fa;
+  font-size: 14px;
   width: 157px;
   height: 45px;
   color: #fff;
@@ -59,11 +74,12 @@ a {
   align-items: center;
   justify-content: space-around;
 }
+
 .icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #000;
+  background: rgb(229, 255, 0);
 }
 
 .questions,
@@ -80,6 +96,7 @@ a {
 .questions {
   background: #1f2637;
 }
+
 .settings {
   background: #15a4fa;
 }
