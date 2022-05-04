@@ -40,12 +40,11 @@ nav a {
 }
 
 nav a:hover,
-.user_card button:hover {
+.user_button:hover {
     color: #fff;
     opacity: 0.7;
     transition: 1s;
 }
-
 
 .user_card {
     background-color: #15a4fa;
@@ -65,7 +64,7 @@ nav a:hover,
     margin: 2px 0 2px 0;
 }
 
-.user_card button {
+.user_button {
     background: url(/src/library_task/assets/img/profile_button.png) 100% 100% / 100% 100% no-repeat;
     border: none;
     width: 10px;
@@ -86,11 +85,11 @@ footer {
     justify-content: flex-end;
 }
 
-.question_item button {
+.question_item_button {
     background: url(/src/library_task/assets/img/question_item.png) 100% 100% / 100% 100% no-repeat;
 }
 
-.settings_item button {
+.settings_item_button {
     background: url(/src/library_task/assets/img/settings_item.png) 100% 100% / 100% 100% no-repeat;
 }
 
