@@ -1,0 +1,110 @@
+@font-face {
+    font-family: FontAwesome;
+    src: url("assets/fonts/FontAwesome.otf");
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url("assets/fonts/Proxima Nova Regular.otf");
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #eef1f7;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    background-color: #2f364a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 8px;
+    font-family: FontAwesome, Arial;
+}
+
+nav a {
+    margin-left: 10px;
+    color: #78829d;
+    text-decoration: none;
+}
+
+nav a:hover,
+.user_button:hover {
+    color: #fff;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.user_card {
+    background-color: #15a4fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    padding: 0 10px 0 10px;
+    gap: 10px;
+}
+
+.user_card img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: #fff solid 2px;
+    margin: 2px 0 2px 0;
+}
+
+.user_button {
+    background: url(/src/library_task/assets/img/profile_button.png) 100% 100% / 100% 100% no-repeat;
+    border: none;
+    width: 10px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.content {
+    flex: 1 1 auto;
+    color: #000;
+}
+
+footer {
+    background-color: #181e2c;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.question_item_button {
+    background: url(/src/library_task/assets/img/question_item.png) 100% 100% / 100% 100% no-repeat;
+}
+
+.settings_item_button {
+    background: url(/src/library_task/assets/img/settings_item.png) 100% 100% / 100% 100% no-repeat;
+}
+
+.settings_item {
+    background-color: #15a4fa;
+}
+
+.question_item {
+    background-color: #1f2637;
+}
+
+footer button {
+    width: 6px;
+    height: 9px;
+    cursor: pointer;
+    border: none;
+    margin: 5px 10px 5px;
+}
