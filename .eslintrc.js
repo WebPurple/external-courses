@@ -55,7 +55,7 @@ module.exports = {
     'no-octal': 2,
     'no-console': 0,
     'no-param-reassign': [0, { props: true }],
-    'no-plus-plus': 0,
+    'no-plusplus': 0,
     'no-process-env': 0,
     'no-proto': 0,
     'no-redeclare': 2,
