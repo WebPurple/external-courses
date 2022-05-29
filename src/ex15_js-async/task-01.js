@@ -1,5 +1,3 @@
-// const requestURL = 'https://jsonplaceholder.typicode.com/users/';
-
 function someFetch(method, url, body = null) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
