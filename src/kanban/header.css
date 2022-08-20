@@ -42,7 +42,7 @@ header .name {
 .rectangle10 {
     position: absolute;
     top: 10px;
-    left: 1075px;
+    right: 100px;
     background-color: white;
     border-radius: 5px;
     width: 160px;

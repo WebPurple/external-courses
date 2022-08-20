@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="kanban.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="logo">
         <div>
           <ul type="circle" class="header__btn-container">
@@ -22,15 +22,19 @@
       </div>
       <div class="user-menu">
         <div class="user-avatar"><img class="avatar" src="Vector.svg" /></div>
-        <div class="arow-down">&rsaquo;</div>
+        <div class="arow-down" id="arow-down" onclick="userList()">
+          &rsaquo;
+        </div>
       </div>
     </header>
-    <div class="container"></div>
+    <container class="main" id="main"> </container>
     <footer>
       <div class="rectangle12"></div>
       <div class="active">Active tasks: &lt;N&gt;</div>
       <div class="finished">Finished tasks: &lt;M&gt;</div>
       <div class="author">Kanban board by: &lt;NAME&gt;, &lt;YEAR&gt;</div>
     </footer>
+
+    <script type="text/javascript" src="kanban.js"></script>
   </body>
 </html>
